@@ -20,7 +20,9 @@
         "splitter@^0.0.8",
         "tbfed-pagefooter@^0.0.1",
         "expandable-chapters-small@^0.1.7",
-        "anchor-navigation-ex@0.1.8"
+        "anchor-navigation-ex@0.1.8",
+		"-sharing", 
+		"sharing-plus"
     ],
 
     "pluginsConfig": {
@@ -52,8 +54,31 @@
             "tocLevel1Icon": "fa fa-hand-o-right",
             "tocLevel2Icon": "fa fa-hand-o-right",
             "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+		"sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "qq", "linkedin",
+                "qzone", "douban"
+            ]
         }
-
 
     }
 }
