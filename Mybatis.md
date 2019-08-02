@@ -55,17 +55,17 @@
 </configuration>
 ```
 
-​		![1553606666801](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1553606666801.png)
+​		![1553606666801](image/1553606666801.png)
 
 ​	 映射文件(被执行语句的配置文件):
 
-![1553606712390](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1553606712390.png)
+![1553606712390](image/zz.png)
 
- ![1553606733125](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1553606733125.png)
+ ![1553606733125](image/1553606733125.png)
 
 ​	具体执行步骤
 
-![1553606776637](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1553606776637.png)
+![1553606776637](image/1553606776637.png)
 
 ​	
 
@@ -175,11 +175,11 @@ public void demo2(){
 
 **注意模糊查询**
 
-​	![1563161984463](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563161984463.png)
+​	![1563161984463](image/1563161984463.png)
 
 
 
-![1563162006052](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563162006052.png)
+![1563162006052](image/1563162006052.png)
 
 
 
