@@ -46,7 +46,7 @@
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "edit-link": {
-            "base": "https://github.com/huangwjwork/gitbook/edit/master",
+            "base": "https://github.com/TaoQZ/book/master",
             "label": "Edit This Page"
         },
         "anchor-navigation-ex": {
