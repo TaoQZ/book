@@ -1,5 +1,5 @@
 {
-    "title": "tao notes",
+    "title": "没伞的孩子要学会奔跑",
     "description": "好记性不如烂笔头，记录日常遇到的问题及学习的成果",
     "author": "almostTao",
     "output.name": "site",
@@ -8,7 +8,7 @@
     "root": ".",
     "links": {
         "sidebar": {
-            "Home": ""
+               "Home": "https://taoqz.github.io"
         }
     },
     "plugins": [
@@ -22,18 +22,17 @@
         "expandable-chapters-small@^0.1.7",
         "anchor-navigation-ex@0.1.8",
 		"-sharing", 
-		"sharing-plus"
+		"sharing-plus",
+		"multipart"
     ],
 
     "pluginsConfig": {
 		"disqus": {
 		  "shortName": "taoqz"
 		},
-        "theme-default": {
-            "showLevel": true
-        },
+      
         "github": {
-            "url": "https://taoqz.github.io/book"
+            "url": "https://taoqz.github.io"
         },
         "include-codeblock": {
             "template": "ace",
@@ -46,7 +45,7 @@
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "edit-link": {
-            "base": "https://github.com/TaoQZ/book/master",
+            "base": "",
             "label": "Edit This Page"
         },
         "anchor-navigation-ex": {
