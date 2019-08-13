@@ -23,7 +23,8 @@
 		"-sharing", 
 		"sharing-plus",
 		"multipart",
-		"baidu-tongji"
+		"baidu-tongji",
+		"ga"
     ],
 
     "pluginsConfig": {
@@ -34,6 +35,9 @@
 		 "baidu-tongji": {
             "token": "547fd35e117e03eb20cde8415b55ab18",
 			 "url":"https://hm.baidu.com/hm.js"
+        },
+		"ga": {
+            "token": "UA-145587281-1"
         },
       
         "github": {
