@@ -20,12 +20,15 @@
         "tbfed-pagefooter@^0.0.1",
         "expandable-chapters-small@^0.1.7",
         "anchor-navigation-ex@0.1.8",
-		"-sharing", 
+        "-sharing", 
 		"sharing-plus",
 		"multipart",
 		"baidu-tongji",
 		"ga",
-		"edit-link@^2.0.2"
+        "edit-link@^2.0.2",
+        "-lunr",
+         "-search", 
+         "search-plus"
     ],
 
     "pluginsConfig": {
