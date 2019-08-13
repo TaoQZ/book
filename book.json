@@ -23,7 +23,7 @@
 		"-sharing", 
 		"sharing-plus",
 		"multipart",
-		"baidu"
+		"baidu-tongji"
     ],
 
     "pluginsConfig": {
@@ -31,7 +31,7 @@
 		  "shortName": "taoqz"
 		},
 		
-		 "baidu": {
+		 "baidu-tongji": {
             "token": "547fd35e117e03eb20cde8415b55ab18"
         },
       
