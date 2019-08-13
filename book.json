@@ -8,13 +8,12 @@
     "root": ".",
     "links": {
         "sidebar": {
-               "Home": "https://taoqz.github.io"
+               "Home": "https://taoqz.xyz"
         }
     },
     "plugins": [
 		"disqus",
         "github@^2.0.0",
-        "edit-link@^2.0.2",
         "anchors@^0.7.1",
         "include-codeblock@^3.0.2",
         "splitter@^0.0.8",
@@ -23,13 +22,18 @@
         "anchor-navigation-ex@0.1.8",
 		"-sharing", 
 		"sharing-plus",
-		"multipart"
+		"multipart",
+		"baidu"
     ],
 
     "pluginsConfig": {
 		"disqus": {
 		  "shortName": "taoqz"
 		},
+		
+		 "baidu": {
+            "token": "547fd35e117e03eb20cde8415b55ab18"
+        },
       
         "github": {
             "url": "https://taoqz.github.io"
@@ -44,10 +48,7 @@
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        "edit-link": {
-            "base": "",
-            "label": "Edit This Page"
-        },
+      
         "anchor-navigation-ex": {
             "isRewritePageTitle": false,
             "tocLevel1Icon": "fa fa-hand-o-right",
@@ -70,14 +71,14 @@
             "twitter": false,
             "viber": false,
             "vk": false,
-            "weibo": true,
-            "whatsapp": false,
+            "weibo": false,
             "all": [
                 "facebook", "google", "twitter",
-                "weibo", "qq", "linkedin",
-                "qzone", "douban"
+                "qq",
+                "qzone"
             ]
         }
+		
 
     }
 }

@@ -4,7 +4,7 @@ typora-copy-images-to: image
 
 
 
-#### 使用Google Cloud搭建ssr
+# 使用Google Cloud搭建ssr
 
 ​	在youtube或者各种搜索引擎上已经有不少的视频和教程,写本文也是分享一下自己的经验:happy:。
 
@@ -12,7 +12,7 @@ typora-copy-images-to: image
 
 
 
-#### 1.需要用到
+## 1.需要用到
 
 ​	1.1.前置的科学上网工具
 
@@ -24,7 +24,7 @@ typora-copy-images-to: image
 
 
 
-#### 2.申请注册谷歌云	
+## 2.申请注册谷歌云	
 
 ​	2.1.地址:<https://cloud.google.com/free/>
 
@@ -36,7 +36,7 @@ typora-copy-images-to: image
 
 
 
-#### 3.创建实例
+## 3.创建实例
 
 ​	**3.1.点击左上角菜单栏图标选中结算,去激活你的结算账号**
 
@@ -58,7 +58,7 @@ typora-copy-images-to: image
 
 
 
-#### 4.创建防火墙规则
+## 4.创建防火墙规则
 
 ​	**4.1选中菜单栏VPC网络点击防火墙规则**
 
@@ -68,7 +68,7 @@ typora-copy-images-to: image
 
 
 
-#### 5.开始搭建
+## 5.开始搭建
 
 ​	**5.1.在创建好的实例有一个SSH选择在浏览器窗口打开**
 
