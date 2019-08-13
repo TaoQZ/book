@@ -24,14 +24,18 @@
 		"sharing-plus",
 		"multipart",
 		"baidu-tongji",
-		"ga"
+		"ga",
+		"edit-link@^2.0.2"
     ],
 
     "pluginsConfig": {
 		"disqus": {
 		  "shortName": "taoqz"
 		},
-		
+		   "edit-link": {
+            "base": "",
+            "label": "Edit This Page"
+        },
 		 "baidu-tongji": {
             "token": "547fd35e117e03eb20cde8415b55ab18",
 			 "url":"https://hm.baidu.com/hm.js"
