@@ -2,6 +2,8 @@
 
 ​	简化了Spring项目的搭建和开发过程,可以整合其他框架,简单,快速,快变
 
+
+
 # 2..SpringBoot的项目结构:	
 
 ​	其他包和boot的启动类在同一级目录
@@ -30,6 +32,8 @@ com
 
 ​		`spring-boot-starter-test` ：测试模块
 
+
+
 # 3.idea中创建项目后使用创建webapp目录,以及使用jsp
 
 ​	需要添加依赖:
@@ -53,11 +57,13 @@ com
 
 ​	标记为web目录:Modules --> 点击项目下的Web,将webapp路径添加到下图
 
-![1561705812585](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1561705812585.png)
+![1561705812585](/img/springboot/使用jsp.png)
+
+
 
 # 4.自定义过滤器:
 
-​	其中MyFilter类自己实现javax.servlet.Filter接口![1561706000817](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1561706000817.png)
+​	其中MyFilter类自己实现javax.servlet.Filter接口![1561706000817](/img/springboot/自定义过滤器.png)
 
 # 5.整合Mybatis:
 
@@ -93,7 +99,7 @@ com
 </dependency>
 ```
 
-# 	**其中如果数据出现乱码:**
+​	**其中如果数据出现乱码:**
 
 ```xml
 <plugin>
@@ -215,7 +221,7 @@ spring:
         </dependency>
 ```
 
-**7.使用log4j:**
+# **7.使用log4j:**
 
 ​	在resources文件夹下添加log4j.properties
 
@@ -273,9 +279,9 @@ spring.devtools.restart.additional-paths=src/main/java
 spring.thymeleaf.cache=false
 ```
 
-​	**idea需要的配置:**	![1561707248382](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1561707248382.png)
+​	**idea需要的配置:**	![1561707248382](/img/springboot/热部署1.png)
 
-![1561707271469](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1561707271469.png)
+![1561707271469](/img/springboot/热部署2.png)
 
 # 9.webjars:
 
@@ -289,7 +295,7 @@ spring.thymeleaf.cache=false
 
 引入时,按照其在pom文件中的 webjars/a/v/具体引入的东西
 
-![1563239197667](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563239197667.png)
+![1563239197667](/img/springboot/webjars.png)
 
 ​	官网:<https://www.webjars.org/>
 
@@ -359,7 +365,7 @@ spring.thymeleaf.cache=false
 
 ​		**spring.jackson.date-format=yyyy-MM-dd HH:mm:ss**
 
-13.boot中使用拦截器
+# 13.boot中使用拦截器
 
 ​	**ssm方式使用配置类配置拦截器在springmvc_note中**,注意spring5后一律推荐使用实现WebMvcConfigurer接口
 
@@ -380,15 +386,15 @@ public void addInterceptors(InterceptorRegistry registry) {
 
 ​	阅读源码可以看到WebMvcAutoConfiguration 类中addResourceHandlers方法
 
-![1563197024899](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563197024899.png)
+![1563197024899](/img/springboot/静态文件1.png)
 
 去读ResourceProperties类中的属性
 
-![1563197067348](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563197067348.png)
+![1563197067348](/img/springboot/静态文件2.png)
 
 其中将默认的值赋值给了它,共有四个默认值,其优先级跟下图声明顺序一样
 
-![1563197107095](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563197107095.png)
+![1563197107095](/img/springboot/静态文件3.png)
 
 这几个文件夹都是在resources文件夹下的
 
@@ -404,11 +410,11 @@ public void addInterceptors(InterceptorRegistry registry) {
 
    **有两栏添加第一个提那家web.xml路径,第二个添加webapp路径,如果jsp访问不到 如下配置,别忘记添加依赖**
 
-   ![1563197392234](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563197392234.png)
+   ![1563197392234](/img/springboot/静态文件4.png)
 
 **自定义方式:**
 
-![1563197545283](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1563197545283.png)
+![1563197545283](/img/springboot/静态文件5.png)
 
 ​	       使用配置文件:
 
@@ -578,19 +584,19 @@ spring.servlet.multipart.max-request-size=20MB
 ​	**自定义方法**,将表单数据转换为json格式的字符串,最后使用js自身的方法JSON.stringify($("#myForm").serializeJson()) 作为data传递到后台		
 
 ```javascript
-function convertJSON(data){
-    var serializeObj={};
-    var array=data.serializeArray();
-    var str=data.serialize();
-    $(array).each(function(){
-        if(serializeObj[this.name]){
-            if($.isArray(serializeObj[this.name])){
+$.fn.serializeJson=function() {
+    var serializeObj = {};
+    var array = this.serializeArray();
+    var str = this.serialize();
+    $(array).each(function () {
+        if (serializeObj[this.name]) {
+            if ($.isArray(serializeObj[this.name])) {
                 serializeObj[this.name].push(this.value);
-            }else{
-                serializeObj[this.name]=[serializeObj[this.name],this.value];
+            } else {
+                serializeObj[this.name] = [serializeObj[this.name], this.value];
             }
-        }else{
-            serializeObj[this.name]=this.value;
+        } else {
+            serializeObj[this.name] = this.value;
         }
     });
     return serializeObj;
@@ -601,6 +607,9 @@ function convertJSON(data){
 
 ```javascript
 // 获取id
+var a = location.search
+var b = location.search.split("=")
+var c = location.search.split("=")[1]
 // var d=  parseInt((location.search.match(/id=\w+/)[0]).split("=")[1])
 var id = parseInt(location.search.split("=")[1]);
 ```
@@ -623,9 +632,9 @@ var id = parseInt(location.search.split("=")[1]);
 spring.datasource.url=jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
 ```
 
-​	
 
-# 20.application.yml: 
+
+# **20.application.yml: **
 
 ​	**注意name和value之间要有一个空格**
 
