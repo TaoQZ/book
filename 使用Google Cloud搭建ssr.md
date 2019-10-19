@@ -78,9 +78,12 @@ typora-copy-images-to: image
 
 ​			**5.1.2.  安装SSR**
 
-```
-wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master
-/shadowsocksR.sh && chmod +x shadowsocksR.sh
+```shell
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
+
+chmod +x shadowsocksR.sh
+
+./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
 ```
 
 ​			**5.1.3.  ./shadowsocksR.sh  运行**
