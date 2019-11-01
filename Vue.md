@@ -936,9 +936,464 @@ const routes = [
         path: 'son',
         name: 'son',
         component: () => import('../views/son.vue'),
-      }
+      },
+     //  子路由path的第二种写法,访问路径加上父组件的路径
+     // {
+     //   path: '/home/son',
+     //   name: 'son',
+     //   component: () => import('../views/son.vue')
+     // }    
     ]
   }
 ]
+```
+
+# 10.Vuex
+
+### 10.1.什么是Vuex,为什么要有Vuex
+
+​		Vuex是组件之间数据共享的一种机制
+
+​		使用父子传值或兄弟传值,太麻烦不好管理,有了Vuex想要共享数据,只需要把数据挂在到vuex就行,想要获取数据,直接从vuex上拿就行,vuex中的数据被修改后其他引用了此数据的组件,也会同步更新
+
+### 10.2.在项目中使用vuex
+
+​		安装vuex:
+
+```shell
+npm install vuex
+```
+
+​		使用
+
+```javascript
+在store/index.js文件
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  // 公共区域数据
+  state: {
+    num : 10,
+    msg : 'zz'
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
+})
+
+```
+
+
+
+```java
+在main.js文件中将store挂在到vm实例上
+
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
+
+```
+
+
+
+### 	10.3.访问vuex中的数据
+
+```javascript
+this.$store.state.变量名
+vue官方并不推荐通过上面的方式获取数据
+```
+
+```javascript
+使用结构表达式
+
+在组件内导入
+import {mapState} from 'vuex'
+
+创建一个computed属性
+// 官方推荐的使用方式,进行结构,将公共属性的值作为计算属性
+computed:{
+	...mapState(['num','msg'])
+},
+```
+
+
+
+### 10.4. 案例,使用并修改state中的数据
+
+在store/index.js中定义变量存储数据
+
+```javascript
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  // 公共区域数据
+  state: {
+    num : 10,
+  },
+  mutations: {
+    addNum(state){
+      state.num++
+    }
+  },
+  actions: {
+  },
+  modules: {
+  }
+})
+
+```
+
+
+
+在components中创建两个组件
+
+​	app.vue
+
+```html
+<!-- add.vue -->
+<template>
+    <div>
+        <!-- 第一种方式 -->
+        <!--  add:<input type="button" value="+" @click="$store.state.num++"> -->
+        <!-- 第二种方式 -->
+        add:<input type="button" value="+" @click="add">
+        
+        <!-- 使用解构表达式 -->
+        <!-- 直接调用mutations 中的方法 -->
+        <!--        add:<input type="button" value="+" @click="$store.commit('addNum')">-->
+        <!-- 使用解构表达式 -->
+        add:<input type="button" value="+" @click="addNum">
+        num:{{num}}
+    </div>
+</template>
+
+<script>
+    // 结构表达式
+    import {mapState} from 'vuex'
+    import {mapMutations} from 'vuex'
+    
+    export default {
+        name: "add",
+        // 官方推荐的使用方式,进行结构,将公共属性的值作为计算属性
+        computed:{
+            ...mapState(['num','msg'])
+        },
+        methods:{
+            add(){
+                this.$store.state.num++
+            },
+            ...mapMutations(['addNum'])
+        }
+    }
+</script>
+
+```
+
+​	minus.vue
+
+```html
+<template>
+    <div>
+      {{num}}
+    </div>
+</template>
+
+<script>
+    // 解构 将vuex中的数据解构成计算属性使用
+    import {mapState} from 'vuex'
+    export default {
+        name: "add",
+        methods:{
+
+        },
+        computed:{
+            ...mapState(['num'])
+        }
+    }
+</script>
+```
+
+
+
+​	router/index.js
+
+```javascript
+// 将这两个组件导入
+import add from '@/components/add.vue'
+import minus from '@/components/minus.vue'
+
+const routes = [
+    {
+    path:'/访问路径',
+    name:'home',
+    components:{
+      add,
+      minus
+    }
+   },
+]
+
+```
+
+​	
+
+​	App.vue:用于显示变量,观察其修改后组件中数据是否同步更新
+
+```html
+  <router-view name="add"></router-view>
+  <router-view name="minus"></router-view>
+```
+
+### 	10.5. 注意事项
+
+​	如果想获取有返回值的方法(对state中的数据有所更改后),可以在getters中创建方法,并
+
+返回处理后的结果,使用this.$store.getters.方法名获取
+
+​	vue推荐使用mutations来对state中的数据进行修改,mutations中的方法第一个参数必
+
+须是state,也就是当前vuex中的state,可以直接调用
+
+​	actions:包裹mutations中的方法,异步调用
+
+​	例子:
+
+```javascript
+mutations:{  
+// 第一个参数必须是state
+  addNumS(state,step){
+      state.num += step
+  },
+},
+actions: {
+    // 第一个参数必须是context step:参数
+    addNumSAysc(context,step){
+        // 利用context来调用mutations的方法来操作state中的数据
+        context.commit('addNumS',step)
+      }
+ },    
+```
+
+
+
+# 11.组件之间传值
+
+### 	11.1. 父传子
+
+​	父组件
+
+```javascript
+<template>
+    <div>
+        我是父组件
+<!--      使用子组件  -->
+        <son :sonMsg="msg"></son>
+    </div>
+</template>
+
+<script>
+    // 导入子组件
+    import son from '@/views/Son'
+
+    export default {
+        name: "Parent",
+        data(){
+            return{
+                msg : '我是父组件中的数据'
+            }
+        },
+        // 注册使用
+        components:{son}
+    }
+</script>
+```
+
+​	子组件
+
+```javascript
+<template>
+    <div>
+        我是子组件:{{sonMsg}}
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "Son",
+        // 定义props属性用来接收父组件的数据
+        props:['sonMsg']
+    }
+</script>
+```
+
+### 	11.2 . 子传父
+
+​	父组件
+
+```javascript
+<template>
+    <div>
+            <p>我是父组件</p>
+        我是子组件传递到父组件的数据:{{sonMs}}
+        <hr>
+<!--     父组件监听   -->
+        <son @fromSon="sonSMsg"></son>
+    </div>
+</template>
+
+<script>
+    // 导入子组件
+    import son from '@/views/Son'
+
+    export default {
+        name: "Parent",
+        data(){
+            return{
+                msg : '我是父组件中的数据',
+                sonMs: ''
+            }
+        },
+        methods:{
+          sonSMsg(msg){
+              this.sonMs = msg
+          }
+        },
+        // 注册使用
+        components:{son}
+    }
+</script>
+```
+
+​	子组件
+
+```javascript
+<template>
+    <div>
+        我是子组件中的按钮
+<!--     子组件触发自身事件调用方法   -->
+        <input type="button" @click="sendMsgToParent" value="点击传值">
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "Son",
+        data(){
+          return{
+              msg:'我是子组件中的数据'
+          }
+        },
+        methods : {
+            sendMsgToParent(){
+                this.$emit('fromSon',this.msg)
+            }
+        }
+    }
+</script>
+```
+
+### 	11.3. 非父子组件之间传值
+
+​	设立公共数据文件
+
+​	Bus.js
+
+```javascript
+// 导入vue
+import vue from 'vue'
+// 创建vue对象
+export default new vue()
+```
+
+
+
+​	Demo01.vue
+
+```javascript
+<template>
+    <div>
+<!--    点击触发事件 调用方法  -->
+        <input type="button" @click="sendMsgToDemo02" value="点击传值">
+        <hr>
+<!--    使用兄弟组件  为了将其显示在同一个页面   -->
+        <demo02></demo02>
+    </div>
+</template>
+
+<script>
+
+    // 导入 兄弟组件 为了将其显示在同一个页面
+    import demo02 from '@/views/Demo02'
+
+    // 导入Bus.js 公共数据文件
+    import bus from './Bus.js'
+
+    export default {
+        name: "Demo01",
+         data(){
+             return{
+                msg : '我是demo01中的数据'
+             }
+         },
+        methods:{
+            sendMsgToDemo02(){
+                // 固定格式
+                bus.$emit('fromDemo02',this.msg)
+            }
+        },
+        components:{demo02}
+    }
+
+
+```
+
+​	Demo02.vue
+
+```javascript
+<template>
+    <div>
+        <p>我是demo02:</p>
+        我是传递过来的数据:插值表达式 msg
+    </div>
+</template>
+
+<script>
+
+    // 导入Bus.js 公共数据文件
+    import bus from './Bus.js'
+
+    export default {
+        name: "Demo02",
+         data(){
+             return{
+                 msg : ''
+             }
+         },
+        created() {
+            // 固定格式 data就是传递过来的数据
+            bus.$on('fromDemo02',data => {
+                this.msg = data
+            })
+        }
+    }
+</script>
 ```
 
