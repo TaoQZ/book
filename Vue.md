@@ -1011,7 +1011,9 @@ new Vue({
 
 
 
-## 	10.3.访问vuex中的数据
+## 	10.3.访问vuex中的数据及方法
+
+​	数据
 
 ```javascript
 this.$store.state.变量名
@@ -1029,6 +1031,51 @@ import {mapState} from 'vuex'
 computed:{
 	...mapState(['num','msg'])
 },
+```
+
+​	方法
+
+​	登录案例
+
+```javascript
+<template>
+    <div>
+        <h3>登录</h3>
+        账号: <input type="text" v-model="user.username"> <br>
+        密码: <input type="text" v-model="user.password"> <br>
+            <!-- 直接使用方法 并且传参 -->
+        <input type="button" @click="login(user)" value="登录">
+    </div>
+</template>
+
+<script>
+
+    import {mapActions} from 'vuex'
+
+    export default {
+        methods:{
+            ...mapActions(['login']),
+        },
+        name: "Login",
+        data(){
+            return{
+                user:{}
+            }
+        },
+    }
+</script>
+```
+
+
+
+```javascript
+ actions: {
+     // 第一个参数默认
+    login(context,user){
+        // 调用的mutations中的方法,进行封装使之可以提交异步请求
+      context.commit('login',user)
+    }
+  },
 ```
 
 
