@@ -761,6 +761,17 @@ this.axios.get('url',{
 ​	需要配合qs使用
 
 ```javascript
+安装
+npm install qs
+
+main.js 中配置
+import qs from 'qs'
+Vue.prototype.qs = qs
+```
+
+
+
+```javascript
 this.axios.delete("/book", {
     params: {
         books: arr
