@@ -12,6 +12,7 @@
         }
     },
     "plugins": [
+        "expandable-chapters",
 		"disqus",
         "github@^2.0.0",
         "anchors@^0.7.1",
