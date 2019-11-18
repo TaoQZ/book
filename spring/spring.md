@@ -771,7 +771,7 @@ public class LogAspects {
 
 ​		配置类
 
-```xml
+```java
 package xyz.taoqz.config;
 
 import com.alibaba.druid.pool.DruidDataSource;

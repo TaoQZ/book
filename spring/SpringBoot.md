@@ -57,13 +57,13 @@ com
 
 ​	标记为web目录:Modules --> 点击项目下的Web,将webapp路径添加到下图
 
-![1561705812585](/img/springboot/使用jsp.png)
+![1561705812585](../img/springboot/使用jsp.png)
 
 
 
 # 4.自定义过滤器:
 
-​	其中MyFilter类自己实现javax.servlet.Filter接口![1561706000817](/img/springboot/自定义过滤器.png)
+​	其中MyFilter类自己实现javax.servlet.Filter接口![1561706000817](../img/springboot/自定义过滤器.png)
 
 # 5.整合Mybatis:
 
@@ -279,9 +279,9 @@ spring.devtools.restart.additional-paths=src/main/java
 spring.thymeleaf.cache=false
 ```
 
-​	**idea需要的配置:**	![1561707248382](/img/springboot/热部署1.png)
+​	**idea需要的配置:**	![1561707248382](../img/springboot/热部署1.png)
 
-![1561707271469](/img/springboot/热部署2.png)
+![1561707271469](../img/springboot/热部署2.png)
 
 # 9.webjars:
 
@@ -295,7 +295,7 @@ spring.thymeleaf.cache=false
 
 引入时,按照其在pom文件中的 webjars/a/v/具体引入的东西
 
-![1563239197667](/img/springboot/webjars.png)
+![1563239197667](../img/springboot/webjars.png)
 
 ​	官网:<https://www.webjars.org/>
 
@@ -386,15 +386,15 @@ public void addInterceptors(InterceptorRegistry registry) {
 
 ​	阅读源码可以看到WebMvcAutoConfiguration 类中addResourceHandlers方法
 
-![1563197024899](/img/springboot/静态文件1.png)
+![1563197024899](../img/springboot/静态文件1.png)
 
 去读ResourceProperties类中的属性
 
-![1563197067348](/img/springboot/静态文件2.png)
+![1563197067348](../img/springboot/静态文件2.png)
 
 其中将默认的值赋值给了它,共有四个默认值,其优先级跟下图声明顺序一样
 
-![1563197107095](/img/springboot/静态文件3.png)
+![1563197107095](../img/springboot/静态文件3.png)
 
 这几个文件夹都是在resources文件夹下的
 
@@ -410,11 +410,11 @@ public void addInterceptors(InterceptorRegistry registry) {
 
    **有两栏添加第一个提那家web.xml路径,第二个添加webapp路径,如果jsp访问不到 如下配置,别忘记添加依赖**
 
-   ![1563197392234](/img/springboot/静态文件4.png)
+   ![1563197392234](../img/springboot/静态文件4.png)
 
 **自定义方式:**
 
-![1563197545283](/img/springboot/静态文件5.png)
+![1563197545283](../img/springboot/静态文件5.png)
 
 ​	       使用配置文件:
 

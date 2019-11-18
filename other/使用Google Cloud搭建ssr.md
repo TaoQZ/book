@@ -32,7 +32,7 @@ typora-copy-images-to: image
 
 ​	       可以看到下图说明已经成功激活谷歌云了    
 
-![	1565587810003](img/google_cloud/1565588490786.png)
+![	1565587810003](../img/google_cloud/1565588490786.png)
 
 
 
@@ -42,11 +42,11 @@ typora-copy-images-to: image
 
 ​	**3.2.选中Compute Engine**
 
-![1565588319747](img/google_cloud/1565588319747.png)
+![1565588319747](../img/google_cloud/1565588319747.png)
 
 ​       **3.3.创建实例详细信息**
 
-![	1565588680251](img/google_cloud/vm.png)
+![	1565588680251](../img/google_cloud/vm.png)
 
 ​	**3.4.测试延迟**
 
@@ -64,7 +64,7 @@ typora-copy-images-to: image
 
 ​	      **注意需要创建两个,下图中会有说明**
 
-![	1565589740995](img/google_cloud/fanghuoqiangguize.png)
+![	1565589740995](../img/google_cloud/fanghuoqiangguize.png)
 
 
 
@@ -90,9 +90,9 @@ chmod +x shadowsocksR.sh
 
 ​	**5.2.回车运行后会看到下图,有解释说明**
 
-![	1565592104389](img/google_cloud/ssr_ssh_mingling.png)
+![	1565592104389](../img/google_cloud/ssr_ssh_mingling.png)
 
-![1565592348878](img/google_cloud/ssrconfig.png)
+![1565592348878](../img/google_cloud/ssrconfig.png)
 
 **到此一个通过Google Cloud搭建的SSR就可以使用了**:beers:
 
