@@ -30,6 +30,10 @@ public InternalResourceViewResolver viewResolver(){
     viewResolver.setSuffix(".jsp");
     return viewResolver;
 }
+
+// properties 方式配置
+spring.mvc.view.prefix=
+spring.mvc.view.suffix=
 ```
 
 # 3.参数绑定:
