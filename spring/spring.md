@@ -1,7 +1,5 @@
 # Spring
 
-## 	day01
-
 ​			context包提供了IOC容器功能
 
 ​			IOC就是一个大的Map集合,key就是name,value就是对象
@@ -253,10 +251,6 @@ console:
 
 
 
-## day02
-
-
-
 ### 	@Conditional条件注册Bean
 
 ​			@Conditional(Class<? extends Condition> [] value())
@@ -385,7 +379,7 @@ boolean isSingleton() : 表示对象注入容器时是否单例
 
 
 
-## day03
+## 
 
 ​	
 
@@ -468,7 +462,7 @@ public class Person {
 
 
 
-## day04
+## 
 
 
 
@@ -558,7 +552,7 @@ for (PropertySource<?> propertySource : propertySources) {
 
 
 
-## day05
+## 
 
 #### 		AOP
 
@@ -734,9 +728,7 @@ public class LogAspects {
 
 ​	
 
-## day08
 
-​	**spring声明式事务**
 
 #### 		什么是声明式事务?
 
@@ -744,7 +736,7 @@ public class LogAspects {
 
 ​			最小的执行单位为方法,决定执行成败通过是否抛出异常来判断,抛出异常即执行失败
 
-### 	     spring使用事务		
+## 	     spring使用事务		
 
 ​		导入相关依赖:
 
@@ -844,17 +836,17 @@ private JdbcTemplate jdbcTemplate;
 
 ​		添加在类上,表示该类中所有方法都有事务
 
+## 	
 
+### 	自定义配置 
 
-## day11
+应该实现WebMvcConfigurer接口还是继承WebMvcConfigurerAdapter类,该类是接口的一个实现类.为了解决需要单独配置其
 
-​	
+中一项而需要实现接口中的所有方法而产生,但在spring5之后该接口中的方法定义为default,可以选择重写方法,因此推荐使用实
 
-### 	springmvc自定义配置 
+现WebMvcConfigurer接口+@EnableWebMvc的方式
 
-​		应该实现**WebMvcConfigurer接口**还是**继承WebMvcConfigurerAdapter类**,该类是接口的一个**实现类**.为了解决需要单独配置其中一项而需要实现接口中的所有方法而产生,但在spring5之后**该接口中的方法定义为default**,可以选择重写方法,因此推荐使用实现WebMvcConfigurer接口的方式
-
-​		需要实现WebMvcConfigurer接口的同时 添加**@EnableWebMvc** 注解
+<https://docs.spring.io/spring/docs/5.2.1.RELEASE/spring-framework-reference/web.html#mvc-config-enable>
 
 ​	
 
