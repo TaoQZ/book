@@ -23,6 +23,7 @@
     * [elementUI](elementUI/ElementUI.md)
 - 其他  
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
+    * [Kaptcha验证码](other/kaptcha验证码.md)
     * [阿里云域名](other/阿里云域名.md)    
  
 

@@ -1515,7 +1515,7 @@ export default new vue()
 
 
 
-全局的:
+### 全局的:
 
 在 main.js中注册一个全局的路由导航钩子
 
@@ -1535,7 +1535,7 @@ router.beforeEach((to,from,next)=>{
 
 
 
-单个路由独享的:
+### 单个路由独享的:
 
 ```javascript
   {
@@ -1550,7 +1550,7 @@ router.beforeEach((to,from,next)=>{
 
 
 
-组件级别的:
+### 组件级别的:
 
 ```javascript
  export default {
