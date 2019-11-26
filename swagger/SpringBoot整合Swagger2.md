@@ -91,7 +91,15 @@ public class EmpController {
 }
 ```
 
+生成后的api文档页面
 
+访问接口: http://localhost:8080/swagger-ui.html
+
+使用: 点击其中一个接口 Try it out 填写好参数后 Excute发送请求
+
+![](F:/software/note/img/swagger.jpg)
+
+推荐使用Idea中的插件RestServices,可以更加方便进行测试
 
 
 
