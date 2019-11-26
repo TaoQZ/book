@@ -476,6 +476,52 @@ Student(sid=null, sname=taoqz, address=北京, teachers=null)
 
 
 
+## 注意事项
+
+​	请求: http://localhost:8090/user?ids=1&ids=2
+
+​	接收数组参数
+
+```java
+@DeleteMapping
+	public void fun(Integer[] ids){
+	System.out.println(Arrays.toString(ids));
+}
+```
+
+​	将参数转为集合
+
+```java
+@DeleteMapping
+public void fun(@RequestParam List<Integer> ids){
+	ids.forEach(System.out::println);
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
