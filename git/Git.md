@@ -189,3 +189,9 @@ C:\Users\{用户名}\\.gitconfig 中删除proxy代理
 
 ​	
 
+## 3.删除所有文件
+
+```bash
+git rm * -r
+```
+
