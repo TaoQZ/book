@@ -906,7 +906,7 @@ this.$route.params.id
 ```
 
 ```javascript
-// 接收
+// 接收 在地址栏填写参数也是使用该方式获取
 this.$route.query.id;
 ```
 

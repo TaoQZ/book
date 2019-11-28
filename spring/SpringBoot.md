@@ -106,29 +106,82 @@ Jar 包部署在 Maven 中央仓库上,可以让我们对前端资源也以jar�
 
 ## 读取配置文件数据
 
-​	@propertySource和@ConfigurationProperties注解
+​	@propertySource : 指定配置文件
 
-​	@PropertySource配合@Value注解使用 前者指定配置文件名称后者使用其在配置文件中的名称注入
+​	@ConfigurationProperties : 指定配置文件中属性的前缀
 
-​	@ConfigurationProperties 自定义一个配置文件,配合@PropertySource指定配置文件后,提供getset方法进行注入
+​	@Value("${配置文件中的属性}")
+
+配置文件 application.properties
+
+```properties
+server.port=8080
+user.username=zzz
+```
+
+
+
+```java
+@Component
+@ConfigurationProperties(prefix = "user")
+@PropertySource(value = "classpath:application.properties")
+public class User {
+
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        System.out.println("通过set方法赋值");
+        this.username = username;
+    }
+```
+
+```java
+@RestController
+@RequestMapping("/hello")
+public class HelloController {
+
+    @Autowired
+    private User user;
+
+    @Value("user.username")
+    private String username;
+
+    @GetMapping("/user")
+    public User getUser(){
+        return user;
+    }
+
+    @GetMapping("/username")
+    public String getUserName(){
+        return user.getUsername();
+    }
+
+}
+```
 
 
 
 ## 日期格式转换
 
-​	在bean类属性上添加
-
 ​	前台传递后台按照指定格式接收:
 
-​		方式一:@DateTimeFormat(pattern = "")
+​		方式一:在bean属性上添加注解
+
+​		@DateTimeFormat(pattern = "")
 
 ​		方式二:在application.properties文件中添加
 
-​				spring.mvc.date-format=yyyy-MM-dd HH:mm:ss	
+​		spring.mvc.date-format=yyyy-MM-dd HH:mm:ss	
 
 ​	后台返回给前台json时的data自定义格式字符串:
 
-​		方式一:@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
+​		方式一:在bean属性上添加注解
+
+​		@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
 
 ​		方式二:在application.properties文件中添加
 
@@ -213,4 +266,74 @@ Jar 包部署在 Maven 中央仓库上,可以让我们对前端资源也以jar�
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
 ```
+
+
+
+## 使用hikari连接池
+
+导入该启动器,如果不配置其他连接池默认使用hikariCP作为连接池
+
+```xml
+  <dependency>
+ 	 <groupId>org.springframework.boot</groupId>
+ 	 <artifactId>spring-boot-starter-jdbc</artifactId>
+  </dependency>
+```
+
+application.properties 关于该连接池的配置
+
+```yaml
+#数据源配置
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/数据库?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+spring.datasource.username=账号
+spring.datasource.password=密码
+#连接池配置
+#最小空闲连接数
+spring.datasource.hikari.minimum-idle=5
+#池中最大连接数,包括闲置和使用的连接
+spring.datasource.hikari.maximum-pool-size=15
+#自动提交从池中返回的连接
+spring.datasource.hikari.auto-commit=true
+#连接允许在池中闲置的最长时间
+spring.datasource.hikari.idle-timeout=30000
+#连接池的用户定义名称，主要出现在日志记录
+spring.datasource.hikari.pool-name=hikariCP
+#此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+spring.datasource.hikari.max-lifetime=1800000
+# 数据库连接超时时间,默认30秒，即30000
+spring.datasource.hikari.connection-timeout=30000
+spring.datasource.hikari.connection-test-query=SELECT 1
+#打印sql日志
+#mybatis.mapper-locations=classpath:mapper/*.xml
+#将数据转换为指定格式+时区返回
+#spring.jackson.time-zone=GMT+8
+#spring.jackson.date-format=yyyy-MM-dd
+#将接收的数据以指定格式存储
+#spring.mvc.date-format=yyyy-MM-dd
+#开启热部署
+spring.devtools.restart.enabled=true
+#设置重启文件目录
+spring.devtools.restart.additional-paths=src/main/java
+#页面热部署
+#spring.thymeleaf.cache=false
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
