@@ -241,6 +241,22 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
 
 
 
+## 解决依赖下载不完全的问题
+
+创建.bat文件
+
+```
+set REPOSITORY_PATH=指向maven仓库
+rem 正在搜索...
+for /f "delims=" %%i in ('dir /b /s "%REPOSITORY_PATH%\*lastUpdated*"') do (
+    del /s /q %%i
+)
+rem 搜索完毕
+pause
+```
+
+
+
 ## pom标签大全详解
 
 [菜鸟教程]: https://www.runoob.com/maven/maven-pom.html	"pom标签大全详解"
