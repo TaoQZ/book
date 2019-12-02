@@ -1,6 +1,6 @@
 # Vue
 
-##  1.Vue是什么
+##  Vue是什么
 
 ​	Vue是一套用于构建用户界面的**渐进式框架**(可以循序渐进的进行学习),是一个**MVVM**的框架,功能强大,重要特点双向绑定
 
@@ -18,11 +18,11 @@
 
 ​		更新data中的数据同步渲染到页面
 
-## 2.使用Vue	
+## 使用Vue	
 
 ​	**以下案例的github地址:https://github.com/TaoQZ/Vue_example.git**
 
-### 	2.1使用cdn	
+### 	使用cdn	
 
 ```html
 <!-- 开发环境版本，包含了有帮助的命令行警告 -->
@@ -32,7 +32,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 ```
 
-### 	2.2官网下载
+### 	官网下载
 
 ```html
 https://cn.vuejs.org/v2/guide/installation.html
@@ -40,7 +40,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 
 
-## 3.**入门案例**
+## 入门案例
 
 ```html
 <!DOCTYPE html>
@@ -78,7 +78,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 
 
-## 4.方法
+## 方法
 
 ```html
 <script>
@@ -107,7 +107,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 
 
-## 5.生命周期
+## 生命周期
 
 ```html
 <body>
@@ -187,9 +187,9 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 
 
-## 6.指令
+## 指令
 
-####    6.1.插值表达式 
+####    插值表达式 
 
 ​	
 
@@ -229,7 +229,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 </body>
 ```
 
-#### 6.2. v-text  v-html
+####  v-text  v-html
 
 ​		为了解决插值闪烁问题提供了解决办法
 
@@ -264,7 +264,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 
 
-#### 6.3.v-model 加 表单元素
+#### v-model 加 表单元素
 
 ​		插值表达式,v-text,v-html : 只是数据的单向绑定
 
@@ -335,7 +335,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 #### 	
 
-#### 6.4.v-on
+#### v-on
 
 ​		例子 涉及事件 
 
@@ -387,7 +387,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 ​	
 
-#### 6.5. 事件冒泡+vue解决办法_按键修饰符
+####  事件冒泡+vue解决办法_按键修饰符
 
 ​	事件发生时,触发内层的事件会同时触发外层的事件
 
@@ -465,7 +465,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 </body>
 ```
 
-#### 	6.6.v-for
+#### 	v-for
 
 ```html
 <div id="app">
@@ -493,7 +493,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 ####  	
 
-#### 	6.7.v-if v-else-if v-else
+#### 	v-if v-else-if v-else
 
 ​		**v-else 必须紧跟在 v-if 或 v-else-if 后**
 
@@ -548,7 +548,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 ​	
 
-#### 	6.8.v-show与v-if
+#### 	v-show与v-if
 
 ```html
   <div id="app">
@@ -580,7 +580,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 
 
-#### 	6.9. v-bind
+#### 	 v-bind
 
 ​	**将html标签的属性与data中的数据进行绑定,可以简写为 :需要绑定的属性**
 
@@ -630,7 +630,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 ​	
 
-## 7.计算属性
+## 计算属性
 
 ​	**解决在插值表达式中书写过长或需要长期维护使用的表达式比较麻烦**
 
@@ -664,7 +664,7 @@ https://cn.vuejs.org/v2/guide/installation.html
     </script>
 ```
 
-## 8.axios
+## axios
 
 ​	用于发送http请求
 
@@ -787,9 +787,9 @@ this.axios.delete("/book", {
 
 
 
-## 9.路由
+## 路由
 
-### 9.1. router-link & router-view
+###  router-link & router-view
 
 ```html
 <!-- 相当于a标签 但是a标签有刷新页面的效果 体验不好 -->
@@ -800,7 +800,7 @@ this.axios.delete("/book", {
    
 ```
 
-### 	9.2配置路由:
+### 	配置路由:
 
 ​	使用vue-cli创建项目后就已做好的:
 
@@ -851,7 +851,7 @@ new Vue({
 
 ```
 
-### 	9.3.style scope
+### 	style scope
 
 ```html
 <!-- 代表该样式表只在该组件中生效 -->
@@ -860,7 +860,7 @@ new Vue({
 </style>
 ```
 
-### 	9.4.export default
+### 	export default
 
 ```javascript
 // 就是vue的实例 是es6的语法 和之前写的差别是,data只能按照这种格式(和写时组件一样)  
@@ -879,7 +879,7 @@ export default {
     }
 ```
 
-### 	9.5. 路由传参
+### 	路由传参
 
 ​		1.name+params
 
@@ -906,7 +906,7 @@ this.$route.params.id
 ```
 
 ```javascript
-// 接收
+// 接收 在地址栏填写参数也是使用该方式获取
 this.$route.query.id;
 ```
 
@@ -928,13 +928,13 @@ this.$route.query.id;
 <router-link :to="/edit/动态数据">修改</router-link>
 ```
 
-### 	9.6.路由跳转
+### 	路由跳转
 
 ```javascript
 this.$router.push(路由的path)
 ```
 
-### 	9.7.嵌套路由
+### 	嵌套路由
 
 ​	在一个组件中引入了另一个组件,相当于父与子的关系
 
@@ -985,15 +985,15 @@ const routes = [
 ]
 ```
 
-# 10.Vuex
+## Vuex
 
-## 10.1.什么是Vuex,为什么要有Vuex
+### 什么是Vuex,为什么要有Vuex
 
 ​		Vuex是组件之间数据共享的一种机制
 
 ​		使用父子传值或兄弟传值,太麻烦不好管理,有了Vuex想要共享数据,只需要把数据挂在到vuex就行,想要获取数据,直接从vuex上拿就行,vuex中的数据被修改后其他引用了此数据的组件,也会同步更新
 
-## 10.2.在项目中使用vuex
+### 在项目中使用vuex
 
 ​		安装vuex:
 
@@ -1048,7 +1048,7 @@ new Vue({
 
 
 
-## 	10.3.访问vuex中的数据及方法
+### 	访问vuex中的数据及方法
 
 ​	数据
 
@@ -1117,7 +1117,7 @@ computed:{
 
 
 
-## 10.4. 案例,使用并修改state中的数据
+###  案例,使用并修改state中的数据
 
 在store/index.js中定义变量存储数据
 
@@ -1248,7 +1248,7 @@ const routes = [
 
 
 
-## 10.5. 在Vuex中跳转组件(使用路由)
+### 在Vuex中跳转组件(使用路由)
 
 ​	在Vuex中访问不到路由实例
 
@@ -1264,7 +1264,7 @@ router.push({path:'/'})
 
 
 
-## 10.6. mutations传参问题
+### mutations传参问题
 
 ​	如果在调用mutations中的方法时,方法有多个参数,后面的参数是undefined
 
@@ -1272,7 +1272,7 @@ router.push({path:'/'})
 
 
 
-## 10.7. 注意事项
+###  注意事项
 
 ​	如果想获取有返回值的方法(对state中的数据有所更改后),可以在getters中创建方法,并
 
@@ -1304,9 +1304,9 @@ actions: {
 
 
 
-# 11.组件之间传值
+## 组件之间传值
 
-## 	11.1. 父传子
+### 	父传子
 
 ​	父组件
 
@@ -1354,7 +1354,7 @@ actions: {
 </script>
 ```
 
-## 	11.2 . 子传父
+### 	子传父
 
 ​	父组件
 
@@ -1420,7 +1420,7 @@ actions: {
 </script>
 ```
 
-## 	11.3. 非父子组件之间传值
+### 	非父子组件之间传值
 
 ​	设立公共数据文件
 
@@ -1506,4 +1506,81 @@ export default new vue()
     }
 </script>
 ```
+
+
+
+## 导航守卫:
+
+  导航守卫的主要作用就是为了拦截导航路由,使之可以跳转或者取消,有多种方式注册路由导航钩子
+
+
+
+### 全局的:
+
+在 main.js中注册一个全局的路由导航钩子
+
+```javascript
+/**
+ * to : 路由将要跳转的路由的信息
+ * from : 路径跳转前的路径信息
+ * next :
+ *    next() : 放行
+ *    next(false) : 返回原来的页面
+ *    next('路径') : 改变路由跳转地址 跳转指定路由
+ */
+router.beforeEach((to,from,next)=>{
+  
+})
+```
+
+
+
+### 单个路由独享的:
+
+```javascript
+  {
+    path: '/login',
+    name: 'login',
+    component: Login,
+    beforeEnter(to,from,next) {
+      
+    }
+  }
+```
+
+
+
+### 组件级别的:
+
+```javascript
+ export default {
+        name: "Login",
+        beforeRouteEnter(to, from, next) {
+            console.log("准备进入登录");
+            next();
+        },
+        beforeRouteLeave  (to, from, next)  {
+            console.log("准备离开登录");
+            next();
+        }
+    }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

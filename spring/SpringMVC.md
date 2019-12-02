@@ -97,25 +97,45 @@ Controller层处理,及控制台输出
 
 ## 	3.3.数组绑定
 
-​		(比如类中说有一个成员变量是数组(爱好)):
+​		前台表单传递一个相同name的一组数据,在方法的参数中写一个数组类型进行赋值,其中数组的名称
 
-​		前台表单传递一个相同name的一组数据,可以在方法的参数中写一个数组类型进行赋值,其中数组的名称也要和
+也要和前台name的名称相同
 
-前台name的名称相同		
+​		示例:
+
+```java
+ // 数据:["1","2"]
+ @PostMapping("/deleteMore")
+ public ResponseEntity<BaseResult> deleteMore(@RequestBody String[] ids){}
+```
+
+​		
+
+```java
+  // 请求路径 http://localhost:8080/emp/demo?arr=1&arr=2
+  @GetMapping("/demo")
+  public void fun(String[] arr){System.out.println(Arrays.toString(arr));}
+```
+
+
 
 ## 	3.4.集合类型:
 
-​		如果在方法参数中直接写集合类型是赋值不了的,需要使用数组或者在Bean中添加一个集合属性进行赋值,如果需
+​		如果在方法参数中直接写集合类型是赋值不了的,需要使用数组或者在Bean中添加一个集合属性进行赋
 
-要给指定索引赋值,在name中指定索引即可
+值,如果需要给指定索引赋值,在name中指定索引即可
 
-​		例子:在上面的基础之上CartItem类中添加了一个集合属性
+​		例子:前台传递表单方式
+
+在上面的基础之上CartItem类中添加了一个集合属性
 
 ​			![1561021515410](../img/springmvc/bean.png)
 
 ​	前台数据传递的方式以及后台打印结果![1561021576371](../img/springmvc/form2.png)![1561021539049](../img/springmvc/output2.png)
 
 # 4.多路径映射/请求方法限定/窄化路径:
+
+
 
 ## 	4.1多路径映射:
 
@@ -127,9 +147,9 @@ Controller层处理,及控制台输出
 
 ​			**headers** :指定请求头中的参数
 
- 		       **params** :你可以让多个处理方法处理到同一个URL 的请求, 而这些请求的参数是不一样的。也就是请求时的
+ 		       **params** :你可以让多个处理方法处理到同一个URL 的请求, 而这些请求的参数是不一样的。也就是
 
-不同参数,调用的方法也会不同	
+请求时的不同参数,调用的方法也会不同	
 
 ```java
     @RequestMapping(value = "/hello.action",params = {"id=10"})
