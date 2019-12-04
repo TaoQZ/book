@@ -512,6 +512,7 @@ Student(sid=null, sname=taoqz, address=北京, teachers=null)
 ​	将参数转为集合
 
 ```java
+// 也可以使用请求: http://localhost:8090/user?ids=1,2
 @DeleteMapping
 public void fun(@RequestParam List<Integer> ids){
 	ids.forEach(System.out::println);
