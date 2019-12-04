@@ -23,11 +23,11 @@
 ```java
 配置用户名和邮箱
 
-配置后的文件在 C:\Users\{用户名}\.gitconfig文件中
+git config --global user.name "用户名"
 
-git config --global user.name "taoqz"
-
-git config --global user.email "2538474354@qq.com"
+git config --global user.email "邮箱地址"
+    
+配置后的文件在 C:\用户\{用户名}\.gitconfig文件中
 ```
 
 ​	
@@ -37,7 +37,7 @@ git config --global user.email "2538474354@qq.com"
 
 1. ssh-keygen -t rsa -C "邮箱地址"
     
-默认生成到当前用户 C:\Users\{当前用户}\.ssh\id_rsa.pub
+默认生成到当前用户 C:\用户\{当前用户}\.ssh\id_rsa.pub
 
 2. 进入github官网,登陆后
 
