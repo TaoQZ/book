@@ -25,9 +25,9 @@
 
 配置后的文件在 C:\Users\{用户名}\.gitconfig文件中
 
-git config --global user.name "taoqz"
+git config --global user.name "用户名"
 
-git config --global user.email "2538474354@qq.com"
+git config --global user.email "邮箱地址"
 ```
 
 ​	
