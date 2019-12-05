@@ -81,6 +81,7 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
 命令 : mvn deploy
 
 ```xml
+<!-- 管理版本的作用,和parent节点的作用类似 -->
 <distributionManagement>  
   <repository>  
     <id>nexus-releases</id>  
@@ -182,7 +183,7 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
      <version>2.2.1.RELEASE</version>
   </parent>
   
-   <!-- 打包后的类型 jar war-->
+   <!-- 打包后的类型 jar war pom -->
    <packaging>jar</packaging>
    
    <modules>

@@ -88,6 +88,7 @@ public class RestTemplateController {
     
        @GetMapping("/product")
     public ResponseEntity<BaseResult> findAllProduct(PageRequest pageRequest){
+        // 也可以直接将参数拼接在地址栏上 注意传递参数是 参数为null 会被拼接为字符串的问题
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("pageNum",pageRequest.getPageNum());
         hashMap.put("pageSize",pageRequest.getPageSize());
