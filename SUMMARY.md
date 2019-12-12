@@ -12,6 +12,9 @@
     * [SpringBoot](spring/SpringBoot.md) 
     * [SpringMVC](spring/SpringMVC.md) 
 - 微服务阶段
+    * [eureka](microservice/eureka/eureka.md)
+    * [Hystrix](microservice/Hystrix.md)
+    * [Feign](microservice/Feign.md)
     - HttpTool
         * [HttpClient](httptool/HttpClient.md)
         * [RestTemplate](httptool/RestTemplate.md)
