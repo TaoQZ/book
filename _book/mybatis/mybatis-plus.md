@@ -229,6 +229,10 @@ public class MyBatisPlusConfig {
 
 
 
+## 示例代码
+
+​	https://github.com/TaoQZ/mybatis-plus-learning-exam.git
+
 ## 官方文档
 
 ​	<https://mp.baomidou.com/>

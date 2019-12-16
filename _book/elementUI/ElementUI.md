@@ -96,7 +96,7 @@ Vue.use(ElementUI);
 
 ​	注意 :label绑定对应id
 
-​		 value此时对应的应该是一个数字类型的数字
+​		 value此时对应的应该是一个数字类型的数组
 
 ```javascript
 <el-checkbox-group v-model="value">
@@ -112,6 +112,7 @@ Vue.use(ElementUI);
  <el-tree
      :data="数据"
      show-checkbox
+     default-expand-all	// 展开所有节点
      node-key="id" // 指定id为节点的key
      ref="tree"    // 需要添加该属性才能根据key获取
      :props="defaultProps">
