@@ -42,7 +42,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 ## 入门案例
 
-```html
+```vue
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +80,7 @@ https://cn.vuejs.org/v2/guide/installation.html
 
 ## 方法
 
-```html
+```vue
 <script>
         var vm = new Vue({
             methods:{
@@ -724,7 +724,7 @@ Vue.prototype.axios(相当于起别名) = axios
 
 ​      2.局部
 
-```javascript
+```vue
     // 局部引入axios 不需要this
     // import axios from 'axios'
     // axios.defaults.baseURL='http://localhost:8080'
@@ -1003,7 +1003,7 @@ npm install vuex
 
 ​		使用
 
-```javascript
+```vue
 在store/index.js文件
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -1074,7 +1074,7 @@ computed:{
 
 ​	登录案例
 
-```javascript
+```vue
 <template>
     <div>
         <h3>登录</h3>
@@ -1310,7 +1310,7 @@ actions: {
 
 ​	父组件
 
-```javascript
+```vue
 <template>
     <div>
         我是父组件
@@ -1338,10 +1338,10 @@ actions: {
 
 ​	子组件
 
-```javascript
+```vue
 <template>
     <div>
-        我是子组件:{{sonMsg}}
+        我是子组件:{{ sonMsg }}
     </div>
 </template>
 
@@ -1358,7 +1358,7 @@ actions: {
 
 ​	父组件
 
-```javascript
+```vue
 <template>
     <div>
             <p>我是父组件</p>
@@ -1394,7 +1394,7 @@ actions: {
 
 ​	子组件
 
-```javascript
+```vue
 <template>
     <div>
         我是子组件中的按钮
@@ -1437,7 +1437,7 @@ export default new vue()
 
 ​	Demo01.vue
 
-```javascript
+```vue
 <template>
     <div>
 <!--    点击触发事件 调用方法  -->
@@ -1477,7 +1477,7 @@ export default new vue()
 
 ​	Demo02.vue
 
-```javascript
+```vue
 <template>
     <div>
         <p>我是demo02:</p>
@@ -1509,13 +1509,13 @@ export default new vue()
 
 
 
-## 导航守卫:
+## 导航守卫
 
   导航守卫的主要作用就是为了拦截导航路由,使之可以跳转或者取消,有多种方式注册路由导航钩子
 
 
 
-### 全局的:
+### 全局的
 
 在 main.js中注册一个全局的路由导航钩子
 
@@ -1535,7 +1535,7 @@ router.beforeEach((to,from,next)=>{
 
 
 
-### 单个路由独享的:
+### 单个路由独享的
 
 ```javascript
   {
@@ -1550,7 +1550,7 @@ router.beforeEach((to,from,next)=>{
 
 
 
-### 组件级别的:
+### 组件级别的
 
 ```javascript
  export default {
@@ -1559,6 +1559,9 @@ router.beforeEach((to,from,next)=>{
             console.log("准备进入登录");
             next();
         },
+     	beforeRouteUpdate(to,from,next){
+     	    console.log('路由发生改变,组件被复用时触发')
+    	},
         beforeRouteLeave  (to, from, next)  {
             console.log("准备离开登录");
             next();

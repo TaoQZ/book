@@ -317,9 +317,30 @@ spring.devtools.restart.additional-paths=src/main/java
 #spring.thymeleaf.cache=false
 ```
 
+## 设置虚拟路径
 
+添加配置类
 
+```java
+@Configuration
+public class WebMvcConfig implements WebMvcConfigurer {
 
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        前面是访问路径 后面是文件实际存在的路径
+        registry.addResourceHandler("/z/**").addResourceLocations("file:F://code/");
+    }
+}
+```
+
+或者在配置文件中添加
+
+```properties
+#url访问的请求路径
+spring.mvc.static-path-pattern=/zz/**
+#真实路径
+spring.resources.static-locations=file:F://code/
+```
 
 
 
