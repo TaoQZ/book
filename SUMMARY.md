@@ -9,7 +9,8 @@
     * [Vue理论知识](vue/vue理论知识.md) 
 - [JWT](jwt/JWT.md)       
 - Linux
-    
+    * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
+    * [Linux远程管理](linux/Linux远程管理.md)
 - Spring    
     * [Spring](spring/spring.md)
     * [SpringBoot](spring/SpringBoot.md) 
@@ -33,14 +34,16 @@
 - Mongo
     * [Mongo的安装与卸载](mongodb/Mongo的安装与卸载.md)
     * [Mongo的介绍及命令行使用](mongodb/Mongo介绍及命令行使用.md) 
+- Aliyun
+    * [阿里云域名](aliyun/阿里云域名.md) 
+    * [OSS存储](aliyun/OSS存储.md) 
 - Swagger
     * [Springboot整合Swagger2](swagger/SpringBoot整合Swagger2.md)
 - ElementUI  
     * [elementUI](elementUI/ElementUI.md)
 - 其他  
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
-    * [Kaptcha验证码](other/kaptcha验证码.md)
-    * [阿里云域名](other/阿里云域名.md)    
+    * [Kaptcha验证码](other/kaptcha验证码.md)  
  
 
 
