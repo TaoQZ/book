@@ -6,7 +6,7 @@
     * [Idea使用Git](git/Idea中使用Git.md)
 - Vue
     * [Vue基础](vue/Vue.md)
-    * [Vue面试题](vue/vue面试题.md) 
+    * [Vue理论知识](vue/vue理论知识.md) 
 - [JWT](jwt/JWT.md)       
 - Linux
     
