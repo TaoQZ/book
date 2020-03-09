@@ -81,6 +81,7 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
 命令 : mvn deploy
 
 ```xml
+<!-- 管理版本的作用,和parent节点的作用类似 -->
 <distributionManagement>  
   <repository>  
     <id>nexus-releases</id>  
@@ -160,6 +161,20 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
 </dependency>
 ```
 
+
+
+### version后缀
+
+- SNAPSHOT：快照版本,此jar包没有经过测试,很多bug
+
+- RC：此jar包经过了充分测试，但是可能还有很多bug
+
+- BETA：上线前的测试版本
+
+- RELEASE：正式版
+
+  
+
 ### 	生命周期
 
 | 阶段          | 处理     | 描述                                                     |
@@ -182,7 +197,7 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
      <version>2.2.1.RELEASE</version>
   </parent>
   
-   <!-- 打包后的类型 jar war-->
+   <!-- 打包后的类型 jar war pom -->
    <packaging>jar</packaging>
    
    <modules>
@@ -239,11 +254,11 @@ maven安装后会有一个默认的仓库在c盘用户的文件夹.m2,更改其�
 - test : 该依赖仅参与测试相关的内容,例如junit
 - system : 使用的非maven仓库中依赖,引用的是本地文件系统的jar
 
+### 注意事项
 
+#### 解决依赖下载不完全的问题
 
-## 解决依赖下载不完全的问题
-
-创建.bat文件
+创建.bat文件,更改目录完毕后,双击运行
 
 ```
 set REPOSITORY_PATH=指向maven仓库
@@ -253,6 +268,17 @@ for /f "delims=" %%i in ('dir /b /s "%REPOSITORY_PATH%\*lastUpdated*"') do (
 )
 rem 搜索完毕
 pause
+```
+
+#### install打包到本地仓库
+
+将项目封装为工具类时,应该打包成为一个不可运行的jar,所以需要将下方插件依赖删除
+
+```
+  <plugin>
+ 	 <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+  </plugin>
 ```
 
 

@@ -1,0 +1,977 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Feign · 没伞的孩子要学会奔跑</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="almostTao">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Hystrix.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://taoqz.xyz" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../git/Git.html">
+            
+                <a href="../../git/Git.html">
+            
+                    
+                    git安装及简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../git/Idea中使用Git.html">
+            
+                <a href="../../git/Idea中使用Git.html">
+            
+                    
+                    Idea使用Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../vue/Vue.html">
+            
+                <a href="../../vue/Vue.html">
+            
+                    
+                    Vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../vue/vue面试题.html">
+            
+                <a href="../../vue/vue面试题.html">
+            
+                    
+                    Vue面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../jwt/JWT.html">
+            
+                <a href="../../jwt/JWT.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../spring/spring.html">
+            
+                <a href="../../spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../spring/SpringBoot.html">
+            
+                <a href="../../spring/SpringBoot.html">
+            
+                    
+                    SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../spring/SpringMVC.html">
+            
+                <a href="../../spring/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../微服务概述.html">
+            
+                <a href="../微服务概述.html">
+            
+                    
+                    微服务阶段
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    Netflix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="Zuul.html">
+            
+                <a href="Zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="eureka/eureka.html">
+            
+                <a href="eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="Hystrix.html">
+            
+                <a href="Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.1.4" data-path="Feign.html">
+            
+                <a href="Feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    Alibaba
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" >
+            
+                <span>
+            
+                    
+                    HttpTool
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../httptool/HttpClient.html">
+            
+                <a href="../../httptool/HttpClient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../../httptool/RestTemplate.html">
+            
+                <a href="../../httptool/RestTemplate.html">
+            
+                    
+                    RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../mybatis/mybatis.html">
+            
+                <a href="../../mybatis/mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../mybatis/注意事项.html">
+            
+                <a href="../../mybatis/注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../mybatis/mybatis-plus.html">
+            
+                <a href="../../mybatis/mybatis-plus.html">
+            
+                    
+                    mybatis-plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../maven/maven.html">
+            
+                <a href="../../maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Mongo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../mongodb/Mongo的安装与卸载.html">
+            
+                <a href="../../mongodb/Mongo的安装与卸载.html">
+            
+                    
+                    Mongo的安装与卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                <a href="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                    
+                    Mongo的介绍及命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Swagger
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../swagger/SpringBoot整合Swagger2.html">
+            
+                <a href="../../swagger/SpringBoot整合Swagger2.html">
+            
+                    
+                    Springboot整合Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    ElementUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../elementUI/ElementUI.html">
+            
+                <a href="../../elementUI/ElementUI.html">
+            
+                    
+                    elementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../other/使用Google Cloud搭建ssr.html">
+            
+                <a href="../../other/使用Google Cloud搭建ssr.html">
+            
+                    
+                    搭建SSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../other/kaptcha验证码.html">
+            
+                <a href="../../other/kaptcha验证码.html">
+            
+                    
+                    Kaptcha验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../../other/阿里云域名.html">
+            
+                <a href="../../other/阿里云域名.html">
+            
+                    
+                    阿里云域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Feign</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#feign">Feign</a></li><ul><li><a href="#&#x5165;&#x95E8;&#x4F7F;&#x7528;">&#x5165;&#x95E8;&#x4F7F;&#x7528;</a></li><ul><li><a href="#&#x4F9D;&#x8D56;">&#x4F9D;&#x8D56;</a></li><li><a href="#&#x6CE8;&#x89E3;">&#x6CE8;&#x89E3;</a></li><li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li><li><a href="#&#x903B;&#x8F91;&#x4EE3;&#x7801;">&#x903B;&#x8F91;&#x4EE3;&#x7801;</a></li><li><a href="#&#x8BF7;&#x6C42;&#x538B;&#x7F29;">&#x8BF7;&#x6C42;&#x538B;&#x7F29;</a></li></ul></ul></ul></div><a href="#feign" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="feign"><a name="feign" class="anchor-navigation-ex-anchor" href="#feign"><i class="fa fa-link" aria-hidden="true"></i></a>Feign</h1>
+<p>&#x200B;    &#x7B80;&#x5316;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x4EE3;&#x7801;,&#x652F;&#x6301;SpringMVC&#x6CE8;&#x89E3;,&#x4E0D;&#x9700;&#x8981;&#x62FC;&#x63A5;url&#x5730;&#x5740;,&#x540C;&#x65F6;&#x6574;&#x5408;&#x4E86;&#x8D1F;&#x8F7D;&#x5747;&#x8861;Ribbon&#x4EE5;&#x53CA;&#x670D;&#x52A1;&#x7194;&#x65AD;(Hystrix)</p>
+<h2 id="&#x5165;&#x95E8;&#x4F7F;&#x7528;"><a name="&#x5165;&#x95E8;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5165;&#x95E8;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5165;&#x95E8;&#x4F7F;&#x7528;</h2>
+<p>&#x670D;&#x52A1;&#x8C03;&#x7528;&#x8005;</p>
+<h3 id="&#x4F9D;&#x8D56;"><a name="&#x4F9D;&#x8D56;" class="anchor-navigation-ex-anchor" href="#&#x4F9D;&#x8D56;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F9D;&#x8D56;</h3>
+<pre><code class="lang-xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.1.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">relativePath</span>/&gt;</span> <span class="hljs-comment">&lt;!-- lookup parent from repository --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--  feign&#x4F9D;&#x8D56;   --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>  
+
+<span class="hljs-comment">&lt;!-- SpringCloud&#x7684;&#x4F9D;&#x8D56; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependencyManagement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-dependencies<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>Hoxton.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>pom<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>import<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencyManagement</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Spring&#x7684;&#x4ED3;&#x5E93;&#x5730;&#x5740; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">repositories</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">repository</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>spring-milestones<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Spring Milestones<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>https://repo.spring.io/milestone<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">snapshots</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">enabled</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">enabled</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">snapshots</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">repository</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">repositories</span>&gt;</span>
+</code></pre>
+<h3 id="&#x6CE8;&#x89E3;"><a name="&#x6CE8;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x89E3;</h3>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x542F;&#x52A8;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;</span>
+<span class="hljs-meta">@EnableFeignClients</span> <span class="hljs-comment">// &#x5F00;&#x542F;Feign&#x529F;&#x80FD;</span>
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;"><a name="&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;</h3>
+<p>&#x200B;    &#x867D;&#x7136;Feign&#x96C6;&#x6210;&#x4E86;Hystrix&#x7194;&#x65AD;,&#x4F46;&#x9ED8;&#x8BA4;&#x662F;&#x5173;&#x95ED;&#x7684;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">feign:</span>
+<span class="hljs-attr">  hystrix:</span>
+<span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;Feign&#x7684;&#x7194;&#x65AD;&#x529F;&#x80FD;</span>
+</code></pre>
+<p>&#x200B;    &#x540C;&#x6837;&#x652F;&#x6301;&#x5BF9;Ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment">#&#x670D;&#x52A1;&#x540D; &#x5982;&#x679C;&#x4E0D;&#x5199;&#x670D;&#x52A1;&#x540D;&#x662F;&#x5168;&#x5C40;&#x914D;&#x7F6E;</span>
+<span class="hljs-attr"> ribbon:</span>
+<span class="hljs-attr">   ConnectTimeout:</span> <span class="hljs-number">250</span> <span class="hljs-comment"># &#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#x65F6;&#x95F4;(ms)</span>
+<span class="hljs-attr">   ReadTimeout:</span> <span class="hljs-number">1000</span> <span class="hljs-comment"># &#x901A;&#x4FE1;&#x8D85;&#x65F6;&#x65F6;&#x95F4;(ms)</span>
+<span class="hljs-attr">   OkToRetryOnAllOperations:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x662F;&#x5426;&#x5BF9;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x91CD;&#x8BD5;</span>
+<span class="hljs-attr">   MaxAutoRetriesNextServer:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># &#x540C;&#x4E00;&#x670D;&#x52A1;&#x4E0D;&#x540C;&#x5B9E;&#x4F8B;&#x7684;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</span>
+<span class="hljs-attr">   MaxAutoRetries:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># &#x540C;&#x4E00;&#x5B9E;&#x4F8B;&#x7684;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</span>
+</code></pre>
+<h3 id="&#x903B;&#x8F91;&#x4EE3;&#x7801;"><a name="&#x903B;&#x8F91;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x903B;&#x8F91;&#x4EE3;&#x7801;</h3>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x521B;&#x5EFA;&#x63A5;&#x53E3; &#x6DFB;&#x52A0;&#x8BBF;&#x95EE;&#x7684;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x4EE5;&#x53CA;&#x7194;&#x65AD;&#x65F6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x7684;class&#x7C7B;(&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;)</span>
+<span class="hljs-meta">@FeignClient</span>(value = <span class="hljs-string">&quot;user-service-tao&quot;</span>,fallback = UserFeignClientFallback.class)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserFeignClient</span> </span>{
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/user/{id}&quot;</span>)
+    <span class="hljs-function">User <span class="hljs-title">queryUserById</span><span class="hljs-params">(@PathVariable(<span class="hljs-string">&quot;id&quot;</span>)</span> Long id)</span>;
+
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5B9E;&#x73B0;Feign&#x7684;&#x63A5;&#x53E3;,&#x91CD;&#x5199;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserFeignClientFallback</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">UserFeignClient</span></span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">queryUserById</span><span class="hljs-params">(Long id)</span> </span>{
+        User user = <span class="hljs-keyword">new</span> User();
+        user.setId(id);
+        user.setName(<span class="hljs-string">&quot;&#x7528;&#x6237;&#x67E5;&#x8BE2;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF01;&quot;</span>);
+        <span class="hljs-keyword">return</span> user;
+    }
+}
+</code></pre>
+<pre><code class="lang-java"> <span class="hljs-comment">// &#x6CE8;&#x5165;&#x540E;&#x63A5;&#x53E3;&#x5E76;&#x8C03;&#x7528; </span>
+ <span class="hljs-meta">@Autowired</span>
+ <span class="hljs-keyword">private</span> UserFeignClient userFeignClient;
+
+ <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">queryUserById</span><span class="hljs-params">(Long id)</span></span>{
+     User user = userFeignClient.queryUserById(id);
+     <span class="hljs-keyword">return</span> user;
+ }
+</code></pre>
+<h3 id="&#x8BF7;&#x6C42;&#x538B;&#x7F29;"><a name="&#x8BF7;&#x6C42;&#x538B;&#x7F29;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x538B;&#x7F29;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BF7;&#x6C42;&#x538B;&#x7F29;</h3>
+<p>&#x200B;    Spring Cloud Feign &#x652F;&#x6301;&#x5BF9;&#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#x8FDB;&#x884C;GZIP&#x538B;&#x7F29;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x901A;&#x4FE1;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6027;&#x80FD;&#x635F;&#x8017;&#x3002;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x53C2;&#x6570;&#x5373;&#x53EF;&#x5F00;&#x542F;&#x8BF7;&#x6C42;&#x4E0E;&#x54CD;&#x5E94;&#x7684;&#x538B;&#x7F29;&#x529F;&#x80FD;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">feign:</span>
+<span class="hljs-attr">  compression:</span>
+<span class="hljs-attr">    request:</span>
+<span class="hljs-attr">      enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;&#x8BF7;&#x6C42;&#x538B;&#x7F29;</span>
+<span class="hljs-attr">    response:</span>
+<span class="hljs-attr">      enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;&#x54CD;&#x5E94;&#x538B;&#x7F29;</span>
+</code></pre>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5BF9;&#x8BF7;&#x6C42;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x53CA;&#x89E6;&#x53D1;&#x538B;&#x7F29;&#x7684;&#x5927;&#x5C0F;&#x4E0B;&#x9650;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">feign:</span>
+<span class="hljs-attr">  compression:</span>
+<span class="hljs-attr">    request:</span>
+<span class="hljs-attr">      enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;&#x8BF7;&#x6C42;&#x538B;&#x7F29;</span>
+<span class="hljs-attr">      mime-types:</span> text/html,application/xml,application/json <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x538B;&#x7F29;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</span>
+<span class="hljs-attr">      min-request-size:</span> <span class="hljs-number">2048</span> <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x89E6;&#x53D1;&#x538B;&#x7F29;&#x7684;&#x5927;&#x5C0F;&#x4E0B;&#x9650;</span>
+</code></pre>
+<p>&#x6CE8;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3001;&#x538B;&#x7F29;&#x5927;&#x5C0F;&#x4E0B;&#x9650;&#x5747;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x3002; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; almostTao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-12-12 08:19:22
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Hystrix.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Hystrix">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Feign","level":"1.7.1.4","depth":3,"next":{"title":"Alibaba","level":"1.7.2","depth":2,"ref":"","articles":[]},"previous":{"title":"Hystrix","level":"1.7.1.3","depth":3,"path":"microservice/netflix/Hystrix.md","ref":"microservice/netflix/Hystrix.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-plus","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © almostTao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"almostTao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"没伞的孩子要学会奔跑","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.xyz"}},"gitbook":"3.2.3","description":"好记性不如烂笔头，记录日常遇到的问题及学习的成果"},"file":{"path":"microservice/netflix/Feign.md","mtime":"2019-12-12T00:19:22.530Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-19T10:54:39.636Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
