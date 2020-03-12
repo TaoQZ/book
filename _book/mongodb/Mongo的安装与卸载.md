@@ -18,15 +18,13 @@
 
 ## 步骤:
 
-1. 下载对应安装包
+1.下载对应安装包
 
-   mongodb中文官网:<https://www.mongodb.org.cn/tutorial/55.html>	
+mongodb中文官网:<https://www.mongodb.org.cn/tutorial/55.html>	
 
-2. 点击安装,选择自定义配置
+2.点击安装,选择自定义配置
 
-
-
-   3.选择安装目录
+3.选择安装目录
 
 ![](../img/mongo/选择安装目录.jpg)
 
@@ -60,7 +58,13 @@
 
 ![](../img/mongo/测试启动.jpg)
 
+## 注册服务
 
+如果安装后再任务管理器-->服务中没有mongo的服务,可自行添加
+
+```
+mongod.exe ‐‐config "d:\MongoDB\Server\3.4\mongo.conf" ‐‐install
+```
 
 
 

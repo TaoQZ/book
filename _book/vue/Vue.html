@@ -1538,37 +1538,95 @@ Vue.config.productionTip = <span class="hljs-literal">false</span>;
     }
 </code></pre>
 <h3 id="&#x8DEF;&#x7531;&#x4F20;&#x53C2;"><a name="&#x8DEF;&#x7531;&#x4F20;&#x53C2;" class="anchor-navigation-ex-anchor" href="#&#x8DEF;&#x7531;&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DEF;&#x7531;&#x4F20;&#x53C2;</h3>
-<p>&#x200B;        1.name+params</p>
+<p>&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x8DEF;&#x7531;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-javascript">  {
+    path: <span class="hljs-string">&apos;/edit&apos;</span>,
+    name: <span class="hljs-string">&apos;edit&apos;</span>,
+    component: Edit
+  },
+</code></pre>
+<h4 id="1nameparams"><a name="1nameparams" class="anchor-navigation-ex-anchor" href="#1nameparams"><i class="fa fa-link" aria-hidden="true"></i></a>1.name+params</h4>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x4F20;&#x53C2; --&gt;</span>
-<span class="hljs-comment">&lt;!-- &#x4F20;&#x9012;id &#x5982;&#x679C;&#x9700;&#x8981;&#x6570;&#x636E;&#x7684;&#x5C5E;&#x6027;&#x8BB0;&#x5F97;&#x7ED1;&#x5B9A; --&gt;</span> 
+<span class="hljs-comment">&lt;!-- &#x4F20;&#x9012;id &#x5982;&#x679C;&#x9700;&#x8981;&#x6570;&#x636E;&#x7684;&#x5C5E;&#x6027;&#x8BB0;&#x5F97;&#x7ED1;&#x5B9A; :=v-bind --&gt;</span> 
+<span class="hljs-comment">&lt;!-- &#x8BE5;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x4E2D;&#x6839;&#x636E;&#x8DEF;&#x7531;&#x7684;name&#x627E;&#x7EC4;&#x4EF6; --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">router-link</span> <span class="hljs-attr">:to</span>=<span class="hljs-string">&quot;{name: &apos;edit&apos;,params: {id: u.uid}}&quot;</span>&gt;</span>&#x4FEE;&#x6539;<span class="hljs-tag">&lt;/<span class="hljs-name">router-link</span>&gt;</span>
 </code></pre>
-<p>&#x200B;    </p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// &#x63A5;&#x6536; </span>
 <span class="hljs-keyword">this</span>.$route.params.id
 </code></pre>
-<p>&#x200B;        2.path+query</p>
+<h4 id="2pathquery"><a name="2pathquery" class="anchor-navigation-ex-anchor" href="#2pathquery"><i class="fa fa-link" aria-hidden="true"></i></a>2.path+query</h4>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x4F20;&#x53C2; --&gt;</span>
+<span class="hljs-comment">&lt;!-- &#x63A5;&#x6536;  &#x8BE5;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x4E2D;&#x6839;&#x636E;&#x8DEF;&#x7531;&#x7684;path&#x627E;&#x7EC4;&#x4EF6; --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">router-link</span> <span class="hljs-attr">:to</span>=<span class="hljs-string">&quot;{path: &apos;/edit&apos;,query: {id: u.uid}}&quot;</span>&gt;</span>&#x4FEE;&#x6539;<span class="hljs-tag">&lt;/<span class="hljs-name">router-link</span>&gt;</span>
 </code></pre>
-<pre><code class="lang-javascript"><span class="hljs-comment">// &#x63A5;&#x6536; &#x5728;&#x5730;&#x5740;&#x680F;&#x586B;&#x5199;&#x53C2;&#x6570;&#x4E5F;&#x662F;&#x4F7F;&#x7528;&#x8BE5;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;</span>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5728;&#x5730;&#x5740;&#x680F;&#x586B;&#x5199;&#x53C2;&#x6570;&#x4E5F;&#x662F;&#x4F7F;&#x7528;&#x8BE5;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;</span>
 <span class="hljs-keyword">this</span>.$route.query.id;
 </code></pre>
-<p>&#x200B;        3.&#x8DEF;&#x7531;&#x4F20;&#x53C2;(&#x5730;&#x5740;&#x680F;)</p>
-<pre><code class="lang-javascript">    <span class="hljs-comment">// &#x5728;&#x8DEF;&#x7531;&#x7684;path&#x540E;&#x6DFB;&#x52A0; :&#x53C2;&#x6570;&#x540D;</span>
+<h4 id="3&#x8DEF;&#x7531;&#x4F20;&#x53C2;&#x5730;&#x5740;&#x680F;"><a name="3&#x8DEF;&#x7531;&#x4F20;&#x53C2;&#x5730;&#x5740;&#x680F;" class="anchor-navigation-ex-anchor" href="#3&#x8DEF;&#x7531;&#x4F20;&#x53C2;&#x5730;&#x5740;&#x680F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x8DEF;&#x7531;&#x4F20;&#x53C2;(&#x5730;&#x5740;&#x680F;)</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5728;&#x8DEF;&#x7531;&#x7684;path&#x540E;&#x6DFB;&#x52A0; :&#x53C2;&#x6570;&#x540D;</span>
 {
     path: <span class="hljs-string">&apos;/edit/:id&apos;</span>,
     name: <span class="hljs-string">&apos;edit&apos;</span>,
     component: Edit
 }
 </code></pre>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;&#x7684;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;</p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x76F4;&#x63A5;&#x5728;&#x8DEF;&#x5F84;&#x540E;&#x4F20;&#x9012;&#x53C2;&#x6570; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">router-link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/edit/&#x975E;&#x52A8;&#x6001;&quot;</span>&gt;</span>&#x4FEE;&#x6539;<span class="hljs-tag">&lt;/<span class="hljs-name">router-link</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">router-link</span> <span class="hljs-attr">:to</span>=<span class="hljs-string">&quot;/edit/&#x52A8;&#x6001;&#x6570;&#x636E;&quot;</span>&gt;</span>&#x4FEE;&#x6539;<span class="hljs-tag">&lt;/<span class="hljs-name">router-link</span>&gt;</span>
+this.$router.push({
+     path: &apos;/edit/111&apos;,
+})
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x63A5;&#x6536;</span>
+<span class="hljs-keyword">this</span>.$route.params.id
 </code></pre>
 <h3 id="&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;"><a name="&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;" class="anchor-navigation-ex-anchor" href="#&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.$router.push(&#x8DEF;&#x7531;&#x7684;path)
 </code></pre>
-<h3 id="&#x5D4C;&#x5957;&#x8DEF;&#x7531;"><a name="&#x5D4C;&#x5957;&#x8DEF;&#x7531;" class="anchor-navigation-ex-anchor" href="#&#x5D4C;&#x5957;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5D4C;&#x5957;&#x8DEF;&#x7531;</h3>
+<p>&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x4F20;&#x53C2;</p>
+<p>&#x65B9;&#x5F0F;&#x4E00;:&#x6839;&#x636E;&#x8DEF;&#x7531;&#x7684;name&#x5339;&#x914D;&#x8DEF;&#x7531;</p>
+<p>&#x8DEF;&#x7531;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-javascript"> {
+    path: <span class="hljs-string">&apos;/edit&apos;</span>,
+    name: <span class="hljs-string">&apos;edit&apos;</span>,
+    component: Edit
+  },
+</code></pre>
+<p>&#x8DF3;&#x8F6C;&#x8DEF;&#x7531;</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">this</span>.$router.push({
+      name:<span class="hljs-string">&apos;edit&apos;</span>,
+      params:{
+          id : <span class="hljs-number">888</span>
+      }
+ })
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x8DEF;&#x7531;&#x4E2D;&#x7684;&#x53C2;&#x6570;</p>
+<p>&#x4E0D;&#x4F1A;&#x8868;&#x73B0;&#x5728;&#x5730;&#x5740;&#x680F;&#x4E0A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.$route.params.id
+</code></pre>
+<p>&#x65B9;&#x5F0F;&#x4E8C;:&#x6839;&#x636E;&#x8DEF;&#x7531;&#x7684;path&#x5339;&#x914D;&#x8DEF;&#x7531;</p>
+<p>&#x8DEF;&#x7531;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-javascript">  {
+    path: <span class="hljs-string">&apos;/edit&apos;</span>,
+    name: <span class="hljs-string">&apos;edit&apos;</span>,
+    component: Edit
+  },
+</code></pre>
+<p>&#x8DF3;&#x8F6C;&#x8DEF;&#x7531;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">this</span>.$router.push({
+      path:<span class="hljs-string">&apos;/edit&apos;</span>,
+     query:{
+           id : <span class="hljs-number">111</span>
+      }
+  })
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x53C2;&#x6570;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.$route.query.id
+</code></pre>
+<p>&#x8868;&#x73B0;&#x5728;&#x5730;&#x5740;&#x680F;</p>
+<pre><code>http://localhost:8080/edit?id=111
+</code></pre><h3 id="&#x5D4C;&#x5957;&#x8DEF;&#x7531;"><a name="&#x5D4C;&#x5957;&#x8DEF;&#x7531;" class="anchor-navigation-ex-anchor" href="#&#x5D4C;&#x5957;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5D4C;&#x5957;&#x8DEF;&#x7531;</h3>
 <p>&#x200B;    &#x5728;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;,&#x76F8;&#x5F53;&#x4E8E;&#x7236;&#x4E0E;&#x5B50;&#x7684;&#x5173;&#x7CFB;</p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!--&#x5B9A;&#x4E49;&#x4E00;&#x7EA7;&#x8DEF;&#x7531; --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
@@ -2062,7 +2120,7 @@ router.beforeEach((to,<span class="hljs-keyword">from</span>,next)=&gt;{
     }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; almostTao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-02-19 18:54:54
+2020-03-12 09:00:33
 </span></footer>
                                 
                                 </section>
@@ -2102,7 +2160,7 @@ router.beforeEach((to,<span class="hljs-keyword">from</span>,next)=&gt;{
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue基础","level":"1.3.1","depth":2,"next":{"title":"Vue理论知识","level":"1.3.2","depth":2,"path":"vue/vue理论知识.md","ref":"vue/vue理论知识.md","articles":[]},"previous":{"title":"Vue","level":"1.3","depth":1,"ref":"","articles":[{"title":"Vue基础","level":"1.3.1","depth":2,"path":"vue/Vue.md","ref":"vue/Vue.md","articles":[]},{"title":"Vue理论知识","level":"1.3.2","depth":2,"path":"vue/vue理论知识.md","ref":"vue/vue理论知识.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-plus","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © almostTao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"almostTao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"没伞的孩子要学会奔跑","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.xyz"}},"gitbook":"3.2.3","description":"好记性不如烂笔头，记录日常遇到的问题及学习的成果"},"file":{"path":"vue/Vue.md","mtime":"2020-02-19T10:54:54.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-09T10:02:15.124Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vue基础","level":"1.3.1","depth":2,"next":{"title":"Vue理论知识","level":"1.3.2","depth":2,"path":"vue/vue理论知识.md","ref":"vue/vue理论知识.md","articles":[]},"previous":{"title":"Vue","level":"1.3","depth":1,"ref":"","articles":[{"title":"Vue基础","level":"1.3.1","depth":2,"path":"vue/Vue.md","ref":"vue/Vue.md","articles":[]},{"title":"Vue理论知识","level":"1.3.2","depth":2,"path":"vue/vue理论知识.md","ref":"vue/vue理论知识.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-plus","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © almostTao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"almostTao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"没伞的孩子要学会奔跑","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.xyz"}},"gitbook":"3.2.3","description":"好记性不如烂笔头，记录日常遇到的问题及学习的成果"},"file":{"path":"vue/Vue.md","mtime":"2020-03-12T01:00:33.123Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-12T01:00:51.646Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

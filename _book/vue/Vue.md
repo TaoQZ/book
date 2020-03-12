@@ -881,15 +881,26 @@ export default {
 
 ### 	路由传参
 
-​		1.name+params
+两种方法的路由配置
+
+```javascript
+  {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
+  },
+```
+
+
+
+#### 		1.name+params
 
 ```html
 <!-- 传参 -->
-<!-- 传递id 如果需要数据的属性记得绑定 --> 
+<!-- 传递id 如果需要数据的属性记得绑定 :=v-bind --> 
+<!-- 该方式是在路由配置中根据路由的name找组件 -->
 <router-link :to="{name: 'edit',params: {id: u.uid}}">修改</router-link>
 ```
-
-​	
 
 ```javascript
 // 接收 
@@ -898,24 +909,25 @@ this.$route.params.id
 
 
 
-​		2.path+query
+#### 		2.path+query
 
 ```html
 <!-- 传参 -->
+<!-- 接收  该方式是在路由配置中根据路由的path找组件 -->
 <router-link :to="{path: '/edit',query: {id: u.uid}}">修改</router-link>
 ```
 
 ```javascript
-// 接收 在地址栏填写参数也是使用该方式获取
+// 在地址栏填写参数也是使用该方式获取
 this.$route.query.id;
 ```
 
 
 
-​		3.路由传参(地址栏)
+#### 		3.路由传参(地址栏)
 
 ```javascript
-	// 在路由的path后添加 :参数名
+// 在路由的path后添加 :参数名
 {
 	path: '/edit/:id',
 	name: 'edit',
@@ -923,9 +935,20 @@ this.$route.query.id;
 }
 ```
 
+该方法路由跳转的三种方式
+
 ```html
 <!-- 直接在路径后传递参数 -->
+<router-link to="/edit/非动态">修改</router-link>
 <router-link :to="/edit/动态数据">修改</router-link>
+this.$router.push({
+     path: '/edit/111',
+})
+```
+
+```javascript
+// 接收
+this.$route.params.id
 ```
 
 ### 	路由跳转
@@ -933,6 +956,76 @@ this.$route.query.id;
 ```javascript
 this.$router.push(路由的path)
 ```
+
+同样适用于传参
+
+方式一:根据路由的name匹配路由
+
+路由配置
+
+```javascript
+ {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
+  },
+```
+
+跳转路由
+
+```javascript
+ this.$router.push({
+      name:'edit',
+      params:{
+          id : 888
+      }
+ })
+```
+
+获取路由中的参数
+
+不会表现在地址栏上
+
+```javascript
+this.$route.params.id
+```
+
+方式二:根据路由的path匹配路由
+
+路由配置
+
+```javascript
+  {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
+  },
+```
+
+跳转路由
+
+```javascript
+  this.$router.push({
+ 	 path:'/edit',
+	 query:{
+ 	  	id : 111
+      }
+  })
+```
+
+获取参数
+
+```javascript
+this.$route.query.id
+```
+
+表现在地址栏
+
+```
+http://localhost:8080/edit?id=111
+```
+
+
 
 ### 	嵌套路由
 
