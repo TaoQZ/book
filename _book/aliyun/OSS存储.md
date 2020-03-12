@@ -4,7 +4,7 @@
 
 # 基本概念
 
-文档:https://help.aliyun.com/document_detail/31827.html?spm=a2c4g.11186623.2.7.549b58d5qcqqsh#concept-izx-fmt-tdb
+文档: https://help.aliyun.com/document_detail/31827.html?spm=a2c4g.11186623.2.7.549b58d5qcqqsh#concept-izx-fmt-tdb
 
 
 

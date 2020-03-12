@@ -58,13 +58,9 @@ mongodb中文官网:<https://www.mongodb.org.cn/tutorial/55.html>
 
 ![](../img/mongo/测试启动.jpg)
 
-## 注册服务
 
-如果安装后再任务管理器-->服务中没有mongo的服务,可自行添加
 
-```
-mongod.exe ‐‐config "d:\MongoDB\Server\3.4\mongo.conf" ‐‐install
-```
+
 
 
 
