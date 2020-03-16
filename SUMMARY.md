@@ -9,7 +9,7 @@
     * [Vue理论知识](vue/vue理论知识.md) 
 - 前端
     * [Node的安装](frontend/node/node.md)
-    * [MockJS](frontend/mock/mock.md)
+    * [Mock](frontend/mock/mock.md)
 - [JWT](jwt/JWT.md)       
 - Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
