@@ -11,6 +11,11 @@
     * [Node的安装](frontend/node/node.md)
     * [Mock](frontend/mock/mock.md)
 - [JWT](jwt/JWT.md)       
+- Java
+    - java8新特性
+        * [默认方法](java/java8new_feature/默认方法.md)
+        * [Lambda](java/java8new_feature/Lambda.md)
+        * [Lambda访问外部变量](java/java8new_feature/Lambda访问外部变量.md)
 - Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
     * [Linux远程管理](linux/Linux远程管理.md)
