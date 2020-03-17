@@ -76,6 +76,10 @@ git remote add origin 远程仓库地址 ：远程仓库与本地仓库添加关
 git pull origin master : 在推之前先拉 更新代码
 
 git push  -u origin master 将代码推到远程仓库
+    
+git log 查看日志
+
+git status 查看当前仓库状态    
 ```
 
 
