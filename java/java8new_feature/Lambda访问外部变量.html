@@ -1,0 +1,1183 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lambda访问外部变量 · 没伞的孩子要学会奔跑</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="almostTao">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="日期时间API.html" />
+    
+    
+    <link rel="prev" href="Lambda.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://taoqz.xyz" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../git/Git.html">
+            
+                <a href="../../git/Git.html">
+            
+                    
+                    git安装及简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../git/Idea中使用Git.html">
+            
+                <a href="../../git/Idea中使用Git.html">
+            
+                    
+                    Idea使用Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../vue/Vue.html">
+            
+                <a href="../../vue/Vue.html">
+            
+                    
+                    Vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../vue/vue理论知识.html">
+            
+                <a href="../../vue/vue理论知识.html">
+            
+                    
+                    Vue理论知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../frontend/node/node.html">
+            
+                <a href="../../frontend/node/node.html">
+            
+                    
+                    Node的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../frontend/mock/mock.html">
+            
+                <a href="../../frontend/mock/mock.html">
+            
+                    
+                    Mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../jwt/JWT.html">
+            
+                <a href="../../jwt/JWT.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    java8新特性
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="默认方法.html">
+            
+                <a href="默认方法.html">
+            
+                    
+                    默认方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="Lambda.html">
+            
+                <a href="Lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.1.3" data-path="Lambda访问外部变量.html">
+            
+                <a href="Lambda访问外部变量.html">
+            
+                    
+                    Lambda访问外部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="日期时间API.html">
+            
+                <a href="日期时间API.html">
+            
+                    
+                    新的日期时间API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../linux/Linux环境下安装jdk和maven.html">
+            
+                <a href="../../linux/Linux环境下安装jdk和maven.html">
+            
+                    
+                    安装jdk及maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../linux/Linux远程管理.html">
+            
+                <a href="../../linux/Linux远程管理.html">
+            
+                    
+                    Linux远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../spring/spring.html">
+            
+                <a href="../../spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../spring/SpringBoot.html">
+            
+                <a href="../../spring/SpringBoot.html">
+            
+                    
+                    SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../spring/SpringMVC.html">
+            
+                <a href="../../spring/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../microservice/微服务概述.html">
+            
+                <a href="../../microservice/微服务概述.html">
+            
+                    
+                    微服务阶段
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    Netflix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../../microservice/netflix/Zuul.html">
+            
+                <a href="../../microservice/netflix/Zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../../microservice/netflix/eureka/eureka.html">
+            
+                <a href="../../microservice/netflix/eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="../../microservice/netflix/Hystrix.html">
+            
+                <a href="../../microservice/netflix/Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.4" data-path="../../microservice/netflix/Feign.html">
+            
+                <a href="../../microservice/netflix/Feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    Alibaba
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    HttpTool
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../../httptool/HttpClient.html">
+            
+                <a href="../../httptool/HttpClient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../../httptool/RestTemplate.html">
+            
+                <a href="../../httptool/RestTemplate.html">
+            
+                    
+                    RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../mybatis/mybatis.html">
+            
+                <a href="../../mybatis/mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../mybatis/注意事项.html">
+            
+                <a href="../../mybatis/注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../mybatis/mybatis-plus.html">
+            
+                <a href="../../mybatis/mybatis-plus.html">
+            
+                    
+                    mybatis-plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../maven/maven.html">
+            
+                <a href="../../maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    Mongo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../mongodb/Mongo的安装与卸载.html">
+            
+                <a href="../../mongodb/Mongo的安装与卸载.html">
+            
+                    
+                    Mongo的安装与卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                <a href="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                    
+                    Mongo的介绍及命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Aliyun
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../aliyun/阿里云域名.html">
+            
+                <a href="../../aliyun/阿里云域名.html">
+            
+                    
+                    阿里云域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../aliyun/OSS存储.html">
+            
+                <a href="../../aliyun/OSS存储.html">
+            
+                    
+                    OSS存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    Swagger
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../swagger/SpringBoot整合Swagger2.html">
+            
+                <a href="../../swagger/SpringBoot整合Swagger2.html">
+            
+                    
+                    Springboot整合Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    ElementUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../elementUI/ElementUI.html">
+            
+                <a href="../../elementUI/ElementUI.html">
+            
+                    
+                    elementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../other/使用Google Cloud搭建ssr.html">
+            
+                <a href="../../other/使用Google Cloud搭建ssr.html">
+            
+                    
+                    搭建SSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../other/kaptcha验证码.html">
+            
+                <a href="../../other/kaptcha验证码.html">
+            
+                    
+                    Kaptcha验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Lambda访问外部变量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;">Lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;</a></li><ul><li><a href="#&#x5C40;&#x90E8;&#x53D8;&#x91CF;">&#x5C40;&#x90E8;&#x53D8;&#x91CF;</a></li><li><a href="#&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53CA;&#x9759;&#x6001;&#x53D8;&#x91CF;">&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53CA;&#x9759;&#x6001;&#x53D8;&#x91CF;</a></li><li><a href="#&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;">&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;</a></li></ul></ul></div><a href="#lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;"><a name="lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>Lambda&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;</h1>
+<h2 id="&#x5C40;&#x90E8;&#x53D8;&#x91CF;"><a name="&#x5C40;&#x90E8;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5C40;&#x90E8;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C40;&#x90E8;&#x53D8;&#x91CF;</h2>
+<p>&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;num&#x53D8;&#x91CF;&#x548C;&#x8FDB;&#x884C;final&#x4FEE;&#x9970;&#x540E;&#x7684;num&#x53D8;&#x91CF;,&#x90A3;&#x4E48;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5982;&#x679C;&#x53D8;&#x91CF;&#x5728;lambda&#x8868;&#x8FBE;&#x5F0F;&#x540E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x4F1A;&#x62A5;&#x9519;,&#x4E5F;&#x5C31;&#x662F;num&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x662F;final&#x7684;</p>
+<p>&#x5728;&#x4E0D;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4E3A;&#x4EC0;&#x4E48;&#x7B2C;&#x4E00;&#x4E2A;&#x6CE8;&#x91CA;&#x6389;&#x7684;num&#x4E5F;&#x53EF;&#x7528;,&#x662F;&#x56E0;&#x4E3A;&#x6B64;&#x65F6;&#x7684;num&#x662F;&#x9690;&#x5F0F;&#x7684;final,&#x4E5F;&#x5C31;&#x662F;&#x540E;&#x7EED;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x4FEE;&#x6539;</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+<span class="hljs-comment">//        Integer num = 123;</span>
+        <span class="hljs-keyword">final</span> Integer num = <span class="hljs-number">123</span>;
+        Function&lt;String,Integer&gt; function = (param) -&gt; Integer.parseInt(param)+num;
+        Integer apply = function.apply(<span class="hljs-string">&quot;12&quot;</span>);
+        System.out.println(apply);
+<span class="hljs-comment">//        Error:(14, 80) java: &#x4ECE;lambda &#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x7528;&#x7684;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x662F;&#x6700;&#x7EC8;&#x53D8;&#x91CF;&#x6216;&#x5B9E;&#x9645;&#x4E0A;&#x7684;&#x6700;&#x7EC8;&#x53D8;&#x91CF;</span>
+<span class="hljs-comment">//        num = 11;</span>
+    }
+</code></pre>
+<p>&#x5728;lambda&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4FEE;&#x6539;&#x53D8;&#x91CF;&#x4E5F;&#x662F;&#x4E0D;&#x53EF;&#x7528;&#x7684;</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Integer num = <span class="hljs-number">123</span>;
+        Function&lt;String,Integer&gt; function = (param) -&gt; {
+            Integer result =Integer.parseInt(param)+num;
+<span class="hljs-comment">//        Variable used in lambda expression should be final or effectively final</span>
+            num = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">return</span> result;
+        };
+        Integer apply = function.apply(<span class="hljs-string">&quot;12&quot;</span>);
+        System.out.println(apply);
+    }
+</code></pre>
+<p>&#x4E0D;&#x5141;&#x8BB8;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x4E0E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x540C;&#x540D;&#x7684;&#x53C2;&#x6570;&#x6216;&#x8005;&#x5C40;&#x90E8;&#x53D8;&#x91CF;</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Integer num = <span class="hljs-number">123</span>;
+<span class="hljs-comment">//        Variable &apos;num&apos; is already defined in the scope</span>
+        Function&lt;String,Integer&gt; function = (num) -&gt; Integer.parseInt(num)+num;
+        Integer apply = function.apply(<span class="hljs-string">&quot;12&quot;</span>);
+        System.out.println(apply);
+    }
+</code></pre>
+<h2 id="&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53CA;&#x9759;&#x6001;&#x53D8;&#x91CF;"><a name="&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53CA;&#x9759;&#x6001;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53CA;&#x9759;&#x6001;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6210;&#x5458;&#x53D8;&#x91CF;&#x53CA;&#x9759;&#x6001;&#x53D8;&#x91CF;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyLambda</span> </span>{
+
+<span class="hljs-comment">//  &#x975E;&#x5305;&#x88C5;&#x7C7B;&#x7684;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x9759;&#x6001;&#x548C;&#x975E;&#x9759;&#x6001;&#x90FD;&#x662F;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> num;
+    <span class="hljs-keyword">int</span> number;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
+
+<span class="hljs-comment">//        &#x9759;&#x6001;&#x53D8;&#x91CF;</span>
+         Function&lt;String,Integer&gt; function1 = param -&gt; {
+          num = <span class="hljs-number">1</span>;
+          <span class="hljs-keyword">return</span> Integer.parseInt(param)+num;
+        };
+        System.out.println(function1.apply(<span class="hljs-string">&quot;123&quot;</span>));
+
+<span class="hljs-comment">//      &#x6210;&#x5458;&#x53D8;&#x91CF;</span>
+        Function&lt;String,Integer&gt; function2 = param -&gt; {
+            number = <span class="hljs-number">2</span>;
+            <span class="hljs-keyword">return</span> Integer.parseInt(param)+number;
+        };
+        System.out.println(function2.apply(<span class="hljs-string">&quot;456&quot;</span>));
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">fun</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">new</span> MyLambda().print();
+    }
+
+}
+</code></pre>
+<h2 id="&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;"><a name="&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">// method&#x65B9;&#x6CD5;&#x548C;converter &#x90FD;&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x4E3A;Integer,&#x4E3A;&#x4E86;&#x6F14;&#x793A;Lambda&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;</span>
+<span class="hljs-meta">@FunctionalInterface</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">MyFunction</span> </span>{
+
+    <span class="hljs-function">Integer <span class="hljs-title">method</span><span class="hljs-params">(String string)</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">default</span> Integer <span class="hljs-title">converter</span><span class="hljs-params">(String string)</span></span>{
+        <span class="hljs-keyword">return</span> Integer.parseInt(string);
+    }
+}
+</code></pre>
+<pre><code class="lang-java"> <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">fun</span><span class="hljs-params">()</span></span>{
+       MyFunction myFunction = param -&gt; Integer.parseInt(param);
+        Integer result1 = myFunction.method(<span class="hljs-string">&quot;123&quot;</span>);
+        System.out.println(result1);
+
+<span class="hljs-comment">//        &#x4F7F;&#x7528;&#x533F;&#x540D;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;</span>
+        MyFunction myFunction2 = <span class="hljs-keyword">new</span> MyFunction(){
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> Integer <span class="hljs-title">method</span><span class="hljs-params">(String string)</span> </span>{
+                <span class="hljs-keyword">return</span> converter(string);
+            }
+        };
+
+        Integer result2 = myFunction2.method(<span class="hljs-string">&quot;456&quot;</span>);
+        System.out.println(result2);
+
+        <span class="hljs-comment">// lambda&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;</span>
+<span class="hljs-comment">//        MyFunction myFunction3 = param -&gt; converter(param);</span>
+    }
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; almostTao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-03-15 16:56:06
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lambda.html" class="navigation navigation-prev " aria-label="Previous page: Lambda">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="日期时间API.html" class="navigation navigation-next " aria-label="Next page: 新的日期时间API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lambda访问外部变量","level":"1.6.1.3","depth":3,"next":{"title":"新的日期时间API","level":"1.6.1.4","depth":3,"path":"java/java8new_feature/日期时间API.md","ref":"java/java8new_feature/日期时间API.md","articles":[]},"previous":{"title":"Lambda","level":"1.6.1.2","depth":3,"path":"java/java8new_feature/Lambda.md","ref":"java/java8new_feature/Lambda.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-plus","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © almostTao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"almostTao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"没伞的孩子要学会奔跑","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.xyz"}},"gitbook":"3.2.3","description":"好记性不如烂笔头，记录日常遇到的问题及学习的成果"},"file":{"path":"java/java8new_feature/Lambda访问外部变量.md","mtime":"2020-03-15T08:56:06.140Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-17T08:54:36.437Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

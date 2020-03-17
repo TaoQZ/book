@@ -18,15 +18,13 @@
 
 ## 步骤:
 
-1. 下载对应安装包
+1.下载对应安装包
 
-   mongodb中文官网:<https://www.mongodb.org.cn/tutorial/55.html>	
+mongodb中文官网:<https://www.mongodb.org.cn/tutorial/55.html>	
 
-2. 点击安装,选择自定义配置
+2.点击安装,选择自定义配置
 
-
-
-   3.选择安装目录
+3.选择安装目录
 
 ![](../img/mongo/选择安装目录.jpg)
 
@@ -59,6 +57,8 @@
    **默认端口 27017**
 
 ![](../img/mongo/测试启动.jpg)
+
+
 
 
 

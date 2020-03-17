@@ -881,15 +881,26 @@ export default {
 
 ### 	路由传参
 
-​		1.name+params
+两种方法的路由配置
+
+```javascript
+  {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
+  },
+```
+
+
+
+#### 		1.name+params
 
 ```html
 <!-- 传参 -->
-<!-- 传递id 如果需要数据的属性记得绑定 --> 
+<!-- 传递id 如果需要数据的属性记得绑定 :=v-bind --> 
+<!-- 该方式是在路由配置中根据路由的name找组件 -->
 <router-link :to="{name: 'edit',params: {id: u.uid}}">修改</router-link>
 ```
-
-​	
 
 ```javascript
 // 接收 
@@ -898,24 +909,25 @@ this.$route.params.id
 
 
 
-​		2.path+query
+#### 		2.path+query
 
 ```html
 <!-- 传参 -->
+<!-- 接收  该方式是在路由配置中根据路由的path找组件 -->
 <router-link :to="{path: '/edit',query: {id: u.uid}}">修改</router-link>
 ```
 
 ```javascript
-// 接收 在地址栏填写参数也是使用该方式获取
+// 在地址栏填写参数也是使用该方式获取
 this.$route.query.id;
 ```
 
 
 
-​		3.路由传参(地址栏)
+#### 		3.路由传参(地址栏)
 
 ```javascript
-	// 在路由的path后添加 :参数名
+// 在路由的path后添加 :参数名
 {
 	path: '/edit/:id',
 	name: 'edit',
@@ -923,9 +935,20 @@ this.$route.query.id;
 }
 ```
 
+该方法路由跳转的三种方式
+
 ```html
 <!-- 直接在路径后传递参数 -->
+<router-link to="/edit/非动态">修改</router-link>
 <router-link :to="/edit/动态数据">修改</router-link>
+this.$router.push({
+     path: '/edit/111',
+})
+```
+
+```javascript
+// 接收
+this.$route.params.id
 ```
 
 ### 	路由跳转
@@ -933,6 +956,76 @@ this.$route.query.id;
 ```javascript
 this.$router.push(路由的path)
 ```
+
+同样适用于传参
+
+方式一:根据路由的name匹配路由
+
+路由配置
+
+```javascript
+ {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
+  },
+```
+
+跳转路由
+
+```javascript
+ this.$router.push({
+      name:'edit',
+      params:{
+          id : 888
+      }
+ })
+```
+
+获取路由中的参数
+
+不会表现在地址栏上
+
+```javascript
+this.$route.params.id
+```
+
+方式二:根据路由的path匹配路由
+
+路由配置
+
+```javascript
+  {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
+  },
+```
+
+跳转路由
+
+```javascript
+  this.$router.push({
+ 	 path:'/edit',
+	 query:{
+ 	  	id : 111
+      }
+  })
+```
+
+获取参数
+
+```javascript
+this.$route.query.id
+```
+
+表现在地址栏
+
+```
+http://localhost:8080/edit?id=111
+```
+
+
 
 ### 	嵌套路由
 
@@ -985,6 +1078,12 @@ const routes = [
 ]
 ```
 
+
+
+
+
+
+
 ## Vuex
 
 ### 什么是Vuex,为什么要有Vuex
@@ -1014,7 +1113,6 @@ export default new Vuex.Store({
   // 公共区域数据
   state: {
     num : 10,
-    msg : 'zz'
   },
   mutations: {
   },
@@ -1050,74 +1148,11 @@ new Vue({
 
 ### 	访问vuex中的数据及方法
 
-​	数据
+#### state,mutations,getters
 
-```javascript
-this.$store.state.变量名
-vue官方并不推荐通过上面的方式获取数据
-```
+官方文档:https://vuex.vuejs.org/zh/guide/getters.html
 
-```javascript
-使用结构表达式
-
-在组件内导入
-import {mapState} from 'vuex'
-
-创建一个computed属性
-// 官方推荐的使用方式,进行结构,将公共属性的值作为计算属性
-computed:{
-	...mapState(['num','msg'])
-},
-```
-
-​	方法
-
-​	登录案例
-
-```vue
-<template>
-    <div>
-        <h3>登录</h3>
-        账号: <input type="text" v-model="user.username"> <br>
-        密码: <input type="text" v-model="user.password"> <br>
-            <!-- 直接使用方法 并且传参 -->
-        <input type="button" @click="login(user)" value="登录">
-    </div>
-</template>
-
-<script>
-
-    import {mapActions} from 'vuex'
-
-    export default {
-        methods:{
-            ...mapActions(['login']),
-        },
-        name: "Login",
-        data(){
-            return{
-                user:{}
-            }
-        },
-    }
-</script>
-```
-
-
-
-```javascript
- actions: {
-     // 第一个参数默认
-    login(context,user){
-        // 调用的mutations中的方法,进行封装使之可以提交异步请求
-      context.commit('login',user)
-    }
-  },
-```
-
-
-
-###  案例,使用并修改state中的数据
+getters是从state中派生的数据,对state中的数据进行过滤修改,并且可以传参返回
 
 在store/index.js中定义变量存储数据
 
@@ -1133,23 +1168,16 @@ export default new Vuex.Store({
     num : 10,
   },
   mutations: {
+      // 第一个参数默认是state
     addNum(state){
       state.num++
     }
   },
-  actions: {
-  },
-  modules: {
-  }
 })
 
 ```
 
-
-
 在components中创建两个组件
-
-​	app.vue
 
 ```html
 <!-- add.vue -->
@@ -1157,23 +1185,21 @@ export default new Vuex.Store({
     <div>
         <!-- 第一种方式 -->
         <!--  add:<input type="button" value="+" @click="$store.state.num++"> -->
-        <!-- 第二种方式 -->
+        <!-- 第二种方式 这两种方式官方都不推荐 -->
         add:<input type="button" value="+" @click="add">
         
         <!-- 使用解构表达式 -->
         <!-- 直接调用mutations 中的方法 -->
-        <!--        add:<input type="button" value="+" @click="$store.commit('addNum')">-->
-        <!-- 使用解构表达式 -->
+        <!-- 官方不推荐   add:<input type="button" value="+" @click="$store.commit('addNum')">-->
+        <!-- 官方推荐方式:使用解构表达式 -->
         add:<input type="button" value="+" @click="addNum">
         num:{{num}}
     </div>
 </template>
 
 <script>
-    // 结构表达式
-    import {mapState} from 'vuex'
-    import {mapMutations} from 'vuex'
-    
+    // 解构表达式
+    import {mapState,mapMutations} from 'vuex'
     export default {
         name: "add",
         // 官方推荐的使用方式,进行结构,将公共属性的值作为计算属性
@@ -1205,17 +1231,13 @@ export default new Vuex.Store({
     import {mapState} from 'vuex'
     export default {
         name: "add",
-        methods:{
-
-        },
+        methods:{},
         computed:{
             ...mapState(['num'])
         }
     }
 </script>
 ```
-
-
 
 ​	router/index.js
 
@@ -1228,6 +1250,8 @@ const routes = [
     {
     path:'/访问路径',
     name:'home',
+    // 这里是简写方式次里是简写方式 相当于 add:add,minus:minus
+    // 前面是路由名称,后面是组件名称,相同时可以简写    
     components:{
       add,
       minus
@@ -1237,29 +1261,67 @@ const routes = [
 
 ```
 
-​	
-
-​	App.vue:用于显示变量,观察其修改后组件中数据是否同步更新
+​	App.vue:用于显示变量,观察其修改后两个组件中数据是否同步更新
 
 ```html
+  // 这里的name对应路由配置中components中所写即可
   <router-view name="add"></router-view>
   <router-view name="minus"></router-view>
 ```
 
+​	
 
+#### 	actions
 
-### 在Vuex中跳转组件(使用路由)
+​	登录案例
 
-​	在Vuex中访问不到路由实例
+```vue
+<template>
+    <div>
+        <h3>登录</h3>
+        账号: <input type="text" v-model="user.username"> <br>
+        密码: <input type="text" v-model="user.password"> <br>
+        <!-- <input type="button" @click="login()" value="提交"> -->
+        <input type="button" @click="asyncLogin(user)" value="登录">
+    </div>
+</template>
 
-​	需要导入
+<script>
+    import {mapActions} from 'vuex'
+    export default {
+        methods:{
+            login(){
+                // 官方并不推荐直接调用actions中的方法
+                this.$store.dispatch('asyncLogin',this.user)
+            },
+            ...mapActions(['asyncLogin']),
+        },
+        name: "Login",
+        data(){
+            return{
+                user:{}
+            }
+        },
+    }
+</script>
+```
+
+store/index.js
 
 ```javascript
-// 导入
-import router from '../router';
-
-// 使用
-router.push({path:'/'})
+ mutations: {
+     // 第一个参数默认state
+    login(state,user){
+      console.log(user)
+    }
+  }, 
+actions: {
+     // 第一个参数默认context
+    asyncLogin(context,user){
+        // 调用的mutations中的方法,进行封装使之可以提交异步请求
+      context.commit('login',user)
+    }
+  },
 ```
 
 
