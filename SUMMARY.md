@@ -10,6 +10,7 @@
 - 前端
     * [Node的安装](frontend/node/node.md)
     * [Mock](frontend/mock/mock.md)
+    * [Nuxt](frontend/nuxt/nuxt.md)
 - [JWT](jwt/JWT.md)       
 - Java
     - java8新特性
