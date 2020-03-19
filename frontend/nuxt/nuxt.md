@@ -309,6 +309,30 @@ npm install @nuxtjs/axios
 
 ### 设置baseURL
 
+最简单的方式,在nuxt.config.js中修改配置
+
+```js
+  modules: [
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios',
+  ],
+  /*
+  ** Axios module configuration
+  ** See https://axios.nuxtjs.org/options
+  */
+  axios: {
+    baseURL: "http://127.0.0.1:7300/mock/5e702522021bfd53ec2f7309/leyou"
+  },
+```
+
+使用
+
+```js
+ async loginSubmit(){
+        let {data} = await this.$axios.$post('/auth-service/login',this.loginForm)
+  }
+```
+
 在src下创建SysConfig.js文件
 
 ```javascript
