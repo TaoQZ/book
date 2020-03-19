@@ -261,7 +261,7 @@ java8之前的java.util包中的Date类,它提供了公开的修改时间的方�
 
 而在Java8中新的时间API,表示时间的类都是不可变的,类本身和变量都被final修饰,所以是不可变的,因此又提供了该类用于进行日期时间的复杂操作,但也正因为这些类都是不可变的所以使用该类产出的对象都是一个新的日期或时间对象
 
-虽然没有直观的setXxxx方法,但是日期时间类也都提供了对应的withXxxx方法,和set方法功能一致,只不过同样是产出新的对象
+虽然没有直观的setXxxx方法,但是也提供了对应的withXxxx方法,和set方法功能一致,只不过同样是产出新的对象
 
 ```java
 import static java.time.temporal.TemporalAdjusters.*;
@@ -331,7 +331,7 @@ public class TemporalAdjusterDemo {
 
 Instant是世界标准时间且不含时区信息
 
-ZonedDateTime则可以配合ZoneId处理时区,本质是用Instant存储时间,再根据时区对时间进行处理
+ZonedDateTime则可以配合ZoneId处理时区,本质是用Instant存储时间,在根据时区进行处理
 
 ```java
 public class ZoneRulesDemo {
@@ -421,15 +421,15 @@ public class ZoneRulesDemo {
         System.out.println(zonedDateTime2.toLocalDate());
 
 //        通过结果可以看出 根据系统时区和根据其他时区创建的ZonedDateTime对象内部的时间戳Instant和标准时间都是一致的
-//        不管时间或者说时区是哪里的,通过toInstant获取的都是世界标准时间,只不过加了时区之后,对时区进行了处理
+//        只不过加了时区之后,对时区进行了处理
 //        相当于对Instant做了增强
         /*
         2020-03-17T01:02:56.253+08:00[Asia/Shanghai]
-        2020-03-16T17:02:56.253Z       !!!!!!!
+        2020-03-16T17:02:56.253Z
         2020-03-17
         2020-03-16T17:02:56.334Z
         2020-03-16T12:02:56.317-05:00[America/Chicago]
-        2020-03-16T17:02:56.317Z	   !!!!!!!
+        2020-03-16T17:02:56.317Z
         2020-03-16
         */
 
@@ -456,5 +456,80 @@ public class ZoneRulesDemo {
     }
 }
 
+```
+
+## 时间戳、时区
+
+理解时间戳和时区
+
+时间戳:指的是Unix时间戳,是一种时间的表示方式,在地球的每一个角落都是相同的,从格林威治时间1970年01月01日00时00分00秒起至现在的总秒数
+
+可以使用网站查询时间戳:http://tool.chinaz.com/Tools/unixtime.aspx
+
+使用时间戳获取总秒数
+
+```java
+   @Test
+    public void demo3(){
+        long epochSecond = Instant.now().getEpochSecond();
+        System.out.println(epochSecond);
+    }	
+```
+
+时区:时间戳在地球的任何位置都是相同的,但是相同的时间点会有不同的表达方式,就是时区的概念。比如我们在中国是白天,而在美国正是夜晚,但是我们过的时间都是一样的,这时便需要使用时区来相互转换获取对方时区的具体时间
+
+```java
+  @Test
+    public void fun(){
+//        获取所有jdk内置的时区信息
+        ZoneId.SHORT_IDS.forEach((e1,e2) -> System.out.println(e1+"=="+e2));
+//        根据本地时区获取信息的时间
+        ZonedDateTime asiaShangha = ZonedDateTime.now();
+//        根据指定的时区获取时间 这里使用的是美国纽约
+        ZonedDateTime americaNewYork = ZonedDateTime.ofInstant(Instant.now(), ZoneId.of("America/New_York"));
+//        分别打印对方所在时区的具体时间
+        System.out.println(asiaShangha);
+        System.out.println(americaNewYork);
+//        获取时间戳总秒数,可以看到是相同的
+        System.out.println(asiaShangha.toInstant().getEpochSecond());
+        System.out.println(americaNewYork.toInstant().getEpochSecond());
+    }
+```
+
+控制台打印信息
+
+```
+CTT==Asia/Shanghai
+ART==Africa/Cairo
+CNT==America/St_Johns
+PRT==America/Puerto_Rico
+PNT==America/Phoenix
+PLT==Asia/Karachi
+AST==America/Anchorage
+BST==Asia/Dhaka
+CST==America/Chicago
+EST==-05:00
+HST==-10:00
+JST==Asia/Tokyo
+IST==Asia/Kolkata
+AGT==America/Argentina/Buenos_Aires
+NST==Pacific/Auckland
+MST==-07:00
+AET==Australia/Sydney
+BET==America/Sao_Paulo
+PST==America/Los_Angeles
+ACT==Australia/Darwin
+SST==Pacific/Guadalcanal
+VST==Asia/Ho_Chi_Minh
+CAT==Africa/Harare
+ECT==Europe/Paris
+EAT==Africa/Addis_Ababa
+IET==America/Indiana/Indianapolis
+MIT==Pacific/Apia
+NET==Asia/Yerevan
+2020-03-18T11:15:09.033+08:00[Asia/Shanghai]
+2020-03-17T23:15:09.034-04:00[America/New_York]
+1584501309
+1584501309
 ```
 
