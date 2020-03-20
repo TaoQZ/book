@@ -18,13 +18,16 @@
         * [Lambda](java/java8new_feature/Lambda.md)
         * [Lambda访问外部变量](java/java8new_feature/Lambda访问外部变量.md)
         * [新的日期时间API](java/java8new_feature/日期时间API.md)
+- MySQL
+    * [mysql基础](mysql_/mysql基础.md)    
+    * [mysql进阶](mysql_/mysql进阶.md)    
+    * [mysql事务](mysql_/mysql事务.md)    
+    * [varchar和char](mysql_/varchar和char.md)    
 - Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
     * [Linux远程管理](linux/Linux远程管理.md)
 - Spring    
-    * [Spring](spring/spring.md)
-    * [SpringBoot](spring/SpringBoot.md) 
-    * [SpringMVC](spring/SpringMVC.md) 
+   
 - [微服务阶段](microservice/微服务概述.md)
     - Netflix
         * [Zuul](microservice/netflix/Zuul.md)
