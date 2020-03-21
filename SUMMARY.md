@@ -19,10 +19,10 @@
         * [Lambda访问外部变量](java/java8new_feature/Lambda访问外部变量.md)
         * [新的日期时间API](java/java8new_feature/日期时间API.md)
 - MySQL
-    * [mysql基础](mysql_/mysql基础.md)    
-    * [mysql进阶](mysql_/mysql进阶.md)    
-    * [mysql事务](mysql_/mysql事务.md)    
-    * [varchar和char](mysql_/varchar和char.md)    
+    * [mysql基础](mysql/mysql基础.md)    
+    * [mysql进阶](mysql/mysql进阶.md)    
+    * [mysql事务](mysql/mysql事务.md)    
+    * [varchar和char](mysql/varchar和char.md)    
 - Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
     * [Linux远程管理](linux/Linux远程管理.md)
@@ -38,8 +38,7 @@
            
     - HttpTool
         * [HttpClient](httptool/HttpClient.md)
-        * [RestTemplate](httptool/RestTemplate.md)
-- MySQL        
+        * [RestTemplate](httptool/RestTemplate.md)      
 - [Mybatis](mybatis/mybatis.md)
     * [注意事项](mybatis/注意事项.md)   
     * [mybatis-plus](mybatis/mybatis-plus.md)    
