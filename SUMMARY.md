@@ -18,6 +18,8 @@
         * [Lambda](java/java8new_feature/Lambda.md)
         * [Lambda访问外部变量](java/java8new_feature/Lambda访问外部变量.md)
         * [新的日期时间API](java/java8new_feature/日期时间API.md)
+    - 设计模式
+        * [单例模式](java/pattern/singleton.md)    
 - MySQL
     * [mysql基础](mysql/mysql基础.md)    
     * [mysql进阶](mysql/mysql进阶.md)    
