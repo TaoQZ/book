@@ -20,7 +20,10 @@
         * [新的日期时间API](java/java8new_feature/日期时间API.md)
     - 设计模式
         * [单例模式](java/pattern/singleton.md)   
-        * [代理模式](java/pattern/proxy.md)          
+        * [代理模式](java/pattern/proxy.md)   
+    - 多线程
+        * [多线程入门](java/thread/多线程入门.md)   
+        * [线程同步和通信](java/thread/线程同步和通信.md)   
 - MySQL
     * [mysql基础](mysql/mysql基础.md)    
     * [mysql进阶](mysql/mysql进阶.md)    
