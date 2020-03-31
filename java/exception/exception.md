@@ -1,0 +1,224 @@
+# 异常
+
+异常是程序中的一些错误,但并不是所有的错误都是异常,比如在java中忘记写分号,这些都是可以避免的。java把异常信息封装成了一个类,当出了问题时,就会创建异常类对象并抛出异常相关的信息(如异常出现的位置、原因等)
+
+## java中的异常体系
+
+```
+Throwable(是整个异常机制的顶级超类,所有的异常类都继承自它)
+	Error:指程序中出现的严重错误,java程序通常不捕获错误
+		比如:OutOfMemoryError, StackOverflowError
+	Exception:程序员可以进行处理的异常
+		RuntimeException:运行时期异常(可以处理,但不一定要处理)
+			常见:ClassCastException, ArrayIndexOutOfBoundsException, NullPointerException 
+		非RuntimeException:检查性异常,要求在程序编译期间就要处理
+			常见:IOException, SQLException, InterruptedException
+```
+
+RuntimeException和它的所有子类都属于运行时期异常。特点是:方法中抛出运行时期异常,方法中无需throws声明或捕获,调用者也无需处理此异常,但异常一旦发生,需要修改源代码。
+
+
+
+## 抛出异常
+
+关键字throw,比如在方法传参我们需要对参数进行操作时,要先判断其是否合法。
+
+```java
+    public static void print(String string){
+        if (string == null)
+//            手动抛出异常,调用其父类的构造传入异常信息
+            throw new NullPointerException("您传入的参数为null");
+        System.out.println(string.length());
+    }
+
+    public static void main(String[] args) {
+        String name = null;
+//        String name = "法外狂徒张三";
+        print(name);
+    }
+```
+
+```java
+// 异常所在的线程,异常名称,异常信息以及异常出现的位置
+// 在位置信息中出现两行,一行是问题实际所在位置,另一行则是调用方,此处为main方法,如果main不做处理会交由jvm处理
+// 并打印出异常信息
+Exception in thread "main" java.lang.NullPointerException: 您传入的参数为null
+	at xyz.taoqz.MyTest.print(MyTest.java:12)
+	at xyz.taoqz.MyTest.main(MyTest.java:19)
+```
+
+但如果方法中抛出的异常是非运行时期异常,那么需要在该方法上进行声明或者捕获
+
+```java
+public void fun(){
+	throw new IOException(); // 会报错,需要捕获或抛出
+}
+```
+
+
+
+## 声明异常
+
+当某个方法可能会抛出异常时,但不想在本方法中进行处理,所以需要告诉调用者可能会出现异常需要处理。
+
+关键字throws,位置方法参数后,多个异常逗号分隔。
+
+```java
+// 例如
+public static void fun(int[] arr,int index) throws NullPointerException,IndexOutOfBoundsException{
+    System.out.println(arr[index]);
+}
+```
+
+重写和实现时方法可以声明的异常受父类或接口方法中的限制。例如父类中没有声明异常,而子类重写时想抛出非运行时异常,但其不能声明抛出,这时可以使用异常的转换。
+
+RuntimeException(Throwable t):提供了构造
+
+```java
+throw new RuntimeException(new IOException());
+```
+
+
+
+## 捕获异常
+
+Java不仅提供了抛出异常的机制,也提供了捕获异常的机制。
+
+try块是监控区,一旦出现异常会由上而下寻找匹配的catch块,然后执行,若未找到匹配的catch块会向上抛出
+
+基本语法
+
+```java
+try {
+	// 可能会出现异常的代码
+} catch (异常名称 异常对象) {
+	// 打印异常信息,或者做其他操作
+	// e.printStackTrace();
+}
+
+// 也可以有多个catch区域,如果catch中的异常对象存在子父关系,子类异常需要在父类异常之前声明,要不然永远轮不到子类异常的执行
+try {
+	
+} catch (异常名称 异常对象) {
+	// e.printStackTrace();
+} catch (异常名称 异常对象) {
+	// e.printStackTrace();
+}
+```
+
+```java
+ public static void fun(int[] arr,int index)  {
+        try {
+            System.out.println(arr[index]);
+        } catch (NullPointerException | ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+//        int[] arr = {1,3,2};
+        int[] arr = null;
+        fun(arr,3);
+    }
+```
+
+### finally
+
+和try..catch或者try..finally一起使用,表示无论是否发生异常一定会执行的代码块(比如释放资源)
+
+```java
+ try {
+	 throw new SQLException();
+ } catch (SQLException e) {
+	 e.printStackTrace();
+ } finally {
+	 // 释放资源
+ }
+// 对代码进行异常检测,检测异常后没有catch(声明),所以一样会被jvm抛出,异常没有捕获处理,但开启的资源可能需要关闭使用finally
+public void method() throws Exception {
+    try {
+        throw new Exception();
+    } finally {
+        // 释放资源
+    }
+}
+```
+
+### return
+
+当try语句和finally语句中都有return语句时,在方法返回之前,finally语句的内容将被执行,并且finally语句的返回值将会覆盖原始的返回值。
+
+finally不会执行的情况
+
+1. 在 finally 语句块第一行发生了异常。 因为在其他行，finally 块还是会得到执行
+
+2. 在前面的代码中用了 System.exit(int)已退出程序。 exit 是带参函数 ；若该语句在异常语句之后，finally 会执行
+
+3. 程序所在的线程死亡。
+
+4. 关闭 CPU。
+
+   [https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#32-java-%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java基础知识.md#32-java-中的异常处理)
+
+
+
+## 常用方法
+
+```java
+getMessage():返回异常的详细信息字符串(构造中的字符串)
+toString():异常类及异常信息
+printStackTrace():异常类,异常信息以及位置
+```
+
+
+
+## 方法重写
+
+子类覆盖父类方法时,如果父类没有声明异常,子类也不能声明异常(这里的异常指的是非运性时期异常),如果子类出现异常只能捕获。
+
+子类声明的异常不能大于父类声明的异常(子类或平级或不声明)
+
+
+
+## 自定义异常
+
+定义类,需要运行时异常继承RuntimeException不需要声明,需要非运行时异常继承Exception需要声明或捕获。
+
+```java
+@Data
+public class Person {
+
+    private String name;
+    private Integer age;
+
+    public Person(String name, Integer age) throws AgeIllegalExecption {
+        if (age <= 0 || age > 200){
+            throw new AgeIllegalExecption(age+",年龄值不合法");
+        }
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+
+```java
+public class AgeIllegalExecption extends Exception{
+
+    public AgeIllegalExecption() {
+        super();
+    }
+
+    public AgeIllegalExecption(String message) {
+        super(message);
+    }
+}
+```
+
+```java
+try {
+	Person person = new Person("张三", 24);
+} catch (AgeIllegalExecption ex) {
+	System.out.println(ex.getMessage());
+}		
+```
+

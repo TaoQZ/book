@@ -93,7 +93,7 @@ public class Singleton4 {
 
     private Singleton4(){}
 
-    private static Singleton4 instance;
+    private volatile static Singleton4 instance;
 
     public static Singleton4 getInstance(){
 

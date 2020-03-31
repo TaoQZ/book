@@ -13,6 +13,7 @@
     * [Nuxt](frontend/nuxt/nuxt.md)
 - [JWT](jwt/JWT.md)       
 - Java
+    - [异常](java/exception/exception.md) 
     - java8新特性
         * [默认方法](java/java8new_feature/默认方法.md)
         * [Lambda](java/java8new_feature/Lambda.md)
@@ -22,8 +23,9 @@
         * [单例模式](java/pattern/singleton.md)   
         * [代理模式](java/pattern/proxy.md)   
     - 多线程
-        * [多线程入门](java/thread/多线程入门.md)   
+        * [多线程基础](java/thread/多线程入门.md)   
         * [线程同步和通信](java/thread/线程同步和通信.md)   
+        * [线程池](java/thread/线程池.md)
 - MySQL
     * [mysql基础](mysql/mysql基础.md)    
     * [mysql进阶](mysql/mysql进阶.md)    
