@@ -974,7 +974,13 @@ skip(), limilt(), sort()三个放在一起执行的时候，执行的顺序是�
 
 ​		使用了lombok简化实体类的代码
 
-## 	 8.2 pom依赖
+## 	 8.2 pom依赖及配置
+
+```properties
+spring.data.mongodb.uri=mongodb://127.0.0.1:27017/testdb
+```
+
+
 
 ```xml
  <parent>
@@ -1014,12 +1020,15 @@ skip(), limilt(), sort()三个放在一起执行的时候，执行的顺序是�
 
 ```javascript
 @Data
+// 指定集合名称
 @Document(collection = "students")
 public class Student {
 
+    // ObjectId 
     @Id
     private String id;
-
+	// 将mongo中的字段名与pojo中的字段名进行映射,字段名称和mongo字段名一样时会自动进行映射,也就是不写该注解也可以 
+    @Field(name = "sid")
     private Integer sid;
 
     private String name;
@@ -1034,6 +1043,7 @@ public class Student {
 
     private String hobbies[];
 
+    // @Transient 如果pojo中有mongo不存在的字段,在映射时进行排除
 }
 ```
 
