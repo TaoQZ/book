@@ -533,3 +533,42 @@ NET==Asia/Yerevan
 1584501309
 ```
 
+
+
+## SpringBoot针对新日期时间API的转换
+
+方式一:只针对某个字段,需要在每个需要格式化的字段上添加该注解
+
+```java
+@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+private LocalDateTime sendDate;
+```
+
+方式二:全局配置,针对所有的LocalDate以及LocalDateTime字段进行格式化
+
+```java
+@Configuration
+public class ContactAppConfig{
+    private static final String dateFormat = "yyyy-MM-dd";
+
+    private static final String dateTimeFormat = "yyyy-MM-dd HH:mm:";
+
+    @Bean
+    public Jackson2ObjectMapperBuilderCustomizer jsonCustomizer(){
+        return builder ->{
+            builder.simpleDateFormat(dateTimeFormat);
+            builder.serializers(new
+                    LocalDateSerializer(DateTimeFormatter.ofPattern(dateFormat)));
+            builder.serializers(new
+                    LocalDateTimeSerializer(DateTimeFormatter.ofPattern(dateTimeFormat)));
+        };
+    }
+}
+```
+
+
+
+
+
+
+
