@@ -1251,6 +1251,18 @@ public class StudentDao {
     private MongoTemplate mongoTemplate;
 
     /**
+     * 分页查询
+     * @param pageNum 页数 从0开始所以需要-1
+     * @param pageSize 页面大小
+     * @return
+     */
+    public List<Student> findByPage(Integer pageNum,Integer pageSize){
+        PageRequest of = PageRequest.of(pageNum - 1, 10);
+        Query with = new Query().with(of);
+        return mongoTemplate.find(with,Student.class);
+    }
+    
+    /**
      * 查询所有
      * @return
      */

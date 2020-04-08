@@ -8,6 +8,7 @@
     * [Vue基础](vue/Vue.md)
     * [Vue理论知识](vue/vue理论知识.md) 
 - 前端
+    * [ES6](frontend/es6/es6.md)
     * [Node的安装](frontend/node/node.md)
     * [Mock](frontend/mock/mock.md)
     * [Nuxt](frontend/nuxt/nuxt.md)
