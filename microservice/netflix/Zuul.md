@@ -206,6 +206,79 @@ public class JWTFilter extends ZuulFilter {
 
 
 
+### fallback
+
+将所有服务收缩到到网关之后,需要通过网关请求服务,如果服务未启动或者请求超时,希望返回自定义信息而不是返回错误信息。
+
+```java
+@Component
+public class ZuulFallback implements FallbackProvider {
+
+    // 表明是为哪个微服务提供回退，*表示为所有微服务提供回退
+    @Override
+    public String getRoute() {
+        return "*";
+    }
+
+    @Override
+    public ClientHttpResponse fallbackResponse(String route, Throwable cause) {
+        System.out.println("路由名称"+route);
+        System.out.println(cause.getMessage());
+//        返回客户端的响应状态码
+//        return this.response(HttpStatus.OK);
+        return this.response(HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    private ClientHttpResponse response(final HttpStatus status) {
+        return new ClientHttpResponse() {
+
+            @Override
+            public HttpStatus getStatusCode() throws IOException {
+                return status;
+            }
+
+            @Override
+            public int getRawStatusCode() throws IOException {
+                return status.value();
+            }
+
+            @Override
+            public String getStatusText() throws IOException {
+                return status.getReasonPhrase();
+            }
+
+            @Override
+            public void close() {
+            }
+
+            @Override
+            public InputStream getBody() throws IOException {
+                RequestContext currentContext = RequestContext.getCurrentContext();
+                int status = currentContext.getResponse().getStatus();
+                System.out.println(status);
+//                 响应给客户端的信息
+                String json = "{\"msg\": \"服务不可用，请稍后再试。\"}";
+                return new ByteArrayInputStream(json.getBytes());
+            }
+
+            @Override
+            public HttpHeaders getHeaders() {
+                // headers设定
+                HttpHeaders headers = new HttpHeaders();
+                MediaType mt = new MediaType("application", "json", Charset.forName("UTF-8"));
+                headers.setContentType(mt);
+                return headers;
+            }
+
+        };
+    }
+
+}
+
+```
+
+
+
 ### 跨域
 
 ```java

@@ -38,7 +38,10 @@
 - Spring    
     * [Spring](spring/spring.md)
     * [SpringMVC](spring/SpringMVC.md)
-    * [SpringBoot](spring/SpringBoot.md)
+    - SpringBoot
+        * [springboot入门](spring/SpringBoot.md)
+        * [javamail](boot_integration/javamail.md)
+        * [springtask](boot_integration/springtask.md)
 - [微服务阶段](microservice/微服务概述.md)
     - Netflix
         * [Zuul](microservice/netflix/Zuul.md)
