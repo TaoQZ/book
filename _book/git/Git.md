@@ -62,7 +62,7 @@ head : 指针 可以通过指针切换版本
 
 
 
-## 常用流程
+## 常用命令
 
 ```java
 git init : 初始化仓库 把这个目录变成Git可以管理的仓库
@@ -80,6 +80,8 @@ git push  -u origin master 将代码推到远程仓库
 git log 查看日志
 
 git status 查看当前仓库状态    
+    
+git rm -r --cached filename : 删除多与文件,只删除git上的文件不会删除本地的文件,删除之后commit提交即可    
 ```
 
 
