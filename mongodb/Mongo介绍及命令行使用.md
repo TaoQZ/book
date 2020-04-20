@@ -532,6 +532,11 @@ db.student.remove({age:18})
 db.student.find()
 // 指定集合名称
 db.getCollection("student").find({})
+
+// 根据id查询(有点特殊)
+db.student.find({_id:ObjectId("5e8c28f8b0851e3157b69d07")})
+// 其他字段可以直接查询
+db.student.find({age:2})
 ```
 
 
@@ -958,11 +963,147 @@ skip(), limilt(), sort()三个放在一起执行的时候，执行的顺序是�
 
 # 7.操作数组
 
+# 8.索引
+
+索引可以极大的提高我们的查询效率,如果没有索引,MongoDB在读数据时必须扫描集合中的每个文件过滤并选取符合条件的记录。这种全局扫描在数据量大的情况下,效率是很慢的。索引是一种特殊的数据结构,存储在一个易于遍历读取数据的集合中,索引是对数据库表中的某一列或多列的值进行排序的一种结构。
+
+## 8.1.索引的创建及删除
+
+```javascript
+// 查看索引
+db.user.getIndexes()
+// 结果集 默认会将ObjectId添加到索引
+    {
+        "v" : 2.0, 
+        "key" : {
+            "_id" : 1.0
+        }, 
+        "name" : "_id_", 
+        "ns" : "testdb.user"
+    }
+
+// 创建索引 ({'字段名称':[1|-1]})
+db.user.createIndex({'age':1})
+{ 
+    "createdCollectionAutomatically" : false, 
+    "numIndexesBefore" : 1.0, 
+    "numIndexesAfter" : 2.0, 
+    "ok" : 1.0
+}
+
+// 创建联合索引
+db.user.createIndex({'age':1,'username':-1})
+// 再次查询
+[
+    {
+        "v" : 2.0, 
+        "key" : {
+            "_id" : 1.0
+        }, 
+        "name" : "_id_", 
+        "ns" : "testdb.user"
+    }, 
+    {
+        "v" : 2.0, 
+        "key" : {
+            "age" : 1.0, 
+            "username" : -1.0
+        }, 
+        "name" : "age_1_username_-1", 
+        "ns" : "testdb.user"
+    }
+]
+
+// 删除索引 需要根据查询所有索引时索引的name进行删除
+db.user.dropIndex('age_1')
+// 删除联合索引 同样是根据索引的名称进行删除
+db.user.dropIndex('age_1_username_-1')
+
+// 查看索引的大小 单位:字节
+db.user.totalIndexSize()
+```
+
+## 8.2.执行计划
+
+执行计划是分析查询语句性能的重要工具,同时可以查看我们的索引是否生效。
+
+```javascript
+// 查看执行计划
+db.user.find({_id:ObjectId("5e8c28f8b0851e3157b69d07")}).explain()
+// 执行结果
+{ 
+    "queryPlanner" : {
+        "plannerVersion" : 1.0, 
+        "namespace" : "testdb.user", 
+        "indexFilterSet" : false, 
+        "parsedQuery" : {
+            "_id" : {
+                "$eq" : ObjectId("5e8c28f8b0851e3157b69d07")
+            }
+        }, 
+        // 最佳执行计划
+        "winningPlan" : {
+            // stage:查询方式
+            // 常见的有COLLSCAN/全盘扫描、IXSCAN/索引扫描、FETCH/根据索引去检索文档、SHARD_MERGE/合并分片结果、IDHACK/针对_id进行查询
+            "stage" : "IDHACK"
+        }, 
+        "rejectedPlans" : [
+
+        ]
+    }, 
+    "serverInfo" : {
+        "host" : "8105bc201a59", 
+        "port" : 27017.0, 
+        "version" : "4.0.3", 
+        "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c"
+    }, 
+    "ok" : 1.0
+}
+
+// 测试查询没有使用索引的列
+db.user.find({age:2}).explain()
+
+{ 
+    "queryPlanner" : {
+        "plannerVersion" : 1.0, 
+        "namespace" : "testdb.user", 
+        "indexFilterSet" : false, 
+        "parsedQuery" : {
+            "age" : {
+                "$eq" : 2.0
+            }
+        }, 
+        "winningPlan" : {
+            // 使用的是全局扫描
+            "stage" : "COLLSCAN", 
+            "filter" : {
+                "age" : {
+                    "$eq" : 2.0
+                }
+            }, 
+            "direction" : "forward"
+        }, 
+        "rejectedPlans" : [
+
+        ]
+    }, 
+    "serverInfo" : {
+        "host" : "8105bc201a59", 
+        "port" : 27017.0, 
+        "version" : "4.0.3", 
+        "gitVersion" : "7ea530946fa7880364d88c8d8b6026bbc9ffa48c"
+    }, 
+    "ok" : 1.0
+}
+```
 
 
-# 8. 整合springboot简单增删改查
 
-## 	8.1 项目环境
+
+
+# 9. 整合springboot简单增删改查
+
+## 	9.1 项目环境
 
 ​		mongodb: 4.0.9
 
@@ -974,7 +1115,7 @@ skip(), limilt(), sort()三个放在一起执行的时候，执行的顺序是�
 
 ​		使用了lombok简化实体类的代码
 
-## 	 8.2 pom依赖及配置
+## 	 9.2 pom依赖及配置
 
 ```properties
 spring.data.mongodb.uri=mongodb://127.0.0.1:27017/testdb
@@ -1012,7 +1153,7 @@ spring.data.mongodb.uri=mongodb://127.0.0.1:27017/testdb
 
 
 
-## 	8.3 代码
+## 	9.3 代码
 
 
 
@@ -1022,9 +1163,10 @@ spring.data.mongodb.uri=mongodb://127.0.0.1:27017/testdb
 @Data
 // 指定集合名称
 @Document(collection = "students")
+// @Document 也可省略集合名称,如果数据库中没有该集合,mongo会自动根据当前类名首字母小写进行创建集合,这也是mongo的特性
 public class Student {
 
-    // ObjectId 
+    // 表名这是ObjectId 
     @Id
     private String id;
 	// 将mongo中的字段名与pojo中的字段名进行映射,字段名称和mongo字段名一样时会自动进行映射,也就是不写该注解也可以 
@@ -1044,6 +1186,7 @@ public class Student {
     private String hobbies[];
 
     // @Transient 如果pojo中有mongo不存在的字段,在映射时进行排除
+    // @Indexed 将某个字段设置为索引
 }
 ```
 
@@ -1107,6 +1250,18 @@ public class StudentDao {
     @Autowired
     private MongoTemplate mongoTemplate;
 
+    /**
+     * 分页查询
+     * @param pageNum 页数 从0开始所以需要-1
+     * @param pageSize 页面大小
+     * @return
+     */
+    public List<Student> findByPage(Integer pageNum,Integer pageSize){
+        PageRequest of = PageRequest.of(pageNum - 1, 10);
+        Query with = new Query().with(of);
+        return mongoTemplate.find(with,Student.class);
+    }
+    
     /**
      * 查询所有
      * @return
