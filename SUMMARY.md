@@ -1,80 +1,76 @@
-# 目录
+# Summary
 
 * [前言](README.md)
-- Git
+* Git
     * [git安装及简介](git/Git.md)
     * [Idea使用Git](git/Idea中使用Git.md)
-- Vue
+* Vue
     * [Vue基础](vue/Vue.md)
-    * [Vue理论知识](vue/vue理论知识.md) 
-- 前端
+    * [Vue理论知识](vue/vue理论知识.md)
+* 前端
     * [ES6](frontend/es6/es6.md)
     * [Node的安装](frontend/node/node.md)
     * [Mock](frontend/mock/mock.md)
     * [Nuxt](frontend/nuxt/nuxt.md)
-- [JWT](jwt/JWT.md)       
-- Java
-    - [异常](java/exception/exception.md) 
-    - java8新特性
+* [JWT](jwt/JWT.md)
+* Java
+    * [异常](java/exception/exception.md)
+    * java8新特性
         * [默认方法](java/java8new_feature/默认方法.md)
         * [Lambda](java/java8new_feature/Lambda.md)
         * [Lambda访问外部变量](java/java8new_feature/Lambda访问外部变量.md)
         * [新的日期时间API](java/java8new_feature/日期时间API.md)
-    - 设计模式
-        * [单例模式](java/pattern/singleton.md)   
-        * [代理模式](java/pattern/proxy.md)   
-    - 多线程
-        * [多线程基础](java/thread/多线程入门.md)   
-        * [线程同步和通信](java/thread/线程同步和通信.md)   
+    * 设计模式
+        * [单例模式](java/pattern/singleton.md)
+        * [代理模式](java/pattern/proxy.md)
+    * 多线程
+        * [多线程基础](java/thread/多线程入门.md)
+        * [线程同步和通信](java/thread/线程同步和通信.md)
         * [线程池](java/thread/线程池.md)
-- MySQL
-    * [mysql基础](mysql/mysql基础.md)    
-    * [mysql进阶](mysql/mysql进阶.md)    
-    * [mysql事务](mysql/mysql事务.md)    
-    * [varchar和char](mysql/varchar和char.md)    
-- Linux
+* MySQL
+    * [mysql基础](mysql/mysql基础.md)
+    * [mysql进阶](mysql/mysql进阶.md)
+    * [mysql事务](mysql/mysql事务.md)
+    * [varchar和char](mysql/varchar和char.md)
+* Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
     * [Linux远程管理](linux/Linux远程管理.md)
-- Spring    
+* Spring
     * [Spring](spring/spring.md)
     * [SpringMVC](spring/SpringMVC.md)
-    - SpringBoot
+    * SpringBoot
         * [springboot入门](spring/SpringBoot.md)
         * [javamail](boot_integration/javamail.md)
         * [springtask](boot_integration/springtask.md)
-- [微服务阶段](microservice/微服务概述.md)
-    - Netflix
+* [微服务阶段](microservice/微服务概述.md)
+    * Netflix
         * [Zuul](microservice/netflix/Zuul.md)
         * [Eureka](microservice/netflix/eureka/eureka.md)
         * [Hystrix](microservice/netflix/Hystrix.md)
         * [Feign](microservice/netflix/Feign.md)
-    - Alibaba
-           
-    - HttpTool
+        * [Config](microservice/netflix/SpringCloudConfig.md)
+    * Alibaba
+    * HttpTool
         * [HttpClient](httptool/HttpClient.md)
-        * [RestTemplate](httptool/RestTemplate.md)      
-- [Mybatis](mybatis/mybatis.md)
-    * [注意事项](mybatis/注意事项.md)   
-    * [mybatis-plus](mybatis/mybatis-plus.md)    
-- Maven
-    * [Maven](maven/maven.md)    
-- Mongo
+        * [RestTemplate](httptool/RestTemplate.md)
+* [Mybatis](mybatis/mybatis.md)
+    * [注意事项](mybatis/注意事项.md)
+    * [mybatis-plus](mybatis/mybatis-plus.md)
+* Maven
+    * [Maven](maven/maven.md)
+* Mongo
     * [Mongo的安装与卸载](mongodb/Mongo的安装与卸载.md)
-    * [Mongo的介绍及命令行使用](mongodb/Mongo介绍及命令行使用.md) 
-- Aliyun
-    * [阿里云域名](aliyun/阿里云域名.md) 
-    * [OSS存储](aliyun/OSS存储.md) 
-- Swagger
+    * [Mongo的介绍及命令行使用](mongodb/Mongo介绍及命令行使用.md)
+* Aliyun
+    * [阿里云域名](aliyun/阿里云域名.md)
+    * [OSS存储](aliyun/OSS存储.md)
+* Swagger
     * [Springboot整合Swagger2](swagger/SpringBoot整合Swagger2.md)
-- ElementUI  
+* ElementUI
     * [elementUI](elementUI/ElementUI.md)
-- Docker
+* Docker
     * [docker](docker/docker.md)
-- 其他  
+* 其他
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
-    * [Kaptcha验证码](other/kaptcha验证码.md)  
- 
-
-
-
+    * [Kaptcha验证码](other/kaptcha验证码.md)
 
