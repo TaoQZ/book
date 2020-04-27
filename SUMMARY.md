@@ -6,12 +6,15 @@
     * [Idea使用Git](git/Idea中使用Git.md)
 * Vue
     * [Vue基础](vue/Vue.md)
-    * [Vue理论知识](vue/vue理论知识.md)
+    * [Vue理论知识](vue/vue理论知识.md)  
 * 前端
     * [ES6](frontend/es6/es6.md)
     * [Node的安装](frontend/node/node.md)
     * [Mock](frontend/mock/mock.md)
     * [Nuxt](frontend/nuxt/nuxt.md)
+    * other
+       * [HTML](frontend/other/html.md)
+       * [JSON对象](frontend/other/JSON对象的两个方法.md)
 * [JWT](jwt/JWT.md)
 * Java
     * [异常](java/exception/exception.md)
@@ -67,9 +70,18 @@
 * Swagger
     * [Springboot整合Swagger2](swagger/SpringBoot整合Swagger2.md)
 * ElementUI
-    * [elementUI](elementUI/ElementUI.md)
+    * [elementUI](elementUI/ElementUI.md)   
+* 模板引擎
+    * [Thymeleaf](templateng/Thymeleaf.md)  
 * Docker
-    * [docker](docker/docker.md)
+    * [docker安装及常用命令](docker/docker安装及常用命令.md)
+    * [IDEA连接docker](docker/IDEA连接docker.md)
+    * [部署springboot项目](docker/部署springboot项目.md)
+    * [遇到的问题](docker/problem.md)
+* Dubbo
+    * [入门使用](dubbo/使用dubbo+zookeeper.md)    
+* 安卓
+    * [刷机](androidRoot/root.md)
 * 其他
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
     * [Kaptcha验证码](other/kaptcha验证码.md)
