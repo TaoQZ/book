@@ -693,9 +693,18 @@ import axios from 'axios'
 axios.defaults.baseURL='http://localhost:8080'
 // 第一个axios可以当做全局的访问前缀
 Vue.prototype.axios(相当于起别名) = axios
+
+// 配置拦截器
+axios.interceptors.request.use(request=>{
+  //获取token
+  let token = sessionStorage.getItem("token");
+  if(token){
+    request.headers.authorization = token
+  }
+  return request
+} , error=>{})
+Vue.prototype.axios=axios
 ```
-
-
 
 示例:
 
