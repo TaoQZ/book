@@ -52,6 +52,7 @@
         * [Hystrix](microservice/netflix/Hystrix.md)
         * [Feign](microservice/netflix/Feign.md)
         * [Config](microservice/netflix/SpringCloudConfig.md)
+    * [POJO](microservice/POJO依赖.md)    
     * Alibaba
     * HttpTool
         * [HttpClient](httptool/HttpClient.md)
@@ -61,6 +62,11 @@
     * [mybatis-plus](mybatis/mybatis-plus.md)
 * Maven
     * [Maven](maven/maven.md)
+* Http    
+    * [状态码](http/状态码.md)
+* Nginx
+    * [nginx](nginx/nginx.md)   
+    * [https配置](nginx/https配置.md)      
 * Mongo
     * [Mongo的安装与卸载](mongodb/Mongo的安装与卸载.md)
     * [Mongo的介绍及命令行使用](mongodb/Mongo介绍及命令行使用.md)
@@ -81,7 +87,15 @@
 * Dubbo
     * [入门使用](dubbo/使用dubbo+zookeeper.md)    
 * 安卓
-    * [刷机](androidRoot/root.md)
+    * [刷机](android/root.md)
+    * [android发送请求](android/android发送请求.md)
+    * [改造为web服务器](android/改造为web服务器.md)
+* React 
+    * [React](react/React.md)
+* Salesforce
+    * [Apex](salesforce/apex.md)  
+    * [Visualforce](salesforce/visualforce.md)
+    * [在IDEA中配置salesforce环境](salesforce/在IDEA中配置salesforce环境.md)    
 * 其他
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
     * [Kaptcha验证码](other/kaptcha验证码.md)
