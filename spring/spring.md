@@ -4,7 +4,7 @@
 
 ​			IOC就是一个大的Map集合,key就是name,value就是对象
 
-### 	XML方式
+## 	XML方式
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@ public class XmlTest {
 
 
 
-### 注解方式
+## 注解方式
 
 ```java
 // 使用注解方式的配置类
@@ -71,7 +71,7 @@ public class AnnoTest {
 
 
 
-### @ComponentScan
+## @ComponentScan
 
 ​		该注解写在配置类用于扫描其他其他包中的组件@Controller  @Service  @Repository 这三个组件最顶层是@Component
 
@@ -97,7 +97,7 @@ public class SpringConfig {
 }
 ```
 
-#### 	主要属性
+### 	主要属性
 
 ```java
 value：指定要扫描的package；
@@ -115,8 +115,7 @@ CUSTOM：自定义规则；
 value：指定在该规则下过滤的表达式；
 ```
 
-
-### 	自定义一个扫描过滤类TypeFilter		
+### 自定义一个扫描过滤类TypeFilter		
 
 ```java
 过滤类:
@@ -282,11 +281,11 @@ public class MyCondition implements Condition {
 
 
 
-### 	@Import注册Bean
+## @Import注册Bean
 
 ​			@Import(Class<?> [] value()) : 参数时要注册的Bean的class数组
 
-#### 			回顾注册Bean的几种常用的方式
+### 			回顾注册Bean的几种常用的方式
 
 ​	1.在配置中使用@Bean的方式将方法的返回值注册到容器中,通常是使用第三方类库时使用使用组件加包扫描的方式,一般用于自定义	
 
@@ -306,7 +305,7 @@ public class MyCondition implements Condition {
 
 ​	4.使用FactoryBean 下方有解释
 
-#### ImportSelector自定义注册Bean
+### ImportSelector自定义注册Bean
 
 ```java
 // 在配置类中添加 @Import(value = {MyImportSelector.class})
@@ -326,7 +325,7 @@ public class MyImportSelector implements ImportSelector {
 
 
 
-#### 	ImportBeanDefinitionRegistrar手动注册Bean
+### 	ImportBeanDefinitionRegistrar手动注册Bean
 
 ```java
 // 在配置类中添加
@@ -359,7 +358,7 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
 
 
 
-### FactoryBean
+## FactoryBean
 
 ​	如果想创建一个工厂类,用来灵活的创建对象并且想要交由Spring管理,可以使用该类
 
@@ -383,7 +382,7 @@ boolean isSingleton() : 表示对象注入容器时是否单例
 
 ​	
 
-### 	Bean的声明周期
+## 	Bean的声明周期
 
 ​			创建     :  构造方法
 
@@ -395,7 +394,7 @@ boolean isSingleton() : 表示对象注入容器时是否单例
 
 ​					创建和初始化会在容器创建完成前
 
-### 	自定义初始化销毁方法
+### 自定义初始化销毁方法
 
 ​		xml方式
 
@@ -462,11 +461,7 @@ public class Person {
 
 
 
-## 
-
-
-
-### 	@Value 赋值
+## 	@Value 赋值
 
 ​		1.普通赋值,直接在组件的成员变量上声明该注解并且赋值(字符串),同时支持springEL表达式完成计算
 
@@ -494,9 +489,9 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ### 	
 
-### 	关于自动装配
+## 	关于自动装配
 
-#### 			@Autowired
+### 			@Autowired
 
 ​				@Autowired默认根据变量名作为beanname获取,如果没有则根据类型查找,@Autowired本身不能根据beanname指定
 
@@ -510,13 +505,27 @@ for (PropertySource<?> propertySource : propertySources) {
 
 
 
-#### 			@Resource
+### @Resource
 
 ​				jdk提供的@Resource(name = beanname)注解可以指定名称,默认根据变量名作为beanname获取,如果没有则根据类型查找,不支持required,不支持优先级
 
+```java
+// 获取指定环境的上下文对象(注解方式)
+ApplicationContext helloController = new AnnotationConfigApplicationContext(MyApplication.class);
+// 获取容器中所有的bean的name 默认是类首字母小写 也就是beanname
+String[] beanDefinitionNames = helloController.getBeanDefinitionNames();
+for (String beanDefinitionName : beanDefinitionNames) {
+    System.out.println(beanDefinitionName);
+}
+// 通过beanname获取指定的bean
+System.out.println(helloController.getBean("userController"));
+//        通过指定的类型获取bean
+System.out.println(helloController.getBean(UserController.class));
+```
 
 
-#### 			@Primary
+
+### 			@Primary
 
 ​				设置获取bean时的优先级,可以在类上添加,也可以配合@Bean使用
 
@@ -528,7 +537,7 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ​				
 
-#### 			@Inject
+### 			@Inject
 
 ​				是Java JSR330的规范,和@Autowired功能类似,支持@Primary优先级,区别是没有required属性
 
@@ -546,15 +555,11 @@ for (PropertySource<?> propertySource : propertySources) {
 
 **如果同时声明了@Qualifier(beanname1)+@Autowired和@Primary+@Bean(beanname2):会使用beanname1**
 
-#### 	注入顺序
+### 	注入顺序
 
  		**@Qualifier >  优先级 > 变量名(同名@Bean优先) > 类型**  
 
-
-
-## 
-
-#### 		AOP
+## 		AOP
 
 ​			面向切面编程(底层使用动态代理)
 
@@ -572,11 +577,11 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ​			
 
-##### 		相关术语:
+### 		相关术语:
 
 ​			Target(目标对象):被增强方法的所属对象
 
-​        	        Joinpoint(连接点):目标方法可增强的位置
+​        	Joinpoint(连接点):目标方法可增强的位置
 
 ​			Pointcut(切入点):实际被增强的方法
 
@@ -586,7 +591,7 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ​			Proxy(代理):一个类被AOP织入增强后,会产生一个结果代理类
 
-##### 		相关注解:
+### 		相关注解:
 
 | **注解**        | **描述**                                                     |      |
 | --------------- | ------------------------------------------------------------ | ---- |
@@ -598,7 +603,7 @@ for (PropertySource<?> propertySource : propertySources) {
 | @Around         | 把当前方法看成是环绕通知                                     |      |
 | @Pointcut       | 定义方法声明该注解添加切入点表达式,可以直接引用该方法作为表达式,相当于提取 |      |
 
-##### 		切入点表达式:
+### 		切入点表达式:
 
 ```java
     //切入点表达式：execution后小括号中寻找要增强方法的表达式
@@ -615,7 +620,7 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ​	
 
-##### 		基本使用步骤:
+### 		基本使用步骤:
 
 ​			1.导入spring aop 的相关依赖
 
@@ -625,7 +630,7 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ​			4.在配置类中添加@EnableAspectJAutoProxy 注解开启切面
 
-##### 		注意事项:
+### 		注意事项:
 
 ​			关于@Around  注解的使用
 
@@ -681,7 +686,7 @@ public void myAround(JoinPoint joinPoint,ProceedingJoinPoint proceedingJoinPoint
 
 
 
-##### 切面类示例代码
+### 切面类示例代码
 
 ```java
 //日志切面类
@@ -722,7 +727,7 @@ public class LogAspects {
 
 
 
-##### 执行顺序
+### 执行顺序
 
 ​	@Around之前 > @Before > 切入点(目标方法) > @Around之后(如抛出异常不执行) > @After > @AfterThrowing(程序抛出异常) > @AfterReturning(成功返回,如抛出异常不执行)
 
@@ -730,13 +735,13 @@ public class LogAspects {
 
 
 
-#### 		什么是声明式事务?
+### 		什么是声明式事务?
 
 ​			以方法为单位,进行事务控制,抛出异常,事务回滚
 
 ​			最小的执行单位为方法,决定执行成败通过是否抛出异常来判断,抛出异常即执行失败
 
-## 	     spring使用事务		
+## spring使用事务		
 
 ​		导入相关依赖:
 
