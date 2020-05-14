@@ -1,4 +1,4 @@
-# Swgger2
+# Swagger2
 
 ​	Swagger 是一个根据接口生成API文档,进行测试
 

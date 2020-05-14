@@ -86,7 +86,7 @@
     * [遇到的问题](docker/problem.md)
 * Dubbo
     * [入门使用](dubbo/使用dubbo+zookeeper.md)    
-* 安卓
+* Android
     * [刷机](android/root.md)
     * [android发送请求](android/android发送请求.md)
     * [改造为web服务器](android/改造为web服务器.md)
