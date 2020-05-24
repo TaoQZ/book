@@ -84,6 +84,7 @@
     * [IDEA连接docker](docker/IDEA连接docker.md)
     * [部署springboot项目](docker/部署springboot项目.md)
     * [遇到的问题](docker/problem.md)
+    * [docker-compose](docker/docker-compose.md)
 * Dubbo
     * [入门使用](dubbo/使用dubbo+zookeeper.md)    
 * Android
@@ -92,6 +93,8 @@
     * [改造为web服务器](android/改造为web服务器.md)
 * React 
     * [React](react/React.md)
+* ElasticStack
+    * [ElasticSearch](elasticsearch/elasticsearch.md)
 * Salesforce
     * [Apex](salesforce/apex.md)  
     * [Visualforce](salesforce/visualforce.md)

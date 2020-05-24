@@ -480,6 +480,8 @@ System.DmlException: Update failed. First exception on row 0; first error: MISSI
 
 默认使用ID进行比较,由于在添加对象时会自动分配一个id,所以我们也可以自定义字段进行比较
 
+由于默认使用id,所以在使用DML的upsert的操作时需要指定id
+
 原本的数据
 
 ![image-20200430111012166](apex.assets/image-20200430111012166.png)
@@ -543,6 +545,24 @@ List<Account> accList = [SELECT Id, Name FROM Account];
 //         accList[0].Phone = '12345678';
 ```
 
+#### 子查询
+
+只支持查询ID
+
+```java
+Contact con = [SELECT id,Name FROM Contact where name = 'Green Avi'];
+System.debug(con);
+Account accs = [SELECT Id,Name FROM Account WHERE Name = :con.Name];
+System.debug(accs);
+String name = 'Green Avi';
+//        System.QueryException: semi join sub selects can only query id fields, cannot use: 'Name'
+//        Account acc = Database.query('SELECT Id,Name FROM Account WHERE name in (SELECT name FROM Contact where name = \'Green Avi\')');
+System.debug('acc');
+System.debug(acc);
+```
+
+
+
 #### map映射
 
 ```java
@@ -557,6 +577,22 @@ for (ID idKey : m.keyset()) {
 ```
 
 ![image-20200430095014507](apex.assets/image-20200430095014507.png)
+
+#### 案例
+
+根据时间删除
+
+```java
+List<Account> accs = [SELECT id,name,CreatedDate FROM Account];
+for (Account account : accs) {
+    if (account.CreatedDate.date() == Date.today()) {
+        System.debug(account.Name+'  '+account.CreatedDate.date());
+        delete account;
+    }
+}
+```
+
+
 
 ### 3.SOSL
 
@@ -655,6 +691,8 @@ accs = [SELECT id,Parentid
 
 ## Trigger触发器
 
+[http://www.ponybai.com/2017/12/07/salesforce%E8%A7%A6%E5%8F%91%E5%99%A8/](http://www.ponybai.com/2017/12/07/salesforce触发器/)
+
 触发器是一种特殊的Apex类,主要作用是在一条记录被插入,修改删除之前或者之后自动执行的一系列操作,每一个Trigger类必须对应一种对象
 
 创建Trigger类
@@ -708,6 +746,16 @@ Trigger 的触发事件分为以下几种：
 
 Trigger.New和Trigger.Old是两个预定义的变量,New即将被插入和更新的数据,Old代表更新和删除之前的数据,如果有多条数据可以使用迭代集合的方式获得,也可以通过[0]角标的方式获取
 
+new:返回sObject的记录的最新的数据的列表;
+
+newMap:返回一个ID映射到最新的数据列表的Map集合;
+
+old:返回sObject的记录修改以前的数据的列表;
+
+oldMap:返回一个ID映射到修改以前的数据列表的Map集合;
+
+
+
 除了这两个可以拿到运行时的数据之外,还预定义了许多返回值为布尔类型用来判断数据的状态
 
 ```java
@@ -730,6 +778,40 @@ else if (Trigger.isDelete) {
 - isDelete：是否是 delete 操作
 - isBefore：是否是操作之前
 - isAfter：是否是操作之后
+
+### 阻止保存或者删除
+
+案例:在添加之前使用触发器判断客户名称
+
+客户数据
+
+```java
+List<Account> accs = new List<Account>{
+	new Account(Name='张三'),
+	new Account(Name='李四'),
+	new Account(Name='王五')
+};
+insert accs;
+```
+
+```java
+trigger AccountTriggers on Account (before insert) {
+
+	for (Account acc : Trigger.new) {
+		// 判断新添加的客户名称是否为王五,如果是王五则给出提示信息,会显示在操作的页面的上
+		// 需要注意的是,该操作会导致整个事务进行回滚
+		if (acc.Name == '王五') {
+			acc.addError('不能插入名称为王五的客户');
+		}else {
+			System.debug('添加成功:'+acc.Name);
+		}
+//		System.debug('添加成功:'+acc.Name);
+	}
+
+}
+```
+
+
 
 ## 异常处理
 
