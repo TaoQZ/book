@@ -52,7 +52,7 @@
         * [Hystrix](microservice/netflix/Hystrix.md)
         * [Feign](microservice/netflix/Feign.md)
         * [Config](microservice/netflix/SpringCloudConfig.md)
-    * [POJO](microservice/POJO依赖.md)    
+        * [POJO](microservice/netflix/POJO依赖.md)    
     * Alibaba
     * HttpTool
         * [HttpClient](httptool/HttpClient.md)
