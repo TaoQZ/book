@@ -17,7 +17,14 @@
        * [JSON对象](frontend/other/JSON对象的两个方法.md)
 * [JWT](jwt/JWT.md)
 * Java
-    * [异常](java/exception/exception.md)
+    * base
+        * [Java的基本程序设计结构](java/base/Java的基本程序设计结构.md)
+        * [对象和类](java/base/对象和类.md)
+        * [泛型](java/base/泛型.md)
+        * [集合](java/base/集合.md)
+        * [继承](java/base/继承.md)
+        * [接口、内部类](java/base/接口、内部类.md)
+        * [异常](java/base/异常.md)
     * java8新特性
         * [默认方法](java/java8new_feature/默认方法.md)
         * [Lambda](java/java8new_feature/Lambda.md)
@@ -35,6 +42,9 @@
     * [mysql进阶](mysql/mysql进阶.md)
     * [mysql事务](mysql/mysql事务.md)
     * [varchar和char](mysql/varchar和char.md)
+* Redis
+    * [Redis基础](redis/redis.md)    
+    * [Redis进阶](redis/redis高级.md)
 * Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
     * [Linux远程管理](linux/Linux远程管理.md)
@@ -98,7 +108,9 @@
 * Salesforce
     * [Apex](salesforce/apex.md)  
     * [Visualforce](salesforce/visualforce.md)
-    * [在IDEA中配置salesforce环境](salesforce/在IDEA中配置salesforce环境.md)    
+    * [遇到的问题](salesforce/遇到的问题.md)
+    * [在IDEA中配置salesforce环境](salesforce/在IDEA中配置salesforce环境.md)   
+    * [VSCode配置salesforce环境](salesforce/VSCode配置salesforce环境.md)     
 * 其他
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
     * [Kaptcha验证码](other/kaptcha验证码.md)

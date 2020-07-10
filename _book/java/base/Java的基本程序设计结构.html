@@ -1,0 +1,2383 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Java的基本程序设计结构 · 没伞的孩子要学会奔跑</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="almostTao">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="对象和类.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://taoqz.xyz" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../git/Git.html">
+            
+                <a href="../../git/Git.html">
+            
+                    
+                    git安装及简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../git/Idea中使用Git.html">
+            
+                <a href="../../git/Idea中使用Git.html">
+            
+                    
+                    Idea使用Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../vue/Vue.html">
+            
+                <a href="../../vue/Vue.html">
+            
+                    
+                    Vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../vue/vue理论知识.html">
+            
+                <a href="../../vue/vue理论知识.html">
+            
+                    
+                    Vue理论知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../frontend/es6/es6.html">
+            
+                <a href="../../frontend/es6/es6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../frontend/node/node.html">
+            
+                <a href="../../frontend/node/node.html">
+            
+                    
+                    Node的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../frontend/mock/mock.html">
+            
+                <a href="../../frontend/mock/mock.html">
+            
+                    
+                    Mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../frontend/nuxt/nuxt.html">
+            
+                <a href="../../frontend/nuxt/nuxt.html">
+            
+                    
+                    Nuxt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../frontend/other/html.html">
+            
+                <a href="../../frontend/other/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../../frontend/other/JSON对象的两个方法.html">
+            
+                <a href="../../frontend/other/JSON对象的两个方法.html">
+            
+                    
+                    JSON对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../jwt/JWT.html">
+            
+                <a href="../../jwt/JWT.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    base
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1.1" data-path="Java的基本程序设计结构.html">
+            
+                <a href="Java的基本程序设计结构.html">
+            
+                    
+                    Java的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="对象和类.html">
+            
+                <a href="对象和类.html">
+            
+                    
+                    对象和类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="泛型.html">
+            
+                <a href="泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="集合.html">
+            
+                <a href="集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="继承.html">
+            
+                <a href="继承.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="接口、内部类.html">
+            
+                <a href="接口、内部类.html">
+            
+                    
+                    接口、内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="异常.html">
+            
+                <a href="异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    java8新特性
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../java8new_feature/默认方法.html">
+            
+                <a href="../java8new_feature/默认方法.html">
+            
+                    
+                    默认方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../java8new_feature/Lambda.html">
+            
+                <a href="../java8new_feature/Lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../java8new_feature/Lambda访问外部变量.html">
+            
+                <a href="../java8new_feature/Lambda访问外部变量.html">
+            
+                    
+                    Lambda访问外部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="../java8new_feature/日期时间API.html">
+            
+                <a href="../java8new_feature/日期时间API.html">
+            
+                    
+                    新的日期时间API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../pattern/singleton.html">
+            
+                <a href="../pattern/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../pattern/proxy.html">
+            
+                <a href="../pattern/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    多线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../thread/多线程入门.html">
+            
+                <a href="../thread/多线程入门.html">
+            
+                    
+                    多线程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../thread/线程同步和通信.html">
+            
+                <a href="../thread/线程同步和通信.html">
+            
+                    
+                    线程同步和通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="../thread/线程池.html">
+            
+                <a href="../thread/线程池.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../mysql/mysql基础.html">
+            
+                <a href="../../mysql/mysql基础.html">
+            
+                    
+                    mysql基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../mysql/mysql进阶.html">
+            
+                <a href="../../mysql/mysql进阶.html">
+            
+                    
+                    mysql进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../mysql/mysql事务.html">
+            
+                <a href="../../mysql/mysql事务.html">
+            
+                    
+                    mysql事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../mysql/varchar和char.html">
+            
+                <a href="../../mysql/varchar和char.html">
+            
+                    
+                    varchar和char
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../redis/redis.html">
+            
+                <a href="../../redis/redis.html">
+            
+                    
+                    Redis基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../redis/redis高级.html">
+            
+                <a href="../../redis/redis高级.html">
+            
+                    
+                    Redis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../linux/Linux环境下安装jdk和maven.html">
+            
+                <a href="../../linux/Linux环境下安装jdk和maven.html">
+            
+                    
+                    安装jdk及maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../linux/Linux远程管理.html">
+            
+                <a href="../../linux/Linux远程管理.html">
+            
+                    
+                    Linux远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../spring/spring.html">
+            
+                <a href="../../spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../spring/SpringMVC.html">
+            
+                <a href="../../spring/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    SpringBoot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="../../spring/SpringBoot.html">
+            
+                <a href="../../spring/SpringBoot.html">
+            
+                    
+                    springboot入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.2" data-path="../../boot_integration/javamail.html">
+            
+                <a href="../../boot_integration/javamail.html">
+            
+                    
+                    javamail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.3" data-path="../../boot_integration/springtask.html">
+            
+                <a href="../../boot_integration/springtask.html">
+            
+                    
+                    springtask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../microservice/微服务概述.html">
+            
+                <a href="../../microservice/微服务概述.html">
+            
+                    
+                    微服务阶段
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" >
+            
+                <span>
+            
+                    
+                    Netflix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../../microservice/netflix/Zuul.html">
+            
+                <a href="../../microservice/netflix/Zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="../../microservice/netflix/eureka/eureka.html">
+            
+                <a href="../../microservice/netflix/eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="../../microservice/netflix/Hystrix.html">
+            
+                <a href="../../microservice/netflix/Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" data-path="../../microservice/netflix/Feign.html">
+            
+                <a href="../../microservice/netflix/Feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" data-path="../../microservice/netflix/SpringCloudConfig.html">
+            
+                <a href="../../microservice/netflix/SpringCloudConfig.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.6" data-path="../../microservice/netflix/POJO依赖.html">
+            
+                <a href="../../microservice/netflix/POJO依赖.html">
+            
+                    
+                    POJO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    Alibaba
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" >
+            
+                <span>
+            
+                    
+                    HttpTool
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.3.1" data-path="../../httptool/HttpClient.html">
+            
+                <a href="../../httptool/HttpClient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.2" data-path="../../httptool/RestTemplate.html">
+            
+                <a href="../../httptool/RestTemplate.html">
+            
+                    
+                    RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../mybatis/mybatis.html">
+            
+                <a href="../../mybatis/mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../mybatis/注意事项.html">
+            
+                <a href="../../mybatis/注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../mybatis/mybatis-plus.html">
+            
+                <a href="../../mybatis/mybatis-plus.html">
+            
+                    
+                    mybatis-plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../maven/maven.html">
+            
+                <a href="../../maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Http
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../http/状态码.html">
+            
+                <a href="../../http/状态码.html">
+            
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    Nginx
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../nginx/nginx.html">
+            
+                <a href="../../nginx/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../nginx/https配置.html">
+            
+                <a href="../../nginx/https配置.html">
+            
+                    
+                    https配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    Mongo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../mongodb/Mongo的安装与卸载.html">
+            
+                <a href="../../mongodb/Mongo的安装与卸载.html">
+            
+                    
+                    Mongo的安装与卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                <a href="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                    
+                    Mongo的介绍及命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    Aliyun
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../aliyun/阿里云域名.html">
+            
+                <a href="../../aliyun/阿里云域名.html">
+            
+                    
+                    阿里云域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../aliyun/OSS存储.html">
+            
+                <a href="../../aliyun/OSS存储.html">
+            
+                    
+                    OSS存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    Swagger
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../swagger/SpringBoot整合Swagger2.html">
+            
+                <a href="../../swagger/SpringBoot整合Swagger2.html">
+            
+                    
+                    Springboot整合Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    ElementUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../elementUI/ElementUI.html">
+            
+                <a href="../../elementUI/ElementUI.html">
+            
+                    
+                    elementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    模板引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../templateng/Thymeleaf.html">
+            
+                <a href="../../templateng/Thymeleaf.html">
+            
+                    
+                    Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../../docker/docker安装及常用命令.html">
+            
+                <a href="../../docker/docker安装及常用命令.html">
+            
+                    
+                    docker安装及常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../../docker/IDEA连接docker.html">
+            
+                <a href="../../docker/IDEA连接docker.html">
+            
+                    
+                    IDEA连接docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../../docker/部署springboot项目.html">
+            
+                <a href="../../docker/部署springboot项目.html">
+            
+                    
+                    部署springboot项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../../docker/problem.html">
+            
+                <a href="../../docker/problem.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../../docker/docker-compose.html">
+            
+                <a href="../../docker/docker-compose.html">
+            
+                    
+                    docker-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    Dubbo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../../dubbo/使用dubbo+zookeeper.html">
+            
+                <a href="../../dubbo/使用dubbo+zookeeper.html">
+            
+                    
+                    入门使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../../android/root.html">
+            
+                <a href="../../android/root.html">
+            
+                    
+                    刷机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../../android/android发送请求.html">
+            
+                <a href="../../android/android发送请求.html">
+            
+                    
+                    android发送请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../../android/改造为web服务器.html">
+            
+                <a href="../../android/改造为web服务器.html">
+            
+                    
+                    改造为web服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../../react/React.md">
+            
+                <span>
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    ElasticStack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../../elasticsearch/elasticsearch.md">
+            
+                <span>
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    Salesforce
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../../salesforce/apex.html">
+            
+                <a href="../../salesforce/apex.html">
+            
+                    
+                    Apex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.2" data-path="../../salesforce/visualforce.html">
+            
+                <a href="../../salesforce/visualforce.html">
+            
+                    
+                    Visualforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.3" data-path="../../salesforce/遇到的问题.html">
+            
+                <a href="../../salesforce/遇到的问题.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.4" data-path="../../salesforce/在IDEA中配置salesforce环境.html">
+            
+                <a href="../../salesforce/在IDEA中配置salesforce环境.html">
+            
+                    
+                    在IDEA中配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.5" data-path="../../salesforce/VSCode配置salesforce环境.html">
+            
+                <a href="../../salesforce/VSCode配置salesforce环境.html">
+            
+                    
+                    VSCode配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="../../other/使用Google Cloud搭建ssr.html">
+            
+                <a href="../../other/使用Google Cloud搭建ssr.html">
+            
+                    
+                    搭建SSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="../../other/kaptcha验证码.html">
+            
+                <a href="../../other/kaptcha验证码.html">
+            
+                    
+                    Kaptcha验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Java的基本程序设计结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;">Java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;</a></li><ul><li><a href="#&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</a></li><li><a href="#&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><ul><li><a href="#&#x56DB;&#x79CD;&#x6574;&#x578B;">&#x56DB;&#x79CD;&#x6574;&#x578B;</a></li><li><a href="#&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x578B;">&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x578B;</a></li><li><a href="#char&#x5B57;&#x7B26;&#x7C7B;&#x578B;">char&#x5B57;&#x7B26;&#x7C7B;&#x578B;</a></li><li><a href="#boolean&#x7C7B;&#x578B;">boolean&#x7C7B;&#x578B;</a></li></ul><li><a href="#&#x53D8;&#x91CF;">&#x53D8;&#x91CF;</a></li><ul><li><a href="#&#x53D8;&#x91CF;&#x5B9A;&#x4E49;">&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</a></li><li><a href="#&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;">&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;</a></li></ul><li><a href="#&#x5E38;&#x91CF;">&#x5E38;&#x91CF;</a></li><li><a href="#&#x8FD0;&#x7B97;&#x7B26;">&#x8FD0;&#x7B97;&#x7B26;</a></li><li><a href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;">&#x7C7B;&#x578B;&#x8F6C;&#x6362;</a></li><ul><li><a href="#&#x6570;&#x503C;&#x7684;&#x4E8C;&#x5143;&#x64CD;&#x4F5C;">&#x6570;&#x503C;&#x7684;&#x4E8C;&#x5143;&#x64CD;&#x4F5C;</a></li><li><a href="#&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;">&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</a></li></ul><li><a href="#&#x8FD0;&#x7B97;&#x7B26;">&#x8FD0;&#x7B97;&#x7B26;</a></li><ul><li><a href="#&#x81EA;&#x589E;&#x4E0E;&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;">&#x81EA;&#x589E;&#x4E0E;&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;</a></li><li><a href="#&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;">&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</a></li><li><a href="#&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;">&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;</a></li><li><a href="#&#x62EC;&#x53F7;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#x7EA7;&#x522B;">&#x62EC;&#x53F7;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#x7EA7;&#x522B;</a></li></ul><li><a href="#&#x5B57;&#x7B26;&#x4E32;">&#x5B57;&#x7B26;&#x4E32;</a></li><li><a href="#&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7B26;">&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7B26;</a></li><li><a href="#switch&#x9009;&#x62E9;&#x8BED;&#x53E5;">switch&#x9009;&#x62E9;&#x8BED;&#x53E5;</a></li><li><a href="#&#x5927;&#x6570;&#x503C;">&#x5927;&#x6570;&#x503C;</a></li><li><a href="#&#x6570;&#x7EC4;">&#x6570;&#x7EC4;</a></li><ul><li><a href="#&#x591A;&#x7EF4;&#x6570;&#x7EC4;">&#x591A;&#x7EF4;&#x6570;&#x7EC4;</a></li></ul></ul></ul></div><a href="#java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;"><a name="java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>Java&#x7684;&#x57FA;&#x672C;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;</h1>
+<h2 id="&#x6CE8;&#x91CA;"><a name="&#x6CE8;&#x91CA;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x91CA;</h2>
+<p>Java&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x4E2D;,&#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x79CD;&#x6CE8;&#x91CA;</p>
+<p>// : &#x5355;&#x884C;&#x6CE8;&#x91CA;</p>
+<p>/**/ : &#x591A;&#x884C;&#x6CE8;&#x91CA;</p>
+<p>/<em>* </em>/ : &#x6587;&#x6863;&#x6CE8;&#x91CA;,&#x53EF;&#x4EE5;&#x751F;&#x6210;doc&#x6587;&#x6863;</p>
+<h2 id="&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>Java&#x662F;&#x4E00;&#x79CD;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;,&#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x65F6;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;</p>
+<p>Java&#x4E2D;&#x6709;8&#x79CD;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<h3 id="&#x56DB;&#x79CD;&#x6574;&#x578B;"><a name="&#x56DB;&#x79CD;&#x6574;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x79CD;&#x6574;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x79CD;&#x6574;&#x578B;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x5360;&#x7528;&#x5B58;&#x50A8;&#x5927;&#x5C0F;</th>
+<th style="text-align:center">&#x53D6;&#x503C;&#x8303;&#x56F4;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4&#x4E2A;&#x5B57;&#x8282;</td>
+<td style="text-align:center">-2147 483 648 - 2147 483 647</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">2&#x4E2A;&#x5B57;&#x8282;</td>
+<td style="text-align:center">-32768 - 32767</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">8&#x4E2A;&#x5B57;&#x8282;</td>
+<td style="text-align:center">-9 223 372 036 854 775 808 - 9 223 372 036 854 775 807</td>
+<td>0L</td>
+</tr>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">1&#x4E2A;&#x5B57;&#x8282;</td>
+<td style="text-align:center">-128 - 127</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;&#x5305;&#x88C5;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x5C5E;&#x6027;MIN_VALUE&#x548C;MAX_VALUE&#x83B7;&#x53D6;&#x5176;&#x53D6;&#x503C;&#x8303;&#x56F4;</p>
+<p>long&#x7C7B;&#x578B;&#x7684;&#x6570;&#x503C;&#x9700;&#x8981;&#x5728;&#x540E;&#x9762;&#x52A0;l&#x6216;&#x8005;L&#x8868;&#x793A;long&#x7C7B;&#x578B;</p>
+<p>int&#x7C7B;&#x578B;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x8868;&#x793A;,&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x66F4;&#x52A0;&#x6613;&#x8BFB;,java&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x53BB;&#x9664;&#x8FD9;&#x4E9B;&#x4E0B;&#x5212;&#x7EBF;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> a = <span class="hljs-number">2147_483_647</span>;
+</code></pre>
+<p>&#x5728;java&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x6240;&#x5360;&#x7684;&#x5B57;&#x8282;&#x6570;&#x91CF;&#x4E0E;&#x5E73;&#x53F0;&#x65E0;&#x5173;</p>
+<h3 id="&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x578B;"><a name="&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x578B;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5360;&#x7528;&#x5B58;&#x50A8;&#x5927;&#x5C0F;</th>
+<th>&#x53D6;&#x503C;&#x8303;&#x56F4;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>4&#x5B57;&#x8282;</td>
+<td>1.4E-45 - 3.4028235E38(&#x6709;&#x6548;&#x4F4D;&#x6570;6~7)</td>
+<td>0.0f</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8&#x5B57;&#x8282;</td>
+<td>4.9E-324 - 1.7976931348623157E308(&#x6709;&#x6548;&#x4F4D;&#x6570;15&#x4F4D;)</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x6D6E;&#x70B9;&#x578B;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;double&#x7C7B;&#x578B;</span>
+<span class="hljs-comment">//        &#x4E0D;&#x4F1A;&#x62A5;&#x9519;</span>
+<span class="hljs-keyword">double</span> b = <span class="hljs-number">1.0</span>;
+<span class="hljs-comment">//        &#x540E;&#x7F00;d&#x53EF;&#x52A0;&#x53EF;&#x4E0D;&#x52A0;</span>
+<span class="hljs-keyword">double</span> b = <span class="hljs-number">1.0</span>d;
+<span class="hljs-comment">//        &#x5728;&#x7F16;&#x8BD1;&#x5668;&#x5185;&#x4F1A;&#x62A5;&#x9519;,&#x9700;&#x52A0;f&#x540E;&#x7F00;</span>
+<span class="hljs-comment">//        float f = 1.0;</span>
+<span class="hljs-comment">//        &#x6B63;&#x786E;&#x5199;&#x6CD5;</span>
+<span class="hljs-keyword">float</span> f = <span class="hljs-number">1.0f</span>;
+</code></pre>
+<p>&#x6D6E;&#x70B9;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x6574;&#x578B;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x8F6C;&#x6362;&#x65F6;&#x4F1A;&#x4E22;&#x5F03;&#x5C0F;&#x6570;&#x90E8;&#x5206;,&#x5982;&#x679C;&#x60F3;&#x8981;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x52A0;&#x4E0A;0.5&#x540E;&#x518D;&#x8F6C;&#x5373;&#x53EF;</span>
+<span class="hljs-comment">// 12</span>
+<span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)<span class="hljs-number">12.7</span>;
+<span class="hljs-comment">// -12</span>
+<span class="hljs-keyword">int</span> i2 = (<span class="hljs-keyword">int</span>)-<span class="hljs-number">12.7</span>;
+</code></pre>
+<p>&#x60F3;&#x8981;&#x7CBE;&#x786E;&#x7684;&#x8FDB;&#x884C;&#x6D6E;&#x70B9;&#x578B;&#x7684;&#x8BA1;&#x7B97;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x4E00;&#x5F8B;&#x4F7F;&#x7528;String&#x7C7B;&#x578B;&#x7684;&#x6784;&#x9020;</span>
+BigDecimal bigDecimal = <span class="hljs-keyword">new</span> BigDecimal(<span class="hljs-string">&quot;100.00&quot;</span>);
+BigDecimal bigDecimal1 = <span class="hljs-keyword">new</span> BigDecimal(<span class="hljs-string">&quot;100.000&quot;</span>);
+<span class="hljs-comment">// false,equals&#x8868;&#x793A;&#x4E24;&#x4E2A;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x6570;&#x4F46;&#x6362;&#x7B97;&#x503C;&#x4E0D;&#x540C;</span>
+System.out.println(bigDecimal.equals(bigDecimal1));
+<span class="hljs-comment">// 0</span>
+<span class="hljs-comment">// 0:&#x76F8;&#x7B49; -1:&#x8868;&#x793A;&#x8C03;&#x7528;&#x65B9;&#x5C0F;&#x4E0E;&#x53C2;&#x6570; 1:&#x8868;&#x793A;&#x8C03;&#x7528;&#x65B9;&#x5927;&#x4E8E;&#x53C2;&#x6570;</span>
+System.out.println(bigDecimal.compareTo(bigDecimal1));
+</code></pre>
+<h3 id="char&#x5B57;&#x7B26;&#x7C7B;&#x578B;"><a name="char&#x5B57;&#x7B26;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#char&#x5B57;&#x7B26;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>char&#x5B57;&#x7B26;&#x7C7B;&#x578B;</h3>
+<p>&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;,&#x53EF;&#x4EE5;&#x662F;&#x6C49;&#x5B57;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;Unicode&#x5B57;&#x7B26;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x5360;&#x7528;&#x5B58;&#x50A8;&#x5927;&#x5C0F;</th>
+<th style="text-align:center">&#x53D6;&#x503C;&#x8303;&#x56F4;</th>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">2&#x5B57;&#x8282;</td>
+<td style="text-align:center">0-65535</td>
+<td style="text-align:center">\u0000</td>
+</tr>
+</tbody>
+</table>
+<p><img src="assets/image-20200531183202844.png" alt="image-20200531183202844"></p>
+<p>&#x53EF;&#x4EE5;&#x4E0E;int&#x7C7B;&#x578B;&#x76F8;&#x4E92;&#x8F6C;&#x6362;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5C0F;&#x8F6C;&#x5927;,&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x63D0;&#x5347;</span>
+<span class="hljs-keyword">char</span> c = <span class="hljs-string">&apos;A&apos;</span>;
+<span class="hljs-keyword">int</span> i = c;
+
+<span class="hljs-comment">// &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4E3A;char&#x8D4B;&#x503C;int&#x7C7B;&#x578B;&#x503C;</span>
+<span class="hljs-comment">// &#x9690;&#x5F0F;&#x8F6C;&#x6362;</span>
+<span class="hljs-keyword">char</span> c1 = <span class="hljs-number">65</span>;
+
+<span class="hljs-comment">// &#x4F46;&#x5982;&#x679C;&#x58F0;&#x660E;&#x4E86;&#x7C7B;&#x578B;&#x5219;&#x9700;&#x8981;&#x5F3A;&#x8F6C;</span>
+<span class="hljs-keyword">int</span> i = <span class="hljs-number">65</span>;
+<span class="hljs-keyword">char</span> c = (<span class="hljs-keyword">char</span>)i;
+</code></pre>
+<p>&#x6BD4;&#x8F83;&#x5E38;&#x7528;&#x7684;ASCII&#x8868;</p>
+<p><img src="assets/image-20200531184052283.png" alt="image-20200531184052283"></p>
+<h3 id="boolean&#x7C7B;&#x578B;"><a name="boolean&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#boolean&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>boolean&#x7C7B;&#x578B;</h3>
+<p>&#x7528;&#x6765;&#x5224;&#x5B9A;&#x903B;&#x8F91;&#x6761;&#x4EF6;,&#x4E0D;&#x80FD;&#x4E0E;&#x6574;&#x578B;&#x76F8;&#x4E92;&#x8F6C;&#x6362;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x5360;&#x7528;&#x5B58;&#x50A8;&#x5927;&#x5C0F;</th>
+<th style="text-align:center">&#x53D6;&#x503C;&#x8303;&#x56F4;</th>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">1&#x4E2A;&#x5B57;&#x8282;</td>
+<td style="text-align:center">true or false</td>
+<td style="text-align:center">false</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x53D8;&#x91CF;"><a name="&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF;</h2>
+<h3 id="&#x53D8;&#x91CF;&#x5B9A;&#x4E49;"><a name="&#x53D8;&#x91CF;&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</h3>
+<p>java&#x4E2D;&#x662F;&#x5BF9;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x7684;,&#x5373;name&#x548C;Name&#x662F;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;,&#x4E0D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;java&#x4E2D;&#x7684;&#x5173;&#x952E;&#x5B57;&#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x540D;</p>
+<p>java&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x90FD;&#x8981;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;,&#x53D8;&#x91CF;&#x540D;&#x5728;&#x53D8;&#x91CF;&#x540E;,&#x5176;&#x5B9A;&#x4E49;&#x89C4;&#x5219;&#x5982;&#x4E0B;(&#x53EF;&#x53C2;&#x8003;&#x963F;&#x91CC;&#x5DF4;&#x5DF4;java&#x5F00;&#x53D1;&#x624B;&#x518C;)</p>
+<p>&#x4E0D;&#x8981;&#x4F7F;&#x7528;$&#x548C;_&#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;,&#x867D;&#x7136;&#x4E24;&#x8005;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F46;&#x662F;&#x8BF7;&#x907F;&#x514D;&#x4F7F;&#x7528;</p>
+<p>&#x5176;&#x4ED6;&#x7684;&#x547D;&#x540D;&#x89C4;&#x8303;</p>
+<p>&#x7C7B;&#x540D; : UpperCamelCase,&#x5373;&#x6BCF;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;</p>
+<p>&#x53D8;&#x91CF;&#x540D;(&#x65B9;&#x6CD5;,&#x53C2;&#x6570;,&#x6210;&#x5458;&#x548C;&#x5C40;&#x90E8;) : lowerCamelCase,&#x5373;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5C0F;&#x5199;&#x5176;&#x4F59;&#x5355;&#x8BCD;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;,&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x884C;&#x4E2D;&#x5B9A;&#x4E49;&#x591A;&#x4E2A;&#x53D8;&#x91CF;,&#x4F46;&#x4E3A;&#x4E86;&#x4EE3;&#x7801;&#x53EF;&#x8BFB;&#x6027;&#x8BF7;&#x4E0D;&#x8981;&#x8FD9;&#x4E48;&#x505A;</p>
+<p>&#x5305;&#x540D; : &#x7EDF;&#x4E00;&#x5C0F;&#x5199;</p>
+<p>&#x5E38;&#x91CF; : &#x5E38;&#x91CF;&#x547D;&#x540D;&#x5168;&#x90E8;&#x5927;&#x5199;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x7528;&#x4E0B;&#x5212;&#x7EBF;&#x9694;&#x5F00;&#xFF0C;&#x529B;&#x6C42;&#x8BED;&#x4E49;&#x8868;&#x8FBE;&#x5B8C;&#x6574;&#x6E05;&#x695A;&#xFF0C;&#x4E0D;&#x8981;&#x5ACC;&#x540D;&#x5B57;&#x957F;&#x3002;</p>
+<h3 id="&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;"><a name="&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5728;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x5148;&#x8D4B;&#x503C;(&#x663E;&#x5F0F;&#x521D;&#x59CB;&#x5316;),&#x6210;&#x5458;&#x53D8;&#x91CF;&#x662F;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;,&#x5728;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E00;&#x7AE0;&#x4E2D;&#x6709;&#x58F0;&#x660E;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x8868;&#x793A;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8D4B;&#x503C;&#x7ED9;&#x4E00;&#x4E2A;String&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;name</span>
+String name = <span class="hljs-string">&quot;taoqz&quot;</span>;
+</code></pre>
+<h2 id="&#x5E38;&#x91CF;"><a name="&#x5E38;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x91CF;</h2>
+<p>&#x5728;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x524D;&#x52A0;final&#x5173;&#x952E;&#x5B57;,&#x88AB;final&#x4FEE;&#x9970;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x5728;&#x5B9A;&#x4E49;&#x65F6;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;(&#x9664;&#x4E86;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x65B9;&#x5F0F;),&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x9700;&#x5728;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x521D;&#x59CB;&#x5316;(&#x6240;&#x6709;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5728;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x90FD;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;)</p>
+<p>&#x88AB;final&#x4FEE;&#x9970;&#x7684;&#x53D8;&#x91CF;&#x4E3A;&#x5E38;&#x91CF;,&#x53EA;&#x80FD;&#x8D4B;&#x503C;&#x4E00;&#x6B21;,&#x4E0D;&#x53EF;&#x88AB;&#x4FEE;&#x6539;</p>
+<p>&#x88AB;final&#x4FEE;&#x9970;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x53EF;&#x88AB;&#x91CD;&#x5199;</p>
+<p>&#x88AB;final&#x4FEE;&#x9970;&#x7684;&#x7C7B;&#x4E0D;&#x53EF;&#x88AB;&#x7EE7;&#x627F;</p>
+<h2 id="&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x5E38;&#x7528;&#x7684;+ - * / &#x8868;&#x793A;&#x52A0;&#x51CF;&#x4E58;&#x9664;,%&#x8868;&#x793A;&#x53D6;&#x4F59;&#x64CD;&#x7EB5;</p>
+<p>java&#x63D0;&#x4F9B;&#x4E86;java.lang.Math&#x7C7B;,&#x8BE5;&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;</p>
+<h2 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><a name="&#x7C7B;&#x578B;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h2>
+<p>&#x5B9E;&#x5FC3;&#x7BAD;&#x5934;&#x8868;&#x793A;&#x65E0;&#x4FE1;&#x606F;&#x4E22;&#x5931;&#x7684;&#x8F6C;&#x6362;,&#x865A;&#x7EBF;&#x7BAD;&#x5934;&#x8868;&#x793A;&#x4F1A;&#x6709;&#x7CBE;&#x5EA6;&#x635F;&#x5931;</p>
+<p><img src="assets/image-20200531192320609.png" alt="image-20200531192320609"></p>
+<h3 id="&#x6570;&#x503C;&#x7684;&#x4E8C;&#x5143;&#x64CD;&#x4F5C;"><a name="&#x6570;&#x503C;&#x7684;&#x4E8C;&#x5143;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x503C;&#x7684;&#x4E8C;&#x5143;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x503C;&#x7684;&#x4E8C;&#x5143;&#x64CD;&#x4F5C;</h3>
+<p>&#xB7;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x662F;double&#x7C7B;&#x578B;,&#x53E6;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x5C31;&#x4F1A;&#x8F6C;&#x4E3A;double&#x7C7B;&#x578B;&#x3002;
+&#xB7;&#x5426;&#x5219;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x662F;float&#x7C7B;&#x578B;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x5C06;&#x4F1A;&#x8F6C;&#x6362;&#x4E3A;float&#x7C7B;&#x578B;&#x3002;&#xB7;&#x5426;&#x5219;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x662F;long&#x7C7B;&#x578B;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x5C06;&#x4F1A;&#x8F6C;&#x6362;&#x4E3A;long&#x7C7B;&#x578B;&#x3002;&#xB7;&#x5426;&#x5219;&#xFF0C;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x90FD;&#x5C06;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;int&#x7C7B;&#x578B;&#x3002;</p>
+<h3 id="&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><a name="&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h3>
+<p>&#x5C0F;&#x8F6C;&#x5927;&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x63D0;&#x5347;,&#x5927;&#x8F6C;&#x5C0F;&#x9700;&#x8981;&#x5F3A;&#x5236;&#x8F6C;&#x6362;</p>
+<p>&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x63D0;&#x5347;:&#x4E00;&#x4E2A;&#x5C0F;&#x4E0E;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x5728;&#x8D4B;&#x503C;&#x65F6;,&#x5982;&#x679C;&#x8BE5;&#x503C;&#x5728;&#x8BE5;&#x503C;&#x6240;&#x5C5E;&#x7684;&#x8303;&#x56F4;&#x5185;&#x4F1A;&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x63D0;&#x5347;,&#x8BE5;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x662F;(byte/char/short/int),java&#x4E2D;&#x6574;&#x578B;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;int&#x7C7B;&#x578B;,&#x6D6E;&#x70B9;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;double,&#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528;long&#x548C;float&#x65F6;&#x9700;&#x8981;&#x5728;&#x540E;&#x9762;&#x6307;&#x51FA;l&#x6216;f&#x6765;&#x8FDB;&#x884C;&#x533A;&#x5206;</p>
+<p>&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x63D0;&#x5347;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">char</span> c = <span class="hljs-string">&apos;A&apos;</span>;
+<span class="hljs-keyword">int</span> a = c;
+System.out.println(a);
+</code></pre>
+<p>&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x63D0;&#x5347;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">char</span> c = <span class="hljs-number">65</span>;
+System.out.println(c);
+</code></pre>
+<p>&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">300</span>;
+<span class="hljs-keyword">byte</span> b = (<span class="hljs-keyword">byte</span>)i;
+<span class="hljs-comment">// 44 &#x5927;&#x8F6C;&#x5C0F;,&#x4F1A;&#x51FA;&#x73B0;&#x4FE1;&#x606F;&#x4E22;&#x5931;&#x95EE;&#x9898;</span>
+System.out.println(b);
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">200</span>;
+<span class="hljs-keyword">byte</span> b = <span class="hljs-number">100</span>;
+b += i;
+<span class="hljs-comment">// 44 &#x7ED3;&#x679C;&#x4E00;&#x6837;,&#x4F46;&#x662F; += &#x4F1A;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</span>
+System.out.println(b);
+</code></pre>
+<h2 id="&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x7B97;&#x7B26;</h2>
+<h3 id="&#x81EA;&#x589E;&#x4E0E;&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x81EA;&#x589E;&#x4E0E;&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x589E;&#x4E0E;&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x589E;&#x4E0E;&#x81EA;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4EE5;&#x81EA;&#x589E;&#x4E3A;&#x4F8B;,&#x81EA;&#x51CF;&#x9053;&#x7406;&#x76F8;&#x540C;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">10</span>,result;
+<span class="hljs-comment">// &#x5148;&#x8FD0;&#x7B97;&#x518D;&#x81EA;&#x589E; 10</span>
+result = i++;
+<span class="hljs-comment">// &#x5148;&#x81EA;&#x589E;&#x518D;&#x8FD0;&#x7B97; 11</span>
+<span class="hljs-comment">// result = ++i;</span>
+System.out.println(result);
+</code></pre>
+<h3 id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4EE5;&amp;&#x7B26;&#x53F7;&#x505A;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// &amp; &#x4E0E; &#x8868;&#x793A;&#x6709;&#x4E00;&#x65B9;&#x4E3A;&#x5219;&#x4E3A;true,&#x6CA1;&#x6709;&#x77ED;&#x8DEF;&#x6548;&#x679C;,&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8FD8;&#x4F1A;&#x6267;&#x884C;</span>
+<span class="hljs-keyword">if</span> (i != <span class="hljs-number">0</span> &amp; i++ &gt; <span class="hljs-number">10</span>){
+    <span class="hljs-comment">// &amp;&amp; &#x4E0E; &#x8868;&#x793A;&#x540C;&#x65F6;&#x4E3A;true&#x65F6;,&#x624D;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x524D;&#x9762;&#x662F;false&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x6709;&#x77ED;&#x8DEF;&#x6548;&#x679C;</span>
+    <span class="hljs-comment">//      if (i == 0 &amp;&amp; i++ &gt; 10){</span>
+    System.out.println(<span class="hljs-string">&quot;&#x6267;&#x884C;&#x4E86;...&quot;</span>);
+}
+System.out.println(i);
+</code></pre>
+<p>&#x603B;&#x7ED3;:</p>
+<p>&amp; : &#x6761;&#x4EF6;&#x90FD;&#x4E3A;true&#x65F6;&#x624D;&#x6267;&#x884C;,&#x6CA1;&#x6709;&#x77ED;&#x8DEF;&#x6548;&#x679C;,&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4F1A;&#x6267;&#x884C;</p>
+<p>&amp;&amp; : &#x6761;&#x4EF6;&#x90FD;&#x4E3A;true&#x65F6;&#x624D;&#x6267;&#x884C;,&#x6709;false&#x5219;&#x4E0D;&#x6267;&#x884C;,&#x6709;&#x77ED;&#x8DEF;&#x6548;&#x679C;,&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</p>
+<p>| : &#x6709;true&#x5219;true,&#x6CA1;&#x6709;&#x77ED;&#x8DEF;&#x6548;&#x679C;,&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4F1A;&#x6267;&#x884C;</p>
+<p>|| : &#x6709;true&#x5219;true,&#x6709;&#x77ED;&#x8DEF;&#x6548;&#x679C;,&#x540E;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</p>
+<p>! : &#x53D6;&#x53CD;,true&#x5219;false,false&#x5219;true</p>
+<h3 id="&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x5F85;&#x8865;&#x5145;&#x4E8C;&#x8FDB;&#x5236;&#x76F8;&#x5173;&#x77E5;&#x8BC6;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">5</span>;
+<span class="hljs-comment">// int&#x7C7B;&#x578B;&#x5E94;&#x4E3A;32&#x4F4D;,&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;8&#x4F4D;</span>
+<span class="hljs-comment">// 0000 0101</span>
+<span class="hljs-comment">// &#x5DE6;&#x79FB;&#x4E24;&#x4F4D;,&#x4F4E;&#x4F4D;&#x8865;0 0001 0100 &#x8F6C;&#x4E3A;&#x5341;&#x8FDB;&#x5236;&#x4E3A;20</span>
+System.out.println(i &lt;&lt; <span class="hljs-number">2</span>);
+<span class="hljs-comment">// 0000 0101</span>
+<span class="hljs-comment">// 0000 0001 &#x53F3;&#x79FB;&#x4E24;&#x4F4D;&#x8F6C;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x4E3A;1</span>
+System.out.println(i &gt;&gt; <span class="hljs-number">2</span>);
+</code></pre>
+<h3 id="&#x62EC;&#x53F7;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#x7EA7;&#x522B;"><a name="&#x62EC;&#x53F7;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#x7EA7;&#x522B;" class="anchor-navigation-ex-anchor" href="#&#x62EC;&#x53F7;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#x7EA7;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62EC;&#x53F7;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#x7EA7;&#x522B;</h3>
+<p>&#x5982;&#x679C;&#x662F;&#x540C;&#x4E00;&#x7EA7;&#x522B;&#x7684;&#x8FD0;&#x7B97;&#x7B26;,&#x4ECE;&#x5DE6;&#x5411;&#x53F3;&#x4F9D;&#x6B21;&#x8BA1;&#x7B97;(&#x9664;&#x4E86;&#x8868;&#x4E2D;&#x7684;&#x53F3;&#x7ED3;&#x5408;&#x8FD0;&#x7B97;&#x7B26;&#x9664;&#x5916;)</p>
+<p><img src="assets/image-20200601215243031.png" alt="image-20200601215243031"></p>
+<pre><code class="lang-java"><span class="hljs-comment">// true</span>
+System.out.println(<span class="hljs-keyword">false</span> &amp;&amp; <span class="hljs-keyword">true</span> || <span class="hljs-keyword">true</span>);
+<span class="hljs-comment">// true &#x4E0B;&#x9762;&#x4E24;&#x79CD;&#x8868;&#x8FBE;&#x5F0F;&#x7B49;&#x4EF7;</span>
+System.out.println(<span class="hljs-keyword">true</span> || <span class="hljs-keyword">true</span> &amp;&amp; <span class="hljs-keyword">false</span>);
+System.out.println(<span class="hljs-keyword">true</span> || (<span class="hljs-keyword">true</span> &amp;&amp; <span class="hljs-keyword">false</span>));
+</code></pre>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;"><a name="&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;</h2>
+<p>Java&#x4E2D;&#x7528;&#x6765;&#x8868;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7C7B;String&#x662F;&#x88AB;final&#x4FEE;&#x9970;&#x7684;,&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x5B57;&#x7B26;&#x4E32;,&#x4E5F;&#x5C31;&#x662F;&#x6BCF;&#x4E00;&#x6B21;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;</p>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;(==,equals())</p>
+<p>==&#x5E38;&#x7528;&#x6765;&#x6BD4;&#x8F83;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#x503C;&#x662F;&#x5426;&#x76F8;&#x540C;</p>
+<p>equals()&#x65B9;&#x6CD5;&#x7EE7;&#x627F;&#x81EA;Object&#x7C7B;,String&#x7C7B;&#x4E2D;&#x5E38;&#x7528;&#x6765;&#x6BD4;&#x8F83;&#x8FDE;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x662F;&#x5426;&#x76F8;&#x540C;</p>
+<p>&#x5E38;&#x89C1;&#x7684;&#x9762;&#x8BD5;&#x9898;</p>
+<pre><code class="lang-java">String st1 = <span class="hljs-string">&quot;abc&quot;</span>;
+String st2 = <span class="hljs-string">&quot;abc&quot;</span>;
+<span class="hljs-comment">// true</span>
+System.out.println(st1 == st2);
+<span class="hljs-comment">// true</span>
+System.out.println(st1.equals(st2));
+</code></pre>
+<p><img src="assets/image-20200601221832727.png" alt="image-20200601221832727"></p>
+<p>&#x6B65;&#x9AA4;:&#x4F7F;&#x7528;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x7684;&#x65B9;&#x5F0F;,&#x4F1A;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&quot;abc&quot;&#x5BF9;&#x8C61;,&#x5F53;str2&#x521B;&#x5EFA;&#x65F6;&#x53D1;&#x73B0;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x4F1A;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x7ED9;str2,&#x6240;&#x4EE5;&#x4E24;&#x8005;&#x6307;&#x5411;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#x662F;&#x76F8;&#x540C;&#x7684;</p>
+<pre><code class="lang-java">String str = <span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;abc&quot;</span>);
+</code></pre>
+<p>&#x8FD9;&#x53E5;&#x8BDD;&#x4F1A;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;,&#x4F7F;&#x7528;new&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x5B58;&#x50A8;&#x5728;&#x5806;&#x5185;&#x5B58;&#x4E2D;,&#x800C;&#x5B57;&#x4E32;&quot;abc&quot;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x5E94;&#x8BE5;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x521B;&#x5EFA;,&#x6839;&#x636E;API&#x4E2D;&#x7684;String(String str)&#x6784;&#x9020;&#x7684;&#x89E3;&#x91CA;&#x6765;&#x770B;,&#x5806;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x5176;&#x5B9E;&#x662F;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x526F;&#x672C;</p>
+<p><img src="assets/image-20200601222353541.png" alt="image-20200601222353541"></p>
+<pre><code class="lang-java">String st1 = <span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;abc&quot;</span>);
+String st2 = <span class="hljs-string">&quot;abc&quot;</span>;
+<span class="hljs-comment">// false</span>
+System.out.println(st1 == st2);
+<span class="hljs-comment">// true</span>
+System.out.println(st1.equals(st2));
+</code></pre>
+<p>&#x6839;&#x636E;&#x4E0A;&#x9762;&#x4F7F;&#x7528;new&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x60C5;&#x51B5;&#x6765;&#x770B;,&#x6B64;&#x5904;&#x7684;str1 == str2&#x81EA;&#x7136;&#x662F;false,&#x56E0;&#x4E3A;str1&#x6307;&#x5411;&#x7684;&#x662F;&#x5806;&#x5185;&#x5B58;&#x7A7A;&#x95F4;,str2&#x6307;&#x5411;&#x7684;&#x662F;&#x5E38;&#x91CF;&#x6C60;</p>
+<pre><code class="lang-java">String st1 = <span class="hljs-string">&quot;a&quot;</span> + <span class="hljs-string">&quot;b&quot;</span> + <span class="hljs-string">&quot;c&quot;</span>;
+String st2 = <span class="hljs-string">&quot;abc&quot;</span>;
+<span class="hljs-comment">// true &#x5E38;&#x91CF;&#x6C60;&#x6709;&#x5E38;&#x91CF;&#x4F18;&#x5316;&#x673A;&#x5236; a b c&#x4E09;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x540E;&#x53D8;&#x6210;abc,&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x4F1A;&#x5728;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;abc&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;,&#x800C;st2&#x5219;&#x76F4;&#x63A5;&#x5F15;&#x7528;</span>
+System.out.println(st1 == st2);
+<span class="hljs-comment">// true</span>
+System.out.println(st1.equals(st2));
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;+&#x62FC;&#x63A5;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;StringBuffer&#x6216;&#x8005;StringBuilder&#x5BF9;&#x8C61;&#x6765;&#x8FDB;&#x884C;&#x62FC;&#x63A5;,&#x518D;&#x4F7F;&#x7528;toString&#x65B9;&#x6CD5;&#x5C06;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;String&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;,&#x6240;&#x4EE5;st3&#x6307;&#x5411;&#x7684;&#x662F;&#x5806;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-java">String st1 = <span class="hljs-string">&quot;ab&quot;</span>;
+String st2 = <span class="hljs-string">&quot;abc&quot;</span>;
+String st3 = st1 + <span class="hljs-string">&quot;c&quot;</span>;
+<span class="hljs-comment">// false</span>
+System.out.println(st2 == st3);
+<span class="hljs-comment">// true</span>
+System.out.println(st2.equals(st3));
+</code></pre>
+<p><img src="assets/image-20200601223532606.png" alt="image-20200601223532606"></p>
+<h2 id="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7B26;"><a name="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7B26;</h2>
+<p><img src="assets/image-20200602204501278.png" alt="image-20200602204501278"></p>
+<p>&#x5FAA;&#x73AF;</p>
+<p>java&#x4E2D;&#x6709;&#x4E09;&#x79CD;&#x5FAA;&#x73AF;&#x65B9;&#x5F0F;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">while</span> (i-- &gt; <span class="hljs-number">0</span>){
+    <span class="hljs-comment">//        while (--i &gt; 0){</span>
+    System.out.println(i);
+}
+System.out.println(i+<span class="hljs-string">&quot; ===&quot;</span>);
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> i = <span class="hljs-number">10</span>;
+do {
+    i--;
+    System.out.println(<span class="hljs-string">&quot;&#x6211;&#x603B;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;&quot;</span>);
+}<span class="hljs-keyword">while</span> (i &gt; <span class="hljs-number">10</span>);
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">//        for (int i = 10; i &gt; 0; i--){</span>
+<span class="hljs-keyword">int</span> i;
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">10</span>; i &gt; <span class="hljs-number">0</span>; i--){
+    System.out.println(i);
+}
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;break&#x548C;continue&#x8BED;&#x53E5;&#x63A7;&#x5236;&#x5FAA;&#x73AF;&#x7684;&#x6B21;&#x6570;,&#x5E76;&#x4E14;&#x652F;&#x6301;&#x5728;&#x5FAA;&#x73AF;&#x4E0A;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;,&#x6839;&#x636E;&#x6807;&#x7B7E;&#x64CD;&#x4F5C;&#x5177;&#x4F53;&#x7684;&#x5FAA;&#x73AF;&#x4F53;</p>
+<p>break:&#x7EC8;&#x6B62;&#x672C;&#x6B21;&#x5FAA;&#x73AF;</p>
+<p>continue:&#x8DF3;&#x8FC7;&#x672C;&#x6B21;&#x5FAA;&#x73AF;&#x7EE7;&#x7EED;&#x4E0B;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;</p>
+<pre><code class="lang-java">flag:
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">10</span>; j++) {
+        <span class="hljs-keyword">if</span> (j == <span class="hljs-number">8</span>){
+            <span class="hljs-keyword">break</span> flag;
+            <span class="hljs-comment">//continue flag;</span>
+        }
+        System.out.println(<span class="hljs-string">&quot;j===&quot;</span>+j);
+    }
+    System.out.println(<span class="hljs-string">&quot;i===&quot;</span>+i);
+}
+</code></pre>
+<h2 id="switch&#x9009;&#x62E9;&#x8BED;&#x53E5;"><a name="switch&#x9009;&#x62E9;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#switch&#x9009;&#x62E9;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>switch&#x9009;&#x62E9;&#x8BED;&#x53E5;</h2>
+<p>switch&#x8BED;&#x53E5;&#x4E2D;&#x652F;&#x6301;char,byte,short,int,&#x4ECE;JDK7&#x5F00;&#x59CB;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x63A7;&#x5236;switch&#x8BED;&#x53E5;</p>
+<p>case&#x8BED;&#x53E5;&#x5177;&#x6709;&#x7A7F;&#x900F;&#x6027;,&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C;&#x4E0D;&#x52A0;break&#x8BED;&#x53E5;,&#x5373;&#x4F7F;case&#x5339;&#x914D;&#x5230;&#x540E;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;,&#x76F4;&#x5230;&#x9047;&#x5230;break&#x8BED;&#x53E5;&#x6216;&#x8005;&#x6267;&#x884C;&#x5230;default&#x6267;&#x884C;&#x5B8C;&#x6BD5;</p>
+<pre><code class="lang-java">String str = <span class="hljs-keyword">new</span> Scanner(System.in).nextLine();
+<span class="hljs-keyword">switch</span> (str){
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;min&quot;</span>:
+        System.out.println(<span class="hljs-string">&quot;min&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;mid&quot;</span>:
+        System.out.println(<span class="hljs-string">&quot;mid&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;max&quot;</span>:
+        System.out.println(<span class="hljs-string">&quot;max&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+        System.out.println(<span class="hljs-string">&quot;no match&quot;</span>);
+}
+</code></pre>
+<h2 id="&#x5927;&#x6570;&#x503C;"><a name="&#x5927;&#x6570;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x5927;&#x6570;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5927;&#x6570;&#x503C;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x4E24;&#x79CD;&#x5927;&#x6570;&#x503C;&#x90FD;&#x5728;java.math&#x5305;&#x4E0B;,&#x5E76;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;+-&#x8FD9;&#x6837;&#x7684;&#x8FD0;&#x7B97;&#x7B26;,&#x800C;&#x662F;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;</span>
+<span class="hljs-comment">// &#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6253;&#x5370;(&#x91CD;&#x5199;&#x4E86;toString&#x65B9;&#x6CD5;)</span>
+<span class="hljs-comment">// BigInteger&#x5B9E;&#x73B0;&#x4E86;&#x4EFB;&#x610F;&#x7CBE;&#x5EA6;&#x7684;&#x6574;&#x6570;&#x8FD0;&#x7B97;</span>
+BigInteger add = BigInteger.valueOf(<span class="hljs-number">1213</span>).add(BigInteger.ONE);
+System.out.println(add.toString());
+
+<span class="hljs-comment">// 0.8999999999999999</span>
+System.out.println(<span class="hljs-number">2.0</span> - <span class="hljs-number">1.1</span>);
+<span class="hljs-comment">// BigDecimal&#x5B9E;&#x73B0;&#x4E86;&#x4EFB;&#x610F;&#x7CBE;&#x5EA6;&#x7684;&#x6D6E;&#x70B9;&#x6570;&#x8FD0;&#x7B97;</span>
+<span class="hljs-comment">// &#x5EFA;&#x8BAE;&#x4F7F;&#x7528;String&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;</span>
+BigDecimal bigDecimal = <span class="hljs-keyword">new</span> BigDecimal(<span class="hljs-string">&quot;2.0&quot;</span>);
+BigDecimal add1 = bigDecimal.subtract(<span class="hljs-keyword">new</span> BigDecimal(<span class="hljs-string">&quot;1.1&quot;</span>));
+System.out.println(add1.toString());
+System.out.println(add1);
+</code></pre>
+<h2 id="&#x6570;&#x7EC4;"><a name="&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x7EC4;</h2>
+<p>&#x6570;&#x7EC4;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;,&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E5F;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;&#x5143;&#x7D20;&#x7D22;&#x5F15;&#x4ECE;0&#x5F00;&#x59CB;,&#x4F46;&#x6570;&#x7EC4;&#x4E00;&#x65E6;&#x521B;&#x5EFA;&#x5176;&#x957F;&#x5EA6;&#x4E0D;&#x53EF;&#x53D8;,&#x5982;&#x679C;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x6570;&#x7EC4;,&#x6570;&#x7EC4;&#x4E2D;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x9ED8;&#x8BA4;&#x503C;,&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53C2;&#x7167;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E00;&#x7BC7;,&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5219;&#x4E3A;null</p>
+<p>&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x4F7F;&#x7528;&#x5176;&#x5C5E;&#x6027;length,&#x5E76;&#x4E0D;&#x662F;&#x65B9;&#x6CD5;</p>
+<p>java&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x7C7B;java.util.Arrays&#x8BE5;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x64CD;&#x4F5C;&#x6570;&#x7EC4;&#x7684;&#x5DE5;&#x5177;&#x7C7B;,&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x6392;&#x5E8F;,&#x6BD4;&#x8F83;,&#x590D;&#x5236;&#x6570;&#x7EC4;&#x7B49;&#x64CD;&#x4F5C;</p>
+<p>&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x7684;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 1.&#x521B;&#x5EFA;&#x65F6;&#x6307;&#x5B9A;&#x6570;&#x7EC4;&#x957F;&#x5EA6;</span>
+<span class="hljs-keyword">int</span>[] arr1 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">10</span>];
+<span class="hljs-comment">// 2.&#x4F7F;&#x7528;new&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x5E76;&#x4E14;&#x7ED9;&#x51FA;&#x503C;</span>
+<span class="hljs-keyword">boolean</span> array2[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">boolean</span>[]{<span class="hljs-keyword">false</span>,<span class="hljs-keyword">true</span>,<span class="hljs-keyword">false</span>};
+<span class="hljs-comment">// 3.&#x76F4;&#x63A5;&#x8D4B;&#x503C;</span>
+String array3[] = {<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>};
+<span class="hljs-keyword">char</span>[] array4 = {<span class="hljs-string">&apos;A&apos;</span>,<span class="hljs-number">65</span>,<span class="hljs-string">&apos;a&apos;</span>};
+System.out.println(array4[<span class="hljs-number">1</span>]);
+System.out.println(array3[<span class="hljs-number">0</span>]);
+System.out.println(array2.length);
+</code></pre>
+<p>&#x6570;&#x7EC4;&#x5B58;&#x50A8;&#x5728;&#x5806;&#x5185;&#x5B58;&#x4E2D;,&#x6570;&#x7EC4;&#x540C;&#x6837;&#x652F;&#x6301;&#x5C06;&#x5176;&#x8D4B;&#x503C;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7C7B;&#x578B;,&#x8D4B;&#x503C;&#x7ED9;arr2&#x7684;&#x662F;arr&#x5728;&#x5185;&#x5B58;&#x7684;&#x5730;&#x5740;&#x503C;,&#x6240;&#x4EE5;&#x5F53;&#x64CD;&#x4F5C;arr2&#x65F6;,arr&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E5F;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span>[] arr = {<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">5</span>};
+<span class="hljs-keyword">int</span>[] arr2 = arr;
+arr2[<span class="hljs-number">1</span>] = <span class="hljs-number">10</span>;
+System.out.println(arr);
+System.out.println(arr2);
+System.out.println(arr == arr2);
+System.out.println(Arrays.toString(arr));
+</code></pre>
+<h3 id="&#x591A;&#x7EF4;&#x6570;&#x7EC4;"><a name="&#x591A;&#x7EF4;&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x7EF4;&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x7EF4;&#x6570;&#x7EC4;</h3>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;</span>
+<span class="hljs-comment">// &#x8868;&#x793A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;,&#x8BE5;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x6BCF;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x4E3A;2</span>
+<span class="hljs-keyword">int</span>[][] arr1 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>];
+<span class="hljs-comment">// &#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8D4B;&#x503C;,&#x5E76;&#x4E14;&#x6BCF;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x5F88;&#x7075;&#x6D3B;</span>
+<span class="hljs-keyword">int</span>[][] arr = {
+    {<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>},
+    {<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>},
+    {<span class="hljs-number">7</span>,<span class="hljs-number">8</span>}
+};
+<span class="hljs-comment">// &#x904D;&#x5386;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; arr[i].length; j++) {
+        System.out.println(arr[i][j]);
+    }
+}
+<span class="hljs-comment">// &#x53EF;&#x4EE5;&#x4ECE;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x4E2D;&#x63D0;&#x53D6;&#x51FA;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x8D4B;&#x503C;</span>
+<span class="hljs-keyword">int</span>[] array = arr[<span class="hljs-number">1</span>];
+System.out.println(Arrays.toString(array));
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; almostTao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-06-10 18:23:26
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="对象和类.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 对象和类">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Java的基本程序设计结构","level":"1.6.1.1","depth":3,"next":{"title":"对象和类","level":"1.6.1.2","depth":3,"path":"java/base/对象和类.md","ref":"java/base/对象和类.md","articles":[]},"previous":{"title":"base","level":"1.6.1","depth":2,"ref":"","articles":[{"title":"Java的基本程序设计结构","level":"1.6.1.1","depth":3,"path":"java/base/Java的基本程序设计结构.md","ref":"java/base/Java的基本程序设计结构.md","articles":[]},{"title":"对象和类","level":"1.6.1.2","depth":3,"path":"java/base/对象和类.md","ref":"java/base/对象和类.md","articles":[]},{"title":"泛型","level":"1.6.1.3","depth":3,"path":"java/base/泛型.md","ref":"java/base/泛型.md","articles":[]},{"title":"集合","level":"1.6.1.4","depth":3,"path":"java/base/集合.md","ref":"java/base/集合.md","articles":[]},{"title":"继承","level":"1.6.1.5","depth":3,"path":"java/base/继承.md","ref":"java/base/继承.md","articles":[]},{"title":"接口、内部类","level":"1.6.1.6","depth":3,"path":"java/base/接口、内部类.md","ref":"java/base/接口、内部类.md","articles":[]},{"title":"异常","level":"1.6.1.7","depth":3,"path":"java/base/异常.md","ref":"java/base/异常.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-plus"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © almostTao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"almostTao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"没伞的孩子要学会奔跑","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.xyz"}},"gitbook":"3.2.3","description":"好记性不如烂笔头，记录日常遇到的问题及学习的成果"},"file":{"path":"java/base/Java的基本程序设计结构.md","mtime":"2020-06-10T10:23:26.098Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-10T03:30:33.255Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1086,3 +1086,70 @@ String[] str = new String[]{'0012x000004FK5oAAG'};
 List<Account> accounts = Database.query('select id,name from account where id in :str');
 ```
 
+
+
+## 附件
+
+Salesforce存储的附件的对象为Attachment
+
+![image-20200529153522322](assets/image-20200529153522322.png)
+
+几个重要的子段
+
+ParentId : 该附件属于哪条数据
+
+Name : 文件的名称,同时需要有文件的后缀
+
+Body : 则是真正存储附件的位置,显示的为Base64类型,但在apex类中操作时,可以赋值给Blob类型
+
+```java
+Attachment att = [select id,name,body from attachment where name = 'quartz.sql'];
+Blob myBlob = att.body;
+```
+
+获取指定的附件
+
+```java
+Attachment att = [select id,name,body from attachment where name = 'quartz.sql'];
+Blob myBlob = att.body;
+// 将Blob转为Base64字符串
+String blobToBase64String = EncodingUtil.base64Encode(myBlob);
+// 将Blob转换为字段串 Blob的toString()方法,只支持UTF-8的文本 否则会出现:BLOB is not a valid UTF-8 string
+String originString = att.body.toString();
+System.debug('blobToBase64String++'+blobToBase64String);
+// 直接打印的格式为 Blob[该附件的字节长度]
+System.debug('att+++'+att.body);
+System.debug('originString++'+originString);
+```
+
+插入指定的附件
+
+```java
+// 将指定的Base64字符串转为Blob类型
+// name需要指定文件的名称以及后缀,后缀决定了你是否能正确打开该文件
+// ParentId指定该附件属于哪条数据
+
+Blob myBlob = EncodingUtil.base64Decode(Base64字符串);
+Attachment att = new Attachment(
+    Name = 'soj.xlsx',
+    ParentId = '01t10000000wAFRAA2',
+    Body = myBlob
+);
+// 添加附件
+insert att; 
+```
+
+操作Base64和Blob的文档:
+
+Blob : https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_blob.htm?search_text=blob
+
+Base64 : https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm?search_text=blob#apex_classes_restful_encodingutil 
+
+
+
+
+
+
+
+
+
