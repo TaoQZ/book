@@ -67,9 +67,11 @@
     * HttpTool
         * [HttpClient](httptool/HttpClient.md)
         * [RestTemplate](httptool/RestTemplate.md)
+* [JDBC](jdbc/jdbc.md) 
 * [Mybatis](mybatis/mybatis.md)
     * [注意事项](mybatis/注意事项.md)
     * [mybatis-plus](mybatis/mybatis-plus.md)
+    * [mybatis进阶](mybatis/mybatis_advance.md)
 * Maven
     * [Maven](maven/maven.md)
 * Http    
