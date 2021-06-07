@@ -15,7 +15,9 @@
     * other
        * [HTML](frontend/other/html.md)
        * [JSON对象](frontend/other/JSON对象的两个方法.md)
-* [JWT](jwt/JWT.md)
+* JWT
+    * [JWT](jwt/JWT.md)
+    * [认证、授权、鉴权、权限控制](jwt/认证、授权、鉴权、权限控制.md)
 * Java
     * base
         * [Java的基本程序设计结构](java/base/Java的基本程序设计结构.md)
@@ -37,6 +39,7 @@
         * [多线程基础](java/thread/多线程入门.md)
         * [线程同步和通信](java/thread/线程同步和通信.md)
         * [线程池](java/thread/线程池.md)
+        * [Threadpool](java/thread/threadpool/threadpool.md)
 * MySQL
     * [mysql基础](mysql/mysql基础.md)
     * [mysql进阶](mysql/mysql进阶.md)
@@ -55,6 +58,7 @@
         * [springboot入门](spring/SpringBoot.md)
         * [javamail](boot_integration/javamail.md)
         * [springtask](boot_integration/springtask.md)
+    * [@Transactional](spring/transactional/@Transactional.md)    
 * [微服务阶段](microservice/微服务概述.md)
     * Netflix
         * [Zuul](microservice/netflix/Zuul.md)
@@ -68,6 +72,7 @@
         * [HttpClient](httptool/HttpClient.md)
         * [RestTemplate](httptool/RestTemplate.md)
 * [JDBC](jdbc/jdbc.md) 
+* [jike100](jike100/jike100.md) 
 * [Mybatis](mybatis/mybatis.md)
     * [注意事项](mybatis/注意事项.md)
     * [mybatis-plus](mybatis/mybatis-plus.md)
@@ -128,10 +133,13 @@
 		* [mysql时区](worknote/mysql/mysql时区.md)
 		* [mysql主从复制_test](worknote/mysql/mysql主从复制_test.md)
 		* [mysql日期函数](worknote/mysql/mysql日期函数.md)
+        * [mysql_bin-log](worknote/mysql/mysql_bin-log.md)
+        * [mysql_null](worknote/mysql/mysql_null.md)
 	* [rabbitmq](worknote/rabbitmq/docker安装rabbitmq.md)	
 	* [redis](worknote/redis/redis.md)	
 	* [websocket](worknote/websocket/springboot+vue+websocket.md)
 	* [tess4j_ocr](worknote/tess4j_ocr/Tess4j使用记录.md)
+    * [swagger](worknote/swagger/swagger.md)
 	* other
 		* [stream](worknote/other/stream.md)
 		* [windows操作端口](worknote/other/windows操作端口.md)
@@ -145,4 +153,5 @@
 * 其他
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
     * [Kaptcha验证码](other/kaptcha验证码.md)
+    * [ffmpeg](other/ffmpeg.md)
 
