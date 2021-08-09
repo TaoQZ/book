@@ -45,6 +45,12 @@
     * [mysql进阶](mysql/mysql进阶.md)
     * [mysql事务](mysql/mysql事务.md)
     * [varchar和char](mysql/varchar和char.md)
+    * 极客
+        * [mysql架构](mysql/jike/mysql架构/mysql架构.md)
+        * [一条更新语句是怎么执行的](mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.md)
+        * [索引](mysql/jike/suoyin/suoyin.md)
+        * [锁](mysql/jike/suo/mysql_全局锁_表锁_行锁.md)
+        * [事务](mysql/jike/事务/事务.md)
 * Redis
     * [Redis基础](redis/redis.md)    
     * [Redis进阶](redis/redis高级.md)
@@ -54,11 +60,13 @@
 * Spring
     * [Spring](spring/spring.md)
     * [SpringMVC](spring/SpringMVC.md)
+    * [Spring循环依赖](spring/spring循环依赖.md)
     * SpringBoot
         * [springboot入门](spring/SpringBoot.md)
         * [javamail](boot_integration/javamail.md)
         * [springtask](boot_integration/springtask.md)
-    * [@Transactional](spring/transactional/@Transactional.md)    
+    * [@Transactional](spring/transactional/@Transactional.md) 
+* [RabbitMQ](rabbitmq/rabbitmq.md)
 * [微服务阶段](microservice/微服务概述.md)
     * Netflix
         * [Zuul](microservice/netflix/Zuul.md)
@@ -68,6 +76,7 @@
         * [Config](microservice/netflix/SpringCloudConfig.md)
         * [POJO](microservice/netflix/POJO依赖.md)    
     * Alibaba
+        * [seata](microservice/alibaba/seata_nacos/seata结合nacos使用.md)
     * HttpTool
         * [HttpClient](httptool/HttpClient.md)
         * [RestTemplate](httptool/RestTemplate.md)
@@ -135,6 +144,7 @@
 		* [mysql日期函数](worknote/mysql/mysql日期函数.md)
         * [mysql_bin-log](worknote/mysql/mysql_bin-log.md)
         * [mysql_null](worknote/mysql/mysql_null.md)
+        * [mysql8](worknote/mysql/mysql8.md)
 	* [rabbitmq](worknote/rabbitmq/docker安装rabbitmq.md)	
 	* [redis](worknote/redis/redis.md)	
 	* [websocket](worknote/websocket/springboot+vue+websocket.md)

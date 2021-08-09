@@ -732,6 +732,32 @@ mybatis在操作时底层会将所有的配置信息读取到Configuration类中
 
 ![image-20200819224952997](assets/image-20200819224952997.png)
 
+### 多条件查询
+
+```xml
+<where>
+    <foreach collection="list" index="index" item="i" open="" separator=" " close="">
+        <choose>
+            <when test="i == 'tao'">
+                or (user_id = '1')
+            </when>
+            <when test="i == 'qz'">
+                or (user_id = '1400032429183381505')
+            </when>
+        </choose>
+        <!--            <if test="i == 'tao'">-->
+        <!--                (user_id = '1')-->
+        <!--            </if>-->
+        <!--            <if test="i == 'qz'">-->
+        <!--                (user_id = '1400032429183381505')-->
+        <!--            </if>-->
+        <!--            <if test="index != list.size - 1">-->
+        <!--                or-->
+        <!--            </if>-->
+    </foreach>
+</where>
+```
+
 ## 博客
 
 http://www.justdojava.com/2019/07/13/MyBatis-OneLevelCache/
