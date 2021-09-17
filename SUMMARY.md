@@ -51,6 +51,8 @@
         * [索引](mysql/jike/suoyin/suoyin.md)
         * [锁](mysql/jike/suo/mysql_全局锁_表锁_行锁.md)
         * [事务](mysql/jike/事务/事务.md)
+        * [mysql执行计划](mysql/jike/xn/mysql执行计划.md)
+        * [MYSQL_performance_schema详解](mysql/jike/xn/MYSQL_performance_schema详解.md)
 * Redis
     * [Redis基础](redis/redis.md)    
     * [Redis进阶](redis/redis高级.md)
@@ -134,7 +136,9 @@
 	* [elk](worknote/elk/elk.md)
 	* [gitlab](worknote/gitlab/gitlab.md)
 	* [jpa](worknote/jpa/jpa.md)
-	* [minio](worknote/minio/minio.md)
+    * minio
+        * [minio](minio/minio.md)
+        * [minio搭建集群](minio/minio搭建集群.md)
 	* mysql
 		* [centos7安装mysql5.7](worknote/mysql/centos7安装mysql5.7.md)
 		* [centos卸载mysql](worknote/mysql/centos卸载mysql.md)
