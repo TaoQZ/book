@@ -493,9 +493,7 @@ for (PropertySource<?> propertySource : propertySources) {
 
 ### 			@Autowired
 
-​				@Autowired默认根据变量名作为beanname获取,如果没有则根据类型查找,@Autowired本身不能根据beanname指定
-
-获取容器中的实例对象,需要配合使用@Qualifier(beanname)
+​				@Autowired默认根据类型匹配,@Autowired本身不能根据beanname指定获取容器中的实例对象,需要配合使用@Qualifier(beanname)
 
 ​						**required属性**
 
