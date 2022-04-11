@@ -92,6 +92,9 @@
     * [Maven](maven/maven.md)
 * Http    
     * [状态码](http/状态码.md)
+* minio
+    * [minio](minio/minio.md)
+    * [minio搭建集群](minio/minio搭建集群.md)    
 * Nginx
     * [nginx](nginx/nginx.md)   
     * [https配置](nginx/https配置.md)      
@@ -136,9 +139,6 @@
 	* [elk](worknote/elk/elk.md)
 	* [gitlab](worknote/gitlab/gitlab.md)
 	* [jpa](worknote/jpa/jpa.md)
-    * minio
-        * [minio](minio/minio.md)
-        * [minio搭建集群](minio/minio搭建集群.md)
 	* mysql
 		* [centos7安装mysql5.7](worknote/mysql/centos7安装mysql5.7.md)
 		* [centos卸载mysql](worknote/mysql/centos卸载mysql.md)
