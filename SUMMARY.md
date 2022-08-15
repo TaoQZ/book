@@ -56,6 +56,11 @@
 * Redis
     * [Redis基础](redis/redis.md)    
     * [Redis进阶](redis/redis高级.md)
+* Kafka
+    * [kafka入门](kafka/kafka入门.md)
+    * [kafka搭建集群](kafka/kafka搭建集群.md)
+* Logstash
+    * [Logstash](logstash/logstash技术分享.md)       
 * Linux
     * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
     * [Linux远程管理](linux/Linux远程管理.md)
@@ -124,8 +129,11 @@
     * [改造为web服务器](android/改造为web服务器.md)
 * React 
     * [React](react/React.md)
+* Jrebel 
+    * [Jrebel](jrebel/远程调试及热部署.md)    
 * ElasticStack
-    * [ElasticSearch](elasticsearch/elasticsearch.md)
+    * [ElasticSearch](elasticstack/elasticsearch.md)
+    * [Api](elasticstack/elasticsearch_api.md)
 * Salesforce
     * [Apex](salesforce/apex.md)  
     * [Visualforce](salesforce/visualforce.md)

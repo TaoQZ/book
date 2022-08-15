@@ -402,34 +402,7 @@ public enum FileBusinessModuleEnum {
     /**
      * 目录
      */
-    DEFAULT("default", "通用目录"),
-    BOOK_CATALOG("bookCatalog", "各科课本目录文件"),
-    EN_CONVERSATION_RECORD("EnConversationRecord", "英语会话学生录音文件"),
-    NOTIFY("Notify", "通知图片"),
-    APP("app", "app应用"),
-    QUESTION_BANK_PIC("questionBankPic", "题库图片"),
-    QUESTION_BANK_VIDEO("questionBankVideo", "题库视频"),
-    KNOWLEDGE_POINT_VIDEO("knowledgePointVideo", "知识点视频"),
-
-    TASK_ANSWER_PIC("taskAnswerPic", "学习任务 学生作答图片"),
-    HOMEWORK_ANNEX("homeworkAnnex", "教师课后作业附属文件"),
-    HOMEWORK_ANSWER_PIC("homeworkAnswerPic", "学课后作业 学生作答图片"),
-
-    EN_RECORDS("englishRecords", "英语单词例句教师录音"),
-    ENGLISH_READ("englishRead", "英语阅读资料"),
-    EN_SENTENCE("enSentence","英语会话文件"),
-    TEACHER_RECORD("teacherRecord", "教师使用统计文件"),
-    CATEGORY("category", "实景语境"),
-    EN_LISTEN_PAPER("englishListen", "英语听力试卷"),
-    WORD_VOICE("wordVoice", "实景语境"),
-    SENTENCE_VOICE("sentenceVoice", "单词查询"),
-    ENGLISH_LISTEN("englishListen", "英语听力"),
-    LIVE_LESSON_MONITOR("liveLessonMonitor", "直播监控"),
-    THESAURUS_WORD_VOICE("thesaurusWordVoice", "趣味单词音频"),
-    TEACHER_TRAINING_VIDEO("teacherTrainingVideo","老师的培训视频"),
-    TEACHER_HELP_CENTER("teacherHelpCenter","老师帮助文档中心"),
-    TEMP_KS_DIR("tempKsDir", "ks上传临时目录"),
-    DAILY_PICS("dailyPics", "学生攀登日记")
+    DEFAULT("default", "通用目录")
         ;
     private final String bussCode;
     private final String bussMsg;
