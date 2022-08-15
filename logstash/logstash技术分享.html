@@ -1,0 +1,3241 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Logstash · 没伞的孩子要学会奔跑</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="almostTao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://taoqz.xyz" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../git/Git.html">
+            
+                <a href="../git/Git.html">
+            
+                    
+                    git安装及简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../git/Idea中使用Git.html">
+            
+                <a href="../git/Idea中使用Git.html">
+            
+                    
+                    Idea使用Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../vue/Vue.html">
+            
+                <a href="../vue/Vue.html">
+            
+                    
+                    Vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../vue/vue理论知识.html">
+            
+                <a href="../vue/vue理论知识.html">
+            
+                    
+                    Vue理论知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../frontend/es6/es6.html">
+            
+                <a href="../frontend/es6/es6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../frontend/node/node.html">
+            
+                <a href="../frontend/node/node.html">
+            
+                    
+                    Node的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../frontend/mock/mock.html">
+            
+                <a href="../frontend/mock/mock.html">
+            
+                    
+                    Mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../frontend/nuxt/nuxt.html">
+            
+                <a href="../frontend/nuxt/nuxt.html">
+            
+                    
+                    Nuxt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../frontend/other/html.html">
+            
+                <a href="../frontend/other/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../frontend/other/JSON对象的两个方法.html">
+            
+                <a href="../frontend/other/JSON对象的两个方法.html">
+            
+                    
+                    JSON对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    JWT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../jwt/JWT.html">
+            
+                <a href="../jwt/JWT.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../jwt/认证、授权、鉴权、权限控制.html">
+            
+                <a href="../jwt/认证、授权、鉴权、权限控制.html">
+            
+                    
+                    认证、授权、鉴权、权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    base
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../java/base/Java的基本程序设计结构.html">
+            
+                <a href="../java/base/Java的基本程序设计结构.html">
+            
+                    
+                    Java的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../java/base/对象和类.html">
+            
+                <a href="../java/base/对象和类.html">
+            
+                    
+                    对象和类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../java/base/泛型.html">
+            
+                <a href="../java/base/泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../java/base/集合.html">
+            
+                <a href="../java/base/集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../java/base/继承.html">
+            
+                <a href="../java/base/继承.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../java/base/接口、内部类.html">
+            
+                <a href="../java/base/接口、内部类.html">
+            
+                    
+                    接口、内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../java/base/异常.html">
+            
+                <a href="../java/base/异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    java8新特性
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../java/java8new_feature/默认方法.html">
+            
+                <a href="../java/java8new_feature/默认方法.html">
+            
+                    
+                    默认方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../java/java8new_feature/Lambda.html">
+            
+                <a href="../java/java8new_feature/Lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../java/java8new_feature/Lambda访问外部变量.html">
+            
+                <a href="../java/java8new_feature/Lambda访问外部变量.html">
+            
+                    
+                    Lambda访问外部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="../java/java8new_feature/日期时间API.html">
+            
+                <a href="../java/java8new_feature/日期时间API.html">
+            
+                    
+                    新的日期时间API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../java/pattern/singleton.html">
+            
+                <a href="../java/pattern/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../java/pattern/proxy.html">
+            
+                <a href="../java/pattern/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    多线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../java/thread/多线程入门.html">
+            
+                <a href="../java/thread/多线程入门.html">
+            
+                    
+                    多线程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../java/thread/线程同步和通信.html">
+            
+                <a href="../java/thread/线程同步和通信.html">
+            
+                    
+                    线程同步和通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="../java/thread/线程池.html">
+            
+                <a href="../java/thread/线程池.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="../java/thread/threadpool/threadpool.html">
+            
+                <a href="../java/thread/threadpool/threadpool.html">
+            
+                    
+                    Threadpool
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../mysql/mysql基础.html">
+            
+                <a href="../mysql/mysql基础.html">
+            
+                    
+                    mysql基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../mysql/mysql进阶.html">
+            
+                <a href="../mysql/mysql进阶.html">
+            
+                    
+                    mysql进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../mysql/mysql事务.html">
+            
+                <a href="../mysql/mysql事务.html">
+            
+                    
+                    mysql事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../mysql/varchar和char.html">
+            
+                <a href="../mysql/varchar和char.html">
+            
+                    
+                    varchar和char
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <span>
+            
+                    
+                    极客
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../mysql/jike/mysql架构/mysql架构.html">
+            
+                <a href="../mysql/jike/mysql架构/mysql架构.html">
+            
+                    
+                    mysql架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html">
+            
+                <a href="../mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html">
+            
+                    
+                    一条更新语句是怎么执行的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../mysql/jike/suoyin/suoyin.html">
+            
+                <a href="../mysql/jike/suoyin/suoyin.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" data-path="../mysql/jike/suo/mysql_全局锁_表锁_行锁.html">
+            
+                <a href="../mysql/jike/suo/mysql_全局锁_表锁_行锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.5" data-path="../mysql/jike/事务/事务.html">
+            
+                <a href="../mysql/jike/事务/事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.6" data-path="../mysql/jike/xn/mysql执行计划.html">
+            
+                <a href="../mysql/jike/xn/mysql执行计划.html">
+            
+                    
+                    mysql执行计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.7" data-path="../mysql/jike/xn/MYSQL_performance_schema详解.html">
+            
+                <a href="../mysql/jike/xn/MYSQL_performance_schema详解.html">
+            
+                    
+                    MYSQL_performance_schema详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../redis/redis.html">
+            
+                <a href="../redis/redis.html">
+            
+                    
+                    Redis基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../redis/redis高级.html">
+            
+                <a href="../redis/redis高级.html">
+            
+                    
+                    Redis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Kafka
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../kafka/kafka入门.html">
+            
+                <a href="../kafka/kafka入门.html">
+            
+                    
+                    kafka入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../kafka/kafka搭建集群.html">
+            
+                <a href="../kafka/kafka搭建集群.html">
+            
+                    
+                    kafka搭建集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Logstash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.10.1" data-path="logstash技术分享.html">
+            
+                <a href="logstash技术分享.html">
+            
+                    
+                    Logstash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../linux/Linux环境下安装jdk和maven.html">
+            
+                <a href="../linux/Linux环境下安装jdk和maven.html">
+            
+                    
+                    安装jdk及maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../linux/Linux远程管理.html">
+            
+                <a href="../linux/Linux远程管理.html">
+            
+                    
+                    Linux远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../spring/spring.html">
+            
+                <a href="../spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../spring/SpringMVC.html">
+            
+                <a href="../spring/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../spring/spring循环依赖.html">
+            
+                <a href="../spring/spring循环依赖.html">
+            
+                    
+                    Spring循环依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" >
+            
+                <span>
+            
+                    
+                    SpringBoot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.4.1" data-path="../spring/SpringBoot.html">
+            
+                <a href="../spring/SpringBoot.html">
+            
+                    
+                    springboot入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.2" data-path="../boot_integration/javamail.html">
+            
+                <a href="../boot_integration/javamail.html">
+            
+                    
+                    javamail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.3" data-path="../boot_integration/springtask.html">
+            
+                <a href="../boot_integration/springtask.html">
+            
+                    
+                    springtask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../spring/transactional/@Transactional.html">
+            
+                <a href="../spring/transactional/@Transactional.html">
+            
+                    
+                    @Transactional
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../rabbitmq/rabbitmq.html">
+            
+                <a href="../rabbitmq/rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../microservice/微服务概述.html">
+            
+                <a href="../microservice/微服务概述.html">
+            
+                    
+                    微服务阶段
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" >
+            
+                <span>
+            
+                    
+                    Netflix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../microservice/netflix/Zuul.html">
+            
+                <a href="../microservice/netflix/Zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.2" data-path="../microservice/netflix/eureka/eureka.html">
+            
+                <a href="../microservice/netflix/eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.3" data-path="../microservice/netflix/Hystrix.html">
+            
+                <a href="../microservice/netflix/Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.4" data-path="../microservice/netflix/Feign.html">
+            
+                <a href="../microservice/netflix/Feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.5" data-path="../microservice/netflix/SpringCloudConfig.html">
+            
+                <a href="../microservice/netflix/SpringCloudConfig.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.6" data-path="../microservice/netflix/POJO依赖.html">
+            
+                <a href="../microservice/netflix/POJO依赖.html">
+            
+                    
+                    POJO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" >
+            
+                <span>
+            
+                    
+                    Alibaba
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.2.1" data-path="../microservice/alibaba/seata_nacos/seata结合nacos使用.html">
+            
+                <a href="../microservice/alibaba/seata_nacos/seata结合nacos使用.html">
+            
+                    
+                    seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" >
+            
+                <span>
+            
+                    
+                    HttpTool
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="../httptool/HttpClient.html">
+            
+                <a href="../httptool/HttpClient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3.2" data-path="../httptool/RestTemplate.html">
+            
+                <a href="../httptool/RestTemplate.html">
+            
+                    
+                    RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../jdbc/jdbc.html">
+            
+                <a href="../jdbc/jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../jike100/jike100.html">
+            
+                <a href="../jike100/jike100.html">
+            
+                    
+                    jike100
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../mybatis/mybatis.html">
+            
+                <a href="../mybatis/mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../mybatis/注意事项.html">
+            
+                <a href="../mybatis/注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../mybatis/mybatis-plus.html">
+            
+                <a href="../mybatis/mybatis-plus.html">
+            
+                    
+                    mybatis-plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../mybatis/mybatis_advance.html">
+            
+                <a href="../mybatis/mybatis_advance.html">
+            
+                    
+                    mybatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../maven/maven.html">
+            
+                <a href="../maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    Http
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../http/状态码.html">
+            
+                <a href="../http/状态码.html">
+            
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    minio
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../minio/minio.html">
+            
+                <a href="../minio/minio.html">
+            
+                    
+                    minio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../minio/minio搭建集群.html">
+            
+                <a href="../minio/minio搭建集群.html">
+            
+                    
+                    minio搭建集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Nginx
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../nginx/nginx.html">
+            
+                <a href="../nginx/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../nginx/https配置.html">
+            
+                <a href="../nginx/https配置.html">
+            
+                    
+                    https配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    Mongo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../mongodb/Mongo的安装与卸载.html">
+            
+                <a href="../mongodb/Mongo的安装与卸载.html">
+            
+                    
+                    Mongo的安装与卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../mongodb/Mongo介绍及命令行使用.html">
+            
+                <a href="../mongodb/Mongo介绍及命令行使用.html">
+            
+                    
+                    Mongo的介绍及命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    Aliyun
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../aliyun/阿里云域名.html">
+            
+                <a href="../aliyun/阿里云域名.html">
+            
+                    
+                    阿里云域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../aliyun/OSS存储.html">
+            
+                <a href="../aliyun/OSS存储.html">
+            
+                    
+                    OSS存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    Swagger
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../swagger/SpringBoot整合Swagger2.html">
+            
+                <a href="../swagger/SpringBoot整合Swagger2.html">
+            
+                    
+                    Springboot整合Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    ElementUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../elementUI/ElementUI.html">
+            
+                <a href="../elementUI/ElementUI.html">
+            
+                    
+                    elementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    模板引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../templateng/Thymeleaf.html">
+            
+                <a href="../templateng/Thymeleaf.html">
+            
+                    
+                    Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="../docker/docker安装及常用命令.html">
+            
+                <a href="../docker/docker安装及常用命令.html">
+            
+                    
+                    docker安装及常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="../docker/IDEA连接docker.html">
+            
+                <a href="../docker/IDEA连接docker.html">
+            
+                    
+                    IDEA连接docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.3" data-path="../docker/部署springboot项目.html">
+            
+                <a href="../docker/部署springboot项目.html">
+            
+                    
+                    部署springboot项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.4" data-path="../docker/problem.html">
+            
+                <a href="../docker/problem.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.5" data-path="../docker/docker-compose.html">
+            
+                <a href="../docker/docker-compose.html">
+            
+                    
+                    docker-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" >
+            
+                <span>
+            
+                    
+                    Dubbo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.28.1" data-path="../dubbo/使用dubbo+zookeeper.html">
+            
+                <a href="../dubbo/使用dubbo+zookeeper.html">
+            
+                    
+                    入门使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" >
+            
+                <span>
+            
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.1" data-path="../android/root.html">
+            
+                <a href="../android/root.html">
+            
+                    
+                    刷机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.2" data-path="../android/android发送请求.html">
+            
+                <a href="../android/android发送请求.html">
+            
+                    
+                    android发送请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.3" data-path="../android/改造为web服务器.html">
+            
+                <a href="../android/改造为web服务器.html">
+            
+                    
+                    改造为web服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.30.1" data-path="../react/React.md">
+            
+                <span>
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" >
+            
+                <span>
+            
+                    
+                    Jrebel
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.31.1" data-path="../jrebel/远程调试及热部署.html">
+            
+                <a href="../jrebel/远程调试及热部署.html">
+            
+                    
+                    Jrebel
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" >
+            
+                <span>
+            
+                    
+                    ElasticStack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.32.1" data-path="../elasticstack/elasticsearch.html">
+            
+                <a href="../elasticstack/elasticsearch.html">
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32.2" data-path="../elasticstack/elasticsearch_api.html">
+            
+                <a href="../elasticstack/elasticsearch_api.html">
+            
+                    
+                    Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" >
+            
+                <span>
+            
+                    
+                    Salesforce
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.33.1" data-path="../salesforce/apex.html">
+            
+                <a href="../salesforce/apex.html">
+            
+                    
+                    Apex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.2" data-path="../salesforce/visualforce.html">
+            
+                <a href="../salesforce/visualforce.html">
+            
+                    
+                    Visualforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.3" data-path="../salesforce/遇到的问题.html">
+            
+                <a href="../salesforce/遇到的问题.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.4" data-path="../salesforce/在IDEA中配置salesforce环境.html">
+            
+                <a href="../salesforce/在IDEA中配置salesforce环境.html">
+            
+                    
+                    在IDEA中配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.5" data-path="../salesforce/VSCode配置salesforce环境.html">
+            
+                <a href="../salesforce/VSCode配置salesforce环境.html">
+            
+                    
+                    VSCode配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" >
+            
+                <span>
+            
+                    
+                    工作笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.34.1" data-path="../worknote/css/css.html">
+            
+                <a href="../worknote/css/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.2" data-path="../worknote/docker/docker.html">
+            
+                <a href="../worknote/docker/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.3" data-path="../worknote/elementui/elementui.html">
+            
+                <a href="../worknote/elementui/elementui.html">
+            
+                    
+                    elementui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.4" data-path="../worknote/elk/elk.html">
+            
+                <a href="../worknote/elk/elk.html">
+            
+                    
+                    elk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.5" data-path="../worknote/gitlab/gitlab.html">
+            
+                <a href="../worknote/gitlab/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.6" data-path="../worknote/jpa/jpa.html">
+            
+                <a href="../worknote/jpa/jpa.html">
+            
+                    
+                    jpa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7" >
+            
+                <span>
+            
+                    
+                    mysql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.34.7.1" data-path="../worknote/mysql/centos7安装mysql5.7.html">
+            
+                <a href="../worknote/mysql/centos7安装mysql5.7.html">
+            
+                    
+                    centos7安装mysql5.7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.2" data-path="../worknote/mysql/centos卸载mysql.html">
+            
+                <a href="../worknote/mysql/centos卸载mysql.html">
+            
+                    
+                    centos卸载mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.3" data-path="../worknote/mysql/mysql 主从复制.html">
+            
+                <a href="../worknote/mysql/mysql 主从复制.html">
+            
+                    
+                    mysql 主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.4" data-path="../worknote/mysql/mysql时区.html">
+            
+                <a href="../worknote/mysql/mysql时区.html">
+            
+                    
+                    mysql时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.5" data-path="../worknote/mysql/mysql主从复制_test.html">
+            
+                <a href="../worknote/mysql/mysql主从复制_test.html">
+            
+                    
+                    mysql主从复制_test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.6" data-path="../worknote/mysql/mysql日期函数.html">
+            
+                <a href="../worknote/mysql/mysql日期函数.html">
+            
+                    
+                    mysql日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.7" data-path="../worknote/mysql/mysql_bin-log.html">
+            
+                <a href="../worknote/mysql/mysql_bin-log.html">
+            
+                    
+                    mysql_bin-log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.8" data-path="../worknote/mysql/mysql_null.html">
+            
+                <a href="../worknote/mysql/mysql_null.html">
+            
+                    
+                    mysql_null
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.7.9" data-path="../worknote/mysql/mysql8.html">
+            
+                <a href="../worknote/mysql/mysql8.html">
+            
+                    
+                    mysql8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.8" data-path="../worknote/rabbitmq/docker安装rabbitmq.html">
+            
+                <a href="../worknote/rabbitmq/docker安装rabbitmq.html">
+            
+                    
+                    rabbitmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.9" data-path="../worknote/redis/redis.html">
+            
+                <a href="../worknote/redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.10" data-path="../worknote/websocket/springboot+vue+websocket.html">
+            
+                <a href="../worknote/websocket/springboot+vue+websocket.html">
+            
+                    
+                    websocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.11" data-path="../worknote/tess4j_ocr/Tess4j使用记录.html">
+            
+                <a href="../worknote/tess4j_ocr/Tess4j使用记录.html">
+            
+                    
+                    tess4j_ocr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.12" data-path="../worknote/swagger/swagger.html">
+            
+                <a href="../worknote/swagger/swagger.html">
+            
+                    
+                    swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.34.13.1" data-path="../worknote/other/stream.html">
+            
+                <a href="../worknote/other/stream.html">
+            
+                    
+                    stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.2" data-path="../worknote/other/windows操作端口.html">
+            
+                <a href="../worknote/other/windows操作端口.html">
+            
+                    
+                    windows操作端口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.3" data-path="../worknote/other/读取文件时自动添加BOM头的问题.html">
+            
+                <a href="../worknote/other/读取文件时自动添加BOM头的问题.html">
+            
+                    
+                    读取文件时自动添加BOM头的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.4" data-path="../worknote/other/java_pdf转图片+打压缩包.html">
+            
+                <a href="../worknote/other/java_pdf转图片+打压缩包.html">
+            
+                    
+                    java_pdf转图片+打压缩包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.5" data-path="../worknote/other/element-ui解决notify速度太快会重叠的问题.html">
+            
+                <a href="../worknote/other/element-ui解决notify速度太快会重叠的问题.html">
+            
+                    
+                    element-ui解决notify速度太快会重叠的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.6" data-path="../worknote/other/vue获取htmlcollection的length为0问题.html">
+            
+                <a href="../worknote/other/vue获取htmlcollection的length为0问题.html">
+            
+                    
+                    vue获取htmlcollection的length为0问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.7" data-path="../worknote/other/解决a标签自动浏览问题.html">
+            
+                <a href="../worknote/other/解决a标签自动浏览问题.html">
+            
+                    
+                    解决a标签自动浏览问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.8" data-path="../worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html">
+            
+                <a href="../worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html">
+            
+                    
+                    解决element-ui在展示数据时会少显示一个空格的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.13.9" data-path="../worknote/other/解决vue使用video播放视频无画面问题.html">
+            
+                <a href="../worknote/other/解决vue使用video播放视频无画面问题.html">
+            
+                    
+                    解决vue使用video播放视频无画面问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.1" data-path="../other/使用Google Cloud搭建ssr.html">
+            
+                <a href="../other/使用Google Cloud搭建ssr.html">
+            
+                    
+                    搭建SSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.2" data-path="../other/kaptcha验证码.html">
+            
+                <a href="../other/kaptcha验证码.html">
+            
+                    
+                    Kaptcha验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.3" data-path="../other/ffmpeg.html">
+            
+                <a href="../other/ffmpeg.html">
+            
+                    
+                    ffmpeg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Logstash</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#logstash&#x6280;&#x672F;&#x5206;&#x4EAB;">Logstash&#x6280;&#x672F;&#x5206;&#x4EAB;</a></li><ul><li><a href="#&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</a></li><li><a href="#&#x6570;&#x636E;&#x5904;&#x7406;&#x6D41;&#x7A0B;">&#x6570;&#x636E;&#x5904;&#x7406;&#x6D41;&#x7A0B;</a></li><li><a href="#&#x5B89;&#x88C5;&#x90E8;&#x7F72;">&#x5B89;&#x88C5;&#x90E8;&#x7F72;</a></li><ul><li><a href="#&#x4E0B;&#x8F7D;&#x5730;&#x5740;">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></li><li><a href="#elastic-stack&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x8868;">Elastic Stack&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x8868;</a></li></ul><li><a href="#&#x6587;&#x4EF6;&#x76EE;&#x5F55;">&#x6587;&#x4EF6;&#x76EE;&#x5F55;</a></li><li><a href="#hello-world">Hello World</a></li><li><a href="#&#x542F;&#x52A8;&#x547D;&#x4EE4;">&#x542F;&#x52A8;&#x547D;&#x4EE4;</a></li><li><a href="#es-to-es">Es-To-Es</a></li><li><a href="#elasticsearch-output-plugin-action">elasticsearch-output-plugin action</a></li><li><a href="#kafka-to-es">Kafka-To-Es</a></li><ul><li><a href="#kafka-to-esconf">kafka-to-es.conf</a></li><li><a href="#kafka-to-es-templatejson">kafka-to-es-template.json</a></li><li><a href="#script-&#x811A;&#x672C;&#x66F4;&#x65B0;">script &#x811A;&#x672C;&#x66F4;&#x65B0;</a></li></ul><li><a href="#&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><a href="#pipelinesyml">pipelines.yml</a></li><li><a href="#&#x6027;&#x80FD;&#x4F18;&#x5316;&#x53CA;&#x6269;&#x5C55;">&#x6027;&#x80FD;&#x4F18;&#x5316;&#x53CA;&#x6269;&#x5C55;</a></li><li><a href="#&#x5176;&#x4ED6;&#x95EE;&#x9898;">&#x5176;&#x4ED6;&#x95EE;&#x9898;</a></li><ul><li><a href="#timestamp-&#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;">@timestamp &#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;</a></li></ul></ul></ul></div><a href="#logstash&#x6280;&#x672F;&#x5206;&#x4EAB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;"><a name="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;" class="anchor-navigation-ex-anchor" href="#logstash&#x6280;&#x672F;&#x5206;&#x4EAB;"><i class="fa fa-link" aria-hidden="true"></i></a>Logstash&#x6280;&#x672F;&#x5206;&#x4EAB;</h1>
+<h2 id="&#x4ECB;&#x7ECD;"><a name="&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x7ECD;</h2>
+<p>&#x200B;    Elasticsearch&#x662F;&#x5F53;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5927;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x5F3A;&#x5927;&#x7684;&#x5168;&#x6587;&#x672C;&#x68C0;&#x7D22;&#x80FD;&#x529B;&#xFF0C;&#x5E7F;&#x6CDB;&#x7528;&#x4E8E;&#x65E5;&#x5FD7;&#x68C0;&#x7D22;&#x3001;&#x5168;&#x7AD9;&#x641C;&#x7D22;&#x7B49;&#x9886;&#x57DF;&#x3002;Logstash&#x4F5C;&#x4E3A;Elasticsearch&#x5E38;&#x7528;&#x7684;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x5F15;&#x64CE;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x96C6;&#x6765;&#x81EA;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x6E90;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x540E;&#x8F93;&#x51FA;&#x5230;&#x591A;&#x79CD;&#x8F93;&#x51FA;&#x6E90;&#xFF0C;&#x662F;Elastic Stack&#x7684;&#x91CD;&#x8981;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x200B;    <strong>logstash&#x652F;&#x6301;&#x7684;input&#x548C;output&#x63D2;&#x4EF6;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x8BE5;&#x5206;&#x4EAB;&#x4E3B;&#x8981;&#x9488;&#x5BF9;Es-To-Es &#x53CA; Kafka-To-Es &#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x3002;</strong></p>
+<h2 id="&#x6570;&#x636E;&#x5904;&#x7406;&#x6D41;&#x7A0B;"><a name="&#x6570;&#x636E;&#x5904;&#x7406;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5904;&#x7406;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5904;&#x7406;&#x6D41;&#x7A0B;</h2>
+<p>&#x200B;    Logstash&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#xFF1A;<strong>Inputs&#x3001;Filters&#x3001;Outputs</strong>&#xFF0C;&#x53E6;&#x5916;&#x5728;Inputs&#x548C;Outputs&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Codecs&#x5BF9;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x56DB;&#x4E2A;&#x90E8;&#x5206;&#x5747;&#x5DF2;&#x63D2;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x5728;&#x3002;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810100454525-16600970995791.png" alt="image-20220810100454525"></p>
+<p>Inputs&#xFF1A;&#x8F93;&#x5165;&#x6E90;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x63D2;&#x4EF6;&#x5982;Kafka&#x3001;File&#x3001;Redis&#x7B49;&#x3002;</p>
+<p>Filter: &#x8FC7;&#x6EE4;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x6E90;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x6E05;&#x6D17;&#xFF0C;&#x5982;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x3001;&#x6570;&#x636E;&#x6D3E;&#x751F;&#x7B49;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x63D2;&#x4EF6;&#x5982;grok&#x3001;mutate&#x3001;drop&#x7B49;&#x3002;</p>
+<p>Outputs&#xFF1A;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x8F93;&#x51FA;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x7EC4;&#x4EF6;&#x4E2D;&#x6BD4;&#x5982;Elasticsearch&#x3001;Mysql&#x7B49;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4F5C;&#x4E3A;ElasticSearch&#x6570;&#x636E;&#x7684;&#x8F93;&#x5165;&#x6E90;&#x3002;</p>
+<p>Codecs&#xFF1A;Codecs&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x800C;&#x662F;&#x5728;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7B49;&#x63D2;&#x4EF6;&#x4E2D;&#x7528;&#x6237;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#x5904;&#x7406;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x63D2;&#x4EF6;&#x5982;json&#x3001;multiline&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;&#x90E8;&#x7F72;"><a name="&#x5B89;&#x88C5;&#x90E8;&#x7F72;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x90E8;&#x7F72;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x90E8;&#x7F72;</h2>
+<h3 id="&#x4E0B;&#x8F7D;&#x5730;&#x5740;"><a name="&#x4E0B;&#x8F7D;&#x5730;&#x5740;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x8F7D;&#x5730;&#x5740;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x8F7D;&#x5730;&#x5740;</h3>
+<p><a href="https://www.elastic.co/cn/downloads/logstash" target="_blank">https://www.elastic.co/cn/downloads/logstash</a></p>
+<h3 id="elastic-stack&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x8868;"><a name="elastic-stack&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x8868;" class="anchor-navigation-ex-anchor" href="#elastic-stack&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>Elastic Stack&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x8868;</h3>
+<p><a href="https://www.elastic.co/cn/support/matrix#matrix_compatibility" target="_blank">https://www.elastic.co/cn/support/matrix#matrix_compatibility</a></p>
+<p>&#x6CE8;&#x610F;&#xFF1A;Logstash&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4F9D;&#x8D56;JDK&#xFF0C;Logstash&#x4E2D;&#x81EA;&#x5E26;&#x4E86;&#x8FD9;&#x90E8;&#x5206;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x9700;&#x8981;&#x4E5F;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x4F7F;&#x7528;&#x5176;&#x4ED6;JDK&#x3002;</p>
+<h2 id="&#x6587;&#x4EF6;&#x76EE;&#x5F55;"><a name="&#x6587;&#x4EF6;&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x76EE;&#x5F55;</h2>
+<p>&#x4E3B;&#x8981;&#x76EE;&#x5F55;</p>
+<ul>
+<li>bin&#xFF1A;bin&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;</li>
+<li>config&#xFF1A;&#x914D;&#x7F6E;&#x76EE;&#x5F55;</li>
+<li>logs&#xFF1A;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;</li>
+<li>data&#xFF1A;&#x6570;&#x636E;&#x76EE;&#x5F55;</li>
+</ul>
+<p>&#x4E3B;&#x8981;&#x6587;&#x4EF6;</p>
+<p>&#x90FD;&#x5728;config&#x76EE;&#x5F55;&#x4E0B;</p>
+<ul>
+<li>logstash.yml&#xFF1A;&#x7528;&#x4E8E;&#x63A7;&#x5236;logstash&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;[<a href="https://www.elastic.co/guide/en/logstash/current/logstash-settings-file.html" target="_blank">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a>]</li>
+<li>pipelines.yml: &#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;pipeline&#x65F6;&#x4F7F;&#x7528;&#x8BE5;&#x914D;&#x7F6E;&#x6765;&#x914D;&#x7F6E;&#x591A;pipeline&#x6267;&#x884C;[<a href="https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html" target="_blank">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a>]</li>
+<li>jvm.options&#xFF1A;jvm&#x7684;&#x914D;&#x7F6E;</li>
+<li>log4j2.properties:log4j 2&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;logstash&#x8FD0;&#x884C;&#x65E5;&#x5FD7;[<a href="https://www.elastic.co/guide/en/logstash/current/logging.html#log4j2" target="_blank">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a>]</li>
+<li>startup.options: &#x4EC5;&#x9002;&#x7528;&#x4E8E;Lniux&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x9879;&#x76EE;&#xFF01;</li>
+</ul>
+<h2 id="hello-world"><a name="hello-world" class="anchor-navigation-ex-anchor" href="#hello-world"><i class="fa fa-link" aria-hidden="true"></i></a>Hello World</h2>
+<p>&#x5728;logstash&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;conf&#x76EE;&#x5F55;&#xFF0C;&#x65B0;&#x5EFA;hello-world.conf&#xFF0C;&#x5185;&#x5BB9;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-shell">input {
+ stdin {} # &#x6807;&#x51C6;&#x8F93;&#x5165;
+}
+
+output {
+ stdout {} # &#x6807;&#x51C6;&#x8F93;&#x51FA; 
+}
+</code></pre>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810103059425.png" alt="image-20220810103059425"></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8F93;&#x51FA;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x81EA;&#x52A8;&#x6DFB;&#x52A0; host&#x3001;hostname&#x3001;@timestamp&#x3001;@version&#x7B49;&#x6570;&#x636E;&#x3002;</p>
+<h2 id="&#x542F;&#x52A8;&#x547D;&#x4EE4;"><a name="&#x542F;&#x52A8;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;&#x547D;&#x4EE4;</h2>
+<p>&#x9A8C;&#x8BC1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-shell">./bin/logstash -f ./conf/es-to-es.conf --config.test_and_exit
+</code></pre>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810115041917.png" alt="image-20220810115041917"></p>
+<p>&#x542F;&#x52A8;</p>
+<pre><code class="lang-shell">./bin/logstash -f ./conf/es-to-es.conf
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x70ED;&#x52A0;&#x8F7D;&#xFF08;&#x9ED8;&#x8BA4;3s&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x4E00;&#x6B21;&#xFF09;</p>
+<pre><code class="lang-shell">./bin/logstash -f ./conf/es-to-es.conf --config.reload.automatic
+</code></pre>
+<h2 id="es-to-es"><a name="es-to-es" class="anchor-navigation-ex-anchor" href="#es-to-es"><i class="fa fa-link" aria-hidden="true"></i></a>Es-To-Es</h2>
+<p>&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x610F;&#x4E3A;&#x5C06;&#x5728;&#x7EBF;&#x7684;&#x673A;&#x5668;&#x4FE1;&#x606F;&#x8F93;&#x51FA;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x4E2D;</p>
+<pre><code class="lang-sh">input {
+    elasticsearch {
+        hosts =&gt; [<span class="hljs-string">&quot;http://192.168.10.65:9200&quot;</span>]        <span class="hljs-comment"># Elasticsearch&#x96C6;&#x7FA4;&#x4E3B;&#x673A;&#x5217;&#x8868;</span>
+        index =&gt; <span class="hljs-string">&quot;zc_machine&quot;</span>                         <span class="hljs-comment"># &#x7D22;&#x5F15;    </span>
+        query =&gt; <span class="hljs-string">&apos;{                                   
+                    &quot;query&quot;:{
+                        &quot;term&quot;:{
+                            &quot;onlineStatus&quot;:{
+                                &quot;value&quot;:1
+                            }
+                        }
+                    }
+                }&apos;</span>                                  <span class="hljs-comment"># query&#x67E5;&#x8BE2;&#x8FC7;&#x6EE4;&#x6570;&#x636E;</span>
+        size =&gt; 500                                   <span class="hljs-comment"># &#x6BCF;&#x4E2A;&#x6EDA;&#x52A8;&#x8FD4;&#x56DE;&#x7684;&#x6700;&#x5927;&#x547D;&#x4E2D;&#x6570;</span>
+        scroll =&gt; <span class="hljs-string">&apos;5m&apos;</span>                                <span class="hljs-comment"># &#x63A7;&#x5236;&#x6EDA;&#x52A8;&#x8BF7;&#x6C42;&#x7684;&#x4FDD;&#x6D3B;&#x65F6;&#x95F4;&#xFF08;&#x5355;&#x4F4D;&#xFF1A;&#x79D2;&#xFF09;</span>
+        docinfo =&gt; <span class="hljs-literal">true</span>                               <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x4E3A;true&#x65F6;&#xFF0C;&#x5219;&#x5728;&#x4E8B;&#x4EF6;&#x4E2D;&#x5305;&#x542B;Elasticseach&#x6587;&#x6863;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x7D22;&#x5F15;&#x3001;&#x7C7B;&#x578B;&#x548C;id</span>
+        docinfo_target =&gt; <span class="hljs-string">&quot;[@metadata][doc]&quot;</span>          <span class="hljs-comment"># &#x5982;&#x679C;docinfo&#x9009;&#x9879;&#x8BF7;&#x6C42;&#x6587;&#x6863;&#x5143;&#x6570;&#x636E;&#x5B58;&#x50A8;&#xFF0C;&#x5219;&#x6B64;&#x9009;&#x9879;&#x5C06;&#x5B58;&#x50A8;&#x5143;&#x6570;&#x636E;&#x5B57;&#x6BB5;&#x7684;&#x5B57;&#x6BB5;&#x547D;&#x540D;&#x4E3A;&#x5B50;&#x5B57;&#x6BB5;&#x3002;</span>
+    }
+}
+
+
+output {
+    elasticsearch {
+        hosts =&gt; [<span class="hljs-string">&quot;http://192.168.10.65:9200&quot;</span>]
+        index =&gt; <span class="hljs-string">&quot;tao_dest_event&quot;</span>
+        action =&gt; <span class="hljs-string">&apos;index&apos;</span>                                <span class="hljs-comment"># &#x64CD;&#x4F5C;</span>
+        document_<span class="hljs-built_in">type</span> =&gt; <span class="hljs-string">&quot;%{[@metadata][doc][_type]}&quot;</span>    <span class="hljs-comment"># &#x7531;&#x4E8E;ElasticSearch&#x4ECE;7.x&#x540E;&#x5E9F;&#x5F03;&#x8BE5;&#x5B57;&#x6BB5;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x5173;&#x7D27;&#x8981;</span>
+        document_id =&gt; <span class="hljs-string">&quot;%{[@metadata][doc][_id]}&quot;</span>        <span class="hljs-comment"># &#x5982;&#x679C;&#x6709;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF0C;&#x5219;&#x4F5C;&#x7528;&#x4E0E;&#x8986;&#x76D6;&#x539F;&#x6587;&#x6863;</span>
+    }
+}
+
+<span class="hljs-comment"># &#x4E00;&#x4E2A;conf&#x6587;&#x4EF6;&#x4E2D;&#x53EF;&#x4EE5;&#x5B58;&#x5728;&#x591A;&#x4E2A;input&#x548C;output</span>
+output {
+    stdout { codec =&gt; rubydebug }
+}
+</code></pre>
+<h3 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h3>
+<p>&#x8FD0;&#x884C;&#x540E;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x88AB;&#x63D2;&#x5165;&#x5230;&#x4E86;&#x65B0;&#x7684;&#x7D22;&#x5F15;&#x4E2D;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810124821964.png" alt="image-20220810124821964"></p>
+<h2 id="elasticsearch-output-plugin-action"><a name="elasticsearch-output-plugin-action" class="anchor-navigation-ex-anchor" href="#elasticsearch-output-plugin-action"><i class="fa fa-link" aria-hidden="true"></i></a>elasticsearch-output-plugin action</h2>
+<p>action&#x662F; logstash elasticsearch-output-plugin&#x4E2D;&#x7684;&#x91CD;&#x8981;&#x53C2;&#x6570;&#xFF0C;&#x4EE3;&#x8868;&#x6570;&#x636E;&#x5165;&#x5E93;elasticsearch&#x65F6;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<ul>
+<li><p>index&#xFF1A;</p>
+<p>&#x6CA1;&#x6709; document_id&#xFF1A;&#x5C06;&#x6570;&#x636E;&#x5165;&#x5E93;&#x5230;Elasticsearch&#x4E2D;&#xFF0C;&#x7531;Elasticsearch&#x751F;&#x6210;&#x8BE5;&#x6587;&#x6863;&#x7684;Id&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x6307;&#x5B9A;document_id&#xFF0C;&#x91CD;&#x590D;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x751F;    &#x6210;&#x591A;&#x6761;&#x5185;&#x5BB9;&#x76F8;&#x540C;&#x4F46; id &#x4E0D;&#x540C;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<p>&#x6709; document_id&#xFF1A;</p>
+<p>&#x200B;    &#x5982;&#x679C; document_id &#x5728;Elasticsearch&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x6761;&#x65B0;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x4F7F;&#x7528; document_id&#x4F5C;&#x4E3A;&#x8BE5;&#x6587;&#x6863;&#x7684; id&#x3002;</p>
+<p>&#x200B;    &#x5982;&#x679C; document_id &#x5728;Elasticsearch&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x76F4;&#x63A5;&#x66F4;&#x65B0;&#x6587;&#x6863;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>create&#xFF1A;</p>
+<p>&#x6CA1;&#x6709; document_id : &#x4E0D;&#x6307;&#x5B9A;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5931;&#x8D25;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810153326569.png" alt="image-20220810153326569"></p>
+</li>
+</ul>
+<p>&#x200B;        &#x6709; document_id&#xFF1A;
+&#x200B;            &#x5982;&#x679C; document_id &#x5728;Elasticsearch&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x6761;&#x65B0;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x4F7F;&#x7528; document_id&#x4F5C;&#x4E3A;&#x8BE5;&#x6587;&#x6863;&#x7684; id&#x3002;
+&#x200B;            &#x5982;&#x679C; document_id &#x5728;Elasticsearch&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5931;&#x8D25;&#xFF0C;&#x63D0;&#x793A;&#x539F;&#x56E0;&#x4E3A;&#x8BE5; id &#x7684;&#x6587;&#x6863;&#x5DF2;&#x5B58;&#x5728;&#x3002;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810154110410.png" alt="image-20220810154110410"></p>
+<ul>
+<li><p>delete&#xFF1A;
+&#x6CA1;&#x6709; document_id&#xFF1A;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E; document_Id,&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x629B;&#x51FA;&#x9519;&#x8BEF;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810175930049.png" alt="image-20220810175930049"></p>
+</li>
+</ul>
+<ul>
+<li><p>update&#xFF1A;
+&#x6CA1;&#x6709; document_id&#xFF1A;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;document_id&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x6392;&#x9664;&#x9519;&#x8BEF;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220810181855447.png" alt="image-20220810181855447"></p>
+</li>
+</ul>
+<p>  &#x6709; document_id&#xFF1A;
+    &#x5982;&#x679C; document_id &#x5728;Elasticsearch&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x6761;&#x65B0;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x4F7F;&#x7528; document_id &#x4F5C;&#x4E3A;&#x8BE5;&#x6587;&#x6863;&#x7684;id&#x3002;</p>
+<p>  &#x200B;      doc_as_upsert &#x4E3A; true &#x65F6;&#xFF0C;&#x4F7F;&#x7528;event&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7684;&#x503C;&#x3002;</p>
+<p>  &#x200B;      scripted_upsert &#x4E3A; true &#x65F6;&#xFF0C; &#x4F7F;&#x7528;script&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7684;&#x503C;&#x3002;</p>
+<p>  &#x200B;      &#x5176;&#x4F59;&#x60C5;&#x51B5;&#xFF0C;&#x4F7F;&#x7528;upsert&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7684;&#x503C;&#x3002;</p>
+<pre><code>&#x5982;&#x679C; document_id &#x5728;Elasticsearch&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x76F4;&#x63A5;&#x66F4;&#x65B0;&#x8BE5;&#x6587;&#x6863;&#x3002;
+</code></pre><p><strong>&#x6CE8;&#x610F;&#xFF1A;es-to-es&#x65F6;&#xFF0C;&#x4E00;&#x6761;&#x6570;&#x636E;&#x53EA;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x6E90;&#x7D22;&#x5F15;&#x53D1;&#x751F;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x901A;&#x8FC7;logstash&#x66F4;&#x65B0;&#x76EE;&#x6807;&#x7D22;&#x5F15;&#x7684;&#x6570;&#x636E;&#x3002;</strong></p>
+<p>Elasticsearch Input Plugin:  <a href="https://www.elastic.co/guide/en/logstash/current/plugins-inputs-elasticsearch.html" target="_blank">https://www.elastic.co/guide/en/logstash/current/plugins-inputs-elasticsearch.html</a></p>
+<p>Elasticsearch Output Plugin: <a href="https://www.elastic.co/guide/en/logstash/current/plugins-outputs-elasticsearch.html" target="_blank">https://www.elastic.co/guide/en/logstash/current/plugins-outputs-elasticsearch.html</a></p>
+<h2 id="kafka-to-es"><a name="kafka-to-es" class="anchor-navigation-ex-anchor" href="#kafka-to-es"><i class="fa fa-link" aria-hidden="true"></i></a>Kafka-To-Es</h2>
+<p>&#x4F7F;&#x7528;Kafka&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;Elasticsearch&#x3002;</p>
+<h3 id="kafka-to-esconf"><a name="kafka-to-esconf" class="anchor-navigation-ex-anchor" href="#kafka-to-esconf"><i class="fa fa-link" aria-hidden="true"></i></a>kafka-to-es.conf</h3>
+<pre><code class="lang-sh">input {
+  <span class="hljs-comment"># &#x914D;&#x7F6E;kafka&#x6570;&#x636E;&#x6E90;</span>
+  kafka {
+    <span class="hljs-comment"># kafka&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#xFF0C;&#x591A;&#x4E2A;&#x5730;&#x5740;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;</span>
+    bootstrap_servers =&gt; <span class="hljs-string">&quot;192.168.181.128:9092,192.168.181.129:9092,192.168.181.130:9092&quot;</span>
+    <span class="hljs-comment"># sasl&#x9A8C;&#x8BC1;</span>
+    <span class="hljs-comment">#security_protocol =&gt; &quot;SASL_PLAINTEXT&quot;</span>
+    <span class="hljs-comment">#sasl_mechanism =&gt; &quot;PLAIN&quot;</span>
+    <span class="hljs-comment">#sasl_jaas_config =&gt; &quot;org.apache.kafka.common.security.plain.PlainLoginModule required username=&quot;admin&quot; password=&quot;g011234&quot;;&quot;</span>
+    <span class="hljs-comment"># &#x8BA2;&#x9605;&#x7684;&#x4E3B;&#x9898;,&#x652F;&#x6301;&#x8BA2;&#x9605;&#x591A;&#x4E2A;&#x4E3B;&#x9898;</span>
+    topics =&gt; [<span class="hljs-string">&quot;logstash-kafka-to-es&quot;</span>]
+    <span class="hljs-comment"># &#x6D88;&#x8D39;&#x8005;&#x7EBF;&#x7A0B;&#x6570;</span>
+    consumer_threads =&gt; 3
+    <span class="hljs-comment"># &#x6D88;&#x8D39;&#x7EC4;Id</span>
+    group_id =&gt; <span class="hljs-string">&quot;logstash-kafka-to-es&quot;</span>
+
+    <span class="hljs-comment"># &#x6B64;&#x5C5E;&#x6027;&#x4F1A;&#x5C06;&#x5F53;&#x524D;topic&#x3001;offset&#x3001;group&#x3001;partition&#x7B49;&#x4FE1;&#x606F;&#x4E5F;&#x5E26;&#x5230;message&#x4E2D;</span>
+    decorate_events =&gt; <span class="hljs-literal">true</span>
+    <span class="hljs-comment"># &#x6DFB;&#x52A0;json&#x63D2;&#x4EF6; </span>
+    codec =&gt; json {  
+      charset =&gt; <span class="hljs-string">&quot;UTF-8&quot;</span>
+    }
+  }
+}
+
+filter {
+   <span class="hljs-comment"># &#x89E3;&#x51B3;@timestamp &#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;</span>
+   ruby {
+    code =&gt; <span class="hljs-string">&quot;event.set(&apos;index_date&apos;, (event.get(&apos;@timestamp&apos;).time.localtime).strftime(&apos;%Y-%m-%d&apos;))&quot;</span>
+   }
+
+   mutate {
+    convert =&gt; [<span class="hljs-string">&quot;index_date&quot;</span>, <span class="hljs-string">&quot;string&quot;</span>]
+   }
+}
+
+
+filter{
+  mutate{
+     <span class="hljs-comment"># &#x5220;&#x9664;&#x5B57;&#x6BB5;event: &#x539F;&#x59CB;&#x4FE1;&#x606F;&#x4F1A;&#x5B58;&#x4E00;&#x4EFD;&#x5230;event</span>
+    remove_field =&gt; [<span class="hljs-string">&quot;event&quot;</span>]
+     <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x5B57;&#x6BB5;</span>
+    add_field =&gt; { <span class="hljs-string">&quot;kafka-metadata&quot;</span> =&gt; <span class="hljs-string">&quot;%{[@metadata][kafka][topic]}-%{[@metadata][kafka][partition]}-%{[@metadata][kafka][offset]}&quot;</span> }
+  }
+}
+
+
+output {
+  elasticsearch {
+    hosts =&gt; [<span class="hljs-string">&quot;http://192.168.10.63:9200&quot;</span>, <span class="hljs-string">&quot;http://192.168.10.64:9200&quot;</span>, <span class="hljs-string">&quot;http://192.168.10.65:9200&quot;</span>]
+<span class="hljs-comment">#    user =&gt; &quot;elastic&quot;</span>
+<span class="hljs-comment">#    password =&gt; &quot;123qweasdZXC&quot;</span>
+    index =&gt; <span class="hljs-string">&quot;tao_index-%{index_date}&quot;</span>
+    document_id =&gt; <span class="hljs-string">&quot;%{[id]}&quot;</span>
+    <span class="hljs-comment"># &#x662F;&#x5426;&#x8986;&#x76D6;ES&#x4E2D;&#x7684;template&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;false</span>
+    template_overwrite =&gt; <span class="hljs-literal">true</span>
+    <span class="hljs-comment"># &#x6A21;&#x677F;&#x540D;&#x79F0; &#x9ED8;&#x8BA4; &#x6587;&#x4EF6;&#x540D;</span>
+    template_name =&gt; <span class="hljs-string">&quot;kafka-to-es-template&quot;</span>
+    <span class="hljs-comment"># &#x6307;&#x5B9A;&#x6620;&#x5C04;&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;setting&#x3001;mapping&#x3001;aliases&#x7B49;&#x7B49;</span>
+    template =&gt; <span class="hljs-string">&quot;/home/app/logstash/logstash-8.3.1/conf/template/kafka-to-es-template.json&quot;</span>
+    sniffing =&gt; <span class="hljs-literal">true</span>
+    action =&gt; <span class="hljs-string">&quot;update&quot;</span>
+    doc_as_upsert =&gt; <span class="hljs-literal">true</span>
+  }
+}
+
+
+output {
+    stdout { codec =&gt; rubydebug }
+}
+</code></pre>
+<h3 id="kafka-to-es-templatejson"><a name="kafka-to-es-templatejson" class="anchor-navigation-ex-anchor" href="#kafka-to-es-templatejson"><i class="fa fa-link" aria-hidden="true"></i></a>kafka-to-es-template.json</h3>
+<p>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; settings&#x3001;mappings&#x3001;aliases&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x4F20;&#x8F93;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x4E2D;&#x65F6;&#x60F3;&#x4FEE;&#x6539;&#x67D0;&#x4E9B;&#x5B57;&#x6BB5;&#x7684;mapping&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5728;&#x8FD9;&#x8FB9;&#x8FDB;&#x884C;&#x5904;&#x7406;</p>
+<pre><code class="lang-sh">{
+    <span class="hljs-string">&quot;template&quot;</span>:<span class="hljs-string">&quot;tao_index-*&quot;</span>,
+    <span class="hljs-string">&quot;settings&quot;</span>:{
+        <span class="hljs-string">&quot;index&quot;</span>:{
+            <span class="hljs-string">&quot;refresh_interval&quot;</span>:<span class="hljs-string">&quot;5s&quot;</span>
+        }
+    },
+    <span class="hljs-string">&quot;mappings&quot;</span>:{
+
+    },
+    <span class="hljs-string">&quot;aliases&quot;</span>:{
+        <span class="hljs-string">&quot;{index}-alias&quot;</span>:{
+
+        }
+    }
+}
+</code></pre>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;kafka</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811161533693.png" alt="image-20220811161533693"></p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811161546739.png" alt="image-20220811161546739"></p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811161608025.png" alt="image-20220811161608025"></p>
+<p><strong>&#x589E;&#x91CF;&#x66F4;&#x65B0;</strong></p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811161600843.png" alt="image-20220811161600843"></p>
+<h3 id="script-&#x811A;&#x672C;&#x66F4;&#x65B0;"><a name="script-&#x811A;&#x672C;&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#script-&#x811A;&#x672C;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>script &#x811A;&#x672C;&#x66F4;&#x65B0;</h3>
+<p>&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x662F;&#x901A;&#x8FC7;script&#x811A;&#x672C;&#x6765;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x7684;&#x573A;&#x666F;</p>
+<p>kafka-to-es-script-upsert.conf &#xFF08;&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x5728; output elasticsearch &#x4E2D;&#x7684; script &#x914D;&#x7F6E;&#xFF09;</p>
+<pre><code class="lang-sh">input {
+  kafka {
+    bootstrap_servers =&gt; <span class="hljs-string">&quot;192.168.181.128:9092,192.168.181.129:9092,192.168.181.130:9092&quot;</span>
+    topics =&gt; [<span class="hljs-string">&quot;logstash-kafka-to-es&quot;</span>]
+    consumer_threads =&gt; 3
+    group_id =&gt; <span class="hljs-string">&quot;logstash-kafka-to-es&quot;</span>
+    decorate_events =&gt; <span class="hljs-literal">true</span>
+    codec =&gt; json {  
+      charset =&gt; <span class="hljs-string">&quot;UTF-8&quot;</span>
+    }
+  }
+}
+
+filter {
+   ruby {
+    code =&gt; <span class="hljs-string">&quot;event.set(&apos;index_date&apos;, (event.get(&apos;@timestamp&apos;).time.localtime).strftime(&apos;%Y-%m-%d&apos;))&quot;</span>
+   }
+
+   mutate {
+    convert =&gt; [<span class="hljs-string">&quot;index_date&quot;</span>, <span class="hljs-string">&quot;string&quot;</span>]
+   }
+}
+
+
+filter{
+  mutate{
+    remove_field =&gt; [<span class="hljs-string">&quot;event&quot;</span>]
+    add_field =&gt; { <span class="hljs-string">&quot;kafka-metadata&quot;</span> =&gt; <span class="hljs-string">&quot;%{[@metadata][kafka][topic]}-%{[@metadata][kafka][partition]}-%{[@metadata][kafka][offset]}&quot;</span> }
+  }
+}
+
+
+output {
+  elasticsearch {
+    hosts =&gt; [<span class="hljs-string">&quot;http://192.168.10.63:9200&quot;</span>, <span class="hljs-string">&quot;http://192.168.10.64:9200&quot;</span>, <span class="hljs-string">&quot;http://192.168.10.65:9200&quot;</span>]
+    index =&gt; <span class="hljs-string">&quot;tao_index-%{index_date}&quot;</span>
+    document_id =&gt; <span class="hljs-string">&quot;%{[id]}&quot;</span>
+    action =&gt; <span class="hljs-string">&quot;update&quot;</span>
+    doc_as_upsert =&gt; <span class="hljs-literal">true</span>
+    script_lang        =&gt; <span class="hljs-string">&quot;painless&quot;</span>
+    script_<span class="hljs-built_in">type</span>        =&gt; <span class="hljs-string">&quot;inline&quot;</span>
+    script             =&gt; <span class="hljs-string">&apos;ctx._source.count += params.event.get(&quot;count&quot;); &apos;</span>
+  }
+}
+
+
+output {
+    stdout { codec =&gt; rubydebug }
+}
+</code></pre>
+<p>&#x63D2;&#x5165;&#x6570;&#x636E;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811170303141.png" alt="image-20220811170303141"></p>
+<p>&#x589E;&#x91CF;&#x66F4;&#x65B0;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811170310436.png" alt="image-20220811170310436"></p>
+<p>logstash&#x6253;&#x5370;&#x6D88;&#x606F;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811170251328.png" alt="image-20220811170251328"></p>
+<p>&#x67E5;&#x770B;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x6570;&#x636E;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811170403908.png" alt="image-20220811170403908"></p>
+<h2 id="&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<p>&#x200B;    &#x5728;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x8981;&#x8D77;&#x591A;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x518D;&#x6F14;&#x793A;&#x4F7F;&#x7528; &#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;&#x591A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <strong>pipelines</strong> &#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p>&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;</p>
+<pre><code class="lang-sh">/home/app/logstash/logstash-8.3.1/config/pipelines.yml
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x76F4;&#x63A5;&#x542F;&#x52A8;</p>
+<pre><code class="lang-sh">./bin/logstash
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-sh">input {
+  kafka {
+    bootstrap_servers =&gt; <span class="hljs-string">&quot;192.168.181.128:9092,192.168.181.129:9092,192.168.181.130:9092&quot;</span>
+    topics =&gt; [<span class="hljs-string">&quot;logstash-kafka-to-es&quot;</span>]
+    consumer_threads =&gt; 3
+    group_id =&gt; <span class="hljs-string">&quot;logstash-kafka-to-es&quot;</span>
+    decorate_events =&gt; <span class="hljs-literal">true</span>
+    codec =&gt; json {  
+      charset =&gt; <span class="hljs-string">&quot;UTF-8&quot;</span>
+    }
+  }
+}
+
+filter {
+   ruby {
+    code =&gt; <span class="hljs-string">&quot;event.set(&apos;index_date&apos;, (event.get(&apos;@timestamp&apos;).time.localtime).strftime(&apos;%Y-%m-%d&apos;))&quot;</span>
+   }
+
+   mutate {
+    convert =&gt; [<span class="hljs-string">&quot;index_date&quot;</span>, <span class="hljs-string">&quot;string&quot;</span>]
+   }
+}
+
+
+filter{
+  mutate{
+    remove_field =&gt; [<span class="hljs-string">&quot;event&quot;</span>]
+    add_field =&gt; { <span class="hljs-string">&quot;kafka-metadata&quot;</span> =&gt; <span class="hljs-string">&quot;%{[@metadata][kafka][topic]}-%{[@metadata][kafka][partition]}-%{[@metadata][kafka][offset]}&quot;</span> }
+  }
+}
+
+
+output {
+  elasticsearch {
+    hosts =&gt; [<span class="hljs-string">&quot;http://192.168.10.63:9200&quot;</span>, <span class="hljs-string">&quot;http://192.168.10.64:9200&quot;</span>, <span class="hljs-string">&quot;http://192.168.10.65:9200&quot;</span>]
+    index =&gt; <span class="hljs-string">&quot;tao_index-%{index_date}&quot;</span>
+    document_id =&gt; <span class="hljs-string">&quot;%{[id]}&quot;</span>
+    action =&gt; <span class="hljs-string">&quot;update&quot;</span>
+    doc_as_upsert =&gt; <span class="hljs-literal">true</span>
+  }
+}
+
+
+output {
+    stdout { codec =&gt; rubydebug }
+}
+</code></pre>
+<p>pipelines.yml &#x914D;&#x7F6E;</p>
+<pre><code class="lang-sh">- pipeline.id: muti1
+  pipeline.workers: 1
+  pipeline.batch.size: 2
+  pipeline.batch.delay: 5000
+  path.config: <span class="hljs-string">&quot;/home/app/logstash/logstash-8.3.1/conf/muti_conf/muti1.conf&quot;</span>
+
+- pipeline.id: muti2
+  pipeline.workers: 1
+  pipeline.batch.size: 1
+  path.config: <span class="hljs-string">&quot;/home/app/logstash/logstash-8.3.1/conf/muti_conf/muti2.conf&quot;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;topic&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x4E86;6&#x4E2A;&#x5206;&#x533A;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x4E86;3&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7EBF;&#x7A0B;&#xFF0C;&#x542F;&#x52A8;&#x540E;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5171;&#x6709;6&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7EBF;&#x7A0B;</p>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811181057288.png" alt="image-20220811181057288"></p>
+<h2 id="pipelinesyml"><a name="pipelinesyml" class="anchor-navigation-ex-anchor" href="#pipelinesyml"><i class="fa fa-link" aria-hidden="true"></i></a>pipelines.yml</h2>
+<pre><code class="lang-sh">- pipeline.id: muti1
+  <span class="hljs-comment"># pipeline&#x7EBF;&#x7A0B;&#x6570;&#xFF0C;&#x5B98;&#x65B9;&#x5EFA;&#x8BAE;&#x662F;&#x7B49;&#x4E8E;CPU&#x5185;&#x6838;&#x6570; </span>
+  pipeline.workers: 1
+  <span class="hljs-comment"># &#x6BCF;&#x6B21;&#x53D1;&#x9001;&#x7684;&#x4E8B;&#x4EF6;&#x6570; &#x9ED8;&#x8BA4; 125  &#x53EF;&#x80FD;&#x9700;&#x8981;&#x5728;jvm.options&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x589E;&#x52A0;&#x5806;&#x5185;&#x5B58;</span>
+  pipeline.batch.size: 20000
+  <span class="hljs-comment"># &#x53D1;&#x9001;&#x5EF6;&#x65F6; &#x6BEB;&#x79D2; &#x9ED8;&#x8BA4; 50</span>
+  pipeline.batch.delay: 5000
+  path.config: <span class="hljs-string">&quot;/home/app/logstash/logstash-8.3.1/conf/muti_conf/muti1.conf&quot;</span>
+</code></pre>
+<p>&#x200B;    &#x4EE5;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x4E3A;&#x4F8B; Logstash &#x4F1A;&#x52AA;&#x529B;&#x6512;&#x5230; 20000 &#x6761;&#x6570;&#x636E;&#x4E00;&#x6B21;&#x6027;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C; 5 &#x79D2;&#x949F;&#x5185;&#x4E5F;&#x6CA1;&#x6512;&#x591F; 20000 &#x6761;&#xFF0C;Logstash &#x8FD8;&#x662F;&#x4F1A;&#x4EE5;&#x5F53;&#x524D;&#x6512;&#x5230;&#x7684;&#x6570;&#x636E;&#x91CF;&#x53D1;&#x4E00;&#x6B21;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x5176;&#x4E00;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x200B;    &#x7ECF;&#x8FC7;&#x6211;&#x7684;&#x5B9E;&#x9645;&#x6D4B;&#x8BD5; &#x5F53; pipeline.batch.delay &#x8BBE;&#x7F6E;&#x4E3A; 5000 &#x65F6;&#x4F1A;&#x7B49;&#x5F85; 10s &#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A; 10000 &#x65F6;&#x4F1A;&#x7B49;&#x5F85;20s&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E24;&#x500D;&#x3002;</p>
+<h2 id="&#x6027;&#x80FD;&#x4F18;&#x5316;&#x53CA;&#x6269;&#x5C55;"><a name="&#x6027;&#x80FD;&#x4F18;&#x5316;&#x53CA;&#x6269;&#x5C55;" class="anchor-navigation-ex-anchor" href="#&#x6027;&#x80FD;&#x4F18;&#x5316;&#x53CA;&#x6269;&#x5C55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6027;&#x80FD;&#x4F18;&#x5316;&#x53CA;&#x6269;&#x5C55;</h2>
+<p>&#x200B;    &#x5F53;&#x5355;&#x4E2A;Logstash&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x6027;&#x80FD;&#x9700;&#x6C42;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x6A2A;&#x5411;&#x6269;&#x5C55;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x63D0;&#x9AD8;Logstash&#x7684;&#x5904;&#x7406;&#x80FD;&#x529B;&#x3002;&#x6A2A;&#x5411;&#x6269;&#x5C55;&#x7684;&#x591A;&#x4E2A;Logstash&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#xFF0C;&#x91C7;&#x7528;&#x76F8;&#x540C;&#x7684;pipeline&#x914D;&#x7F6E;&#xFF0C;&#x53E6;&#x5916;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x591A;&#x4E2A;Logstash&#x524D;&#x589E;&#x52A0;&#x4E00;&#x4E2A;LoadBalance&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;Logstash&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x3002;</p>
+<p>&#x200B;    &#x5728; <strong>kafka-to-es</strong> &#x7684;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;kafka&#x6709;&#x5206;&#x533A;&#x548C;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x7684;&#x5929;&#x7136;&#x4F18;&#x52BF;&#x505A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x3002;</p>
+<p>&#x200B;    &#x7531;&#x4E8E;&#x591A;&#x4E2A;Logstash&#x4E4B;&#x95F4;&#x662F;&#x76F8;&#x4E92;&#x7684;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x6570;&#x636E;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x6BD4;&#x5982;&#x63D2;&#x5165;es&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#x53EA;&#x5B58;&#x5728;&#x4E00;&#x4EFD;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5728;&#x8F93;&#x5165;&#x65F6;&#x6307;&#x5B9A;document_id&#xFF0C;&#x540C;&#x65F6;&#x5728;&#x8F93;&#x51FA;&#x65F6;&#x58F0;&#x660E;&#x51FA;&#x6765;&#xFF08;&#x8FD9;&#x91CC;&#x7684;&#x6307;&#x5B9A;&#x4E0D;&#x4EE3;&#x8868;&#x975E;&#x8981;&#x81EA;&#x5B9A;&#x4E49;es&#x7684;document_id&#xFF0C;&#x800C;&#x662F;&#x8F93;&#x5165;&#x6E90;&#x7684;&#x6570;&#x636E;&#x8981;&#x6709;document_id&#x7684;&#x5C5E;&#x6027;&#x503C;&#xFF09;&#xFF0C;&#x8F93;&#x51FA;&#x65F6;&#x9009;&#x62E9;create&#x3001;update&#x6216;upsert&#x3002;</p>
+<p>&#x200B;    </p>
+<h2 id="&#x5176;&#x4ED6;&#x95EE;&#x9898;"><a name="&#x5176;&#x4ED6;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x4ED6;&#x95EE;&#x9898;</h2>
+<h3 id="timestamp-&#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;"><a name="timestamp-&#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#timestamp-&#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>@timestamp &#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;</h3>
+<pre><code class="lang-sh">filter {
+<span class="hljs-comment">#   # &#x89E3;&#x51B3;timestamp&#x5C11;8&#x5C0F;&#x65F6;&#x95EE;&#x9898;</span>
+<span class="hljs-comment">#   # 1.&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;timestamp&#xFF0C;&#x5C06;&#x539F;&#x59CB;&#x5B57;&#x6BB5;@timestamp&#x6DFB;&#x52A0;8&#x5C0F;&#x65F6;&#x8D4B;&#x503C;&#x5230;timestamp</span>
+<span class="hljs-comment">#   ruby {</span>
+<span class="hljs-comment">#     code =&gt; &quot;event.set(&apos;timestamp&apos;, event.get(&apos;@timestamp&apos;).time.localtime + 8*60*60)&quot;</span>
+<span class="hljs-comment">#   }</span>
+<span class="hljs-comment">#   # 2.&#x91CD;&#x65B0;&#x8BBE;&#x7F6E;@timestamp&#x503C;</span>
+<span class="hljs-comment">#   ruby {</span>
+<span class="hljs-comment">#     code =&gt; &quot;event.set(&apos;@timestamp&apos;,event.get(&apos;timestamp&apos;))&quot;</span>
+<span class="hljs-comment">#   }</span>
+<span class="hljs-comment">#   # 3.&#x5220;&#x9664;&#x4E34;&#x65F6;&#x5B57;&#x6BB5;timestamp</span>
+<span class="hljs-comment">#   mutate {</span>
+<span class="hljs-comment">#     remove_field =&gt; [&quot;timestamp&quot;]</span>
+<span class="hljs-comment">#   }</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#   # &#x683C;&#x5F0F;&#x5316;@timestamp&#x5B57;&#x6BB5;&#x8D4B;&#x503C;&#x5230;&#x65B0;&#x5B57;&#x6BB5;index_date&#x4E0A;</span>
+<span class="hljs-comment">#   ruby {</span>
+<span class="hljs-comment">#    code =&gt; &quot;event.set(&apos;index_date&apos;, (event.get(&apos;@timestamp&apos;).time.localtime - 8*60*60).strftime(&apos;%Y-%m-%d&apos;))&quot;</span>
+<span class="hljs-comment">#   }</span>
+<span class="hljs-comment">#   # &#x5C06;index_date&#x5B57;&#x6BB5;&#x8F6C;&#x6362;&#x4E3A;string&#x7C7B;&#x578B;</span>
+<span class="hljs-comment">#   mutate {</span>
+<span class="hljs-comment">#     convert =&gt; [&quot;index_date&quot;,&quot;string&quot;]</span>
+<span class="hljs-comment">#   }</span>
+   ruby {
+    code =&gt; <span class="hljs-string">&quot;event.set(&apos;index_date_time&apos;, (event.get(&apos;@timestamp&apos;).time.localtime).strftime(&apos;%Y-%m-%d - %H:%M:%S&apos;))&quot;</span>
+   }
+   ruby {
+    code =&gt; <span class="hljs-string">&quot;event.set(&apos;timestamp_origin&apos;, (event.get(&apos;@timestamp&apos;).time.localtime - 8*60*60).strftime(&apos;%Y-%m-%d - %H:%M:%S&apos;))&quot;</span>
+   }
+}
+</code></pre>
+<p><img src="logstash&#x6280;&#x672F;&#x5206;&#x4EAB;.assets/image-20220811153251522.png" alt="image-20220811153251522"></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; almostTao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-08-11 18:56:43
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Logstash","level":"1.10.1","depth":2,"next":{"title":"Linux","level":"1.11","depth":1,"ref":"","articles":[{"title":"安装jdk及maven","level":"1.11.1","depth":2,"path":"linux/Linux环境下安装jdk和maven.md","ref":"linux/Linux环境下安装jdk和maven.md","articles":[]},{"title":"Linux远程管理","level":"1.11.2","depth":2,"path":"linux/Linux远程管理.md","ref":"linux/Linux远程管理.md","articles":[]}]},"previous":{"title":"Logstash","level":"1.10","depth":1,"ref":"","articles":[{"title":"Logstash","level":"1.10.1","depth":2,"path":"logstash/logstash技术分享.md","ref":"logstash/logstash技术分享.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-plus"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © almostTao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"almostTao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"没伞的孩子要学会奔跑","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.xyz"}},"gitbook":"3.2.3","description":"好记性不如烂笔头，记录日常遇到的问题及学习的成果"},"file":{"path":"logstash/logstash技术分享.md","mtime":"2022-08-11T10:56:43.311Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-15T06:35:40.448Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
