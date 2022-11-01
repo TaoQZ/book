@@ -133,6 +133,7 @@
     * [Jrebel](jrebel/远程调试及热部署.md)    
 * ElasticStack
     * [ElasticSearch](elasticstack/elasticsearch.md)
+    * [Nested类型对文档的影响](elasticstack/ElasticSearch_Nested类型对文档的影响.md)
     * [Api](elasticstack/elasticsearch_api.md)
 * Salesforce
     * [Apex](salesforce/apex.md)  
