@@ -133,6 +133,7 @@
     * [Jrebel](jrebel/远程调试及热部署.md)    
 * ElasticStack
     * [ElasticSearch](elasticstack/elasticsearch.md)
+    * [ElasticSearch](elasticstack/ElasticSearch主要搜索关键字.md)
     * [Nested类型对文档的影响](elasticstack/ElasticSearch_Nested类型对文档的影响.md)
     * [Api](elasticstack/elasticsearch_api.md)
 * Salesforce
@@ -143,6 +144,7 @@
     * [VSCode配置salesforce环境](salesforce/VSCode配置salesforce环境.md) 
 * 工作笔记
 	* [css](worknote/css/css.md)
+    * [nacos](worknote/nacos/nacos配置自动刷新.md)
 	* [docker](worknote/docker/docker.md)
 	* [elementui](worknote/elementui/elementui.md)
 	* [elk](worknote/elk/elk.md)
