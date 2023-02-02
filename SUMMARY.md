@@ -134,8 +134,9 @@
 * ElasticStack
     * [ElasticSearch](elasticstack/elasticsearch.md)
     * [ElasticSearch](elasticstack/ElasticSearch主要搜索关键字.md)
-    * [Nested类型对文档的影响](elasticstack/ElasticSearch_Nested类型对文档的影响.md)
     * [Api](elasticstack/elasticsearch_api.md)
+    * [Nested类型对文档的影响](elasticstack/ElasticSearch_Nested类型对文档的影响.md)
+    * [ES_工作中遇到的问题.md](elasticstack/ES_工作中遇到的问题.md)
 * Salesforce
     * [Apex](salesforce/apex.md)  
     * [Visualforce](salesforce/visualforce.md)
