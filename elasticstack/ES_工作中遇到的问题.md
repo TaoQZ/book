@@ -51,3 +51,59 @@ ReverseNestedAggregationBuilder revers = AggregationBuilders.reverseNested("reve
 machineTags.subAggregation(revers); 
 searchSourceBuilder.aggregation(nested);
 ```
+
+## 4、es having操作
+
+```java
+// 这里的count对应的 bucketsPathsMap 中的key count
+Script script = new Script("params.count == 0");
+Map<String, String> bucketsPathsMap = new HashMap<>();
+// 这里的malicious对应的 AggregationBuilders.cardinality("malicious") 里的名称
+bucketsPathsMap.put("count", "malicious.value");
+BucketSelectorPipelineAggregationBuilder having = PipelineAggregatorBuilders.bucketSelector("having", bucketsPathsMap, script);
+CardinalityAggregationBuilder malicious = AggregationBuilders.cardinality("malicious").field("maliciousList.keyword");
+TermsAggregationBuilder machineTerm = AggregationBuilders.terms("machineTerm").field("outreachMachine.keyword").size(Integer.MAX_VALUE);
+machineTerm.subAggregation(malicious);
+machineTerm.subAggregation(having);
+
+searchSourceBuilder.query(boolQueryBuilder);
+searchSourceBuilder.aggregation(machineTerm);
+```
+
+## 5、查询数组为空的数据
+exists query
+
+Returns documents that contain an indexed value for a field.
+
+An indexed value may not exist for a document’s field due to a variety of reasons:
+
+The field in the source JSON is null or []
+The field has “index” : false set in the mapping
+The length of the field value exceeded an ignore_above setting in the mapping
+The field value was malformed and ignore_malformed was defined in the mapping
+
+```json
+GET zc_machine/_search
+{
+
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "exists": {
+            "field": "orgDatas"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "ms": {
+      "terms": {
+        "field": "machineUuid.keyword",
+        "size": 1000
+      }
+    }
+  }
+}
+```
