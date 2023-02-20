@@ -107,3 +107,98 @@ GET zc_machine/_search
   }
 }
 ```
+
+
+
+## 6、查询数组中同时包含两个及以上的值
+
+```json
+PUT tao_ce
+{
+  "mappings" : {
+    "properties" : {
+      
+    }
+  }
+}
+
+POST _bulk
+{ "index" : { "_index" : "tao_ce", "_id" : "1" } }
+{ "name": "hh", "hobbis":["游泳", "篮球","足球"]}
+{ "index" : { "_index" : "tao_ce", "_id" : "2" } }
+{ "name": "xx", "hobbis":["乒乓球", "篮球","足球"]}
+{ "index" : { "_index" : "tao_ce", "_id" : "3" } }
+{ "name":"zz", "hobbis":["乒乓球", "篮球","网球"]}
+
+
+GET tao_ce/_search
+{
+  "query": {
+    "match_all": {
+      
+    }
+  }
+}
+
+### 可以，使用 must-term array
+GET tao_ce/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "hobbis.keyword": {
+              "value": "游泳"
+            }
+          }
+        },
+        {
+          "term": {
+            "hobbis.keyword": {
+              "value": "足球"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+### 不可以，文档中包含查询条件数组其一即返回
+GET tao_ce/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+         "terms": {
+           "hobbis.keyword": [
+             "游泳",
+             "足球"
+           ]
+         }
+        }
+      ]
+    }
+  }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
