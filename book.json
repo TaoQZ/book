@@ -1,14 +1,14 @@
 {
-    "title": "没伞的孩子要学会奔跑",
-    "description": "好记性不如烂笔头，记录日常遇到的问题及学习的成果",
-    "author": "almostTao",
+    "title": "TaoQZ",
+    "description": "TaoQZ",
+    "author": "TaoQZ",
     "output.name": "site",
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "root": ".",
     "links": {
         "sidebar": {
-               "Home": "https://taoqz.xyz"
+               "Home": "https://taoqz.top"
         }
     },
     "plugins": [
@@ -28,8 +28,15 @@
 		"ga",
         "edit-link@^2.0.2",
         "-lunr",
-         "-search", 
-         "search-plus"
+        "-search", 
+        "search-pro",
+        "search-plus",
+        "code",
+        "insert-logo",
+        "custom-favicon",
+        "popup"
+
+
     ],
 
     "pluginsConfig": {
@@ -57,7 +64,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © almostTao 2019",
+            "copyright": "Copyright © TaoQZ 2019",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -90,8 +97,12 @@
                 "qq",
                 "qzone"
             ]
-        }
-		
+        },
+        "favicon": "/img/header/favicon.ico",
+        "insert-logo": {
+            "url": "/img/header/header.jpg",
+            "style": "background: none; max-height: 50px; min-height: 50px"
+        }		
 
     }
 }
