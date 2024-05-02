@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Idea使用Git · Peace & Love</title>
+        <title>Redis进阶 · Peace & Love</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -103,7 +103,7 @@
 
     
     
-    <link rel="prev" href="Git.html" />
+    <link rel="prev" href="redis.html" />
     
 
     
@@ -177,9 +177,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="Git.html">
+        <li class="chapter " data-level="1.2.1" data-path="../git/Git.html">
             
-                <a href="Git.html">
+                <a href="../git/Git.html">
             
                     
                     git安装及简介
@@ -190,9 +190,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="Idea中使用Git.html">
+        <li class="chapter " data-level="1.2.2" data-path="../git/Idea中使用Git.html">
             
-                <a href="Idea中使用Git.html">
+                <a href="../git/Idea中使用Git.html">
             
                     
                     Idea使用Git
@@ -957,9 +957,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../redis/redis.html">
+        <li class="chapter " data-level="1.8.1" data-path="redis.html">
             
-                <a href="../redis/redis.html">
+                <a href="redis.html">
             
                     
                     Redis基础
@@ -970,9 +970,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../redis/redis高级.html">
+        <li class="chapter active" data-level="1.8.2" data-path="redis高级.html">
             
-                <a href="../redis/redis高级.html">
+                <a href="redis高级.html">
             
                     
                     Redis进阶
@@ -2855,7 +2855,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Idea使用Git</a>
+        <a href=".." >Redis进阶</a>
     </h1>
 </div>
 
@@ -2873,44 +2873,64 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li><li><a href="#&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</a></li><ul><li><a href="#1-&#x521B;&#x5EFA;&#x9879;&#x76EE;">1. &#x521B;&#x5EFA;&#x9879;&#x76EE;</a></li><li><a href="#2-&#x6DFB;&#x52A0;&#x6587;&#x4EF6;">2. &#x6DFB;&#x52A0;&#x6587;&#x4EF6;</a></li><li><a href="#3-&#x63D0;&#x4EA4;&#x5E76;&#x63A8;&#x9001;">3. &#x63D0;&#x4EA4;&#x5E76;&#x63A8;&#x9001;</a></li><li><a href="#4-&#x51B2;&#x7A81;">4. &#x51B2;&#x7A81;</a></li></ul></ul></div><a href="#&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x914D;&#x7F6E;"><a name="&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;</h1>
-<p>&#x200B;    &#x5728;git&#x4E00;&#x7AE0;&#x4E2D;&#x6709;&#x5199;&#x5728;Idea&#x4E2D;&#x5982;&#x4F55;&#x914D;&#x7F6E;git</p>
-<h1 id="&#x4F7F;&#x7528;"><a name="&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;</h1>
-<h2 id="1-&#x521B;&#x5EFA;&#x9879;&#x76EE;"><a name="1-&#x521B;&#x5EFA;&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#1-&#x521B;&#x5EFA;&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x521B;&#x5EFA;&#x9879;&#x76EE;</h2>
-<p>&#x200B;         idea&#x4E2D;&#x521B;&#x5EFA;&#x9879;&#x76EE; &#x76F8;&#x5F53;&#x4E8E; init &#x5C06;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x53D8;&#x4E3A;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;</p>
-<p><img src="../img/idea_git/idea_init.jpg" alt=""></p>
-<p>&#x200B;         github&#x4E2D;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x4ED3;&#x5E93;</p>
-<p><img src="../img/idea_git/new_repository.jpg" alt=""></p>
-<h2 id="2-&#x6DFB;&#x52A0;&#x6587;&#x4EF6;"><a name="2-&#x6DFB;&#x52A0;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#2-&#x6DFB;&#x52A0;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6DFB;&#x52A0;&#x6587;&#x4EF6;</h2>
-<p>&#x200B;        &#x76F8;&#x5F53;&#x4E8E; add (&#x6587;&#x4EF6;)</p>
-<p>&#x200B;        <img src="../img/idea_git/idea_add.jpg" alt=""></p>
-<h2 id="3-&#x63D0;&#x4EA4;&#x5E76;&#x63A8;&#x9001;"><a name="3-&#x63D0;&#x4EA4;&#x5E76;&#x63A8;&#x9001;" class="anchor-navigation-ex-anchor" href="#3-&#x63D0;&#x4EA4;&#x5E76;&#x63A8;&#x9001;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x63D0;&#x4EA4;&#x5E76;&#x63A8;&#x9001;</h2>
-<p>&#x200B;           &#x5728;idea&#x83DC;&#x5355;&#x680F;VSC&#x9009;&#x9879; &#x76F8;&#x5F53;&#x4E8E; commit </p>
-<p><img src="../img/idea_git/idea_commit.jpg" alt=""></p>
-<p>&#x200B;        &#x9009;&#x62E9;&#x9700;&#x8981;&#x63D0;&#x4EA4;&#x7684;&#x6587;&#x4EF6;,&#x5728;Commit Message &#x4E2D;&#x586B;&#x5199;&#x4FE1;&#x606F;,&#x9009;&#x62E9;commit and push </p>
-<p><img src="../img/idea_git/commit_andpush.jpg" alt=""></p>
-<p>&#x200B;    &#x9009;&#x62E9;commit&#x548C;push&#x540E;,&#x5728;&#x7B2C;&#x4E00;&#x6B21;push&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x4E0B;&#x56FE;,&#x9700;&#x8981;&#x5C06;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x4E0E;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x8FDB;&#x884C;&#x5173;&#x8054;</p>
-<p>&#x200B;    &#x586B;&#x5199;&#x5B8C;&#x6210;&#x540E;&#x4FBF;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x63A8;&#x9001;</p>
-<p><img src="../img/idea_git/connection.jpg" alt=""></p>
-<p>&#x200B;    </p>
-<h2 id="4-&#x51B2;&#x7A81;"><a name="4-&#x51B2;&#x7A81;" class="anchor-navigation-ex-anchor" href="#4-&#x51B2;&#x7A81;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x51B2;&#x7A81;</h2>
-<p>&#x200B;    &#x4E0D;&#x540C;&#x7684;&#x4EBA;&#x5728;&#x5BF9;&#x76F8;&#x540C;&#x884C;&#x6570;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x65F6;,&#x4E00;&#x65B9;&#x5DF2;&#x7ECF;&#x63D0;&#x4EA4;,&#x53E6;&#x4E00;&#x65B9;&#x5728;&#x62C9;&#x53D6;&#x6216;&#x8005;&#x63A8;&#x9001;&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;</p>
-<p>&#x6848;&#x4F8B;: </p>
-<p>&#x200B;    &#x7B2C;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x4EE3;&#x7801;</p>
-<p><img src="../img/idea_git/idea_edit_qian.jpg" alt=""></p>
-<p>&#x200B;    &#x5047;&#x8BBE;&#x6709;&#x4EBA;&#x4FEE;&#x6539;&#x4E86;&#x4EE3;&#x7801;,&#x5E76;&#x4E0A;&#x4F20;&#x6210;&#x529F;</p>
-<p><img src="../img/idea_git/github_edit.jpg" alt=""></p>
-<p>&#x200B;    &#x540C;&#x65F6;&#x4FEE;&#x6539;idea&#x4E2D;&#x7684;&#x4EE3;&#x7801;</p>
-<p><img src="../img/idea_git/idea_edit_hou.jpg" alt=""></p>
-<p>&#x200B;    &#x8FDB;&#x884C;commit &#x63D0;&#x4EA4;&#x540E;&#x8FDB;&#x884C;pull &#x62C9;&#x53D6;</p>
-<p><img src="../img/idea_git/pull.jpg" alt=""></p>
-<p>&#x200B;    &#x4F1A;&#x51FA;&#x73B0;&#x51B2;&#x7A81;&#x63D0;&#x793A; ,&#x70B9;&#x51FB;&#x4E2D;&#x95F4;&#x7684;&#x5408;&#x5E76;&#x6309;&#x94AE;</p>
-<p><img src="../img/idea_git/megre_tishi.jpg" alt=""></p>
-<p>&#x200B;    &#x8FDB;&#x884C;&#x5408;&#x5E76;</p>
-<p><img src="../img/idea_git/megre_hebing.jpg" alt=""></p>
-<p><img src="../img/idea_git/megre_zong.jpg" alt=""></p>
-<p>&#x200B;    &#x5408;&#x5E76;&#x540E;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;</p>
-<p><img src="../img/idea_git/megre_hou.jpg" alt=""></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x8FDB;&#x9636;">&#x8FDB;&#x9636;</a></li><ul><li><a href="#&#x5B89;&#x5168;">&#x5B89;&#x5168;</a></li><li><a href="#&#x6301;&#x4E45;&#x5316;">&#x6301;&#x4E45;&#x5316;</a></li><ul><li><a href="#rdb">RDB</a></li><li><a href="#aof">AOF</a></li><li><a href="#rdb&#x548C;aof&#x6301;&#x4E45;&#x5316;&#x7684;&#x6BD4;&#x8F83;">RDB&#x548C;AOF&#x6301;&#x4E45;&#x5316;&#x7684;&#x6BD4;&#x8F83;</a></li></ul><li><a href="#&#x4E8B;&#x52A1;">&#x4E8B;&#x52A1;</a></li><ul><li><a href="#&#x4E8B;&#x52A1;&#x9501;">&#x4E8B;&#x52A1;&#x9501;</a></li><li><a href="#&#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898;">&#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898;</a></li></ul><li><a href="#&#x5220;&#x9664;&#x7B56;&#x7565;">&#x5220;&#x9664;&#x7B56;&#x7565;</a></li><li><a href="#&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li></ul></ul></div><a href="#&#x8FDB;&#x9636;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8FDB;&#x9636;"><a name="&#x8FDB;&#x9636;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x9636;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x9636;</h1>
+<h2 id="&#x5B89;&#x5168;"><a name="&#x5B89;&#x5168;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x5168;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;</h2>
+<pre><code class="lang-shell"># &#x67E5;&#x770B;&#x662F;&#x5426;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;
+CONFIG get requirepass
+# &#x8BBE;&#x7F6E;&#x5BC6;&#x7801;
+CONFIG set requirepass &quot;password&quot;
+# &#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x767B;&#x5F55;
+AUTH password
+</code></pre>
+<pre><code class="lang-shell"># &#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x9879;
+CONFIG GET *
+# &#x67E5;&#x770B;&#x5F53;&#x524D;&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;
+info
+</code></pre>
+<h2 id="&#x6301;&#x4E45;&#x5316;"><a name="&#x6301;&#x4E45;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6301;&#x4E45;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6301;&#x4E45;&#x5316;</h2>
+<p>&#x5206;&#x4E3A;RDB&#x548C;AOF&#x4E24;&#x79CD;&#x6301;&#x4E45;&#x5316;&#x65B9;&#x5F0F;</p>
+<h3 id="rdb"><a name="rdb" class="anchor-navigation-ex-anchor" href="#rdb"><i class="fa fa-link" aria-hidden="true"></i></a>RDB</h3>
+<p>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x540E;&#x4F1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x751F;&#x6210;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x7684;&#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;</p>
+<pre><code class="lang-shell"># &#x7ACB;&#x523B;&#x6267;&#x884C;
+save 
+# &#x540E;&#x53F0;&#x6267;&#x884C;
+bgsave
+</code></pre>
+<h4 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<p>save&#x6307;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x4F1A;&#x963B;&#x585E;&#x5F53;&#x524D;Redis&#x670D;&#x52A1;&#x5668;,&#x77E5;&#x9053;&#x5F53;&#x524D;RDB&#x5B8C;&#x6210;&#x4E3A;&#x6B62;,&#x6709;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x957F;&#x65F6;&#x95F4;&#x963B;&#x585E;</p>
+<p><img src="assets/image-20200705172902465.png" alt="image-20200705172902465"></p>
+<p><img src="assets/image-20200705173000676.png" alt="image-20200705173000676"></p>
+<h3 id="aof"><a name="aof" class="anchor-navigation-ex-anchor" href="#aof"><i class="fa fa-link" aria-hidden="true"></i></a>AOF</h3>
+<p>&#x4F7F;&#x7528;&#x65E5;&#x5FD7;&#x7684;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;,&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x5F00;&#x81EA;&#x52A8;&#x5F00;&#x542F;,&#x8BB0;&#x5F55;&#x7684;&#x662F;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x5F0F;&#x7F29;&#x5C0F;&#x6587;&#x4EF6;&#x5927;&#x5C0F;</p>
+<p><img src="assets/image-20200705173243768.png" alt="image-20200705173243768"></p>
+<p><img src="assets/image-20200705173550660.png" alt="image-20200705173550660"></p>
+<p><img src="assets/image-20200705174002918.png" alt="image-20200705174002918"></p>
+<p><img src="assets/image-20200705173528654.png" alt="image-20200705173528654"></p>
+<p><img src="assets/image-20200705174140561.png" alt="image-20200705174140561"></p>
+<p><img src="assets/image-20200705174201449.png" alt="image-20200705174201449"></p>
+<p><img src="assets/image-20200705174237401.png" alt="image-20200705174237401"></p>
+<p><img src="assets/image-20200705174941890.png" alt="image-20200705174941890"></p>
+<h3 id="rdb&#x548C;aof&#x6301;&#x4E45;&#x5316;&#x7684;&#x6BD4;&#x8F83;"><a name="rdb&#x548C;aof&#x6301;&#x4E45;&#x5316;&#x7684;&#x6BD4;&#x8F83;" class="anchor-navigation-ex-anchor" href="#rdb&#x548C;aof&#x6301;&#x4E45;&#x5316;&#x7684;&#x6BD4;&#x8F83;"><i class="fa fa-link" aria-hidden="true"></i></a>RDB&#x548C;AOF&#x6301;&#x4E45;&#x5316;&#x7684;&#x6BD4;&#x8F83;</h3>
+<p><img src="assets/image-20200705175234102.png" alt="image-20200705175234102"></p>
+<p><img src="assets/image-20200705175352579.png" alt="image-20200705175352579"></p>
+<h2 id="&#x4E8B;&#x52A1;"><a name="&#x4E8B;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x52A1;</h2>
+<p><img src="assets/image-20200705180435987.png" alt="image-20200705180435987"></p>
+<p>&#x53D6;&#x6D88;&#x4E8B;&#x52A1;</p>
+<p>&#x4E0D;&#x4F1A;&#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x4E8B;&#x52A1;,&#x6267;&#x884C;&#x547D;&#x4EE4;&#x540E;&#x4F1A;&#x6E05;&#x9664;&#x5B58;&#x5728;&#x7684;&#x6240;&#x6709;&#x4E8B;&#x52A1;</p>
+<pre><code>discard
+</code></pre><p><img src="assets/image-20200705181428269.png" alt="image-20200705181428269"></p>
+<h3 id="&#x4E8B;&#x52A1;&#x9501;"><a name="&#x4E8B;&#x52A1;&#x9501;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x52A1;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x52A1;&#x9501;</h3>
+<p><img src="assets/image-20200705181645189.png" alt="image-20200705181645189"></p>
+<p>watch&#x5FC5;&#x987B;&#x5728;&#x4E8B;&#x52A1;&#x524D;&#x6267;&#x884C;</p>
+<p><img src="assets/image-20200705182118708.png" alt="image-20200705182118708"></p>
+<h3 id="&#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898;"><a name="&#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898;</h3>
+<p><img src="assets/image-20200705182508936.png" alt="image-20200705182508936"></p>
+<h2 id="&#x5220;&#x9664;&#x7B56;&#x7565;"><a name="&#x5220;&#x9664;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x7B56;&#x7565;</h2>
+<p><img src="assets/image-20200705192650901.png" alt="image-20200705192650901"></p>
+<p>&#x5B9A;&#x65F6;: &#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;,expire(&#x8BBE;&#x7F6E;&#x4E86;&#x5B9A;&#x65F6;&#x5143;&#x7D20;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;,&#x5B58;&#x50A8;&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740;&#x503C;&#x548C;&#x8FC7;&#x671F;&#x65F6;&#x95F4;)&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5230;&#x8FBE;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7ACB;&#x523B;&#x5220;&#x9664;</p>
+<p>&#x60F0;&#x6027;: &#x5F53;&#x5143;&#x7D20;&#x5230;&#x8FBE;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x5982;&#x679C;&#x670D;&#x52A1;&#x5668;&#x538B;&#x529B;&#x8FC7;&#x5927;&#x4E0D;&#x4F1A;&#x7ACB;&#x523B;&#x5220;&#x9664;,&#x7B49;&#x5230;&#x5728;&#x83B7;&#x53D6;&#x65F6;&#x518D;&#x8FDB;&#x884C;&#x5220;&#x9664;</p>
+<p>&#x5B9A;&#x671F;: &#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5BF9;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x968F;&#x673A;&#x62BD;&#x67E5;,&#x628A;&#x62BD;&#x67E5;&#x5230;&#x7684;&#x8FC7;&#x671F;&#x6570;&#x636E;&#x5220;&#x9664;</p>
+<h2 id="&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; TaoQZ 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2024-04-30 17:23:28
 </span></footer>
@@ -2957,7 +2977,7 @@
 
             
                 
-                <a href="Git.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: git安装及简介">
+                <a href="redis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Redis基础">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -2969,7 +2989,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Idea使用Git","level":"1.2.2","depth":2,"next":{"title":"Vue","level":"1.3","depth":1,"ref":"","articles":[{"title":"Vue基础","level":"1.3.1","depth":2,"path":"vue/Vue.md","ref":"vue/Vue.md","articles":[]},{"title":"Vue理论知识","level":"1.3.2","depth":2,"path":"vue/vue理论知识.md","ref":"vue/vue理论知识.md","articles":[]}]},"previous":{"title":"git安装及简介","level":"1.2.1","depth":2,"path":"git/Git.md","ref":"git/Git.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.top"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"git/Idea中使用Git.md","mtime":"2024-04-30T08:23:28.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-02T05:41:04.884Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Redis进阶","level":"1.8.2","depth":2,"next":{"title":"Kafka","level":"1.9","depth":1,"ref":"","articles":[{"title":"kafka入门","level":"1.9.1","depth":2,"path":"kafka/kafka入门.md","ref":"kafka/kafka入门.md","articles":[]},{"title":"kafka搭建集群","level":"1.9.2","depth":2,"path":"kafka/kafka搭建集群.md","ref":"kafka/kafka搭建集群.md","articles":[]}]},"previous":{"title":"Redis基础","level":"1.8.1","depth":2,"path":"redis/redis.md","ref":"redis/redis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.top"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"redis/redis高级.md","mtime":"2024-04-30T08:23:28.538Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-02T05:41:04.884Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,5 +1,5 @@
 {
-    "title": "TaoQZ",
+    "title": "Peace & Love",
     "description": "TaoQZ",
     "author": "TaoQZ",
     "output.name": "site",
@@ -33,9 +33,8 @@
         "search-plus",
         "code",
         "insert-logo",
-        "custom-favicon",
+        "favicon",
         "popup"
-
 
     ],
 
@@ -98,10 +97,13 @@
                 "qzone"
             ]
         },
-        "favicon": "/img/header/favicon.ico",
+         "favicon": {
+            "shortcut": "/img/header/favicon.ico",
+            "bookmark": "/img/header/favicon.ico"  
+        },
         "insert-logo": {
             "url": "/img/header/header.jpg",
-            "style": "background: none; max-height: 50px; min-height: 50px"
+            "style": "background: none; max-height: 100px; min-height: 100px"
         }		
 
     }
