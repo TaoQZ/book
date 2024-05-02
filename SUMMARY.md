@@ -1,0 +1,188 @@
+# Summary
+
+* [前言](README.md)
+* Git
+    * [git安装及简介](git/Git.md)
+    * [Idea使用Git](git/Idea中使用Git.md)
+* Vue
+    * [Vue基础](vue/Vue.md)
+    * [Vue理论知识](vue/vue理论知识.md)  
+* 前端
+    * [ES6](frontend/es6/es6.md)
+    * [Node的安装](frontend/node/node.md)
+    * [Mock](frontend/mock/mock.md)
+    * [Nuxt](frontend/nuxt/nuxt.md)
+    * other
+       * [HTML](frontend/other/html.md)
+       * [JSON对象](frontend/other/JSON对象的两个方法.md)
+* JWT
+    * [JWT](jwt/JWT.md)
+    * [认证、授权、鉴权、权限控制](jwt/认证、授权、鉴权、权限控制.md)
+* Java
+    * base
+        * [Java的基本程序设计结构](java/base/Java的基本程序设计结构.md)
+        * [对象和类](java/base/对象和类.md)
+        * [泛型](java/base/泛型.md)
+        * [集合](java/base/集合.md)
+        * [继承](java/base/继承.md)
+        * [接口、内部类](java/base/接口、内部类.md)
+        * [异常](java/base/异常.md)
+    * java8新特性
+        * [默认方法](java/java8new_feature/默认方法.md)
+        * [Lambda](java/java8new_feature/Lambda.md)
+        * [Lambda访问外部变量](java/java8new_feature/Lambda访问外部变量.md)
+        * [新的日期时间API](java/java8new_feature/日期时间API.md)
+    * java17
+        * [java17](java/jdk17/jdk17.md)        
+    * 设计模式
+        * [单例模式](java/pattern/singleton.md)
+        * [代理模式](java/pattern/proxy.md)
+    * 多线程
+        * [多线程基础](java/thread/多线程入门.md)
+        * [线程同步和通信](java/thread/线程同步和通信.md)
+        * [线程池](java/thread/线程池.md)
+        * [Threadpool](java/thread/threadpool/threadpool.md)
+* MySQL
+    * [mysql基础](mysql/mysql基础.md)
+    * [mysql进阶](mysql/mysql进阶.md)
+    * [mysql事务](mysql/mysql事务.md)
+    * [varchar和char](mysql/varchar和char.md)
+    * 极客
+        * [mysql架构](mysql/jike/mysql架构/mysql架构.md)
+        * [一条更新语句是怎么执行的](mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.md)
+        * [索引](mysql/jike/suoyin/suoyin.md)
+        * [锁](mysql/jike/suo/mysql_全局锁_表锁_行锁.md)
+        * [事务](mysql/jike/事务/事务.md)
+        * [mysql执行计划](mysql/jike/xn/mysql执行计划.md)
+        * [MYSQL_performance_schema详解](mysql/jike/xn/MYSQL_performance_schema详解.md)
+* Redis
+    * [Redis基础](redis/redis.md)    
+    * [Redis进阶](redis/redis高级.md)
+* Kafka
+    * [kafka入门](kafka/kafka入门.md)
+    * [kafka搭建集群](kafka/kafka搭建集群.md)
+* Logstash
+    * [Logstash](logstash/logstash技术分享.md)       
+* Linux
+    * [安装jdk及maven](linux/Linux环境下安装jdk和maven.md)
+    * [Linux远程管理](linux/Linux远程管理.md)
+* Spring
+    * [Spring](spring/spring.md)
+    * [SpringMVC](spring/SpringMVC.md)
+    * [Spring循环依赖](spring/spring循环依赖.md)
+    * SpringBoot
+        * [springboot入门](spring/SpringBoot.md)
+        * [javamail](boot_integration/javamail.md)
+        * [springtask](boot_integration/springtask.md)
+    * [@Transactional](spring/transactional/@Transactional.md) 
+* [RabbitMQ](rabbitmq/rabbitmq.md)
+* [微服务阶段](microservice/微服务概述.md)
+    * Netflix
+        * [Zuul](microservice/netflix/Zuul.md)
+        * [Eureka](microservice/netflix/eureka/eureka.md)
+        * [Hystrix](microservice/netflix/Hystrix.md)
+        * [Feign](microservice/netflix/Feign.md)
+        * [Config](microservice/netflix/SpringCloudConfig.md)
+        * [POJO](microservice/netflix/POJO依赖.md)    
+    * Alibaba
+        * [seata](microservice/alibaba/seata_nacos/seata结合nacos使用.md)
+    * HttpTool
+        * [HttpClient](httptool/HttpClient.md)
+        * [RestTemplate](httptool/RestTemplate.md)
+* [JDBC](jdbc/jdbc.md) 
+* [jike100](jike100/jike100.md) 
+* [Mybatis](mybatis/mybatis.md)
+    * [注意事项](mybatis/注意事项.md)
+    * [mybatis-plus](mybatis/mybatis-plus.md)
+    * [mybatis进阶](mybatis/mybatis_advance.md)
+* Maven
+    * [Maven](maven/maven.md)
+* Http    
+    * [状态码](http/状态码.md)
+* minio
+    * [minio](minio/minio.md)
+    * [minio搭建集群](minio/minio搭建集群.md)    
+* Nginx
+    * [nginx](nginx/nginx.md)   
+    * [https配置](nginx/https配置.md) 
+    * [docker-nginx](nginx/docker-nginx.md)      
+* Mongo
+    * [Mongo的安装与卸载](mongodb/Mongo的安装与卸载.md)
+    * [Mongo的介绍及命令行使用](mongodb/Mongo介绍及命令行使用.md)
+* Aliyun
+    * [阿里云域名](aliyun/阿里云域名.md)
+    * [OSS存储](aliyun/OSS存储.md)
+* Swagger
+    * [Springboot整合Swagger2](swagger/SpringBoot整合Swagger2.md)
+* ElementUI
+    * [elementUI](elementUI/ElementUI.md)   
+* 模板引擎
+    * [Thymeleaf](templateng/Thymeleaf.md)  
+* Docker
+    * [docker安装及常用命令](docker/docker安装及常用命令.md)
+    * [IDEA连接docker](docker/IDEA连接docker.md)
+    * [部署springboot项目](docker/部署springboot项目.md)
+    * [遇到的问题](docker/problem.md)
+    * [docker-compose](docker/docker-compose.md)
+* Harbor
+    * [Harbor](harbor/harbor.md)  
+* Dubbo
+    * [入门使用](dubbo/使用dubbo+zookeeper.md)    
+* Android
+    * [刷机](android/root.md)
+    * [android发送请求](android/android发送请求.md)
+    * [改造为web服务器](android/改造为web服务器.md)
+* React 
+    * [React](react/React.md)
+* Jrebel 
+    * [Jrebel](jrebel/远程调试及热部署.md)    
+* ElasticStack
+    * [ElasticSearch](elasticstack/elasticsearch.md)
+    * [ElasticSearch](elasticstack/ElasticSearch主要搜索关键字.md)
+    * [Api](elasticstack/elasticsearch_api.md)
+    * [Nested类型对文档的影响](elasticstack/ElasticSearch_Nested类型对文档的影响.md)
+    * [ES_工作中遇到的问题.md](elasticstack/ES_工作中遇到的问题.md)
+* Salesforce
+    * [Apex](salesforce/apex.md)  
+    * [Visualforce](salesforce/visualforce.md)
+    * [遇到的问题](salesforce/遇到的问题.md)
+    * [在IDEA中配置salesforce环境](salesforce/在IDEA中配置salesforce环境.md)   
+    * [VSCode配置salesforce环境](salesforce/VSCode配置salesforce环境.md) 
+* 工作笔记
+	* [css](worknote/css/css.md)
+    * [nacos](worknote/nacos/nacos配置自动刷新.md)
+	* [docker](worknote/docker/docker.md)
+	* [elementui](worknote/elementui/elementui.md)
+	* [elk](worknote/elk/elk.md)
+	* [gitlab](worknote/gitlab/gitlab.md)
+	* [jpa](worknote/jpa/jpa.md)
+	* mysql
+		* [centos7安装mysql5.7](worknote/mysql/centos7安装mysql5.7.md)
+		* [centos卸载mysql](worknote/mysql/centos卸载mysql.md)
+		* [mysql 主从复制](worknote/mysql/mysql 主从复制.md)
+		* [mysql时区](worknote/mysql/mysql时区.md)
+		* [mysql主从复制_test](worknote/mysql/mysql主从复制_test.md)
+		* [mysql日期函数](worknote/mysql/mysql日期函数.md)
+        * [mysql_bin-log](worknote/mysql/mysql_bin-log.md)
+        * [mysql_null](worknote/mysql/mysql_null.md)
+        * [mysql8](worknote/mysql/mysql8.md)
+	* [rabbitmq](worknote/rabbitmq/docker安装rabbitmq.md)	
+	* [redis](worknote/redis/redis.md)	
+	* [websocket](worknote/websocket/springboot+vue+websocket.md)
+	* [tess4j_ocr](worknote/tess4j_ocr/Tess4j使用记录.md)
+    * [swagger](worknote/swagger/swagger.md)
+	* other
+		* [stream](worknote/other/stream.md)
+		* [windows操作端口](worknote/other/windows操作端口.md)
+		* [读取文件时自动添加BOM头的问题](worknote/other/读取文件时自动添加BOM头的问题.md)
+		* [java_pdf转图片+打压缩包](worknote/other/java_pdf转图片+打压缩包.md)
+		* [element-ui解决notify速度太快会重叠的问题](worknote/other/element-ui解决notify速度太快会重叠的问题.md)
+		* [vue获取htmlcollection的length为0问题](worknote/other/vue获取htmlcollection的length为0问题.md)
+		* [解决a标签自动浏览问题](worknote/other/解决a标签自动浏览问题.md)
+		* [解决element-ui在展示数据时会少显示一个空格的问题](worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.md)
+		* [解决vue使用video播放视频无画面问题](worknote/other/解决vue使用video播放视频无画面问题.md)
+* 其他
+    * [搭建SSR](other/使用Google Cloud搭建ssr.md)
+    * [Kaptcha验证码](other/kaptcha验证码.md)
+    * [ffmpeg](other/ffmpeg.md)
+
