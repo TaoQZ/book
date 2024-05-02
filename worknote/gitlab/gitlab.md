@@ -1,1 +1,0 @@
-docker run --detach   --hostname taoqz.xyz   --publish 8443:443 --publish 8086:80 --publish 8222:22   --name gitlab   --restart always   --volume /usr/local/gitlab/config:/etc/gitlab   --volume /usr/local/gitlab/logs:/var/log/gitlab   --volume /usr/local/gitlab/data:/var/opt/gitlab   --privileged=true   gitlab/gitlab-ce:latest
