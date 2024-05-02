@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3191434f-c0cc-424c-8d01-817bf90c4f13" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/aliyun/OSS存储.html" beforeDir="false" afterPath="$PROJECT_DIR$/aliyun/OSS存储.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aliyun/OSS存储.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aliyun/阿里云域名.html" beforeDir="false" afterPath="$PROJECT_DIR$/aliyun/阿里云域名.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aliyun/阿里云域名.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/android发送请求.html" beforeDir="false" afterPath="$PROJECT_DIR$/android/android发送请求.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/android发送请求.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/root.html" beforeDir="false" afterPath="$PROJECT_DIR$/android/root.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/root.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/改造为web服务器.html" beforeDir="false" afterPath="$PROJECT_DIR$/android/改造为web服务器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/改造为web服务器.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot_integration/javamail.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot_integration/javamail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot_integration/javamail.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot_integration/springtask.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot_integration/springtask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot_integration/springtask.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/IDEA连接docker.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/IDEA连接docker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/IDEA连接docker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker安装及常用命令.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker安装及常用命令.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker安装及常用命令.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/problem.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/problem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/problem.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/部署springboot项目.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/部署springboot项目.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/部署springboot项目.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/使用dubbo+zookeeper.html" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/使用dubbo+zookeeper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/使用dubbo+zookeeper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticstack/elasticsearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/elasticstack/elasticsearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticstack/elasticsearch.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticstack/elasticsearch_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/elasticstack/elasticsearch_api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticstack/elasticsearch_api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementUI/ElementUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/elementUI/ElementUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementUI/ElementUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/es6/es6.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/es6/es6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/es6/es6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/mock/mock.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/mock/mock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/mock/mock.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node/node.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node/node.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node/node.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/nuxt/nuxt.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/nuxt/nuxt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/nuxt/nuxt.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/other/JSON对象的两个方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/other/JSON对象的两个方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/other/JSON对象的两个方法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/other/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/other/html.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/other/html.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/git/Git.html" beforeDir="false" afterPath="$PROJECT_DIR$/git/Git.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git/Git.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/git/Idea中使用Git.html" beforeDir="false" afterPath="$PROJECT_DIR$/git/Idea中使用Git.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git/Idea中使用Git.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/状态码.html" beforeDir="false" afterPath="$PROJECT_DIR$/http/状态码.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/状态码.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptool/HttpClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/httptool/HttpClient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptool/HttpClient.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptool/RestTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/httptool/RestTemplate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptool/RestTemplate.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/Java的基本程序设计结构.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/Java的基本程序设计结构.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/Java的基本程序设计结构.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/对象和类.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/对象和类.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/对象和类.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/异常.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/异常.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/异常.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/接口、内部类.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/接口、内部类.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/接口、内部类.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/泛型.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/泛型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/泛型.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/继承.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/继承.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/继承.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/集合.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/base/集合.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/base/集合.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/Lambda.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/java8new_feature/Lambda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/Lambda.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/Lambda访问外部变量.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/java8new_feature/Lambda访问外部变量.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/Lambda访问外部变量.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/日期时间API.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/java8new_feature/日期时间API.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/日期时间API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/默认方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/java8new_feature/默认方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java8new_feature/默认方法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pattern/proxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/pattern/proxy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pattern/proxy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pattern/singleton.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/pattern/singleton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pattern/singleton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/threadpool/threadpool.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/thread/threadpool/threadpool.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/threadpool/threadpool.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/多线程入门.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/thread/多线程入门.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/多线程入门.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/线程同步和通信.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/thread/线程同步和通信.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/线程同步和通信.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/线程池.html" beforeDir="false" afterPath="$PROJECT_DIR$/java/thread/线程池.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/thread/线程池.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/jdbc.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/jdbc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/jdbc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jike100/jike100.html" beforeDir="false" afterPath="$PROJECT_DIR$/jike100/jike100.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jike100/jike100.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jrebel/远程调试及热部署.html" beforeDir="false" afterPath="$PROJECT_DIR$/jrebel/远程调试及热部署.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jrebel/远程调试及热部署.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/JWT.html" beforeDir="false" afterPath="$PROJECT_DIR$/jwt/JWT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/JWT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/认证、授权、鉴权、权限控制.html" beforeDir="false" afterPath="$PROJECT_DIR$/jwt/认证、授权、鉴权、权限控制.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/认证、授权、鉴权、权限控制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/kafka入门.html" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/kafka入门.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/kafka入门.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/kafka搭建集群.html" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/kafka搭建集群.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/kafka搭建集群.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/Linux环境下安装jdk和maven.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/Linux环境下安装jdk和maven.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/Linux环境下安装jdk和maven.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/Linux远程管理.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/Linux远程管理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/Linux远程管理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logstash/logstash技术分享.html" beforeDir="false" afterPath="$PROJECT_DIR$/logstash/logstash技术分享.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logstash/logstash技术分享.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/maven.html" beforeDir="false" afterPath="$PROJECT_DIR$/maven/maven.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/maven.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/alibaba/seata_nacos/seata结合nacos使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/alibaba/seata_nacos/seata结合nacos使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/alibaba/seata_nacos/seata结合nacos使用.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/Feign.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/netflix/Feign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/Feign.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/Hystrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/netflix/Hystrix.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/Hystrix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/POJO依赖.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/netflix/POJO依赖.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/POJO依赖.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/SpringCloudConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/netflix/SpringCloudConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/SpringCloudConfig.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/Zuul.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/netflix/Zuul.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/Zuul.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/eureka/eureka.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/netflix/eureka/eureka.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/netflix/eureka/eureka.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/微服务概述.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/微服务概述.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/微服务概述.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minio/minio.html" beforeDir="false" afterPath="$PROJECT_DIR$/minio/minio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minio/minio.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minio/minio搭建集群.html" beforeDir="false" afterPath="$PROJECT_DIR$/minio/minio搭建集群.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minio/minio搭建集群.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/Mongo介绍及命令行使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/Mongo介绍及命令行使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/Mongo介绍及命令行使用.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/Mongo的安装与卸载.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/Mongo的安装与卸载.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/Mongo的安装与卸载.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/mybatis-plus.html" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/mybatis-plus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/mybatis-plus.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/mybatis.html" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/mybatis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/mybatis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/mybatis_advance.html" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/mybatis_advance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/mybatis_advance.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/注意事项.html" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/注意事项.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/注意事项.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/mysql架构/mysql架构.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/mysql架构/mysql架构.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/mysql架构/mysql架构.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/suo/mysql_全局锁_表锁_行锁.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/suo/mysql_全局锁_表锁_行锁.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/suo/mysql_全局锁_表锁_行锁.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/suoyin/suoyin.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/suoyin/suoyin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/suoyin/suoyin.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/xn/MYSQL_performance_schema详解.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/xn/MYSQL_performance_schema详解.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/xn/MYSQL_performance_schema详解.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/xn/mysql执行计划.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/xn/mysql执行计划.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/xn/mysql执行计划.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/事务/事务.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/jike/事务/事务.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/jike/事务/事务.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql事务.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql事务.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql事务.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql基础.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql基础.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql基础.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql进阶.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql进阶.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql进阶.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/varchar和char.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/varchar和char.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/varchar和char.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/https配置.html" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/https配置.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/https配置.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.html" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/ffmpeg.html" beforeDir="false" afterPath="$PROJECT_DIR$/other/ffmpeg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/ffmpeg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/kaptcha验证码.html" beforeDir="false" afterPath="$PROJECT_DIR$/other/kaptcha验证码.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/kaptcha验证码.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/使用Google Cloud搭建ssr.html" beforeDir="false" afterPath="$PROJECT_DIR$/other/使用Google Cloud搭建ssr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/使用Google Cloud搭建ssr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/rabbitmq.html" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/rabbitmq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/rabbitmq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis.html" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis高级.html" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis高级.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis高级.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/VSCode配置salesforce环境.html" beforeDir="false" afterPath="$PROJECT_DIR$/salesforce/VSCode配置salesforce环境.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/VSCode配置salesforce环境.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/apex.html" beforeDir="false" afterPath="$PROJECT_DIR$/salesforce/apex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/apex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/visualforce.html" beforeDir="false" afterPath="$PROJECT_DIR$/salesforce/visualforce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/visualforce.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/在IDEA中配置salesforce环境.html" beforeDir="false" afterPath="$PROJECT_DIR$/salesforce/在IDEA中配置salesforce环境.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/在IDEA中配置salesforce环境.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/遇到的问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/salesforce/遇到的问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salesforce/遇到的问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plus_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/search_plus_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/SpringBoot.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring/SpringBoot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/SpringBoot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/SpringMVC.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring/SpringMVC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/SpringMVC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring循环依赖.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring循环依赖.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring循环依赖.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/transactional/@Transactional.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring/transactional/@Transactional.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/transactional/@Transactional.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/SpringBoot整合Swagger2.html" beforeDir="false" afterPath="$PROJECT_DIR$/swagger/SpringBoot整合Swagger2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/SpringBoot整合Swagger2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templateng/Thymeleaf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templateng/Thymeleaf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templateng/Thymeleaf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/Vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue/Vue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/Vue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue理论知识.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue/vue理论知识.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue理论知识.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/css/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/css/css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/css/css.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/docker/docker.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/docker/docker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/docker/docker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/elementui/elementui.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/elementui/elementui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/elementui/elementui.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/elk/elk.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/elk/elk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/elk/elk.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/gitlab/gitlab.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/gitlab/gitlab.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/gitlab/gitlab.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/jpa/jpa.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/jpa/jpa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/jpa/jpa.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/centos7安装mysql5.7.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/centos7安装mysql5.7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/centos7安装mysql5.7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/centos卸载mysql.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/centos卸载mysql.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/centos卸载mysql.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql 主从复制.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql 主从复制.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql 主从复制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql8.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql_bin-log.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql_bin-log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql_bin-log.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql_null.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql_null.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql主从复制_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql主从复制_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql主从复制_test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql日期函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql日期函数.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql日期函数.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql时区.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/mysql/mysql时区.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/mysql/mysql时区.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/element-ui解决notify速度太快会重叠的问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/element-ui解决notify速度太快会重叠的问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/element-ui解决notify速度太快会重叠的问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/java_pdf转图片+打压缩包.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/java_pdf转图片+打压缩包.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/java_pdf转图片+打压缩包.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/stream.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/stream.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/stream.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/vue获取htmlcollection的length为0问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/vue获取htmlcollection的length为0问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/vue获取htmlcollection的length为0问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/windows操作端口.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/windows操作端口.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/windows操作端口.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/解决a标签自动浏览问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/解决a标签自动浏览问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/解决a标签自动浏览问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/解决vue使用video播放视频无画面问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/解决vue使用video播放视频无画面问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/解决vue使用video播放视频无画面问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/读取文件时自动添加BOM头的问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/other/读取文件时自动添加BOM头的问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/other/读取文件时自动添加BOM头的问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/rabbitmq/docker安装rabbitmq.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/rabbitmq/docker安装rabbitmq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/rabbitmq/docker安装rabbitmq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/redis/redis.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/redis/redis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/redis/redis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/swagger/swagger.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/swagger/swagger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/swagger/swagger.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/tess4j_ocr/Tess4j使用记录.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/tess4j_ocr/Tess4j使用记录.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/tess4j_ocr/Tess4j使用记录.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/websocket/springboot+vue+websocket.html" beforeDir="false" afterPath="$PROJECT_DIR$/worknote/websocket/springboot+vue+websocket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worknote/websocket/springboot+vue+websocket.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GvxJPB5ctF3A3IVZVtA7almI1O" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/tao/tao/x_code/book"
+  }
+}]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3191434f-c0cc-424c-8d01-817bf90c4f13" name="Changes" comment="" />
+      <created>1667282785665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667282785665</updated>
+      <workItem from="1667282786829" duration="629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
