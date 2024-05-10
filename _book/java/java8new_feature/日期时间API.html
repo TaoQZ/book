@@ -1,0 +1,3522 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>新的日期时间API · Peace & Love</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="TaoQZ">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Lambda访问外部变量.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../img/header/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../img/header/favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://taoqz.top" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../git/Git.html">
+            
+                <a href="../../git/Git.html">
+            
+                    
+                    git安装及简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../git/Idea中使用Git.html">
+            
+                <a href="../../git/Idea中使用Git.html">
+            
+                    
+                    Idea使用Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../vue/Vue.html">
+            
+                <a href="../../vue/Vue.html">
+            
+                    
+                    Vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../vue/vue理论知识.html">
+            
+                <a href="../../vue/vue理论知识.html">
+            
+                    
+                    Vue理论知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../frontend/es6/es6.html">
+            
+                <a href="../../frontend/es6/es6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../frontend/node/node.html">
+            
+                <a href="../../frontend/node/node.html">
+            
+                    
+                    Node的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../frontend/mock/mock.html">
+            
+                <a href="../../frontend/mock/mock.html">
+            
+                    
+                    Mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../frontend/nuxt/nuxt.html">
+            
+                <a href="../../frontend/nuxt/nuxt.html">
+            
+                    
+                    Nuxt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../frontend/other/html.html">
+            
+                <a href="../../frontend/other/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../../frontend/other/JSON对象的两个方法.html">
+            
+                <a href="../../frontend/other/JSON对象的两个方法.html">
+            
+                    
+                    JSON对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    JWT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../jwt/JWT.html">
+            
+                <a href="../../jwt/JWT.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../jwt/认证、授权、鉴权、权限控制.html">
+            
+                <a href="../../jwt/认证、授权、鉴权、权限控制.html">
+            
+                    
+                    认证、授权、鉴权、权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    base
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../base/Java的基本程序设计结构.html">
+            
+                <a href="../base/Java的基本程序设计结构.html">
+            
+                    
+                    Java的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../base/对象和类.html">
+            
+                <a href="../base/对象和类.html">
+            
+                    
+                    对象和类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../base/泛型.html">
+            
+                <a href="../base/泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../base/集合.html">
+            
+                <a href="../base/集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../base/继承.html">
+            
+                <a href="../base/继承.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../base/接口、内部类.html">
+            
+                <a href="../base/接口、内部类.html">
+            
+                    
+                    接口、内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../base/异常.html">
+            
+                <a href="../base/异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    java8新特性
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="默认方法.html">
+            
+                <a href="默认方法.html">
+            
+                    
+                    默认方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="Lambda.html">
+            
+                <a href="Lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="Lambda访问外部变量.html">
+            
+                <a href="Lambda访问外部变量.html">
+            
+                    
+                    Lambda访问外部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2.4" data-path="日期时间API.html">
+            
+                <a href="日期时间API.html">
+            
+                    
+                    新的日期时间API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    java17
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../jdk17/jdk17.html">
+            
+                <a href="../jdk17/jdk17.html">
+            
+                    
+                    java17
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../pattern/singleton.html">
+            
+                <a href="../pattern/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../pattern/proxy.html">
+            
+                <a href="../pattern/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    多线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../thread/多线程入门.html">
+            
+                <a href="../thread/多线程入门.html">
+            
+                    
+                    多线程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../thread/线程同步和通信.html">
+            
+                <a href="../thread/线程同步和通信.html">
+            
+                    
+                    线程同步和通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="../thread/线程池.html">
+            
+                <a href="../thread/线程池.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="../thread/threadpool/threadpool.html">
+            
+                <a href="../thread/threadpool/threadpool.html">
+            
+                    
+                    Threadpool
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../mysql/mysql基础.html">
+            
+                <a href="../../mysql/mysql基础.html">
+            
+                    
+                    mysql基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../mysql/mysql进阶.html">
+            
+                <a href="../../mysql/mysql进阶.html">
+            
+                    
+                    mysql进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../mysql/mysql事务.html">
+            
+                <a href="../../mysql/mysql事务.html">
+            
+                    
+                    mysql事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../mysql/varchar和char.html">
+            
+                <a href="../../mysql/varchar和char.html">
+            
+                    
+                    varchar和char
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <span>
+            
+                    
+                    极客
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../../mysql/jike/mysql架构/mysql架构.html">
+            
+                <a href="../../mysql/jike/mysql架构/mysql架构.html">
+            
+                    
+                    mysql架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../../mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html">
+            
+                <a href="../../mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html">
+            
+                    
+                    一条更新语句是怎么执行的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../../mysql/jike/suoyin/suoyin.html">
+            
+                <a href="../../mysql/jike/suoyin/suoyin.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" data-path="../../mysql/jike/suo/mysql_全局锁_表锁_行锁.html">
+            
+                <a href="../../mysql/jike/suo/mysql_全局锁_表锁_行锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.5" data-path="../../mysql/jike/事务/事务.html">
+            
+                <a href="../../mysql/jike/事务/事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.6" data-path="../../mysql/jike/xn/mysql执行计划.html">
+            
+                <a href="../../mysql/jike/xn/mysql执行计划.html">
+            
+                    
+                    mysql执行计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.7" data-path="../../mysql/jike/xn/MYSQL_performance_schema详解.html">
+            
+                <a href="../../mysql/jike/xn/MYSQL_performance_schema详解.html">
+            
+                    
+                    MYSQL_performance_schema详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../redis/redis.html">
+            
+                <a href="../../redis/redis.html">
+            
+                    
+                    Redis基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../redis/redis高级.html">
+            
+                <a href="../../redis/redis高级.html">
+            
+                    
+                    Redis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Kafka
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../kafka/kafka入门.html">
+            
+                <a href="../../kafka/kafka入门.html">
+            
+                    
+                    kafka入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../kafka/kafka搭建集群.html">
+            
+                <a href="../../kafka/kafka搭建集群.html">
+            
+                    
+                    kafka搭建集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Logstash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../logstash/logstash技术分享.html">
+            
+                <a href="../../logstash/logstash技术分享.html">
+            
+                    
+                    Logstash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../linux/Linux环境下安装jdk和maven.html">
+            
+                <a href="../../linux/Linux环境下安装jdk和maven.html">
+            
+                    
+                    安装jdk及maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../linux/Linux远程管理.html">
+            
+                <a href="../../linux/Linux远程管理.html">
+            
+                    
+                    Linux远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../spring/spring.html">
+            
+                <a href="../../spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../spring/SpringMVC.html">
+            
+                <a href="../../spring/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../spring/spring循环依赖.html">
+            
+                <a href="../../spring/spring循环依赖.html">
+            
+                    
+                    Spring循环依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" >
+            
+                <span>
+            
+                    
+                    SpringBoot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.4.1" data-path="../../spring/SpringBoot.html">
+            
+                <a href="../../spring/SpringBoot.html">
+            
+                    
+                    springboot入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.2" data-path="../../boot_integration/javamail.html">
+            
+                <a href="../../boot_integration/javamail.html">
+            
+                    
+                    javamail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.3" data-path="../../boot_integration/springtask.html">
+            
+                <a href="../../boot_integration/springtask.html">
+            
+                    
+                    springtask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../spring/transactional/@Transactional.html">
+            
+                <a href="../../spring/transactional/@Transactional.html">
+            
+                    
+                    @Transactional
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../rabbitmq/rabbitmq.html">
+            
+                <a href="../../rabbitmq/rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../microservice/微服务概述.html">
+            
+                <a href="../../microservice/微服务概述.html">
+            
+                    
+                    微服务阶段
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" >
+            
+                <span>
+            
+                    
+                    Netflix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../microservice/netflix/Zuul.html">
+            
+                <a href="../../microservice/netflix/Zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.2" data-path="../../microservice/netflix/eureka/eureka.html">
+            
+                <a href="../../microservice/netflix/eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.3" data-path="../../microservice/netflix/Hystrix.html">
+            
+                <a href="../../microservice/netflix/Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.4" data-path="../../microservice/netflix/Feign.html">
+            
+                <a href="../../microservice/netflix/Feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.5" data-path="../../microservice/netflix/SpringCloudConfig.html">
+            
+                <a href="../../microservice/netflix/SpringCloudConfig.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.6" data-path="../../microservice/netflix/POJO依赖.html">
+            
+                <a href="../../microservice/netflix/POJO依赖.html">
+            
+                    
+                    POJO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" >
+            
+                <span>
+            
+                    
+                    Alibaba
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.2.1" data-path="../../microservice/alibaba/seata_nacos/seata结合nacos使用.html">
+            
+                <a href="../../microservice/alibaba/seata_nacos/seata结合nacos使用.html">
+            
+                    
+                    seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" >
+            
+                <span>
+            
+                    
+                    HttpTool
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="../../httptool/HttpClient.html">
+            
+                <a href="../../httptool/HttpClient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3.2" data-path="../../httptool/RestTemplate.html">
+            
+                <a href="../../httptool/RestTemplate.html">
+            
+                    
+                    RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../jdbc/jdbc.html">
+            
+                <a href="../../jdbc/jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../jike100/jike100.html">
+            
+                <a href="../../jike100/jike100.html">
+            
+                    
+                    jike100
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../mybatis/mybatis.html">
+            
+                <a href="../../mybatis/mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../mybatis/注意事项.html">
+            
+                <a href="../../mybatis/注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../mybatis/mybatis-plus.html">
+            
+                <a href="../../mybatis/mybatis-plus.html">
+            
+                    
+                    mybatis-plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../../mybatis/mybatis_advance.html">
+            
+                <a href="../../mybatis/mybatis_advance.html">
+            
+                    
+                    mybatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../maven/maven.html">
+            
+                <a href="../../maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    Http
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../http/状态码.html">
+            
+                <a href="../../http/状态码.html">
+            
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    minio
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../minio/minio.html">
+            
+                <a href="../../minio/minio.html">
+            
+                    
+                    minio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../minio/minio搭建集群.html">
+            
+                <a href="../../minio/minio搭建集群.html">
+            
+                    
+                    minio搭建集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Nginx
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../../nginx/nginx.html">
+            
+                <a href="../../nginx/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../../nginx/https配置.html">
+            
+                <a href="../../nginx/https配置.html">
+            
+                    
+                    https配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../../nginx/docker-nginx.html">
+            
+                <a href="../../nginx/docker-nginx.html">
+            
+                    
+                    docker-nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    Mongo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../../mongodb/Mongo的安装与卸载.html">
+            
+                <a href="../../mongodb/Mongo的安装与卸载.html">
+            
+                    
+                    Mongo的安装与卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                <a href="../../mongodb/Mongo介绍及命令行使用.html">
+            
+                    
+                    Mongo的介绍及命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    Aliyun
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../../aliyun/阿里云域名.html">
+            
+                <a href="../../aliyun/阿里云域名.html">
+            
+                    
+                    阿里云域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../../aliyun/OSS存储.html">
+            
+                <a href="../../aliyun/OSS存储.html">
+            
+                    
+                    OSS存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    Swagger
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../../swagger/SpringBoot整合Swagger2.html">
+            
+                <a href="../../swagger/SpringBoot整合Swagger2.html">
+            
+                    
+                    Springboot整合Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    ElementUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../../elementUI/ElementUI.html">
+            
+                <a href="../../elementUI/ElementUI.html">
+            
+                    
+                    elementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    模板引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../../templateng/Thymeleaf.html">
+            
+                <a href="../../templateng/Thymeleaf.html">
+            
+                    
+                    Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="../../docker/docker安装及常用命令.html">
+            
+                <a href="../../docker/docker安装及常用命令.html">
+            
+                    
+                    docker安装及常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="../../docker/IDEA连接docker.html">
+            
+                <a href="../../docker/IDEA连接docker.html">
+            
+                    
+                    IDEA连接docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.3" data-path="../../docker/部署springboot项目.html">
+            
+                <a href="../../docker/部署springboot项目.html">
+            
+                    
+                    部署springboot项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.4" data-path="../../docker/problem.html">
+            
+                <a href="../../docker/problem.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.5" data-path="../../docker/docker-compose.html">
+            
+                <a href="../../docker/docker-compose.html">
+            
+                    
+                    docker-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" >
+            
+                <span>
+            
+                    
+                    Harbor
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.28.1" data-path="../../harbor/harbor.html">
+            
+                <a href="../../harbor/harbor.html">
+            
+                    
+                    Harbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" >
+            
+                <span>
+            
+                    
+                    Dubbo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.1" data-path="../../dubbo/使用dubbo+zookeeper.html">
+            
+                <a href="../../dubbo/使用dubbo+zookeeper.html">
+            
+                    
+                    入门使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" >
+            
+                <span>
+            
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.30.1" data-path="../../android/root.html">
+            
+                <a href="../../android/root.html">
+            
+                    
+                    刷机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30.2" data-path="../../android/android发送请求.html">
+            
+                <a href="../../android/android发送请求.html">
+            
+                    
+                    android发送请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30.3" data-path="../../android/改造为web服务器.html">
+            
+                <a href="../../android/改造为web服务器.html">
+            
+                    
+                    改造为web服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.31.1" data-path="../../react/React.md">
+            
+                <span>
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" >
+            
+                <span>
+            
+                    
+                    Jrebel
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.32.1" data-path="../../jrebel/远程调试及热部署.html">
+            
+                <a href="../../jrebel/远程调试及热部署.html">
+            
+                    
+                    Jrebel
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" >
+            
+                <span>
+            
+                    
+                    ElasticStack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.33.1" data-path="../../elasticstack/elasticsearch.html">
+            
+                <a href="../../elasticstack/elasticsearch.html">
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.2" data-path="../../elasticstack/ElasticSearch主要搜索关键字.html">
+            
+                <a href="../../elasticstack/ElasticSearch主要搜索关键字.html">
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.3" data-path="../../elasticstack/elasticsearch_api.html">
+            
+                <a href="../../elasticstack/elasticsearch_api.html">
+            
+                    
+                    Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.4" data-path="../../elasticstack/ElasticSearch_Nested类型对文档的影响.html">
+            
+                <a href="../../elasticstack/ElasticSearch_Nested类型对文档的影响.html">
+            
+                    
+                    Nested类型对文档的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.5" data-path="../../elasticstack/ES_工作中遇到的问题.html">
+            
+                <a href="../../elasticstack/ES_工作中遇到的问题.html">
+            
+                    
+                    ES_工作中遇到的问题.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" >
+            
+                <span>
+            
+                    
+                    Salesforce
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.34.1" data-path="../../salesforce/apex.html">
+            
+                <a href="../../salesforce/apex.html">
+            
+                    
+                    Apex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.2" data-path="../../salesforce/visualforce.html">
+            
+                <a href="../../salesforce/visualforce.html">
+            
+                    
+                    Visualforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.3" data-path="../../salesforce/遇到的问题.html">
+            
+                <a href="../../salesforce/遇到的问题.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.4" data-path="../../salesforce/在IDEA中配置salesforce环境.html">
+            
+                <a href="../../salesforce/在IDEA中配置salesforce环境.html">
+            
+                    
+                    在IDEA中配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.5" data-path="../../salesforce/VSCode配置salesforce环境.html">
+            
+                <a href="../../salesforce/VSCode配置salesforce环境.html">
+            
+                    
+                    VSCode配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" >
+            
+                <span>
+            
+                    
+                    工作笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.1" data-path="../../worknote/css/css.html">
+            
+                <a href="../../worknote/css/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.2" data-path="../../worknote/nacos/nacos配置自动刷新.html">
+            
+                <a href="../../worknote/nacos/nacos配置自动刷新.html">
+            
+                    
+                    nacos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.3" data-path="../../worknote/docker/docker.html">
+            
+                <a href="../../worknote/docker/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.4" data-path="../../worknote/elementui/elementui.html">
+            
+                <a href="../../worknote/elementui/elementui.html">
+            
+                    
+                    elementui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.5" data-path="../../worknote/elk/elk.html">
+            
+                <a href="../../worknote/elk/elk.html">
+            
+                    
+                    elk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.6" data-path="../../worknote/gitlab/gitlab.html">
+            
+                <a href="../../worknote/gitlab/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.7" data-path="../../worknote/jpa/jpa.html">
+            
+                <a href="../../worknote/jpa/jpa.html">
+            
+                    
+                    jpa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8" >
+            
+                <span>
+            
+                    
+                    mysql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.8.1" data-path="../../worknote/mysql/centos7安装mysql5.7.html">
+            
+                <a href="../../worknote/mysql/centos7安装mysql5.7.html">
+            
+                    
+                    centos7安装mysql5.7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.2" data-path="../../worknote/mysql/centos卸载mysql.html">
+            
+                <a href="../../worknote/mysql/centos卸载mysql.html">
+            
+                    
+                    centos卸载mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.3" data-path="../../worknote/mysql/mysql 主从复制.html">
+            
+                <a href="../../worknote/mysql/mysql 主从复制.html">
+            
+                    
+                    mysql 主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.4" data-path="../../worknote/mysql/mysql时区.html">
+            
+                <a href="../../worknote/mysql/mysql时区.html">
+            
+                    
+                    mysql时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.5" data-path="../../worknote/mysql/mysql主从复制_test.html">
+            
+                <a href="../../worknote/mysql/mysql主从复制_test.html">
+            
+                    
+                    mysql主从复制_test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.6" data-path="../../worknote/mysql/mysql日期函数.html">
+            
+                <a href="../../worknote/mysql/mysql日期函数.html">
+            
+                    
+                    mysql日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.7" data-path="../../worknote/mysql/mysql_bin-log.html">
+            
+                <a href="../../worknote/mysql/mysql_bin-log.html">
+            
+                    
+                    mysql_bin-log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.8" data-path="../../worknote/mysql/mysql_null.html">
+            
+                <a href="../../worknote/mysql/mysql_null.html">
+            
+                    
+                    mysql_null
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.9" data-path="../../worknote/mysql/mysql8.html">
+            
+                <a href="../../worknote/mysql/mysql8.html">
+            
+                    
+                    mysql8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.9" data-path="../../worknote/rabbitmq/docker安装rabbitmq.html">
+            
+                <a href="../../worknote/rabbitmq/docker安装rabbitmq.html">
+            
+                    
+                    rabbitmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.10" data-path="../../worknote/redis/redis.html">
+            
+                <a href="../../worknote/redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.11" data-path="../../worknote/websocket/springboot+vue+websocket.html">
+            
+                <a href="../../worknote/websocket/springboot+vue+websocket.html">
+            
+                    
+                    websocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.12" data-path="../../worknote/tess4j_ocr/Tess4j使用记录.html">
+            
+                <a href="../../worknote/tess4j_ocr/Tess4j使用记录.html">
+            
+                    
+                    tess4j_ocr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.13" data-path="../../worknote/swagger/swagger.html">
+            
+                <a href="../../worknote/swagger/swagger.html">
+            
+                    
+                    swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.14.1" data-path="../../worknote/other/stream.html">
+            
+                <a href="../../worknote/other/stream.html">
+            
+                    
+                    stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.2" data-path="../../worknote/other/windows操作端口.html">
+            
+                <a href="../../worknote/other/windows操作端口.html">
+            
+                    
+                    windows操作端口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.3" data-path="../../worknote/other/读取文件时自动添加BOM头的问题.html">
+            
+                <a href="../../worknote/other/读取文件时自动添加BOM头的问题.html">
+            
+                    
+                    读取文件时自动添加BOM头的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.4" data-path="../../worknote/other/java_pdf转图片+打压缩包.html">
+            
+                <a href="../../worknote/other/java_pdf转图片+打压缩包.html">
+            
+                    
+                    java_pdf转图片+打压缩包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.5" data-path="../../worknote/other/element-ui解决notify速度太快会重叠的问题.html">
+            
+                <a href="../../worknote/other/element-ui解决notify速度太快会重叠的问题.html">
+            
+                    
+                    element-ui解决notify速度太快会重叠的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.6" data-path="../../worknote/other/vue获取htmlcollection的length为0问题.html">
+            
+                <a href="../../worknote/other/vue获取htmlcollection的length为0问题.html">
+            
+                    
+                    vue获取htmlcollection的length为0问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.7" data-path="../../worknote/other/解决a标签自动浏览问题.html">
+            
+                <a href="../../worknote/other/解决a标签自动浏览问题.html">
+            
+                    
+                    解决a标签自动浏览问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.8" data-path="../../worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html">
+            
+                <a href="../../worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html">
+            
+                    
+                    解决element-ui在展示数据时会少显示一个空格的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.9" data-path="../../worknote/other/解决vue使用video播放视频无画面问题.html">
+            
+                <a href="../../worknote/other/解决vue使用video播放视频无画面问题.html">
+            
+                    
+                    解决vue使用video播放视频无画面问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.36.1" data-path="../../other/使用Google Cloud搭建ssr.html">
+            
+                <a href="../../other/使用Google Cloud搭建ssr.html">
+            
+                    
+                    搭建SSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36.2" data-path="../../other/kaptcha验证码.html">
+            
+                <a href="../../other/kaptcha验证码.html">
+            
+                    
+                    Kaptcha验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36.3" data-path="../../other/ffmpeg.html">
+            
+                <a href="../../other/ffmpeg.html">
+            
+                    
+                    ffmpeg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >新的日期时间API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#java-8-&#x65E5;&#x671F;&#x65F6;&#x95F4;-api">Java 8 &#x65E5;&#x671F;&#x65F6;&#x95F4; API</a></li><ul><li><a href="#localdate">LocalDate</a></li><li><a href="#localtime">LocalTime</a></li><li><a href="#localdatetime">LocalDateTime</a></li><li><a href="#datetimeformatter">DateTimeFormatter</a></li><li><a href="#temporaladjusters">TemporalAdjusters</a></li><li><a href="#zoneddatetime&#x3001;instant">ZonedDateTime&#x3001;Instant</a></li><li><a href="#&#x65F6;&#x95F4;&#x6233;&#x3001;&#x65F6;&#x533A;">&#x65F6;&#x95F4;&#x6233;&#x3001;&#x65F6;&#x533A;</a></li><li><a href="#springboot&#x9488;&#x5BF9;&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4;api&#x7684;&#x8F6C;&#x6362;">SpringBoot&#x9488;&#x5BF9;&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4;API&#x7684;&#x8F6C;&#x6362;</a></li></ul></ul></div><a href="#java-8-&#x65E5;&#x671F;&#x65F6;&#x95F4;-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="java-8-&#x65E5;&#x671F;&#x65F6;&#x95F4;-api"><a name="java-8-&#x65E5;&#x671F;&#x65F6;&#x95F4;-api" class="anchor-navigation-ex-anchor" href="#java-8-&#x65E5;&#x671F;&#x65F6;&#x95F4;-api"><i class="fa fa-link" aria-hidden="true"></i></a>Java 8 &#x65E5;&#x671F;&#x65F6;&#x95F4; API</h1>
+<p>&#x200B;        &#x5728;&#x65E7;&#x7248;&#x7684;Java&#x4E2D;,&#x65E5;&#x671F;&#x65F6;&#x95F4;API&#x4E3B;&#x8981;&#x5728;java.util&#x5305;&#x4E0B;,&#x4F46;&#x5176;&#x5B58;&#x5728;&#x8BB8;&#x591A;&#x95EE;&#x9898;,&#x6BD4;&#x5982;java.util.Date&#x662F;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;,&#x6240;&#x6709;&#x7684;&#x65E5;&#x671F;&#x7C7B;&#x90FD;&#x662F;&#x53EF;&#x53D8;&#x7684;&#x3002;&#x4ECE;Java8&#x5F00;&#x59CB;,Java API&#x4E2D;&#x5DF2;&#x7ECF;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x652F;&#x6301;,java.time&#x5305;,&#x5E76;&#x4E14;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x548C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;</p>
+<h2 id="localdate"><a name="localdate" class="anchor-navigation-ex-anchor" href="#localdate"><i class="fa fa-link" aria-hidden="true"></i></a>LocalDate</h2>
+<p>&#x8BE5;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x548C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;;&#x8868;&#x793A;&#x65E5;&#x671F;,&#x901A;&#x5E38;&#x88AB;&#x89C6;&#x4E3A;&#x5E74;&#x6708;&#x65E5;,&#x8BE5;&#x7C7B;&#x4E0D;&#x5B58;&#x50A8;&#x6216;&#x8868;&#x793A;&#x65F6;&#x533A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LocalDateDemo</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        <span class="hljs-comment">// LocalDate &#x4E0D;&#x53EF;&#x53D8;,&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x65E5;&#x671F;&#x7C7B; &#x5E74;&#x6708;&#x65E5;</span>
+        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x65E5;&#x671F; &#x9ED8;&#x8BA4;&#x683C;&#x5F0F;:yyyy-MM-dd &#x6839;&#x636E;&#x7CFB;&#x7EDF;&#x7684;&#x65F6;&#x949F;&#x548C;&#x65F6;&#x533A;&#x83B7;&#x53D6;&#x65E5;&#x671F;</span>
+        LocalDate date = LocalDate.now();
+        <span class="hljs-comment">// &#x5E74;</span>
+        <span class="hljs-keyword">int</span> year = date.getYear();
+        <span class="hljs-comment">// &#x6708;</span>
+        <span class="hljs-keyword">int</span> monthValue = date.getMonthValue();
+        <span class="hljs-comment">// &#x65E5;(&#x53F7;)</span>
+        <span class="hljs-keyword">int</span> dayOfMonth = date.getDayOfMonth();
+        System.out.println(date);
+        System.out.println(year+<span class="hljs-string">&quot;&#x5E74;/&quot;</span>+monthValue+<span class="hljs-string">&quot;(&quot;</span>+date.getMonth()+<span class="hljs-string">&quot;)&#x6708;/&quot;</span>+dayOfMonth+<span class="hljs-string">&quot;&#x65E5;&quot;</span>);
+        <span class="hljs-comment">// &#x661F;&#x671F;</span>
+        <span class="hljs-keyword">int</span> week = date.getDayOfWeek().getValue();
+        System.out.println(<span class="hljs-string">&quot;&#x661F;&#x671F;:&quot;</span>+week+<span class="hljs-string">&quot;===&quot;</span>+date.getDayOfWeek());
+
+        <span class="hljs-comment">// &#x5F53;&#x5E74;&#x4E2D;&#x7684;&#x7B2C;&#x51E0;&#x5929;</span>
+        <span class="hljs-keyword">int</span> dayOfYear = date.getDayOfYear();
+        <span class="hljs-comment">// &#x5F53;&#x6708;&#x7684;&#x603B;&#x5929;&#x6570;</span>
+        <span class="hljs-keyword">int</span> monthLength = date.lengthOfMonth();
+        <span class="hljs-comment">// &#x5F53;&#x5E74;&#x7684;&#x603B;&#x5929;&#x6570;</span>
+        <span class="hljs-keyword">int</span> yearLength = date.lengthOfYear();
+
+        System.out.println(<span class="hljs-string">&quot;&#x51E0;&#x5929;&#x662F;&#x672C;&#x5E74;&#x7684;&#x7B2C;&quot;</span>+dayOfYear+<span class="hljs-string">&quot;&#x5929;&quot;</span>);
+        System.out.println(<span class="hljs-string">&quot;&#x672C;&#x6708;&#x7684;&#x603B;&#x5929;&#x6570;&#x4E3A;:&quot;</span>+monthLength);
+        System.out.println(<span class="hljs-string">&quot;&#x5F53;&#x5E74;&#x7684;&#x603B;&#x5929;&#x6570;&#x4E3A;:&quot;</span>+yearLength);
+
+        System.out.println(date.isLeapYear() ? <span class="hljs-string">&quot;&#x95F0;&#x5E74;&quot;</span> : <span class="hljs-string">&quot;&#x5E73;&#x5E74;&quot;</span>);
+    }
+
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">fun</span><span class="hljs-params">()</span></span>{
+
+<span class="hljs-comment">//        &#x5728;&#x521B;&#x5EFA;LocalDate&#x65F6;&#x4F1A;&#x5BF9;&#x65E5;&#x671F;&#x8FDB;&#x884C;&#x6821;&#x9A8C;,&#x5982;&#x679C;&#x4EFB;&#x4F55;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x8D85;&#x51FA;&#x8303;&#x56F4;&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x6708;&#x7684;&#x65E5;&#x671F;&#x5BF9;&#x4E8E;&#x6708;&#x4EFD;&#x65E0;&#x6548;&#x5C06;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+<span class="hljs-comment">//        java.time.DateTimeException: Invalid date &apos;February 29&apos; as &apos;2019&apos; is not a leap year</span>
+<span class="hljs-comment">//        2019&#x5E74;&#x4E0D;&#x662F;&#x95F0;&#x5E74;,&#x6240;&#x4EE5;2&#x6708;&#x6CA1;&#x6709;29&#x53F7;</span>
+<span class="hljs-comment">//        LocalDate of = LocalDate.of(2019, 2, 29);</span>
+<span class="hljs-comment">//        &#x867D;&#x7136;2020&#x5E74;&#x65F6;&#x95F0;&#x5E74;,&#x4F46;&#x662F;2&#x6708;&#x4EFD;&#x6700;&#x591A;&#x53EA;&#x6709;29&#x5929;</span>
+<span class="hljs-comment">//        java.time.DateTimeException: Invalid date &apos;FEBRUARY 30&apos;</span>
+<span class="hljs-comment">//        LocalDate of = LocalDate.of(2020, 2, 30);</span>
+        LocalDate of = LocalDate.of(<span class="hljs-number">2020</span>, <span class="hljs-number">2</span>, <span class="hljs-number">29</span>);
+        System.out.println(of);
+
+<span class="hljs-comment">//        &#x6839;&#x636E;&#x4E00;&#x5E74;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x5929;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+        LocalDate date = LocalDate.ofYearDay(<span class="hljs-number">2020</span>, <span class="hljs-number">32</span>);
+        System.out.println(date);
+
+<span class="hljs-comment">//        &#x53C2;&#x6570;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x6B63;&#x786E;&#x7684;&#x65E5;&#x671F;&#x683C;&#x5F0F; &#x5E74;-&#x6708;-&#x65E5;</span>
+<span class="hljs-comment">//        &#x4E25;&#x683C;&#x6309;&#x7167;yyyy-MM-dd&#x7684;&#x683C;&#x5F0F;&#x9A8C;&#x8BC1; &#x9700;&#x8865;0</span>
+<span class="hljs-comment">//        LocalDate parse = LocalDate.parse(&quot;1999-10-9&quot;);</span>
+        LocalDate parse = LocalDate.parse(<span class="hljs-string">&quot;1999-10-09&quot;</span>);
+        System.out.println(parse);
+
+<span class="hljs-comment">//        &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x662F;&#x5426;&#x5728;&#x53C2;&#x6570;&#x65E5;&#x671F;&#x4E4B;&#x524D;, &#x5176;&#x4ED6;&#x8FD8;&#x6709; &#x4E4B;&#x540E;,&#x76F8;&#x7B49;&#x65B9;&#x6CD5;&#x6765;&#x6BD4;&#x8F83;&#x65E5;&#x671F;</span>
+        <span class="hljs-keyword">boolean</span> after = parse.isBefore(LocalDate.now());
+        System.out.println(after);
+
+    }
+}
+</code></pre>
+<h2 id="localtime"><a name="localtime" class="anchor-navigation-ex-anchor" href="#localtime"><i class="fa fa-link" aria-hidden="true"></i></a>LocalTime</h2>
+<p>&#x8BE5;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x548C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;;&#x8868;&#x793A;&#x65F6;&#x95F4;,&#x901A;&#x5E38;&#x88AB;&#x89C6;&#x4E3A;&#x65F6;&#x5206;&#x79D2;,&#x8BE5;&#x7C7B;&#x4E0D;&#x5B58;&#x50A8;&#x6216;&#x8868;&#x793A;&#x65F6;&#x533A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LocalTimeDemo</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        <span class="hljs-comment">// LocalTime &#x4E0D;&#x53EF;&#x53D8;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x65F6;&#x95F4;&#x7C7B;</span>
+        <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x683C;&#x5F0F; &#x65F6;:&#x5206;:&#x79D2;:&#x7EB3;&#x79D2;(nanosecond)</span>
+        LocalTime now = LocalTime.now();
+        System.out.println(now);
+
+        <span class="hljs-comment">// &#x6307;&#x5B9A;&#x65F6;&#x5206;&#x79D2;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+        LocalTime of = LocalTime.of(<span class="hljs-number">18</span>, <span class="hljs-number">30</span>,<span class="hljs-number">48</span>);
+        System.out.println(of);
+        System.out.println(of.getHour()+<span class="hljs-string">&quot;&#x65F6;&quot;</span>+of.getMinute()+<span class="hljs-string">&quot;&#x5206;&quot;</span>+of.getSecond()+<span class="hljs-string">&quot;&#x79D2;&quot;</span>);
+
+        <span class="hljs-comment">// &#x51CF;&#x53BB;&#x6307;&#x5B9A;&#x7684;Hour&#x5E76;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61; &#x540C;&#x6837;&#x53EF;&#x51CF;&#x53BB;&#x5206;&#x79D2;&#x7EB3;&#x79D2;</span>
+        LocalTime minusHours = of.minusHours(<span class="hljs-number">2</span>);
+        System.out.println(minusHours);
+
+        <span class="hljs-comment">// &#x589E;&#x52A0;&#x6307;&#x5B9A;&#x7684;Minute &#x540C;&#x6837;&#x53EF;&#x589E;&#x52A0;&#x65F6;&#x79D2;&#x7EB3;&#x79D2;</span>
+        LocalTime plusMinutes = of.plusMinutes(<span class="hljs-number">29</span>);
+<span class="hljs-comment">//        of.plusNanos(12);</span>
+        System.out.println(plusMinutes);
+
+<span class="hljs-comment">//      &#x6839;&#x636E;&#x6587;&#x672C;&#x89E3;&#x6790;&#x4E3A;LocalTime&#x5BF9;&#x8C61;</span>
+<span class="hljs-comment">//      &#x4E25;&#x683C;&#x6309;&#x7167;HH:mm:ss&#x7684;&#x683C;&#x5F0F;&#x9A8C;&#x8BC1; &#x9700;&#x8865;0</span>
+<span class="hljs-comment">//        LocalTime parse = LocalTime.parse(&quot;09:20:6&quot;);</span>
+        LocalTime parse = LocalTime.parse(<span class="hljs-string">&quot;09:20:06&quot;</span>);
+        System.out.println(parse);
+
+        <span class="hljs-keyword">boolean</span> after = of.isAfter(now);
+        System.out.println(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x5728;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x4E4B;&#x540E;:&quot;</span>+after);
+
+    }
+
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span></span>{
+        LocalTime of = LocalTime.of(<span class="hljs-number">18</span>, <span class="hljs-number">30</span>,<span class="hljs-number">38</span>,<span class="hljs-number">199</span>);
+<span class="hljs-comment">//        java.time.DateTimeException: Invalid value for HourOfDay (valid values 0 - 23): 24</span>
+<span class="hljs-comment">//        &#x4ECE;0-23&#x6765;&#x8868;&#x793A;&#x65F6;&#x95F4;</span>
+<span class="hljs-comment">//        &#x5C06;&#x65F6;&#x95F4;&#x6539;&#x4E3A;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x503C;,&#x76F8;&#x5F53;&#x4E8E;&#x8FDB;&#x884C;set</span>
+        LocalTime localTime = of.withHour(<span class="hljs-number">6</span>).withMinute(<span class="hljs-number">10</span>);
+        System.out.println(localTime);
+        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x603B;&#x79D2;&#x6570;</span>
+        <span class="hljs-keyword">int</span> i = localTime.toSecondOfDay();
+        System.out.println(i);
+        <span class="hljs-comment">// &#x5C06;&#x79D2;&#x6570;&#x8F6C;&#x4E3A;LocalTime&#x5BF9;&#x8C61;</span>
+        LocalTime ofSecondOfDay = LocalTime.ofSecondOfDay(i);
+        System.out.println(ofSecondOfDay);
+
+<span class="hljs-comment">//        System.out.println(of);</span>
+<span class="hljs-comment">//        System.out.println(of.getNano());</span>
+    }
+}
+</code></pre>
+<h2 id="localdatetime"><a name="localdatetime" class="anchor-navigation-ex-anchor" href="#localdatetime"><i class="fa fa-link" aria-hidden="true"></i></a>LocalDateTime</h2>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x7C7B;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x65E5;&#x671F;,&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x65F6;&#x95F4;,&#x800C;&#x8BE5;&#x7C7B;&#x66F4;&#x50CF;&#x662F;&#x5C06;&#x4E24;&#x8005;&#x7ED3;&#x5408;&#x8D77;&#x6765;,&#x901A;&#x8FC7;&#x89C2;&#x770B;&#x6E90;&#x7801;&#x5F97;&#x77E5;,&#x5B83;&#x786E;&#x5B9E;&#x4E5F;&#x662F;&#x8FD9;&#x4E48;&#x505A;&#x7684;</p>
+<p>&#x6784;&#x9020;&#x662F;&#x4E2A;&#x79C1;&#x6709;&#x7684;,&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;LocalDate&#x53E6;&#x4E00;&#x4E2A;&#x5219;&#x662F;LocalTime</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LocalDateTimeDemo</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+<span class="hljs-comment">//      &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x52A0;&#x65F6;&#x95F4;</span>
+<span class="hljs-comment">//      &#x6548;&#x679C;&#x662F;&#x5176;LocalDate&#x548C;LocalTime&#x7684;&#x5408;&#x4F53;,&#x540C;&#x65F6;&#x4EE3;&#x8868;&#x4E86;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4; &#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x65F6;&#x533A;</span>
+        LocalDateTime now = LocalDateTime.now();
+<span class="hljs-comment">//      &#x6253;&#x5370;&#x683C;&#x5F0F;  2020-03-16T20:49:02.450</span>
+        System.out.println(now);
+
+<span class="hljs-comment">//        &#x540C;&#x6837;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B57;&#x7B26;&#x4E32;&#x89E3;&#x6790;&#x4E3A;&#x5BF9;&#x8C61; &#x5176;&#x4E2D;T&#x662F;&#x5FC5;&#x987B;&#x7684;&#x8868;&#x793A;&#x65F6;&#x95F4;&#x7684;&#x5F00;&#x59CB;</span>
+<span class="hljs-comment">//        &#x5E76;&#x4E14;&#x4E25;&#x683C;&#x6309;&#x7167;yyyy-MM-ddTHH:mm:ss&#x7684;&#x683C;&#x5F0F;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;,&#x9700;&#x8865;0</span>
+<span class="hljs-comment">//        LocalDateTime parse = LocalDateTime.parse(&quot;2001-12-9T10:22:36&quot;);</span>
+        LocalDateTime parse = LocalDateTime.parse(<span class="hljs-string">&quot;2001-12-09T10:22:36&quot;</span>);
+        System.out.println(parse);
+
+<span class="hljs-comment">//      &#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+        LocalDateTime of = LocalDateTime.of(<span class="hljs-number">2020</span>, <span class="hljs-number">2</span>, <span class="hljs-number">20</span>, <span class="hljs-number">15</span>, <span class="hljs-number">30</span>,<span class="hljs-number">36</span>);
+        System.out.println(of);
+<span class="hljs-comment">//      &#x901A;&#x8FC7;&#x67E5;&#x770B;&#x5176; of &#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x53D1;&#x73B0;&#x5176;&#x5B9E;&#x4F7F;&#x7528;&#x4E86;&#x4E4B;&#x524D;&#x4E24;&#x4E2A;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7C7B;&#x7684;&#x6784;&#x9020;</span>
+<span class="hljs-comment">//      &#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#x548C;&#x672C;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x4E00;&#x81F4;</span>
+        LocalDate localDate = LocalDate.of(<span class="hljs-number">2020</span>, <span class="hljs-number">2</span>, <span class="hljs-number">20</span>);
+        LocalTime localTime = LocalTime.of(<span class="hljs-number">15</span>, <span class="hljs-number">30</span>, <span class="hljs-number">36</span>);
+<span class="hljs-comment">//      &#x8BE5;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x662F;&#x79C1;&#x6709;&#x7684;,&#x8BE5;&#x65B9;&#x5F0F;&#x662F;&#x56E0;&#x4E3A;&#x8BE5;&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x9759;&#x6001;&#x7684;of&#x65B9;&#x6CD5;,&#x5728;&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x5176;&#x6784;&#x9020;&#x65B9;&#x6CD5;new&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+        LocalDateTime localDateTime = LocalDateTime.of(localDate, localTime);
+
+<span class="hljs-comment">//      true</span>
+        System.out.println(of.isEqual(localDateTime));
+
+<span class="hljs-comment">//        &#x540C;&#x6837;LocalDate&#x548C;LocalTime&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x8EAB;&#x7684;     atXXXX  &#x6765;&#x8FDB;&#x884C;&#x7EC4;&#x5408;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;LocalTime&#x5BF9;&#x8C61;</span>
+        LocalDateTime localDateTime1 = localDate.atTime(localTime);
+        LocalDateTime localDateTime2 = localTime.atDate(localDate);
+
+<span class="hljs-comment">//        &#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x8F6C;&#x6362;</span>
+<span class="hljs-comment">//        LocalDate date = localDateTime1.toLocalDate();</span>
+<span class="hljs-comment">//        LocalTime time = localDateTime1.toLocalTime();</span>
+
+<span class="hljs-comment">//         &#x6BD4;&#x8F83;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x662F;&#x5426;&#x4E00;&#x81F4;        </span>
+        System.out.println(localDateTime1.isEqual(localDateTime2));
+
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span></span>{
+
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+        <span class="hljs-comment">//   withXXXX &#x7528;&#x4E8E;&#x4FEE;&#x6539;&#x4E3A;&#x6307;&#x5B9A;&#x7684;&#x65E5;&#x671F;&#x6216;&#x65F6;&#x95F4;</span>
+        <span class="hljs-comment">//   plusXXXX &#x7528;&#x4E8E;&#x5C06;&#x65E5;&#x671F;&#x6216;&#x65F6;&#x95F4;&#x548C;&#x53C2;&#x6570;&#x76F8;&#x52A0;</span>
+        <span class="hljs-comment">//   minusXXXX &#x7528;&#x4E8E;&#x5C06;&#x65E5;&#x671F;&#x6216;&#x65F6;&#x95F4;&#x51CF;&#x53BB;&#x76F8;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x503C;</span>
+        LocalDateTime withHour = now.withHour(<span class="hljs-number">2</span>).plusMinutes(<span class="hljs-number">20</span>).minusSeconds(<span class="hljs-number">5</span>);
+        System.out.println(withHour);
+    }
+}
+</code></pre>
+<h2 id="datetimeformatter"><a name="datetimeformatter" class="anchor-navigation-ex-anchor" href="#datetimeformatter"><i class="fa fa-link" aria-hidden="true"></i></a>DateTimeFormatter</h2>
+<p>&#x5728;java8&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x7684;SimpleDateFormat&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x95EE;&#x9898;,&#x800C;&#x5728;Java8&#x4E2D;&#x65B0;&#x63D0;&#x4F9B;&#x7684;DateTimeFormatter&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;,&#x8BE5;&#x7C7B;&#x4E5F;&#x4E3B;&#x7528;&#x4E8E;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x89E3;&#x6790;&#x548C;&#x683C;&#x5F0F;&#x5316;&#x3002;&#x8FD9;&#x4E2A;&#x7C7B;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x548C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DateTimeFormatterDemo</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+<span class="hljs-comment">//        &#x6309;&#x7167;&#x683C;&#x5F0F;&#x8FDB;&#x884C;&#x76F8;&#x4E92;&#x8F6C;&#x6362;</span>
+        LocalDateTime now = LocalDateTime.of(<span class="hljs-number">2020</span>,<span class="hljs-number">03</span>,<span class="hljs-number">16</span>,<span class="hljs-number">22</span>,<span class="hljs-number">59</span>,<span class="hljs-number">23</span>);
+        System.out.println(now);
+        String format = now.format(DateTimeFormatter.BASIC_ISO_DATE);
+<span class="hljs-comment">//        20200316</span>
+        System.out.println(format);
+<span class="hljs-comment">//        22:59:23</span>
+        format = now.format(DateTimeFormatter.ISO_LOCAL_TIME);
+<span class="hljs-comment">//        2020-03-16</span>
+        System.out.println(format);
+
+        LocalDate localDateParse = LocalDate.parse(<span class="hljs-string">&quot;20200316&quot;</span>, DateTimeFormatter.BASIC_ISO_DATE);
+<span class="hljs-comment">//        2020-03-16</span>
+        System.out.println(localDateParse);
+
+        LocalTime localTimeParse = LocalTime.parse(<span class="hljs-string">&quot;22:59:23.017&quot;</span>, DateTimeFormatter.ISO_LOCAL_TIME);
+<span class="hljs-comment">//        22:59:23.017</span>
+        System.out.println(localTimeParse);
+
+    }
+
+    <span class="hljs-comment">/**
+     * &#x81EA;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">// &#x4ECE;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#xFF0C;&#x5B83;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x5E76;&#x4E14;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002; </span>
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(<span class="hljs-string">&quot;yyyy/MM/dd&quot;</span>);
+<span class="hljs-comment">//        &#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x5C06;&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x5316;</span>
+        String format = LocalDateTime.now().format(dateTimeFormatter);
+<span class="hljs-comment">//        2020/03/16</span>
+        System.out.println(format);
+
+<span class="hljs-comment">//        &#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x683C;&#x5F0F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x518D;&#x8F6C;&#x4E3A;&#x5BF9;&#x8C61;</span>
+        LocalDate parse = LocalDate.parse(format, dateTimeFormatter);
+<span class="hljs-comment">//       2020-03-16</span>
+        System.out.println(parse);
+
+<span class="hljs-comment">//        &#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;,&#x521B;&#x5EFA;&#x5339;&#x914D;&#x89C4;&#x5219;&#x5E76;&#x8F6C;&#x4E3A;&#x65F6;&#x95F4;&#x5BF9;&#x8C61;</span>
+        String time = <span class="hljs-string">&quot;18&#x65F6;12&#x5206;40&#x79D2;&quot;</span>;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(<span class="hljs-string">&quot;HH&#x65F6;mm&#x5206;ss&#x79D2;&quot;</span>);
+        LocalTime localTime = LocalTime.parse(time, formatter);
+        System.out.println(localTime);
+    }
+}
+</code></pre>
+<h2 id="temporaladjusters"><a name="temporaladjusters" class="anchor-navigation-ex-anchor" href="#temporaladjusters"><i class="fa fa-link" aria-hidden="true"></i></a>TemporalAdjusters</h2>
+<p>java8&#x4E4B;&#x524D;&#x7684;java.util&#x5305;&#x4E2D;&#x7684;Date&#x7C7B;,&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x516C;&#x5F00;&#x7684;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x7684;&#x65B9;&#x6CD5;,&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x7684;&#x4FEE;&#x6539;&#x65F6;&#x95F4;</p>
+<p>&#x800C;&#x5728;Java8&#x4E2D;&#x65B0;&#x7684;&#x65F6;&#x95F4;API,&#x8868;&#x793A;&#x65F6;&#x95F4;&#x7684;&#x7C7B;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;,&#x7C7B;&#x672C;&#x8EAB;&#x548C;&#x53D8;&#x91CF;&#x90FD;&#x88AB;final&#x4FEE;&#x9970;,&#x6240;&#x4EE5;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;,&#x56E0;&#x6B64;&#x53C8;&#x63D0;&#x4F9B;&#x4E86;&#x8BE5;&#x7C7B;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x590D;&#x6742;&#x64CD;&#x4F5C;,&#x4F46;&#x4E5F;&#x6B63;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x7C7B;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x4EA7;&#x51FA;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;&#x6216;&#x65F6;&#x95F4;&#x5BF9;&#x8C61;</p>
+<p>&#x867D;&#x7136;&#x6CA1;&#x6709;&#x76F4;&#x89C2;&#x7684;setXxxx&#x65B9;&#x6CD5;,&#x4F46;&#x662F;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x5E94;&#x7684;withXxxx&#x65B9;&#x6CD5;,&#x548C;set&#x65B9;&#x6CD5;&#x529F;&#x80FD;&#x4E00;&#x81F4;,&#x53EA;&#x4E0D;&#x8FC7;&#x540C;&#x6837;&#x662F;&#x4EA7;&#x51FA;&#x65B0;&#x7684;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> java.time.temporal.TemporalAdjusters.*;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TemporalAdjusterDemo</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+
+        LocalDateTime with;
+<span class="hljs-comment">//        &#x6839;&#x636E;ordinal&#x7684;&#x503C; &#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x8BA1;&#x7B97;&#x540E;&#x7684;week</span>
+        with = now.with(dayOfWeekInMonth(-<span class="hljs-number">6</span>,DayOfWeek.SUNDAY));
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x8BE5;&#x6708;&#x4EFD;&#x7684;&#x7B2C;&#x4E00;&#x5929;</span>
+        with = now.with(firstDayOfMonth());
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x4E0B;&#x4E2A;&#x6708;&#x7684;&#x7B2C;&#x4E00;&#x5929;</span>
+        with = now.with(firstDayOfNextMonth());
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x5F53;&#x5E74;&#x7684;&#x7B2C;&#x4E00;&#x5929;</span>
+        with = now.with(firstDayOfYear());
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x4E0B;&#x4E00;&#x5E74;&#x7684;&#x7B2C;&#x4E00;&#x5929;</span>
+        with = now.with(firstDayOfNextYear());
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x661F;&#x671F;</span>
+        with = now.with(firstInMonth(DayOfWeek.SUNDAY));
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x5F53;&#x6708;&#x7684;&#x6700;&#x540E;&#x4E00;&#x5929;</span>
+        with = now.with(lastDayOfMonth());
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x5F53;&#x5E74;&#x7684;&#x6700;&#x540E;&#x4E00;&#x5929;</span>
+        with = now.with(lastDayOfYear());
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x5F53;&#x6708;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x661F;&#x671F;</span>
+        with = now.with(lastInMonth(DayOfWeek.THURSDAY));
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x4E0B;&#x4E00;&#x5468;&#x6307;&#x5B9A;&#x7684;&#x661F;&#x671F;</span>
+        with = now.with(next(DayOfWeek.MONDAY));
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x661F;&#x671F;,&#x5982;&#x679C;&#x5F53;&#x524D;&#x661F;&#x671F;&#x548C;&#x53C2;&#x6570;&#x4E00;&#x81F4;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;</span>
+        with = now.with(nextOrSame(DayOfWeek.THURSDAY));
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x8D77;&#x8C03;&#x6574;&#x4E3A;&#x4E0A;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x661F;&#x671F;</span>
+        with = now.with(previous(DayOfWeek.FRIDAY));
+<span class="hljs-comment">//        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x65E5;&#x671F;,&#x5C06;&#x65E5;&#x671F;&#x8C03;&#x6574;&#x4E3A;&#x4E0A;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x661F;&#x671F;,&#x5982;&#x679C;&#x8BE5;&#x65E5;&#x671F;&#x7684;&#x661F;&#x671F;&#x548C;&#x53C2;&#x6570;&#x4E00;&#x81F4;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;</span>
+        with = now.with(previousOrSame(DayOfWeek.WEDNESDAY));
+
+        System.out.println(with);
+<span class="hljs-comment">//        false</span>
+<span class="hljs-comment">//        &#x56E0;&#x4E3A;java.time&#x4E2D;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x90FD;&#x662F;final&#x7684;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;</span>
+<span class="hljs-comment">//        &#x6240;&#x4EE5;with&#x65B9;&#x6CD5;&#x5E76;&#x4E0D;&#x662F;&#x4FEE;&#x6539;&#x800C;&#x662F;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5BF9;&#x8C61;</span>
+        System.out.println(with == now);
+
+<span class="hljs-comment">//        &#x53EF;&#x4EE5;&#x770B;&#x5230;java.util&#x5305;&#x4E2D;&#x4E2D;&#x7684;&#x65E5;&#x671F;&#x7C7B;,&#x63D0;&#x4F9B;&#x4E86;public&#x516C;&#x5171;&#x7684;&#x4FEE;&#x6539;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;,&#x5728;&#x5E76;&#x53D1;&#x91CF;&#x5927;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x95EE;&#x9898;</span>
+<span class="hljs-comment">//        Date date = new Date();</span>
+<span class="hljs-comment">//        date.setTime();</span>
+    }
+
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span></span>{
+        LocalDateTime now = LocalDateTime.now();
+<span class="hljs-comment">//      Period&#x53EF;&#x4EE5;&#x5BF9;&#x65E5;&#x671F;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;</span>
+        LocalDateTime with = now.with(t -&gt; t.plus(Period.ofWeeks(<span class="hljs-number">1</span>)));
+        System.out.println(with);
+    }
+
+}
+</code></pre>
+<h2 id="zoneddatetime&#x3001;instant"><a name="zoneddatetime&#x3001;instant" class="anchor-navigation-ex-anchor" href="#zoneddatetime&#x3001;instant"><i class="fa fa-link" aria-hidden="true"></i></a>ZonedDateTime&#x3001;Instant</h2>
+<p>&#x524D;&#x9762;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x672C;&#x5730;&#x65F6;&#x95F4;&#x4F46;&#x6CA1;&#x6709;&#x65F6;&#x533A;&#x4FE1;&#x606F;</p>
+<p>Instant&#x662F;&#x4E16;&#x754C;&#x6807;&#x51C6;&#x65F6;&#x95F4;&#x4E14;&#x4E0D;&#x542B;&#x65F6;&#x533A;&#x4FE1;&#x606F;</p>
+<p>ZonedDateTime&#x5219;&#x53EF;&#x4EE5;&#x914D;&#x5408;ZoneId&#x5904;&#x7406;&#x65F6;&#x533A;,&#x672C;&#x8D28;&#x662F;&#x7528;Instant&#x5B58;&#x50A8;&#x65F6;&#x95F4;,&#x5728;&#x6839;&#x636E;&#x65F6;&#x533A;&#x8FDB;&#x884C;&#x5904;&#x7406;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ZoneRulesDemo</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+<span class="hljs-comment">//        &#x83B7;&#x53D6;&#x5185;&#x7F6E;&#x7684;&#x6240;&#x6709;&#x65F6;&#x533A;&#x4FE1;&#x606F; value&#x4E3A; &#x533A;&#x57DF;/&#x57CE;&#x5E02; &#x6BD4;&#x5982; Asia/Shanghai &#x4E9A;&#x6D32;/&#x4E0A;&#x6D77;</span>
+        ZoneId.SHORT_IDS.forEach((key,value) -&gt; System.out.println(key+<span class="hljs-string">&quot;===&quot;</span>+value));
+
+<span class="hljs-comment">//        TimeZone&#x662F;java8&#x4E4B;&#x524D;&#x7684;&#x65F6;&#x533A;&#x5BF9;&#x8C61;,&#x5C06;&#x5176;&#x8F6C;&#x4E3A;&#x6700;&#x65B0;&#x7684;&#x65F6;&#x533A;&#x5BF9;&#x8C61;&#x5E76;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7CFB;&#x7EDF;&#x7684;&#x65F6;&#x533A;</span>
+        ZoneId aDefault = TimeZone.getDefault().toZoneId();
+        System.out.println(aDefault);
+
+        LocalDateTime now = LocalDateTime.now();
+
+<span class="hljs-comment">//        &#x5C06;&#x5F53;&#x524D;&#x65F6;&#x533A;&#x8F6C;&#x4E3A;&#x6307;&#x5B9A;&#x65F6;&#x533A;</span>
+        ZoneId of = ZoneId.of(<span class="hljs-string">&quot;America/Chicago&quot;</span>);
+        System.out.println(LocalDateTime.ofInstant(now.atZone(ZoneId.systemDefault()).toInstant(),of));
+        System.out.println(LocalDateTime.ofInstant(Instant.now(),of));
+
+    }
+
+
+    <span class="hljs-comment">/**
+     * https://blog.csdn.net/u012107143/article/details/78790378
+     * &#x8868;&#x793A;&#x65F6;&#x95F4;&#x7684;&#x4E3B;&#x8981;&#x7C7B;: String LocalDateTime Instant ZonedDateTime
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span></span>{
+
+<span class="hljs-comment">//        2020-03-16T16:05:59.793Z  T&#x4EE3;&#x8868;&#x65F6;&#x95F4;&#x7684;&#x5F00;&#x59CB; Z&#x8868;&#x793A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x4E16;&#x754C;&#x6807;&#x51C6;&#x65F6;&#x95F4; +00:00</span>
+        System.out.println(Instant.now());
+<span class="hljs-comment">//        2020-03-17T00:07:08.203 &#x672C;&#x5730;&#x65F6;&#x95F4;,&#x4E0D;&#x542B;&#x65F6;&#x533A;&#x4FE1;&#x606F;&#x7684;&#x65F6;&#x95F4;</span>
+        System.out.println(LocalDateTime.now());
+        System.out.println(LocalDateTime.now(ZoneId.of(<span class="hljs-string">&quot;+00:00&quot;</span>)));
+<span class="hljs-comment">//        2020-03-17T00:07:08.203+08:00[Asia/Shanghai] &#x672C;&#x5730;&#x65F6;&#x95F4;&#x5E76;&#x4E14;&#x663E;&#x793A;&#x65F6;&#x533A;&#x4FE1;&#x606F;</span>
+        System.out.println(ZonedDateTime.now());
+        System.out.println(ZonedDateTime.now(ZoneId.of(<span class="hljs-string">&quot;+00:00&quot;</span>)));
+
+<span class="hljs-comment">//        &#x4E09;&#x4E2A;&#x7C7B;&#x6784;&#x9020;&#x5BF9;&#x8C61;&#x7684;&#x4E0D;&#x540C;&#x65B9;&#x5F0F;</span>
+<span class="hljs-comment">//        &#x4F7F;&#x7528;&#x6BEB;&#x79D2;&#x4ECE;1970-01-01T00&#x5F00;&#x59CB;&#x83B7;&#x5F97;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B; Instant &#x4E16;&#x754C;&#x6807;&#x51C6;&#x65F6;&#x95F4;</span>
+        Instant instant = Instant.ofEpochMilli(System.currentTimeMillis());
+        System.out.println(instant);
+
+        LocalDateTime localDateTime = LocalDateTime.of(<span class="hljs-number">2020</span>, <span class="hljs-number">02</span>, <span class="hljs-number">20</span>, <span class="hljs-number">18</span>, <span class="hljs-number">30</span>, <span class="hljs-number">16</span>);
+        System.out.println(localDateTime);
+
+<span class="hljs-comment">//        &#x6839;&#x636E;&#x6307;&#x5B9A;&#x65F6;&#x533A;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+        ZonedDateTime zonedDateTime = ZonedDateTime.of(localDateTime, ZoneId.of(<span class="hljs-string">&quot;Africa/Cairo&quot;</span>));
+<span class="hljs-comment">//        ZonedDateTime zonedDateTime = ZonedDateTime.of(localDateTime, ZoneId.systemDefault());</span>
+        System.out.println(zonedDateTime);
+
+
+    }
+
+
+    <span class="hljs-comment">/**
+     *  &#x5176;&#x4E2D;String&#x548C;LocalDateTime&#x662F;&#x7B49;&#x4EF7;&#x7684;,&#x4E24;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;DateTimeFormatter&#x8FDB;&#x884C;&#x76F8;&#x4E92;&#x8F6C;&#x6362;
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stringLocalDateTimeDemo</span><span class="hljs-params">()</span></span>{
+        String dateTime = <span class="hljs-string">&quot;2020/02/20 18:30:36&quot;</span>;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(<span class="hljs-string">&quot;yyyy/MM/dd HH:mm:ss&quot;</span>);
+        LocalDateTime parse = LocalDateTime.parse(dateTime, formatter);
+        System.out.println(parse);
+        String format = parse.format(formatter);
+        System.out.println(format);
+    }
+
+    <span class="hljs-comment">/**
+     * Instant&#x548C;ZonedDateTime&#x662F;&#x7B49;&#x4EF7;&#x7684;
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">instantZonedDateTime</span><span class="hljs-params">()</span></span>{
+
+        ZonedDateTime zonedDateTime1 = Instant.now().atZone(ZoneId.systemDefault());
+        ZonedDateTime zonedDateTime2 = Instant.now().atZone(ZoneId.of(<span class="hljs-string">&quot;America/Chicago&quot;</span>));
+
+        System.out.println(zonedDateTime1);
+        System.out.println(zonedDateTime1.toInstant());
+        System.out.println(zonedDateTime1.toLocalDate());
+
+        System.out.println(Instant.now().atZone(ZoneId.of(<span class="hljs-string">&quot;+00:00&quot;</span>)));
+
+        System.out.println(zonedDateTime2);
+        System.out.println(zonedDateTime2.toInstant());
+        System.out.println(zonedDateTime2.toLocalDate());
+
+<span class="hljs-comment">//        &#x901A;&#x8FC7;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x770B;&#x51FA; &#x6839;&#x636E;&#x7CFB;&#x7EDF;&#x65F6;&#x533A;&#x548C;&#x6839;&#x636E;&#x5176;&#x4ED6;&#x65F6;&#x533A;&#x521B;&#x5EFA;&#x7684;ZonedDateTime&#x5BF9;&#x8C61;&#x5185;&#x90E8;&#x7684;&#x65F6;&#x95F4;&#x6233;Instant&#x548C;&#x6807;&#x51C6;&#x65F6;&#x95F4;&#x90FD;&#x662F;&#x4E00;&#x81F4;&#x7684;</span>
+<span class="hljs-comment">//        &#x53EA;&#x4E0D;&#x8FC7;&#x52A0;&#x4E86;&#x65F6;&#x533A;&#x4E4B;&#x540E;,&#x5BF9;&#x65F6;&#x533A;&#x8FDB;&#x884C;&#x4E86;&#x5904;&#x7406;</span>
+<span class="hljs-comment">//        &#x76F8;&#x5F53;&#x4E8E;&#x5BF9;Instant&#x505A;&#x4E86;&#x589E;&#x5F3A;</span>
+        <span class="hljs-comment">/*
+        2020-03-17T01:02:56.253+08:00[Asia/Shanghai]
+        2020-03-16T17:02:56.253Z
+        2020-03-17
+        2020-03-16T17:02:56.334Z
+        2020-03-16T12:02:56.317-05:00[America/Chicago]
+        2020-03-16T17:02:56.317Z
+        2020-03-16
+        */</span>
+
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">exchange</span><span class="hljs-params">()</span></span>{
+        Instant instant = Instant.now();
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
+<span class="hljs-comment">//        &#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;&#x65F6;&#x533A;&#x5C31;&#x662F;&#x8BE5;&#x65F6;&#x533A;,&#x53E6;&#x4E00;&#x79CD;&#x5199;&#x6CD5;</span>
+        ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(instant, ZoneId.of(<span class="hljs-string">&quot;Asia/Shanghai&quot;</span>));
+
+<span class="hljs-comment">//        LocalDateTime&#x8F6C;&#x4E3A;ZonedDateTime</span>
+        ZonedDateTime of = ZonedDateTime.of(localDateTime, ZoneId.systemDefault());
+<span class="hljs-comment">//        ZonedDateTime&#x8F6C;&#x4E3A;LocalDateTime</span>
+        LocalDate localDate = zonedDateTime.toLocalDate();
+
+        Instant instant1 = zonedDateTime.toInstant();
+        System.out.println(instant1);
+<span class="hljs-comment">//        LocalDateTime&#x8F6C;&#x6362;Instant&#x65F6;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x65F6;&#x533A;,&#x65F6;&#x533A;&#x5FC5;&#x987B;&#x662F;&#x65F6;&#x533A;&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;</span>
+        Instant instant2 = localDateTime.toInstant(ZoneOffset.of(<span class="hljs-string">&quot;+08:00&quot;</span>));
+        System.out.println(instant2);
+
+    }
+}
+</code></pre>
+<h2 id="&#x65F6;&#x95F4;&#x6233;&#x3001;&#x65F6;&#x533A;"><a name="&#x65F6;&#x95F4;&#x6233;&#x3001;&#x65F6;&#x533A;" class="anchor-navigation-ex-anchor" href="#&#x65F6;&#x95F4;&#x6233;&#x3001;&#x65F6;&#x533A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65F6;&#x95F4;&#x6233;&#x3001;&#x65F6;&#x533A;</h2>
+<p>&#x7406;&#x89E3;&#x65F6;&#x95F4;&#x6233;&#x548C;&#x65F6;&#x533A;</p>
+<p>&#x65F6;&#x95F4;&#x6233;:&#x6307;&#x7684;&#x662F;Unix&#x65F6;&#x95F4;&#x6233;,&#x662F;&#x4E00;&#x79CD;&#x65F6;&#x95F4;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;,&#x5728;&#x5730;&#x7403;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x89D2;&#x843D;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;,&#x4ECE;&#x683C;&#x6797;&#x5A01;&#x6CBB;&#x65F6;&#x95F4;1970&#x5E74;01&#x6708;01&#x65E5;00&#x65F6;00&#x5206;00&#x79D2;&#x8D77;&#x81F3;&#x73B0;&#x5728;&#x7684;&#x603B;&#x79D2;&#x6570;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7F51;&#x7AD9;&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x6233;:<a href="http://tool.chinaz.com/Tools/unixtime.aspx" target="_blank">http://tool.chinaz.com/Tools/unixtime.aspx</a></p>
+<p>&#x4F7F;&#x7528;&#x65F6;&#x95F4;&#x6233;&#x83B7;&#x53D6;&#x603B;&#x79D2;&#x6570;</p>
+<pre><code class="lang-java">   <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo3</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">long</span> epochSecond = Instant.now().getEpochSecond();
+        System.out.println(epochSecond);
+    }
+</code></pre>
+<p>&#x65F6;&#x533A;:&#x65F6;&#x95F4;&#x6233;&#x5728;&#x5730;&#x7403;&#x7684;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;,&#x4F46;&#x662F;&#x76F8;&#x540C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8868;&#x8FBE;&#x65B9;&#x5F0F;,&#x5C31;&#x662F;&#x65F6;&#x533A;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x5728;&#x4E2D;&#x56FD;&#x662F;&#x767D;&#x5929;,&#x800C;&#x5728;&#x7F8E;&#x56FD;&#x6B63;&#x662F;&#x591C;&#x665A;,&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x8FC7;&#x7684;&#x65F6;&#x95F4;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;,&#x8FD9;&#x65F6;&#x4FBF;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x65F6;&#x533A;&#x6765;&#x76F8;&#x4E92;&#x8F6C;&#x6362;&#x83B7;&#x53D6;&#x5BF9;&#x65B9;&#x65F6;&#x533A;&#x7684;&#x5177;&#x4F53;&#x65F6;&#x95F4;</p>
+<pre><code class="lang-java">  <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">fun</span><span class="hljs-params">()</span></span>{
+<span class="hljs-comment">//        &#x83B7;&#x53D6;&#x6240;&#x6709;jdk&#x5185;&#x7F6E;&#x7684;&#x65F6;&#x533A;&#x4FE1;&#x606F;</span>
+        ZoneId.SHORT_IDS.forEach((e1,e2) -&gt; System.out.println(e1+<span class="hljs-string">&quot;==&quot;</span>+e2));
+<span class="hljs-comment">//        &#x6839;&#x636E;&#x672C;&#x5730;&#x65F6;&#x533A;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#x7684;&#x65F6;&#x95F4;</span>
+        ZonedDateTime asiaShangha = ZonedDateTime.now();
+<span class="hljs-comment">//        &#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x533A;&#x83B7;&#x53D6;&#x65F6;&#x95F4; &#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x7F8E;&#x56FD;&#x7EBD;&#x7EA6;</span>
+        ZonedDateTime americaNewYork = ZonedDateTime.ofInstant(Instant.now(), ZoneId.of(<span class="hljs-string">&quot;America/New_York&quot;</span>));
+<span class="hljs-comment">//        &#x5206;&#x522B;&#x6253;&#x5370;&#x5BF9;&#x65B9;&#x6240;&#x5728;&#x65F6;&#x533A;&#x7684;&#x5177;&#x4F53;&#x65F6;&#x95F4;</span>
+        System.out.println(asiaShangha);
+        System.out.println(americaNewYork);
+<span class="hljs-comment">//        &#x83B7;&#x53D6;&#x65F6;&#x95F4;&#x6233;&#x603B;&#x79D2;&#x6570;,&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x662F;&#x76F8;&#x540C;&#x7684;</span>
+        System.out.println(asiaShangha.toInstant().getEpochSecond());
+        System.out.println(americaNewYork.toInstant().getEpochSecond());
+    }
+</code></pre>
+<p>&#x63A7;&#x5236;&#x53F0;&#x6253;&#x5370;&#x4FE1;&#x606F;</p>
+<pre><code>CTT==Asia/Shanghai
+ART==Africa/Cairo
+CNT==America/St_Johns
+PRT==America/Puerto_Rico
+PNT==America/Phoenix
+PLT==Asia/Karachi
+AST==America/Anchorage
+BST==Asia/Dhaka
+CST==America/Chicago
+EST==-05:00
+HST==-10:00
+JST==Asia/Tokyo
+IST==Asia/Kolkata
+AGT==America/Argentina/Buenos_Aires
+NST==Pacific/Auckland
+MST==-07:00
+AET==Australia/Sydney
+BET==America/Sao_Paulo
+PST==America/Los_Angeles
+ACT==Australia/Darwin
+SST==Pacific/Guadalcanal
+VST==Asia/Ho_Chi_Minh
+CAT==Africa/Harare
+ECT==Europe/Paris
+EAT==Africa/Addis_Ababa
+IET==America/Indiana/Indianapolis
+MIT==Pacific/Apia
+NET==Asia/Yerevan
+2020-03-18T11:15:09.033+08:00[Asia/Shanghai]
+2020-03-17T23:15:09.034-04:00[America/New_York]
+1584501309
+1584501309
+</code></pre><h2 id="springboot&#x9488;&#x5BF9;&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4;api&#x7684;&#x8F6C;&#x6362;"><a name="springboot&#x9488;&#x5BF9;&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4;api&#x7684;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#springboot&#x9488;&#x5BF9;&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4;api&#x7684;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>SpringBoot&#x9488;&#x5BF9;&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4;API&#x7684;&#x8F6C;&#x6362;</h2>
+<p>&#x65B9;&#x5F0F;&#x4E00;:&#x53EA;&#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;,&#x9700;&#x8981;&#x5728;&#x6BCF;&#x4E2A;&#x9700;&#x8981;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x5B57;&#x6BB5;&#x4E0A;&#x6DFB;&#x52A0;&#x8BE5;&#x6CE8;&#x89E3;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@JsonFormat</span>(pattern = <span class="hljs-string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>)
+<span class="hljs-keyword">private</span> LocalDateTime sendDate;
+</code></pre>
+<p>&#x65B9;&#x5F0F;&#x4E8C;:&#x5168;&#x5C40;&#x914D;&#x7F6E;,&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7684;LocalDate&#x4EE5;&#x53CA;LocalDateTime&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ContactAppConfig</span></span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String dateFormat = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String dateTimeFormat = <span class="hljs-string">&quot;yyyy-MM-dd HH:mm:&quot;</span>;
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Jackson2ObjectMapperBuilderCustomizer <span class="hljs-title">jsonCustomizer</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> builder -&gt;{
+            builder.simpleDateFormat(dateTimeFormat);
+            builder.serializers(<span class="hljs-keyword">new</span>
+                    LocalDateSerializer(DateTimeFormatter.ofPattern(dateFormat)));
+            builder.serializers(<span class="hljs-keyword">new</span>
+                    LocalDateTimeSerializer(DateTimeFormatter.ofPattern(dateTimeFormat)));
+        };
+    }
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; TaoQZ 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2024-05-02 16:08:43
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lambda访问外部变量.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Lambda访问外部变量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"新的日期时间API","level":"1.6.2.4","depth":3,"next":{"title":"java17","level":"1.6.3","depth":2,"ref":"","articles":[{"title":"java17","level":"1.6.3.1","depth":3,"path":"java/jdk17/jdk17.md","ref":"java/jdk17/jdk17.md","articles":[]}]},"previous":{"title":"Lambda访问外部变量","level":"1.6.2.3","depth":3,"path":"java/java8new_feature/Lambda访问外部变量.md","ref":"java/java8new_feature/Lambda访问外部变量.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.top"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"java/java8new_feature/日期时间API.md","mtime":"2024-05-02T07:08:43.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-10T01:56:24.940Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

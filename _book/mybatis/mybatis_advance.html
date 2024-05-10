@@ -1,0 +1,3564 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mybatis进阶 · Peace & Love</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="TaoQZ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="mybatis-plus.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../img/header/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../img/header/favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://taoqz.top" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../git/Git.html">
+            
+                <a href="../git/Git.html">
+            
+                    
+                    git安装及简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../git/Idea中使用Git.html">
+            
+                <a href="../git/Idea中使用Git.html">
+            
+                    
+                    Idea使用Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../vue/Vue.html">
+            
+                <a href="../vue/Vue.html">
+            
+                    
+                    Vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../vue/vue理论知识.html">
+            
+                <a href="../vue/vue理论知识.html">
+            
+                    
+                    Vue理论知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../frontend/es6/es6.html">
+            
+                <a href="../frontend/es6/es6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../frontend/node/node.html">
+            
+                <a href="../frontend/node/node.html">
+            
+                    
+                    Node的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../frontend/mock/mock.html">
+            
+                <a href="../frontend/mock/mock.html">
+            
+                    
+                    Mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../frontend/nuxt/nuxt.html">
+            
+                <a href="../frontend/nuxt/nuxt.html">
+            
+                    
+                    Nuxt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../frontend/other/html.html">
+            
+                <a href="../frontend/other/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../frontend/other/JSON对象的两个方法.html">
+            
+                <a href="../frontend/other/JSON对象的两个方法.html">
+            
+                    
+                    JSON对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    JWT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../jwt/JWT.html">
+            
+                <a href="../jwt/JWT.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../jwt/认证、授权、鉴权、权限控制.html">
+            
+                <a href="../jwt/认证、授权、鉴权、权限控制.html">
+            
+                    
+                    认证、授权、鉴权、权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    base
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../java/base/Java的基本程序设计结构.html">
+            
+                <a href="../java/base/Java的基本程序设计结构.html">
+            
+                    
+                    Java的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../java/base/对象和类.html">
+            
+                <a href="../java/base/对象和类.html">
+            
+                    
+                    对象和类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../java/base/泛型.html">
+            
+                <a href="../java/base/泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../java/base/集合.html">
+            
+                <a href="../java/base/集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../java/base/继承.html">
+            
+                <a href="../java/base/继承.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../java/base/接口、内部类.html">
+            
+                <a href="../java/base/接口、内部类.html">
+            
+                    
+                    接口、内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../java/base/异常.html">
+            
+                <a href="../java/base/异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    java8新特性
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../java/java8new_feature/默认方法.html">
+            
+                <a href="../java/java8new_feature/默认方法.html">
+            
+                    
+                    默认方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../java/java8new_feature/Lambda.html">
+            
+                <a href="../java/java8new_feature/Lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../java/java8new_feature/Lambda访问外部变量.html">
+            
+                <a href="../java/java8new_feature/Lambda访问外部变量.html">
+            
+                    
+                    Lambda访问外部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="../java/java8new_feature/日期时间API.html">
+            
+                <a href="../java/java8new_feature/日期时间API.html">
+            
+                    
+                    新的日期时间API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    java17
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../java/jdk17/jdk17.html">
+            
+                <a href="../java/jdk17/jdk17.html">
+            
+                    
+                    java17
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../java/pattern/singleton.html">
+            
+                <a href="../java/pattern/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../java/pattern/proxy.html">
+            
+                <a href="../java/pattern/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    多线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../java/thread/多线程入门.html">
+            
+                <a href="../java/thread/多线程入门.html">
+            
+                    
+                    多线程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../java/thread/线程同步和通信.html">
+            
+                <a href="../java/thread/线程同步和通信.html">
+            
+                    
+                    线程同步和通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="../java/thread/线程池.html">
+            
+                <a href="../java/thread/线程池.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="../java/thread/threadpool/threadpool.html">
+            
+                <a href="../java/thread/threadpool/threadpool.html">
+            
+                    
+                    Threadpool
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../mysql/mysql基础.html">
+            
+                <a href="../mysql/mysql基础.html">
+            
+                    
+                    mysql基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../mysql/mysql进阶.html">
+            
+                <a href="../mysql/mysql进阶.html">
+            
+                    
+                    mysql进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../mysql/mysql事务.html">
+            
+                <a href="../mysql/mysql事务.html">
+            
+                    
+                    mysql事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../mysql/varchar和char.html">
+            
+                <a href="../mysql/varchar和char.html">
+            
+                    
+                    varchar和char
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <span>
+            
+                    
+                    极客
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../mysql/jike/mysql架构/mysql架构.html">
+            
+                <a href="../mysql/jike/mysql架构/mysql架构.html">
+            
+                    
+                    mysql架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html">
+            
+                <a href="../mysql/jike/一条更新语句是怎么执行的/一条更新语句是怎么执行的.html">
+            
+                    
+                    一条更新语句是怎么执行的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../mysql/jike/suoyin/suoyin.html">
+            
+                <a href="../mysql/jike/suoyin/suoyin.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" data-path="../mysql/jike/suo/mysql_全局锁_表锁_行锁.html">
+            
+                <a href="../mysql/jike/suo/mysql_全局锁_表锁_行锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.5" data-path="../mysql/jike/事务/事务.html">
+            
+                <a href="../mysql/jike/事务/事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.6" data-path="../mysql/jike/xn/mysql执行计划.html">
+            
+                <a href="../mysql/jike/xn/mysql执行计划.html">
+            
+                    
+                    mysql执行计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.7" data-path="../mysql/jike/xn/MYSQL_performance_schema详解.html">
+            
+                <a href="../mysql/jike/xn/MYSQL_performance_schema详解.html">
+            
+                    
+                    MYSQL_performance_schema详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../redis/redis.html">
+            
+                <a href="../redis/redis.html">
+            
+                    
+                    Redis基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../redis/redis高级.html">
+            
+                <a href="../redis/redis高级.html">
+            
+                    
+                    Redis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Kafka
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../kafka/kafka入门.html">
+            
+                <a href="../kafka/kafka入门.html">
+            
+                    
+                    kafka入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../kafka/kafka搭建集群.html">
+            
+                <a href="../kafka/kafka搭建集群.html">
+            
+                    
+                    kafka搭建集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Logstash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../logstash/logstash技术分享.html">
+            
+                <a href="../logstash/logstash技术分享.html">
+            
+                    
+                    Logstash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../linux/Linux环境下安装jdk和maven.html">
+            
+                <a href="../linux/Linux环境下安装jdk和maven.html">
+            
+                    
+                    安装jdk及maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../linux/Linux远程管理.html">
+            
+                <a href="../linux/Linux远程管理.html">
+            
+                    
+                    Linux远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../spring/spring.html">
+            
+                <a href="../spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../spring/SpringMVC.html">
+            
+                <a href="../spring/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../spring/spring循环依赖.html">
+            
+                <a href="../spring/spring循环依赖.html">
+            
+                    
+                    Spring循环依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" >
+            
+                <span>
+            
+                    
+                    SpringBoot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.4.1" data-path="../spring/SpringBoot.html">
+            
+                <a href="../spring/SpringBoot.html">
+            
+                    
+                    springboot入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.2" data-path="../boot_integration/javamail.html">
+            
+                <a href="../boot_integration/javamail.html">
+            
+                    
+                    javamail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4.3" data-path="../boot_integration/springtask.html">
+            
+                <a href="../boot_integration/springtask.html">
+            
+                    
+                    springtask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../spring/transactional/@Transactional.html">
+            
+                <a href="../spring/transactional/@Transactional.html">
+            
+                    
+                    @Transactional
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../rabbitmq/rabbitmq.html">
+            
+                <a href="../rabbitmq/rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../microservice/微服务概述.html">
+            
+                <a href="../microservice/微服务概述.html">
+            
+                    
+                    微服务阶段
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" >
+            
+                <span>
+            
+                    
+                    Netflix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../microservice/netflix/Zuul.html">
+            
+                <a href="../microservice/netflix/Zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.2" data-path="../microservice/netflix/eureka/eureka.html">
+            
+                <a href="../microservice/netflix/eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.3" data-path="../microservice/netflix/Hystrix.html">
+            
+                <a href="../microservice/netflix/Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.4" data-path="../microservice/netflix/Feign.html">
+            
+                <a href="../microservice/netflix/Feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.5" data-path="../microservice/netflix/SpringCloudConfig.html">
+            
+                <a href="../microservice/netflix/SpringCloudConfig.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.6" data-path="../microservice/netflix/POJO依赖.html">
+            
+                <a href="../microservice/netflix/POJO依赖.html">
+            
+                    
+                    POJO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" >
+            
+                <span>
+            
+                    
+                    Alibaba
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.2.1" data-path="../microservice/alibaba/seata_nacos/seata结合nacos使用.html">
+            
+                <a href="../microservice/alibaba/seata_nacos/seata结合nacos使用.html">
+            
+                    
+                    seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" >
+            
+                <span>
+            
+                    
+                    HttpTool
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="../httptool/HttpClient.html">
+            
+                <a href="../httptool/HttpClient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3.2" data-path="../httptool/RestTemplate.html">
+            
+                <a href="../httptool/RestTemplate.html">
+            
+                    
+                    RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../jdbc/jdbc.html">
+            
+                <a href="../jdbc/jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../jike100/jike100.html">
+            
+                <a href="../jike100/jike100.html">
+            
+                    
+                    jike100
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="注意事项.html">
+            
+                <a href="注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="mybatis-plus.html">
+            
+                <a href="mybatis-plus.html">
+            
+                    
+                    mybatis-plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17.3" data-path="mybatis_advance.html">
+            
+                <a href="mybatis_advance.html">
+            
+                    
+                    mybatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../maven/maven.html">
+            
+                <a href="../maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    Http
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../http/状态码.html">
+            
+                <a href="../http/状态码.html">
+            
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    minio
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../minio/minio.html">
+            
+                <a href="../minio/minio.html">
+            
+                    
+                    minio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../minio/minio搭建集群.html">
+            
+                <a href="../minio/minio搭建集群.html">
+            
+                    
+                    minio搭建集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Nginx
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../nginx/nginx.html">
+            
+                <a href="../nginx/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../nginx/https配置.html">
+            
+                <a href="../nginx/https配置.html">
+            
+                    
+                    https配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../nginx/docker-nginx.html">
+            
+                <a href="../nginx/docker-nginx.html">
+            
+                    
+                    docker-nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    Mongo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../mongodb/Mongo的安装与卸载.html">
+            
+                <a href="../mongodb/Mongo的安装与卸载.html">
+            
+                    
+                    Mongo的安装与卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../mongodb/Mongo介绍及命令行使用.html">
+            
+                <a href="../mongodb/Mongo介绍及命令行使用.html">
+            
+                    
+                    Mongo的介绍及命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    Aliyun
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../aliyun/阿里云域名.html">
+            
+                <a href="../aliyun/阿里云域名.html">
+            
+                    
+                    阿里云域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../aliyun/OSS存储.html">
+            
+                <a href="../aliyun/OSS存储.html">
+            
+                    
+                    OSS存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    Swagger
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../swagger/SpringBoot整合Swagger2.html">
+            
+                <a href="../swagger/SpringBoot整合Swagger2.html">
+            
+                    
+                    Springboot整合Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    ElementUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../elementUI/ElementUI.html">
+            
+                <a href="../elementUI/ElementUI.html">
+            
+                    
+                    elementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    模板引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../templateng/Thymeleaf.html">
+            
+                <a href="../templateng/Thymeleaf.html">
+            
+                    
+                    Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="../docker/docker安装及常用命令.html">
+            
+                <a href="../docker/docker安装及常用命令.html">
+            
+                    
+                    docker安装及常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="../docker/IDEA连接docker.html">
+            
+                <a href="../docker/IDEA连接docker.html">
+            
+                    
+                    IDEA连接docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.3" data-path="../docker/部署springboot项目.html">
+            
+                <a href="../docker/部署springboot项目.html">
+            
+                    
+                    部署springboot项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.4" data-path="../docker/problem.html">
+            
+                <a href="../docker/problem.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.5" data-path="../docker/docker-compose.html">
+            
+                <a href="../docker/docker-compose.html">
+            
+                    
+                    docker-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" >
+            
+                <span>
+            
+                    
+                    Harbor
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.28.1" data-path="../harbor/harbor.html">
+            
+                <a href="../harbor/harbor.html">
+            
+                    
+                    Harbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" >
+            
+                <span>
+            
+                    
+                    Dubbo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.1" data-path="../dubbo/使用dubbo+zookeeper.html">
+            
+                <a href="../dubbo/使用dubbo+zookeeper.html">
+            
+                    
+                    入门使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" >
+            
+                <span>
+            
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.30.1" data-path="../android/root.html">
+            
+                <a href="../android/root.html">
+            
+                    
+                    刷机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30.2" data-path="../android/android发送请求.html">
+            
+                <a href="../android/android发送请求.html">
+            
+                    
+                    android发送请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30.3" data-path="../android/改造为web服务器.html">
+            
+                <a href="../android/改造为web服务器.html">
+            
+                    
+                    改造为web服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.31.1" data-path="../react/React.md">
+            
+                <span>
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" >
+            
+                <span>
+            
+                    
+                    Jrebel
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.32.1" data-path="../jrebel/远程调试及热部署.html">
+            
+                <a href="../jrebel/远程调试及热部署.html">
+            
+                    
+                    Jrebel
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" >
+            
+                <span>
+            
+                    
+                    ElasticStack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.33.1" data-path="../elasticstack/elasticsearch.html">
+            
+                <a href="../elasticstack/elasticsearch.html">
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.2" data-path="../elasticstack/ElasticSearch主要搜索关键字.html">
+            
+                <a href="../elasticstack/ElasticSearch主要搜索关键字.html">
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.3" data-path="../elasticstack/elasticsearch_api.html">
+            
+                <a href="../elasticstack/elasticsearch_api.html">
+            
+                    
+                    Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.4" data-path="../elasticstack/ElasticSearch_Nested类型对文档的影响.html">
+            
+                <a href="../elasticstack/ElasticSearch_Nested类型对文档的影响.html">
+            
+                    
+                    Nested类型对文档的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33.5" data-path="../elasticstack/ES_工作中遇到的问题.html">
+            
+                <a href="../elasticstack/ES_工作中遇到的问题.html">
+            
+                    
+                    ES_工作中遇到的问题.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" >
+            
+                <span>
+            
+                    
+                    Salesforce
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.34.1" data-path="../salesforce/apex.html">
+            
+                <a href="../salesforce/apex.html">
+            
+                    
+                    Apex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.2" data-path="../salesforce/visualforce.html">
+            
+                <a href="../salesforce/visualforce.html">
+            
+                    
+                    Visualforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.3" data-path="../salesforce/遇到的问题.html">
+            
+                <a href="../salesforce/遇到的问题.html">
+            
+                    
+                    遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.4" data-path="../salesforce/在IDEA中配置salesforce环境.html">
+            
+                <a href="../salesforce/在IDEA中配置salesforce环境.html">
+            
+                    
+                    在IDEA中配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34.5" data-path="../salesforce/VSCode配置salesforce环境.html">
+            
+                <a href="../salesforce/VSCode配置salesforce环境.html">
+            
+                    
+                    VSCode配置salesforce环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" >
+            
+                <span>
+            
+                    
+                    工作笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.1" data-path="../worknote/css/css.html">
+            
+                <a href="../worknote/css/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.2" data-path="../worknote/nacos/nacos配置自动刷新.html">
+            
+                <a href="../worknote/nacos/nacos配置自动刷新.html">
+            
+                    
+                    nacos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.3" data-path="../worknote/docker/docker.html">
+            
+                <a href="../worknote/docker/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.4" data-path="../worknote/elementui/elementui.html">
+            
+                <a href="../worknote/elementui/elementui.html">
+            
+                    
+                    elementui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.5" data-path="../worknote/elk/elk.html">
+            
+                <a href="../worknote/elk/elk.html">
+            
+                    
+                    elk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.6" data-path="../worknote/gitlab/gitlab.html">
+            
+                <a href="../worknote/gitlab/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.7" data-path="../worknote/jpa/jpa.html">
+            
+                <a href="../worknote/jpa/jpa.html">
+            
+                    
+                    jpa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8" >
+            
+                <span>
+            
+                    
+                    mysql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.8.1" data-path="../worknote/mysql/centos7安装mysql5.7.html">
+            
+                <a href="../worknote/mysql/centos7安装mysql5.7.html">
+            
+                    
+                    centos7安装mysql5.7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.2" data-path="../worknote/mysql/centos卸载mysql.html">
+            
+                <a href="../worknote/mysql/centos卸载mysql.html">
+            
+                    
+                    centos卸载mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.3" data-path="../worknote/mysql/mysql 主从复制.html">
+            
+                <a href="../worknote/mysql/mysql 主从复制.html">
+            
+                    
+                    mysql 主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.4" data-path="../worknote/mysql/mysql时区.html">
+            
+                <a href="../worknote/mysql/mysql时区.html">
+            
+                    
+                    mysql时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.5" data-path="../worknote/mysql/mysql主从复制_test.html">
+            
+                <a href="../worknote/mysql/mysql主从复制_test.html">
+            
+                    
+                    mysql主从复制_test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.6" data-path="../worknote/mysql/mysql日期函数.html">
+            
+                <a href="../worknote/mysql/mysql日期函数.html">
+            
+                    
+                    mysql日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.7" data-path="../worknote/mysql/mysql_bin-log.html">
+            
+                <a href="../worknote/mysql/mysql_bin-log.html">
+            
+                    
+                    mysql_bin-log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.8" data-path="../worknote/mysql/mysql_null.html">
+            
+                <a href="../worknote/mysql/mysql_null.html">
+            
+                    
+                    mysql_null
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.8.9" data-path="../worknote/mysql/mysql8.html">
+            
+                <a href="../worknote/mysql/mysql8.html">
+            
+                    
+                    mysql8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.9" data-path="../worknote/rabbitmq/docker安装rabbitmq.html">
+            
+                <a href="../worknote/rabbitmq/docker安装rabbitmq.html">
+            
+                    
+                    rabbitmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.10" data-path="../worknote/redis/redis.html">
+            
+                <a href="../worknote/redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.11" data-path="../worknote/websocket/springboot+vue+websocket.html">
+            
+                <a href="../worknote/websocket/springboot+vue+websocket.html">
+            
+                    
+                    websocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.12" data-path="../worknote/tess4j_ocr/Tess4j使用记录.html">
+            
+                <a href="../worknote/tess4j_ocr/Tess4j使用记录.html">
+            
+                    
+                    tess4j_ocr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.13" data-path="../worknote/swagger/swagger.html">
+            
+                <a href="../worknote/swagger/swagger.html">
+            
+                    
+                    swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.14.1" data-path="../worknote/other/stream.html">
+            
+                <a href="../worknote/other/stream.html">
+            
+                    
+                    stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.2" data-path="../worknote/other/windows操作端口.html">
+            
+                <a href="../worknote/other/windows操作端口.html">
+            
+                    
+                    windows操作端口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.3" data-path="../worknote/other/读取文件时自动添加BOM头的问题.html">
+            
+                <a href="../worknote/other/读取文件时自动添加BOM头的问题.html">
+            
+                    
+                    读取文件时自动添加BOM头的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.4" data-path="../worknote/other/java_pdf转图片+打压缩包.html">
+            
+                <a href="../worknote/other/java_pdf转图片+打压缩包.html">
+            
+                    
+                    java_pdf转图片+打压缩包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.5" data-path="../worknote/other/element-ui解决notify速度太快会重叠的问题.html">
+            
+                <a href="../worknote/other/element-ui解决notify速度太快会重叠的问题.html">
+            
+                    
+                    element-ui解决notify速度太快会重叠的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.6" data-path="../worknote/other/vue获取htmlcollection的length为0问题.html">
+            
+                <a href="../worknote/other/vue获取htmlcollection的length为0问题.html">
+            
+                    
+                    vue获取htmlcollection的length为0问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.7" data-path="../worknote/other/解决a标签自动浏览问题.html">
+            
+                <a href="../worknote/other/解决a标签自动浏览问题.html">
+            
+                    
+                    解决a标签自动浏览问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.8" data-path="../worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html">
+            
+                <a href="../worknote/other/解决element-ui在展示数据时会少显示一个空格的问题.html">
+            
+                    
+                    解决element-ui在展示数据时会少显示一个空格的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.14.9" data-path="../worknote/other/解决vue使用video播放视频无画面问题.html">
+            
+                <a href="../worknote/other/解决vue使用video播放视频无画面问题.html">
+            
+                    
+                    解决vue使用video播放视频无画面问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.36.1" data-path="../other/使用Google Cloud搭建ssr.html">
+            
+                <a href="../other/使用Google Cloud搭建ssr.html">
+            
+                    
+                    搭建SSR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36.2" data-path="../other/kaptcha验证码.html">
+            
+                <a href="../other/kaptcha验证码.html">
+            
+                    
+                    Kaptcha验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36.3" data-path="../other/ffmpeg.html">
+            
+                <a href="../other/ffmpeg.html">
+            
+                    
+                    ffmpeg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >mybatis进阶</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#mybatis-xml&#x7248;">MyBatis XML&#x7248;</a></li><ul><li><a href="#&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;">&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;</a></li><li><a href="#&#x7F13;&#x5B58;">&#x7F13;&#x5B58;</a></li><ul><li><a href="#&#x4E00;&#x7EA7;&#x7F13;&#x5B58;">&#x4E00;&#x7EA7;&#x7F13;&#x5B58;</a></li><li><a href="#&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;">&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;</a></li><li><a href="#&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;">&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;</a></li></ul><li><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li><li><a href="#&#x95EE;&#x9898;">&#x95EE;&#x9898;</a></li><ul><li><a href="#resultmap&#x548C;resulttype&#x7684;&#x533A;&#x522B;">resultMap&#x548C;resultType&#x7684;&#x533A;&#x522B;</a></li><li><a href="#&#x4E3A;&#x4EC0;&#x4E48;mapper&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;">&#x4E3A;&#x4EC0;&#x4E48;Mapper&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;</a></li><li><a href="#&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;">&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</a></li></ul><li><a href="#&#x535A;&#x5BA2;">&#x535A;&#x5BA2;</a></li></ul></ul></div><a href="#mybatis-xml&#x7248;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mybatis-xml&#x7248;"><a name="mybatis-xml&#x7248;" class="anchor-navigation-ex-anchor" href="#mybatis-xml&#x7248;"><i class="fa fa-link" aria-hidden="true"></i></a>MyBatis XML&#x7248;</h1>
+<p>MyBatis3&#x5B98;&#x65B9;&#x6587;&#x6863; </p>
+<p> <a href="https://mybatis.org/mybatis-3/zh/configuration.html#environments" target="_blank">https://mybatis.org/mybatis-3/zh/configuration.html#environments</a></p>
+<h2 id="&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;"><a name="&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;</h2>
+<p>&#x9488;&#x5BF9;&#x6709;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x7684;&#x5BF9;&#x8C61;,&#x53EA;&#x52A0;&#x8F7D;&#x5355;&#x8868;,&#x5728;&#x5C5E;&#x6027;&#x9700;&#x8981;&#x65F6;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;(&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;),&#x5982;&#x679C;&#x5F00;&#x542F;&#x4E86;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;,&#x6839;&#x636E;&#x914D;&#x7F6E;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x65E5;&#x5FD7;&#x6D4B;&#x8BD5;</p>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">settings</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x9A7C;&#x5CF0;&#x6620;&#x5C04;   --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;mapUnderscoreToCamelCase&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!--&#x5F00;&#x542F;&#x65E5;&#x5FD7;&#x6253;&#x5370;--&gt;</span>
+<span class="hljs-comment">&lt;!--        &lt;setting name=&quot;logImpl&quot; value=&quot;STDOUT_LOGGING&quot;/&gt;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;logImpl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;LOG4J&quot;</span>/&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- &#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x603B;&#x5F00;&#x5173; --&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7684;&#x5168;&#x5C40;&#x5F00;&#x5173;&#x3002;&#x5F53;&#x5F00;&#x542F;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x3002;
+            &#x7279;&#x5B9A;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x4E2D;&#x53EF;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E; fetchType &#x5C5E;&#x6027;&#x6765;&#x8986;&#x76D6;&#x8BE5;&#x9879;&#x7684;&#x5F00;&#x5173;&#x72B6;&#x6001; default:false--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;lazyLoadingEnabled&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;true&quot;</span> /&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- &#x8BBE;&#x7F6E;&#x6309;&#x9700;&#x52A0;&#x8F7D; default:false &#xFF08;&#x5728; 3.4.1 &#x53CA;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x9ED8;&#x8BA4;&#x4E3A; true&#xFF09;--&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x5F00;&#x542F;&#x65F6;&#xFF0C;&#x4EFB;&#x4E00;&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x90FD;&#x4F1A;&#x52A0;&#x8F7D;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x5C5E;&#x6027;&#x3002; --&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x5426;&#x5219;&#xFF0C;&#x6BCF;&#x4E2A;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x5C5E;&#x6027;&#x4F1A;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#xFF08;&#x53C2;&#x8003; lazyLoadTriggerMethods)&#x3002;--&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x672C;&#x4EBA;&#x6D4B;&#x8BD5; &#x5355;&#x72EC;&#x4F7F;&#x7528;&#x65F6;&#x65E0;&#x8BBA;  true&#x6216;false &#x90FD;&#x4F1A;&#x52A0;&#x8F7D;&#x5173;&#x8054;&#x5C5E;&#x6027;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;aggressiveLazyLoading&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;false&quot;</span> /&gt;</span>
+
+<span class="hljs-comment">&lt;!--        lazyLoadTriggerMethods--&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x3002;    &#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x3002;--&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x968F;&#x610F;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5; &#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;&#x6D4B;&#x8BD5;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;lazyLoadTriggerMethods&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;getClass&quot;</span>/&gt;</span>
+<span class="hljs-comment">&lt;!--        &#x9ED8;&#x8BA4; &#x8FD9;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;&#x5F88;&#x7279;&#x6B8A;,&#x90FD;&#x53EF;&#x80FD;&#x4F1A;&#x7528;&#x5230;&#x6240;&#x6709;&#x5C5E;&#x6027;,&#x6240;&#x4EE5;&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;--&gt;</span>
+<span class="hljs-comment">&lt;!--        &lt;setting name=&quot;lazyLoadTriggerMethods&quot; value=&quot;equals,clone,hashCode,toString&quot;/&gt;--&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+</code></pre>
+<h2 id="&#x7F13;&#x5B58;"><a name="&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x5B58;</h2>
+<p>&#x7F13;&#x5B58;&#x7684;&#x610F;&#x4E49;&#x5C06;&#x2F64;&#x6237;&#x7ECF;&#x5E38;&#x67E5;&#x8BE2;&#x7684;&#x6570;&#x636E;&#x653E;&#x5728;&#x7F13;&#x5B58;&#xFF08;&#x5185;&#x5B58;&#xFF09;&#x4E2D;&#xFF0C;&#x2F64;&#x6237;&#x53BB;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5C31;&#x4E0D;&#x2F64;&#x4ECE;&#x78C1;&#x76D8;&#x4E0A;(&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;
+&#x6570;&#x636E;&#x2F42;&#x4EF6;)&#x67E5;&#x8BE2;&#xFF0C;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x67E5;&#x8BE2;&#xFF0C;&#x4ECE;&#x2F7D;&#x63D0;&#x2FBC;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x2FBC;&#x5E76;&#x53D1;&#x7CFB;&#x7EDF;&#x7684;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="&#x4E00;&#x7EA7;&#x7F13;&#x5B58;"><a name="&#x4E00;&#x7EA7;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x7EA7;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x7EA7;&#x7F13;&#x5B58;</h3>
+<p>mybatis&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;</p>
+<pre><code class="lang-java">TeacherMapper mapper = MyBatisUtil.getMapper(TeacherMapper.class);
+System.out.println(mapper.findById(<span class="hljs-number">1</span>));
+System.out.println(mapper.findById(<span class="hljs-number">2</span>));
+System.out.println(mapper.findById(<span class="hljs-number">1</span>));
+</code></pre>
+<p><img src="assets/image-20200811210641297.png" alt="image-20200811210641297"></p>
+<h4 id="&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;"><a name="&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;</h4>
+<h5 id="update&#x548C;insert&#x64CD;&#x4F5C;"><a name="update&#x548C;insert&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#update&#x548C;insert&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>update&#x548C;insert&#x64CD;&#x4F5C;</h5>
+<pre><code class="lang-java">TeacherMapper mapper = MyBatisUtil.getMapper(TeacherMapper.class);
+System.out.println(mapper.findById(<span class="hljs-number">1</span>));
+<span class="hljs-comment">//        mapper.insert(new Teacher());</span>
+mapper.update(<span class="hljs-keyword">new</span> Teacher());
+System.out.println(mapper.findById(<span class="hljs-number">1</span>));
+</code></pre>
+<p><img src="assets/image-20200811210944158.png" alt="image-20200811210944158"></p>
+<p><img src="assets/image-20200811211203891.png" alt="image-20200811211203891"></p>
+<h5 id="delete&#x64CD;&#x4F5C;"><a name="delete&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#delete&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>delete&#x64CD;&#x4F5C;</h5>
+<p>&#x65E0;&#x8BBA;&#x771F;&#x6B63;&#x662F;&#x5426;&#x5220;&#x9664;&#x90FD;&#x4F1A;&#x6E05;&#x9664;&#x7F13;&#x5B58;</p>
+<pre><code class="lang-java">TeacherMapper mapper = MyBatisUtil.getMapper(TeacherMapper.class);
+System.out.println(mapper.findById(<span class="hljs-number">1</span>));
+mapper.deleteById(<span class="hljs-number">100</span>);
+System.out.println(mapper.findById(<span class="hljs-number">1</span>));
+</code></pre>
+<p><img src="assets/image-20200811212934979.png" alt="image-20200811212934979"></p>
+<h4 id="&#x6E05;&#x9664;&#x7F13;&#x5B58;"><a name="&#x6E05;&#x9664;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x9664;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6E05;&#x9664;&#x7F13;&#x5B58;</h4>
+<p>&#x5982;&#x679C;&#x662F;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x4F1A;&#x6E05;&#x9664;&#x7F13;&#x5B58;</p>
+<p><img src="assets/image-20200813222614600.png" alt="image-20200813222614600"></p>
+<p><img src="assets/image-20200813222645984.png" alt="image-20200813222645984"></p>
+<p>&#x6216;&#x8005;&#x7F13;&#x5B58;&#x7684;&#x7EA7;&#x522B;&#x662F;STATEMENT</p>
+<p><img src="assets/image-20200813223142751.png" alt="image-20200813223142751"></p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x8BBE;&#x7F6E;&#x4E3A;STATEMENT,&#x4F46;&#x662F;&#x60F3;&#x6E05;&#x9664;&#x672C;&#x6B21;&#x7684;&#x7F13;&#x5B58;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SqlSession&#x7684;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-java">sqlSession1.clearCache();
+</code></pre>
+<p>&#x6700;&#x7EC8;&#x4F1A;&#x843D;&#x5B9E;&#x5230;PerpetualCache&#x7C7B;&#x4E0A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Map&lt;Object, Object&gt; cache = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+
+<span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span> </span>{
+  cache.clear();
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5728;&#x4E0B;&#x9762;&#x7C7B;&#x4E2D;&#x5B58;&#x50A8;&#x4E86;&#x5168;&#x5C40;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</span>
+<span class="hljs-keyword">package</span> org.apache.ibatis.session;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Configuration</span> </span>{}
+</code></pre>
+<h4 id="&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x662F;sqlsession&#x7EA7;&#x522B;&#x7684;"><a name="&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x662F;sqlsession&#x7EA7;&#x522B;&#x7684;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x662F;sqlsession&#x7EA7;&#x522B;&#x7684;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x662F;SqlSession&#x7EA7;&#x522B;&#x7684;</h4>
+<p>&#x200B;        &#x4ECE;&#x4E0B;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x51FA;,&#x5206;&#x522B;&#x4F7F;&#x7528;mapper1&#x67E5;&#x8BE2;&#x548C;mapper2&#x66F4;&#x65B0;,&#x5728;mapper1&#x4E2D;&#x83B7;&#x53D6;&#x4ECD;&#x662F;&#x66F4;&#x65B0;&#x524D;&#x7684;&#x6570;&#x636E;,&#x4E5F;&#x5C31;&#x662F;&#x810F;&#x6570;&#x636E;,&#x53EF;&#x4EE5;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;&#x7F13;&#x5B58;&#x8303;&#x56F4;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;localCacheScope&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;STATEMENT&quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x200B;    &#x8FD9;&#x6837;&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x5B8C;&#x4E00;&#x4E2A;Mapper&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x540E;&#x90FD;&#x4F1A;&#x5C06;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x6E05;&#x9664;,&#x540C;&#x65F6;&#x4E5F;&#x8BC1;&#x5B9E;&#x4E86;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x662F;SqlSession&#x7EA7;&#x522B;&#x7684;</p>
+<pre><code class="lang-java">SqlSession sqlSession1= MyBatisCacheUtil.openSession();
+SqlSession sqlSession2 = MyBatisCacheUtil.openSession();
+System.out.println(sqlSession1);
+System.out.println(sqlSession2);
+
+TeacherMapper mapper1 = sqlSession1.getMapper(TeacherMapper.class);
+TeacherMapper mapper2 = sqlSession2.getMapper(TeacherMapper.class);
+
+System.out.println(<span class="hljs-string">&quot;mapper1 select&quot;</span>+mapper1.findById(<span class="hljs-number">1</span>));
+System.out.println(<span class="hljs-string">&quot;mapper1 select&quot;</span>+mapper1.findById(<span class="hljs-number">1</span>));
+Teacher teacher = <span class="hljs-keyword">new</span> Teacher(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Pink&#x8001;&#x5E08;&quot;</span>);
+System.out.println(<span class="hljs-string">&quot;mapper2 update&quot;</span>+mapper2.update(teacher));
+
+System.out.println(<span class="hljs-string">&quot;mapper1 select&quot;</span>+mapper1.findById(<span class="hljs-number">1</span>));
+System.out.println(<span class="hljs-string">&quot;mapper2 select&quot;</span>+mapper2.findById(<span class="hljs-number">1</span>));
+</code></pre>
+<p><img src="assets/image-20200811212538388.png" alt="image-20200811212538388"></p>
+<h4 id="&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;"><a name="&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;</h4>
+<p><img src="assets/image-20200811214352902.png" alt="image-20200811214352902"></p>
+<h5 id="&#x8DDF;&#x8BFB;&#x6E90;&#x7801;"><a name="&#x8DDF;&#x8BFB;&#x6E90;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x8DDF;&#x8BFB;&#x6E90;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DDF;&#x8BFB;&#x6E90;&#x7801;</h5>
+<p>&#x51E0;&#x4E2A;&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x7684;&#x7C7B;</p>
+<pre><code>// &#x6267;&#x884C;sql&#x76F8;&#x5173;
+CachingExecutor
+BaseExecutor
+
+// &#x52A8;&#x6001;&#x4EE3;&#x7406;&#x76F8;&#x5173;
+Method            package java.lang.reflect;
+Invocation
+
+// &#x7F13;&#x5B58;&#x76F8;&#x5173;
+Cache
+CacheKey
+PerpetualCache
+</code></pre><h6 id="&#x6DFB;&#x52A0;&#x7F13;&#x5B58;"><a name="&#x6DFB;&#x52A0;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x7F13;&#x5B58;</h6>
+<p><img src="assets/image-20200813212450710.png" alt="image-20200813212450710"></p>
+<p><img src="assets/image-20200813212551746.png" alt="image-20200813212551746"></p>
+<p>key&#x7684;&#x7EC4;&#x6210;&#x90E8;&#x5206;</p>
+<pre><code>StatementId : nameSpace + &#x65B9;&#x6CD5;id
+offset
+limit
+sql
+param
+environment
+</code></pre><p><img src="assets/image-20200813212639699.png" alt="image-20200813212639699"></p>
+<p>&#x4ECE;&#x7F13;&#x5B58;&#x83B7;&#x53D6;</p>
+<p><img src="assets/image-20200813212743877.png" alt="image-20200813212743877"></p>
+<p>&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x65F6;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;</p>
+<p><img src="assets/image-20200813212813445.png" alt="image-20200813212813445"></p>
+<p>&#x6700;&#x7EC8;&#x8FD8;&#x662F;&#x8981;&#x843D;&#x5B9E;&#x5230;PreparedStatement&#x4E0A;</p>
+<p><img src="assets/image-20200813212937268.png" alt="image-20200813212937268"></p>
+<p>&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;PerpetualCache&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Map&lt;Object, Object&gt; cache = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+</code></pre>
+<p><img src="assets/image-20200813213041785.png" alt="image-20200813213041785"></p>
+<h6 id="&#x83B7;&#x53D6;&#x7F13;&#x5B58;"><a name="&#x83B7;&#x53D6;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x7F13;&#x5B58;</h6>
+<p>&#x6BD4;&#x8F83;key&#x65F6;&#x4F1A;&#x7528;&#x5230;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>CacheKey&#x5185;&#x90E8;&#x7684;equals()&#x548C;hashcode()</p>
+<pre><code class="lang-java"> <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object object)</span> </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span> == object) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+    <span class="hljs-keyword">if</span> (!(object <span class="hljs-keyword">instanceof</span> CacheKey)) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-keyword">final</span> CacheKey cacheKey = (CacheKey) object;
+
+    <span class="hljs-keyword">if</span> (hashcode != cacheKey.hashcode) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+    <span class="hljs-keyword">if</span> (checksum != cacheKey.checksum) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+    <span class="hljs-keyword">if</span> (count != cacheKey.count) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; updateList.size(); i++) {
+      Object thisObject = updateList.get(i);
+      Object thatObject = cacheKey.updateList.get(i);
+      <span class="hljs-keyword">if</span> (!ArrayUtil.equals(thisObject, thatObject)) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+      }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> hashcode;
+  }
+</code></pre>
+<h3 id="&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><a name="&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;</h3>
+<p>&#x200B;     &#x9996;&#x5148;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;,<strong>&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;</strong>,&#x4E5F;&#x5C31;&#x662F;session&#x7EA7;&#x522B;&#x7684;,<strong>&#x540C;&#x4E00;&#x4E2A;sqlsession&#x5185;&#x5171;&#x4EAB;&#x7F13;&#x5B58;</strong>,&#x4F46;&#x662F;&#x6BCF;&#x6B21;&#x6267;&#x884C;<strong>&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;</strong>,&#x8FD9;&#x91CC;&#x7684;<strong>&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x6CDB;&#x6307;insert&#x3001;update&#x548C;delete</strong>,&#x5982;&#x679C;&#x60F3;&#x7981;&#x7528;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x5219;&#x9700;&#x8981;&#x628A;&#x7B49;&#x7EA7;&#x8C03;&#x81F3;<strong>STATEMENT</strong>,&#x610F;&#x4E3A;&#x6BCF;&#x4E00;&#x6761;&#x6267;&#x884C;&#x8BED;&#x53E5;&#x90FD;&#x4F1A;&#x72EC;&#x7ACB;&#x6267;&#x884C;,&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x7F13;&#x5B58;,&#x4E5F;&#x53EF;&#x4EE5;&#x8C03;&#x7528;sqlseesion&#x7684;&#x65B9;&#x6CD5;<strong>&#x624B;&#x52A8;&#x6E05;&#x9664;&#x7F13;&#x5B58;</strong>&#x3002;</p>
+<p>&#x200B;    &#x7F13;&#x5B58;&#x7684;&#x63A5;&#x53E3;&#x662F;<strong>Cache</strong>,&#x6700;&#x7EC8;&#x4F1A;&#x843D;&#x5B9E;&#x5230;<strong>PerpetualCache</strong>&#x7C7B;&#x4E2D;,&#x8BE5;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;Map&#x96C6;&#x5408;,&#x64CD;&#x4F5C;&#x7F13;&#x5B58;&#x6570;&#x636E;,&#x4E5F;&#x5C31;&#x662F;&#x5728;&#x64CD;&#x4F5C;&#x8BE5;map&#x96C6;&#x5408;,&#x5176;&#x4E2D;&#x8BE5;map&#x96C6;&#x5408;&#x7684;key&#x4E3A;<strong>CacheKey</strong>,&#x6B64;&#x7C7B;&#x4F1A;&#x5C06;&#x901A;&#x8FC7;update&#x65B9;&#x6CD5;&#x95EF;&#x5165;&#x5185;&#x90E8;&#x7684;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x5F97;&#x51FA;hashCode&#x503C;,&#x5177;&#x4F53;&#x53D8;&#x91CF;&#x5728;&#x4E0A;&#x9762;&#x6709;&#x63D0;&#x51FA;&#x3002;</p>
+<p>&#x200B;    &#x4F46;&#x7531;&#x4E8E;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x8303;&#x56F4;&#x53EA;&#x5728;sqlsession&#x540C;&#x4E00;&#x4F1A;&#x8BDD;&#x7EA7;&#x522B;,&#x5982;&#x679C;&#x60F3;&#x628A;&#x8303;&#x56F4;&#x7F29;&#x5C0F;&#x53EF;&#x4EE5;&#x5C06;&#x8303;&#x56F4;&#x6539;&#x4E3A;STATEMENT&#x7EA7;&#x522B;,&#x4F46;&#x662F;&#x5C06;&#x8303;&#x56F4;&#x6269;&#x5927;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x4E86;</p>
+<h4 id="&#x5F00;&#x542F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><a name="&#x5F00;&#x542F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x542F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x542F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;</h4>
+<p>&#x4ECE;&#x6E90;&#x7801;&#x53EF;&#x4EE5;&#x770B;&#x51FA;,&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x662F;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684;</p>
+<p><img src="assets/image-20200815145906622.png" alt="image-20200815145906622"></p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- &#x5F00;&#x542F;&#x2F06;&#x7EA7;&#x7F13;&#x5B58;,&#x662F;&#x9ED8;&#x8BA4;&#x5F00;&#x542F; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cacheEnabled&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x4F46;&#x662F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x5C06;&#x8303;&#x56F4;&#x6269;&#x5927;&#x5230;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x4F1A;&#x8BDD;,&#x540C;&#x65F6;&#x9897;&#x7C92;&#x5EA6;&#x7EC6;&#x5206;&#x5230;&#x4E86;namespace,&#x4E5F;&#x5C31;&#x662F;sql&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;,&#x9700;&#x8981;&#x5728;&#x4F7F;&#x7528;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">cache</span>/&gt;</span>
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;,&#x4E0D;&#x540C;&#x7684;sqlsession&#x662F;&#x5426;&#x5171;&#x4EAB;&#x7F13;&#x5B58;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span> </span>{
+    SqlSession sqlSession1 = MyBatisCacheUtil.openSession();
+    SqlSession sqlSession2 = MyBatisCacheUtil.openSession();
+
+    GradeMapper mapper1 = sqlSession1.getMapper(GradeMapper.class);
+    GradeMapper mapper2 = sqlSession2.getMapper(GradeMapper.class);
+
+    System.out.println(<span class="hljs-string">&quot;mapper1  &quot;</span> + mapper1.findById(<span class="hljs-number">1</span>));
+    System.out.println(<span class="hljs-string">&quot;mapper2  &quot;</span> + mapper2.findById(<span class="hljs-number">1</span>));
+    <span class="hljs-comment">//        sqlSession1.commit();</span>
+    <span class="hljs-comment">//        sqlSession1.close();</span>
+    System.out.println(<span class="hljs-string">&quot;mapper2  &quot;</span> + mapper2.findById(<span class="hljs-number">1</span>));
+
+}
+</code></pre>
+<p><img src="assets/image-20200815180940978.png" alt="image-20200815180940978"></p>
+<p>&#x4ECE;&#x4E0A;&#x56FE;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x4EEC;&#x9884;&#x671F;&#x7684;&#x4E0D;&#x540C;&#x7684;sqlsession&#x95F4;&#x5171;&#x4EAB;&#x7F13;&#x5B58;&#x5E76;&#x6CA1;&#x6709;&#x6210;&#x529F;(&#x4F46;&#x662F;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x8FD8;&#x662F;&#x4F1A;&#x751F;&#x6548;),&#x5C06;&#x4EE3;&#x7801;&#x6539;&#x4E3A;&#x5982;&#x4E0B;&#x540E;&#x518D;&#x6B21;&#x6267;&#x884C;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span> </span>{
+    SqlSession sqlSession1 = MyBatisCacheUtil.openSession();
+    SqlSession sqlSession2 = MyBatisCacheUtil.openSession();
+
+    GradeMapper mapper1 = sqlSession1.getMapper(GradeMapper.class);
+    GradeMapper mapper2 = sqlSession2.getMapper(GradeMapper.class);
+
+    System.out.println(<span class="hljs-string">&quot;mapper1  &quot;</span> + mapper1.findById(<span class="hljs-number">1</span>));
+    <span class="hljs-comment">//        &#x624B;&#x52A8;&#x63D0;&#x4EA4;</span>
+    sqlSession1.commit();
+    <span class="hljs-comment">//        &#x6216;&#x8005;&#x5173;&#x95ED;</span>
+    <span class="hljs-comment">//        sqlSession1.close();</span>
+    System.out.println(<span class="hljs-string">&quot;mapper2  &quot;</span> + mapper2.findById(<span class="hljs-number">1</span>));
+    System.out.println(<span class="hljs-string">&quot;mapper2  &quot;</span> + mapper2.findById(<span class="hljs-number">1</span>));
+
+}
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x4E5F;&#x751F;&#x6548;&#x4E86;</p>
+<p><img src="assets/image-20200815181315341.png" alt="image-20200815181315341"></p>
+<p>&#x4F46;&#x662F;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x63D0;&#x4EA4;,&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x4E0D;&#x4F1A;&#x751F;&#x6548;,&#x8FD9;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;,&#x8FFD;&#x8E2A;&#x63D0;&#x4EA4;&#x7684;&#x6E90;&#x7801;</p>
+<p><img src="assets/image-20200815181459988.png" alt="image-20200815181459988"></p>
+<p><img src="assets/image-20200815181615382.png" alt="image-20200815181615382"></p>
+<p><img src="assets/image-20200815181554166.png" alt="image-20200815181554166"></p>
+<p><img src="assets/image-20200815181636213.png" alt="image-20200815181636213"></p>
+<p>&#x6B64;&#x65F6;&#x8FD8;&#x6CA1;&#x6709;&#x5F00;&#x59CB;&#x904D;&#x5386;,&#x7F13;&#x5B58;&#x4E2D;&#x8FD8;&#x6CA1;&#x6709;&#x6570;&#x636E;</p>
+<p><img src="assets/image-20200815181951880.png" alt="image-20200815181951880"></p>
+<p>&#x5728;&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#x540E;,&#x6267;&#x884C;&#x56FE;&#x4E0B;&#x65B9;&#x6CD5;&#x540E;&#x624D;&#x4F1A;&#x5C06;&#x6570;&#x636E;&#x771F;&#x6B63;&#x7684;&#x6DFB;&#x52A0;&#x5230;&#x7F13;&#x5B58;&#x533A;&#x4E2D;,&#x4E4B;&#x524D;&#x5B58;&#x50A8;&#x5728;&#x4E86;&#x7531;TransactionalCacheManager&#x5185;&#x90E8;&#x7684;TransactionalCache&#x7684;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Map&lt;Object, Object&gt; entriesToAddOnCommit
+</code></pre>
+<p>&#x4E2D;,&#x4E5F;&#x5C31;&#x662F;&#x6682;&#x5B58;&#x533A;,&#x662F;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6570;&#x636E;&#x4E0D;&#x63D0;&#x4EA4;&#x6216;&#x8005;&#x6570;&#x636E;&#x56DE;&#x6EDA;&#x540E;&#x9020;&#x6210;&#x7684;&#x6570;&#x636E;&#x810F;&#x8BFB;&#x95EE;&#x9898;,&#x53EA;&#x6709;&#x5728;&#x63D0;&#x4EA4;&#x540E;&#x624D;&#x4F1A;&#x5C06;&#x6682;&#x5B58;&#x5904;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x653E;&#x81F3;&#x7F13;&#x5B58;&#x533A;</p>
+<p><img src="assets/image-20200815182054807.png" alt="image-20200815182054807"></p>
+<p>&#x67E5;&#x8BE2;&#x65F6;&#x83B7;&#x53D6;&#x7F13;&#x5B58;,&#x4ECE;MappedStatement&#x4E2D;&#x83B7;&#x53D6;&#x7F13;&#x5B58;,&#x6B64;&#x65F6;&#x7684;&#x7F13;&#x5B58;&#x662F;&#x5728;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x65F6;,&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x4E86;&#x7F13;&#x5B58;&#x7684;&#x6807;&#x7B7E;,&#x4F1A;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;&#x7F13;&#x5B58;&#x5BF9;&#x8C61;</p>
+<p><img src="assets/image-20200815182733950.png" alt="image-20200815182733950"></p>
+<p>&#x6839;&#x636E;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x586B;&#x5145;MappedStatement</p>
+<p><img src="assets/image-20200815221546059.png" alt="image-20200815221546059"></p>
+<p>&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#x76F8;&#x5173;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+<p><img src="assets/image-20200815190903693.png" alt="image-20200815190903693"></p>
+<p>&#x6839;&#x636E;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x5C5E;&#x6027;&#x521B;&#x5EFA;Cache</p>
+<p><img src="assets/image-20200815190937157.png" alt="image-20200815190937157"></p>
+<p>build&#x65F6;&#x5BF9;cache&#x505A;&#x4E86;&#x5305;&#x88C5;,&#x88C5;&#x9970;&#x5668;&#x6A21;&#x5F0F;,&#x5177;&#x4F53;&#x7684;&#x88C5;&#x9970;&#x94FE;&#x3002;</p>
+<pre><code class="lang-java">SynchronizedCache -&gt; LoggingCache -&gt; SerializedCache -&gt; LruCache -&gt; PerpetualCache&#x3002;
+
+SynchronizedCache&#xFF1A;&#x540C;&#x6B65;Cache&#xFF0C;&#x5B9E;&#x73B0;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<span class="hljs-keyword">synchronized</span>&#x4FEE;&#x9970;&#x65B9;&#x6CD5;&#x3002;
+LoggingCache&#xFF1A;&#x65E5;&#x5FD7;&#x529F;&#x80FD;&#xFF0C;&#x88C5;&#x9970;&#x7C7B;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x7F13;&#x5B58;&#x7684;&#x547D;&#x4E2D;&#x7387;&#xFF0C;&#x5982;&#x679C;&#x5F00;&#x542F;&#x4E86;DEBUG&#x6A21;&#x5F0F;&#xFF0C;&#x5219;&#x4F1A;&#x8F93;&#x51FA;&#x547D;&#x4E2D;&#x7387;&#x65E5;&#x5FD7;&#x3002;
+SerializedCache&#xFF1A;&#x5E8F;&#x5217;&#x5316;&#x529F;&#x80FD;&#xFF0C;&#x5C06;&#x503C;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x5B58;&#x5230;&#x7F13;&#x5B58;&#x4E2D;&#x3002;&#x8BE5;&#x529F;&#x80FD;&#x7528;&#x4E8E;&#x7F13;&#x5B58;&#x8FD4;&#x56DE;&#x4E00;&#x4EFD;&#x5B9E;&#x4F8B;&#x7684;Copy&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x3002;
+LruCache&#xFF1A;&#x91C7;&#x7528;&#x4E86;Lru&#x7B97;&#x6CD5;&#x7684;Cache&#x5B9E;&#x73B0;&#xFF0C;&#x79FB;&#x9664;&#x6700;&#x8FD1;&#x6700;&#x5C11;&#x4F7F;&#x7528;&#x7684;Key/Value&#x3002;
+PerpetualCache&#xFF1A; &#x4F5C;&#x4E3A;&#x4E3A;&#x6700;&#x57FA;&#x7840;&#x7684;&#x7F13;&#x5B58;&#x7C7B;&#xFF0C;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E86;HashMap&#x3002;
+</code></pre>
+<p><img src="assets/image-20200815225636762.png" alt="image-20200815225636762"></p>
+<p><img src="assets/image-20200815225805544.png" alt="image-20200815225805544"></p>
+<p>&#x5176;&#x4E2D;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x7684;&#x547D;&#x4E2D;&#x7387;&#x5C31;&#x662F;&#x7531;LoggingCache&#x505A;&#x7684;,&#x8FD8;&#x6709;&#x4E00;&#x5C42;LruCache(&#x961F;&#x5217;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#x7F13;&#x5B58;)</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoggingCache</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Cache</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Log log;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Cache delegate;
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">int</span> requests = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">int</span> hits = <span class="hljs-number">0</span>;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">getObject</span><span class="hljs-params">(Object key)</span> </span>{
+        <span class="hljs-comment">// &#x8BF7;&#x6C42;&#x6B21;&#x6570;</span>
+        requests++;
+        <span class="hljs-keyword">final</span> Object value = delegate.getObject(key);
+        <span class="hljs-keyword">if</span> (value != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-comment">// &#x547D;&#x4E2D;&#x6B21;&#x6570;</span>
+            hits++;
+        }
+        <span class="hljs-keyword">if</span> (log.isDebugEnabled()) {
+            log.debug(<span class="hljs-string">&quot;Cache Hit Ratio [&quot;</span> + getId() + <span class="hljs-string">&quot;]: &quot;</span> + getHitRatio());
+        }
+        <span class="hljs-keyword">return</span> value;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getHitRatio</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">double</span>) hits / (<span class="hljs-keyword">double</span>) requests;
+    }
+}
+</code></pre>
+<p>id&#x662F;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x7684;namespace</p>
+<p><img src="assets/image-20200815191020101.png" alt="image-20200815191020101"></p>
+<p>&#x83B7;&#x53D6;id&#x5C06;&#x7F13;&#x5B58;&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x5230;Configuration&#x4E2D;</p>
+<p><img src="assets/image-20200815191045572.png" alt="image-20200815191045572"> </p>
+<h4 id="&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x5173;&#x8054;&#x67E5;&#x8BE2;"><a name="&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x5173;&#x8054;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x5173;&#x8054;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x5173;&#x8054;&#x67E5;&#x8BE2;</h4>
+<p>&#x867D;&#x7136;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x4F7F;&#x7528;&#x4E86;TransactionalCacheManager&#x548C;TransactionalCache&#x6765;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x63D0;&#x4EA4;&#x540E;&#x8FDB;&#x884C;&#x7F13;&#x5B58;&#x7684;&#x66F4;&#x65B0;,&#x907F;&#x514D;&#x4E86;&#x810F;&#x8BFB;,&#x4F46;&#x662F;&#x8FD9;&#x4E5F;&#x53EA;&#x662F;&#x5355;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;namespace&#x7EA7;&#x522B;&#x7684;,&#x5982;&#x679C;&#x6709;&#x5173;&#x8054;&#x5BF9;&#x8C61;,&#x90A3;&#x4E48;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;,&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x53CA;&#x65F6;&#x66F4;&#x65B0;(&#x611F;&#x5E94;&#x4E0D;&#x5230;&#x5176;&#x4ED6;namespace&#x7684;&#x53D8;&#x5316;)</p>
+<p>&#x6548;&#x679C;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">refCache</span><span class="hljs-params">()</span></span>{
+    SqlSession sqlSession1 = MyBatisCacheUtil.openSession();
+    SqlSession sqlSession2 = MyBatisCacheUtil.openSession();
+
+    GradeMapper gradeMapper = sqlSession1.getMapper(GradeMapper.class);
+    SchoolMapper schoolMapper = sqlSession2.getMapper(SchoolMapper.class);
+    System.out.println(gradeMapper.findById(<span class="hljs-number">1</span>));
+    sqlSession1.commit();
+    School school = <span class="hljs-keyword">new</span> School();
+    school.setCid(<span class="hljs-number">1</span>);
+    school.setCname(<span class="hljs-string">&quot;&#x4EA4;&#x5927;&quot;</span>);
+    schoolMapper.update(school);
+    sqlSession2.commit();
+    System.out.println(gradeMapper.findById(<span class="hljs-number">1</span>));
+
+}
+</code></pre>
+<p><img src="assets/image-20200816004832755.png" alt="image-20200816004832755"></p>
+<p>&#x5728;&#x5BF9;&#x5E94;&#x7684;SchoolMapper.xml&#x4E2D;&#x6DFB;&#x52A0;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">cache-ref</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;xyz.taoqz.dao.GradeMapper&quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x540E;&#x7684;&#x6548;&#x679C;,&#x53EF;&#x4EE5;&#x611F;&#x77E5;&#x4E3B;&#x8868;&#x7684;&#x66F4;&#x65B0;,&#x4E5F;&#x5C31;&#x662F;&#x5C06;&#x8303;&#x56F4;&#x6269;&#x5927;&#x5230;&#x4E86;&#x4E0D;&#x540C;&#x7684;namespace,&#x5176;&#x4E2D;&#x53EA;&#x8981;&#x6709;namespace&#x6709;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;,&#x5C31;&#x4F1A;&#x66F4;&#x65B0;&#x5171;&#x540C;&#x7684;Cache</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">refCache</span><span class="hljs-params">()</span></span>{
+    SqlSession sqlSession1 = MyBatisCacheUtil.openSession();
+    SqlSession sqlSession2 = MyBatisCacheUtil.openSession();
+
+    GradeMapper gradeMapper = sqlSession1.getMapper(GradeMapper.class);
+    SchoolMapper schoolMapper = sqlSession2.getMapper(SchoolMapper.class);
+    System.out.println(gradeMapper.findById(<span class="hljs-number">1</span>));
+    sqlSession1.commit();
+    School school = <span class="hljs-keyword">new</span> School();
+    school.setCid(<span class="hljs-number">1</span>);
+    school.setCname(<span class="hljs-string">&quot;&#x4EA4;&#x5927;&quot;</span>);
+    schoolMapper.update(school);
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x624B;&#x52A8;&#x63D0;&#x4EA4;,&#x624D;&#x4F1A;&#x66F4;&#x65B0;&#x7F13;&#x5B58;</span>
+    sqlSession2.commit();
+    System.out.println(gradeMapper.findById(<span class="hljs-number">1</span>));
+
+}
+</code></pre>
+<p><img src="assets/image-20200816010136150.png" alt="image-20200816010136150"></p>
+<p>&#x6709;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;,&#x5C06;&#x5BF9;&#x5E94;&#x7684;cache&#x7684;&#x6807;&#x8BB0;clearOnCommit&#x6539;&#x4E3A;true,&#x5728;&#x63D0;&#x4EA4;&#x65F6;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;</p>
+<p><img src="assets/image-20200816022449044.png" alt="image-20200816022449044"></p>
+<p><img src="assets/image-20200816023313711.png" alt="image-20200816023313711"></p>
+<pre><code class="lang-java">&lt;cache-ref namespace=<span class="hljs-string">&quot;xyz.taoqz.dao.GradeMapper&quot;</span>/&gt;
+</code></pre>
+<p>&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#x5982;&#x679C;&#x6709;cache-ref &#x6807;&#x7B7E;,&#x5728;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x521D;&#x59CB;&#x4FE1;&#x606F;&#x65F6;,&#x5982;&#x679C;&#x5176;&#x5BF9;&#x5E94;&#x540D;&#x79F0;&#x7684;cache&#x8FD8;&#x6CA1;&#x6709;&#x521B;&#x5EFA;,&#x4F1A;&#x5C06;&#x5176;&#x4FDD;&#x5B58;&#x81F3;&#x4E00;&#x4E2A;linkedlist&#x96C6;&#x5408;&#x7684;&#x5C3E;&#x90E8;,&#x7B49;&#x5230;&#x5BF9;&#x5E94;&#x7684;namespace&#x7684;cache&#x521B;&#x5EFA;&#x597D;&#x65F6;,&#x4E0E;&#x5176;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;cache,&#x4EE5;&#x6B64;&#x6765;&#x8FBE;&#x5230;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65F6;&#x540C;&#x6B65;&#x66F4;&#x65B0;&#x540C;&#x4E00;&#x4E2A;cache</p>
+<h4 id="lrucache"><a name="lrucache" class="anchor-navigation-ex-anchor" href="#lrucache"><i class="fa fa-link" aria-hidden="true"></i></a>LruCache</h4>
+<p>&#x5176;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x4E3A;&#x5982;&#x4E0B;,map&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5B58;&#x50A8;&#x9650;&#x5236;&#x7684;&#x961F;&#x5217;map,&#x5982;&#x679C;&#x5B58;&#x50A8;&#x8FC7;&#x5927;,&#x5C06;&#x6700;&#x524D;&#x9762;&#x7684;&#x6570;&#x636E;&#x6E05;&#x9664;,&#x4E5F;&#x5C31;&#x662F;&#x961F;&#x5217;,&#x5148;&#x8FDB;&#x5148;&#x51FA;,&#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x5176;&#x6E05;&#x9664;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x7F13;&#x5B58;&#x6548;&#x679C;</p>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * Lru (least recently used) cache decorator.
+ *
+ * <span class="hljs-doctag">@author</span> Clinton Begin
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LruCache</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Cache</span> </span>{
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Cache delegate;
+  <span class="hljs-keyword">private</span> Map&lt;Object, Object&gt; keyMap;
+  <span class="hljs-keyword">private</span> Object eldestKey;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">LruCache</span><span class="hljs-params">(Cache delegate)</span> </span>{
+    <span class="hljs-keyword">this</span>.delegate = delegate;
+    setSize(<span class="hljs-number">1024</span>);
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getId</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> delegate.getId();
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSize</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> delegate.getSize();
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSize</span><span class="hljs-params">(<span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> size)</span> </span>{
+    keyMap = <span class="hljs-keyword">new</span> LinkedHashMap&lt;Object, Object&gt;(size, .<span class="hljs-number">75F</span>, <span class="hljs-keyword">true</span>) {
+      <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID = <span class="hljs-number">4267176411845948333L</span>;
+
+      <span class="hljs-meta">@Override</span>
+      <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">removeEldestEntry</span><span class="hljs-params">(Map.Entry&lt;Object, Object&gt; eldest)</span> </span>{
+        <span class="hljs-keyword">boolean</span> tooBig = size() &gt; size;
+        <span class="hljs-keyword">if</span> (tooBig) {
+          eldestKey = eldest.getKey();
+        }
+        <span class="hljs-keyword">return</span> tooBig;
+      }
+    };
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">putObject</span><span class="hljs-params">(Object key, Object value)</span> </span>{
+    delegate.putObject(key, value);
+    cycleKeyList(key);
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">getObject</span><span class="hljs-params">(Object key)</span> </span>{
+    keyMap.get(key); <span class="hljs-comment">// touch</span>
+    <span class="hljs-keyword">return</span> delegate.getObject(key);
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">removeObject</span><span class="hljs-params">(Object key)</span> </span>{
+    <span class="hljs-keyword">return</span> delegate.removeObject(key);
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span> </span>{
+    delegate.clear();
+    keyMap.clear();
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">cycleKeyList</span><span class="hljs-params">(Object key)</span> </span>{
+    keyMap.put(key, key);
+    <span class="hljs-keyword">if</span> (eldestKey != <span class="hljs-keyword">null</span>) {
+      delegate.removeObject(eldestKey);
+      eldestKey = <span class="hljs-keyword">null</span>;
+    }
+  }
+
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> Object eldestKey;
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo4</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">int</span> size = <span class="hljs-number">3</span>;
+    LinkedHashMap&lt;Object, Object&gt; map = <span class="hljs-keyword">new</span> LinkedHashMap&lt;&gt;(<span class="hljs-number">5</span>);
+
+    map  = <span class="hljs-keyword">new</span> LinkedHashMap&lt;Object, Object&gt;(size, .<span class="hljs-number">75F</span>, <span class="hljs-keyword">true</span>) {
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID = <span class="hljs-number">4267176411845948333L</span>;
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">removeEldestEntry</span><span class="hljs-params">(Map.Entry&lt;Object, Object&gt; eldest)</span> </span>{
+            <span class="hljs-keyword">boolean</span> tooBig = size() &gt; size;
+            <span class="hljs-keyword">if</span> (tooBig) {
+                eldestKey = eldest.getKey();
+            }
+            <span class="hljs-keyword">return</span> tooBig;
+        }
+    };
+
+    map.put(<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>);
+    map.put(<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>);
+    map.put(<span class="hljs-string">&quot;3&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>);
+    map.put(<span class="hljs-string">&quot;4&quot;</span>,<span class="hljs-string">&quot;4&quot;</span>);
+    System.out.println(map);
+}
+<span class="hljs-comment">// &#x6253;&#x5370;&#x7ED3;&#x679C;</span>
+<span class="hljs-comment">// {2=2, 3=3, 4=4}</span>
+</code></pre>
+<h4 id="&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<p>&#x5B9E;&#x4F53;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;Serializable&#x63A5;&#x53E3;(Cache&#x7684;&#x88C5;&#x9970;&#x8005;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x5C42;&#x7528;&#x5230;&#x4E86;&#x5E8F;&#x5217;&#x5316;,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63D0;&#x4EA4;&#x540E;&#x62A5;&#x9519;&#x67E5;&#x770B;)</p>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;</h3>
+<h4 id="&#x5176;&#x4ED6;&#x914D;&#x7F6E;"><a name="&#x5176;&#x4ED6;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x4ED6;&#x914D;&#x7F6E;</h4>
+<p>&#x8FD9;&#x884C;&#x8BED;&#x53E5;&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">cache</span>/&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6620;&#x5C04;&#x8BED;&#x53E5;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709; select &#x8BED;&#x53E5;&#x7684;&#x7ED3;&#x679C;&#x5C06;&#x4F1A;&#x88AB;&#x7F13;&#x5B58;&#x3002;</li>
+<li>&#x6620;&#x5C04;&#x8BED;&#x53E5;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709; insert&#x3001;update &#x548C; delete &#x8BED;&#x53E5;&#x4F1A;&#x5237;&#x65B0;&#x7F13;&#x5B58;&#x3002;</li>
+<li>&#x7F13;&#x5B58;&#x4F1A;&#x4F7F;&#x7528;&#x6700;&#x8FD1;&#x6700;&#x5C11;&#x4F7F;&#x7528;&#x7B97;&#x6CD5;&#xFF08;LRU, Least Recently Used&#xFF09;&#x7B97;&#x6CD5;&#x6765;&#x6E05;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x7F13;&#x5B58;&#x3002;</li>
+<li>&#x7F13;&#x5B58;&#x4E0D;&#x4F1A;&#x5B9A;&#x65F6;&#x8FDB;&#x884C;&#x5237;&#x65B0;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709;&#x5237;&#x65B0;&#x95F4;&#x9694;&#xFF09;&#x3002;</li>
+<li>&#x7F13;&#x5B58;&#x4F1A;&#x4FDD;&#x5B58;&#x5217;&#x8868;&#x6216;&#x5BF9;&#x8C61;&#xFF08;&#x65E0;&#x8BBA;&#x67E5;&#x8BE2;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x54EA;&#x79CD;&#xFF09;&#x7684; 1024 &#x4E2A;&#x5F15;&#x7528;&#x3002;</li>
+<li>&#x7F13;&#x5B58;&#x4F1A;&#x88AB;&#x89C6;&#x4E3A;&#x8BFB;/&#x5199;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x5E76;&#x4E0D;&#x662F;&#x5171;&#x4EAB;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x88AB;&#x8C03;&#x7528;&#x8005;&#x4FEE;&#x6539;&#xFF0C;&#x800C;&#x4E0D;&#x5E72;&#x6270;&#x5176;&#x4ED6;&#x8C03;&#x7528;&#x8005;&#x6216;&#x7EBF;&#x7A0B;&#x6240;&#x505A;&#x7684;&#x6F5C;&#x5728;&#x4FEE;&#x6539;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">cache</span>
+  <span class="hljs-attr">eviction</span>=<span class="hljs-string">&quot;FIFO&quot;</span>
+  <span class="hljs-attr">flushInterval</span>=<span class="hljs-string">&quot;60000&quot;</span>
+  <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;512&quot;</span>
+  <span class="hljs-attr">readOnly</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x914D;&#x7F6E;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; FIFO &#x7F13;&#x5B58;&#xFF0C;&#x6BCF;&#x9694; 60 &#x79D2;&#x5237;&#x65B0;&#xFF0C;&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x7ED3;&#x679C;&#x5BF9;&#x8C61;&#x6216;&#x5217;&#x8868;&#x7684; 512 &#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5BF9;&#x5B83;&#x4EEC;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x4E0D;&#x540C;&#x7EBF;&#x7A0B;&#x4E2D;&#x7684;&#x8C03;&#x7528;&#x8005;&#x4EA7;&#x751F;&#x51B2;&#x7A81;&#x3002;</p>
+<p>&#x53EF;&#x7528;&#x7684;&#x6E05;&#x9664;&#x7B56;&#x7565;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>LRU</code> &#x2013; &#x6700;&#x8FD1;&#x6700;&#x5C11;&#x4F7F;&#x7528;&#xFF1A;&#x79FB;&#x9664;&#x6700;&#x957F;&#x65F6;&#x95F4;&#x4E0D;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>FIFO</code> &#x2013; &#x5148;&#x8FDB;&#x5148;&#x51FA;&#xFF1A;&#x6309;&#x5BF9;&#x8C61;&#x8FDB;&#x5165;&#x7F13;&#x5B58;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x79FB;&#x9664;&#x5B83;&#x4EEC;&#x3002;</li>
+<li><code>SOFT</code> &#x2013; &#x8F6F;&#x5F15;&#x7528;&#xFF1A;&#x57FA;&#x4E8E;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#x72B6;&#x6001;&#x548C;&#x8F6F;&#x5F15;&#x7528;&#x89C4;&#x5219;&#x79FB;&#x9664;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>WEAK</code> &#x2013; &#x5F31;&#x5F15;&#x7528;&#xFF1A;&#x66F4;&#x79EF;&#x6781;&#x5730;&#x57FA;&#x4E8E;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x72B6;&#x6001;&#x548C;&#x5F31;&#x5F15;&#x7528;&#x89C4;&#x5219;&#x79FB;&#x9664;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#x6E05;&#x9664;&#x7B56;&#x7565;&#x662F; LRU&#x3002;</p>
+<p>flushInterval&#xFF08;&#x5237;&#x65B0;&#x95F4;&#x9694;&#xFF09;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EFB;&#x610F;&#x7684;&#x6B63;&#x6574;&#x6570;&#xFF0C;&#x8BBE;&#x7F6E;&#x7684;&#x503C;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x5408;&#x7406;&#x65F6;&#x95F4;&#x91CF;&#x3002; &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x662F;&#x4E0D;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x5237;&#x65B0;&#x95F4;&#x9694;&#xFF0C;&#x7F13;&#x5B58;&#x4EC5;&#x4EC5;&#x4F1A;&#x5728;&#x8C03;&#x7528;&#x8BED;&#x53E5;&#x65F6;&#x5237;&#x65B0;&#x3002;</p>
+<p>size&#xFF08;&#x5F15;&#x7528;&#x6570;&#x76EE;&#xFF09;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EFB;&#x610F;&#x6B63;&#x6574;&#x6570;&#xFF0C;&#x8981;&#x6CE8;&#x610F;&#x6B32;&#x7F13;&#x5B58;&#x5BF9;&#x8C61;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4E2D;&#x53EF;&#x7528;&#x7684;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F; 1024&#x3002;</p>
+<p>readOnly&#xFF08;&#x53EA;&#x8BFB;&#xFF09;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; true &#x6216; false&#x3002;&#x53EA;&#x8BFB;&#x7684;&#x7F13;&#x5B58;&#x4F1A;&#x7ED9;&#x6240;&#x6709;&#x8C03;&#x7528;&#x8005;&#x8FD4;&#x56DE;&#x7F13;&#x5B58;&#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x540C;&#x5B9E;&#x4F8B;&#x3002; &#x56E0;&#x6B64;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#x3002;&#x8FD9;&#x5C31;&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x89C2;&#x7684;&#x6027;&#x80FD;&#x63D0;&#x5347;&#x3002;&#x800C;&#x53EF;&#x8BFB;&#x5199;&#x7684;&#x7F13;&#x5B58;&#x4F1A;&#xFF08;&#x901A;&#x8FC7;&#x5E8F;&#x5217;&#x5316;&#xFF09;&#x8FD4;&#x56DE;&#x7F13;&#x5B58;&#x5BF9;&#x8C61;&#x7684;&#x62F7;&#x8D1D;&#x3002; &#x901F;&#x5EA6;&#x4E0A;&#x4F1A;&#x6162;&#x4E00;&#x4E9B;&#xFF0C;&#x4F46;&#x662F;&#x66F4;&#x5B89;&#x5168;&#xFF0C;&#x56E0;&#x6B64;&#x9ED8;&#x8BA4;&#x503C;&#x662F; false&#x3002;</p>
+<p><strong>&#x63D0;&#x793A;</strong> &#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x662F;&#x4E8B;&#x52A1;&#x6027;&#x7684;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5F53; SqlSession &#x5B8C;&#x6210;&#x5E76;&#x63D0;&#x4EA4;&#x65F6;&#xFF0C;&#x6216;&#x662F;&#x5B8C;&#x6210;&#x5E76;&#x56DE;&#x6EDA;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x6267;&#x884C; flushCache=true &#x7684; insert/delete/update &#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x7F13;&#x5B58;&#x4F1A;&#x83B7;&#x5F97;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x7F13;&#x5B58;&#x7684;&#x914D;&#x7F6E;&#x548C;&#x7F13;&#x5B58;&#x5B9E;&#x4F8B;&#x4F1A;&#x88AB;&#x7ED1;&#x5B9A;&#x5230; SQL &#x6620;&#x5C04;&#x6587;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E2D;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x540C;&#x4E00;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x8BED;&#x53E5;&#x548C;&#x7F13;&#x5B58;&#x5C06;&#x901A;&#x8FC7;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;&#x3002; &#x6BCF;&#x6761;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E0E;&#x7F13;&#x5B58;&#x4EA4;&#x4E92;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6216;&#x5C06;&#x5B83;&#x4EEC;&#x5B8C;&#x5168;&#x6392;&#x9664;&#x4E8E;&#x7F13;&#x5B58;&#x4E4B;&#x5916;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x6BCF;&#x6761;&#x8BED;&#x53E5;&#x4E0A;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x7B80;&#x5355;&#x5C5E;&#x6027;&#x6765;&#x8FBE;&#x6210;&#x3002; &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BED;&#x53E5;&#x4F1A;&#x8FD9;&#x6837;&#x6765;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">...</span> <span class="hljs-attr">flushCache</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">useCache</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">insert</span> <span class="hljs-attr">...</span> <span class="hljs-attr">flushCache</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">update</span> <span class="hljs-attr">...</span> <span class="hljs-attr">flushCache</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">delete</span> <span class="hljs-attr">...</span> <span class="hljs-attr">flushCache</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x9274;&#x4E8E;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF0C;&#x663E;&#x7136;&#x4F60;&#x6C38;&#x8FDC;&#x4E0D;&#x5E94;&#x8BE5;&#x4EE5;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x663E;&#x5F0F;&#x914D;&#x7F6E;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x3002;&#x4F46;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6539;&#x53D8;&#x9ED8;&#x8BA4;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8BBE;&#x7F6E; flushCache &#x548C; useCache &#x5C5E;&#x6027;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x4F60;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x7279;&#x5B9A; select &#x8BED;&#x53E5;&#x7684;&#x7ED3;&#x679C;&#x6392;&#x9664;&#x4E8E;&#x7F13;&#x5B58;&#x4E4B;&#x5916;&#xFF0C;&#x6216;&#x5E0C;&#x671B;&#x4E00;&#x6761; select &#x8BED;&#x53E5;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;&#x3002;&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x67D0;&#x4E9B; update &#x8BED;&#x53E5;&#x6267;&#x884C;&#x65F6;&#x4E0D;&#x8981;&#x5237;&#x65B0;&#x7F13;&#x5B58;&#x3002;</p>
+<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<ul>
+<li><p>Mybatis&#x7684;&#x2F00;&#x7EA7;&#x7F13;&#x5B58;&#x662F;sqlSession&#x7EA7;&#x522B;&#x7684;&#x3002;&#x53EA;&#x80FD;&#x8BBF;&#x95EE;&#x2F83;&#x2F30;&#x7684;sqlSession&#x5185;&#x7684;&#x7F13;&#x5B58;&#x3002;&#x5982;&#x679C;Mybatis&#x4E0E;Spring&#x6574;&#x5408;&#x4E86;&#xFF0C;Spring&#x4F1A;&#x2F83;&#x52A8;&#x5173;&#x95ED;sqlSession&#x7684;&#x3002;&#x6240;&#x4EE5;&#x2F00;&#x7EA7;&#x7F13;&#x5B58;&#x4F1A;&#x5931;&#x6548;&#x7684;&#x3002;</p>
+</li>
+<li><p>&#x2F00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x539F;&#x7406;&#x662F;map&#x96C6;&#x5408;&#xFF0C;Mybatis&#x9ED8;&#x8BA4;&#x5C31;&#x2F40;&#x6301;&#x2F00;&#x7EA7;&#x7F13;&#x5B58;</p>
+</li>
+<li><p>&#x2F06;&#x7EA7;&#x7F13;&#x5B58;&#x662F;Mapper&#x7EA7;&#x522B;&#x7684;&#x3002;&#x53EA;&#x8981;&#x5728;Mapper&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x2F64;&#x2F06;&#x7EA7;&#x7F13;&#x5B58;&#x3002;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x2F83;&#x2F30;&#x2F3F;&#x52A8;
+  &#x53BB;&#x914D;&#x7F6E;&#x2F06;&#x7EA7;&#x7F13;&#x5B58;</p>
+</li>
+<li><p>Mybatis&#x7684;&#x7F13;&#x5B58;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x2F64;Ehcache&#x6846;&#x67B6;&#x6765;&#x8FDB;&#x2F8F;&#x7BA1;&#x7406;&#xFF0C;Ehcache&#x5B9E;&#x73B0;Cache&#x63A5;&#x2F1D;&#x5C31;&#x4EE3;&#x8868;&#x4F7F;&#x2F64;Ehcache&#x6765;&#x73AF;&#x5883;Mybatis&#x7F13;&#x5B58;&#x3002;</p>
+</li>
+<li><p>&#x7531;&#x4E8E;&#x4E4B;&#x524D;&#x5199;&#x7684;DaoImpl&#x662F;&#x6709;&#x2FAE;&#x5E38;&#x591A;&#x7684;&#x786C;&#x7F16;&#x7801;&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x2F64;Mapper&#x4EE3;&#x7406;&#x7684;&#x2F45;&#x5F0F;&#x6765;&#x7B80;&#x5316;&#x5F00;&#x53D1;</p>
+<p>  &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x8981;&#x4E0E;JavaBean&#x7684;&#x5168;&#x7C7B;&#x540D;&#x76F8;&#x540C;
+  sql&#x2F5A;&#x6BB5;&#x8BED;&#x53E5;&#x7684;id&#x8981;&#x4E0E;Dao&#x63A5;&#x2F1D;&#x7684;&#x2F45;&#x6CD5;&#x540D;&#x76F8;&#x540C;
+  &#x2F45;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x8981;&#x4E0E;SQL&#x2F5A;&#x6BB5;&#x7684;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;</h2>
+<h3 id="resultmap&#x548C;resulttype&#x7684;&#x533A;&#x522B;"><a name="resultmap&#x548C;resulttype&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#resultmap&#x548C;resulttype&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>resultMap&#x548C;resultType&#x7684;&#x533A;&#x522B;</h3>
+<p>&#x200B;        &#x4E24;&#x79CD;&#x90FD;&#x53EF;&#x4EE5;&#x63CF;&#x8FF0;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x7C7B;&#x578B;,&#x5728;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x975E;&#x5BF9;&#x8C61;&#x548C;&#x5BF9;&#x8C61;,&#x65E0;&#x8BBA;&#x5BF9;&#x8C61;&#x662F;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x65F6;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;resultType,&#x5F53;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x7684;&#x6620;&#x5C04;&#x65F6;&#x9700;&#x8981;&#x4F7F;&#x7528;resultMap,&#x4E00;&#x822C;&#x4F7F;&#x7528;resultMap&#x5373;&#x53EF;,&#x4E00;&#x822C;&#x90FD;&#x4F5C;&#x7528;&#x5728;select&#x6807;&#x7B7E;&#x4E0A;,&#x4E24;&#x8005;&#x5FC5;&#x987B;&#x9009;&#x5176;&#x4E00;,&#x5426;&#x5219;&#x4F1A;&#x62A5;&#x5982;&#x4E0B;&#x9519;&#x8BEF;</p>
+<pre><code>Cause: org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement &apos;xyz.taoqz.domain.Student.findAll&apos;.  It&apos;s likely that neither a Result Type nor a Result Map was specified.
+</code></pre><h3 id="&#x4E3A;&#x4EC0;&#x4E48;mapper&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;"><a name="&#x4E3A;&#x4EC0;&#x4E48;mapper&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;mapper&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x4EC0;&#x4E48;Mapper&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;</h3>
+<p>mybatis&#x5728;&#x64CD;&#x4F5C;&#x65F6;&#x5E95;&#x5C42;&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x8BFB;&#x53D6;&#x5230;Configuration&#x7C7B;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;mapper&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x4E5F;&#x4F1A;&#x88AB;&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;map&#x91CC;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;map&#x7684;key&#x5C31;&#x662F;namespace+&#x65B9;&#x6CD5;&#x540D;&#xFF0C;&#x800C;&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#x5219;&#x662F;&#x65B9;&#x6CD5;&#x540D;&#x5F62;&#x540C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x79CD;&#x5B58;&#x50A8;&#x673A;&#x5236;&#x4E0D;&#x5141;&#x8BB8;&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;</p>
+<p><img src="assets/image-20200819224624355.png" alt="image-20200819224624355"></p>
+<p><img src="assets/image-20200819224317357.png" alt="image-20200819224317357"></p>
+<p><img src="assets/image-20200819224719188.png" alt="image-20200819224719188"></p>
+<p><img src="assets/image-20200819224952997.png" alt="image-20200819224952997"></p>
+<h3 id="&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;"><a name="&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">foreach</span> <span class="hljs-attr">collection</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">index</span>=<span class="hljs-string">&quot;index&quot;</span> <span class="hljs-attr">item</span>=<span class="hljs-string">&quot;i&quot;</span> <span class="hljs-attr">open</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">separator</span>=<span class="hljs-string">&quot; &quot;</span> <span class="hljs-attr">close</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">choose</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;i == &apos;tao&apos;&quot;</span>&gt;</span>
+                or (user_id = &apos;1&apos;)
+            <span class="hljs-tag">&lt;/<span class="hljs-name">when</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;i == &apos;qz&apos;&quot;</span>&gt;</span>
+                or (user_id = &apos;1400032429183381505&apos;)
+            <span class="hljs-tag">&lt;/<span class="hljs-name">when</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">choose</span>&gt;</span>
+        <span class="hljs-comment">&lt;!--            &lt;if test=&quot;i == &apos;tao&apos;&quot;&gt;--&gt;</span>
+        <span class="hljs-comment">&lt;!--                (user_id = &apos;1&apos;)--&gt;</span>
+        <span class="hljs-comment">&lt;!--            &lt;/if&gt;--&gt;</span>
+        <span class="hljs-comment">&lt;!--            &lt;if test=&quot;i == &apos;qz&apos;&quot;&gt;--&gt;</span>
+        <span class="hljs-comment">&lt;!--                (user_id = &apos;1400032429183381505&apos;)--&gt;</span>
+        <span class="hljs-comment">&lt;!--            &lt;/if&gt;--&gt;</span>
+        <span class="hljs-comment">&lt;!--            &lt;if test=&quot;index != list.size - 1&quot;&gt;--&gt;</span>
+        <span class="hljs-comment">&lt;!--                or--&gt;</span>
+        <span class="hljs-comment">&lt;!--            &lt;/if&gt;--&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">foreach</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span>
+</code></pre>
+<h2 id="&#x535A;&#x5BA2;"><a name="&#x535A;&#x5BA2;" class="anchor-navigation-ex-anchor" href="#&#x535A;&#x5BA2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x535A;&#x5BA2;</h2>
+<p><a href="http://www.justdojava.com/2019/07/13/MyBatis-OneLevelCache/" target="_blank">http://www.justdojava.com/2019/07/13/MyBatis-OneLevelCache/</a></p>
+<p><a href="https://tech.meituan.com/2018/01/19/mybatis-cache.html" target="_blank">https://tech.meituan.com/2018/01/19/mybatis-cache.html</a></p>
+<p><a href="https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#cache" target="_blank">https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#cache</a></p>
+<p><a href="https://www.codenong.com/cs107068256/" target="_blank">https://www.codenong.com/cs107068256/</a></p>
+<p><a href="https://juejin.im/post/6847902224975314958" target="_blank">https://juejin.im/post/6847902224975314958</a> </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; TaoQZ 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2024-05-02 16:08:43
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mybatis-plus.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: mybatis-plus">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mybatis进阶","level":"1.17.3","depth":2,"next":{"title":"Maven","level":"1.18","depth":1,"ref":"","articles":[{"title":"Maven","level":"1.18.1","depth":2,"path":"maven/maven.md","ref":"maven/maven.md","articles":[]}]},"previous":{"title":"mybatis-plus","level":"1.17.2","depth":2,"path":"mybatis/mybatis-plus.md","ref":"mybatis/mybatis-plus.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.top"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"mybatis/mybatis_advance.md","mtime":"2024-05-02T07:08:43.452Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-10T01:56:24.940Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
