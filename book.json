@@ -8,7 +8,7 @@
     "root": ".",
     "links": {
         "sidebar": {
-               "Home": "https://taoqz.top"
+               "Home": "https://ifl.life"
         }
     },
     "plugins": [
@@ -64,7 +64,7 @@
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright © TaoQZ 2019",
-            "modify_label": "该文件修订时间：",
+            "modify_label": "作者联系方式：taoqingzhou@gmail.com 修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
       

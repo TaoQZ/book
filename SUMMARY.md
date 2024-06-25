@@ -46,6 +46,7 @@
     * [mysql基础](mysql/mysql基础.md)
     * [mysql进阶](mysql/mysql进阶.md)
     * [mysql事务](mysql/mysql事务.md)
+    * [join连接](mysql/join.md)
     * [varchar和char](mysql/varchar和char.md)
     * 极客
         * [mysql架构](mysql/jike/mysql架构/mysql架构.md)
