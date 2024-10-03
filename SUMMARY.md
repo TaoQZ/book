@@ -186,5 +186,4 @@
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
     * [Kaptcha验证码](other/kaptcha验证码.md)
     * [ffmpeg](other/ffmpeg.md)
-    * [samba](samba/搭建基于公网的samba服务.md)
-
+    * [samba](other/搭建基于公网的samba服务.md)
