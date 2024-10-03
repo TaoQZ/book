@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>遇到的问题 · Peace & Love</title>
+        <title>samba · Peace & Love</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -102,10 +102,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="docker-compose.html" />
     
-    
-    <link rel="prev" href="部署springboot项目.html" />
+    <link rel="prev" href="ffmpeg.html" />
     
 
     
@@ -1911,9 +1909,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.27.1" data-path="docker安装及常用命令.html">
+        <li class="chapter " data-level="1.27.1" data-path="../docker/docker安装及常用命令.html">
             
-                <a href="docker安装及常用命令.html">
+                <a href="../docker/docker安装及常用命令.html">
             
                     
                     docker安装及常用命令
@@ -1924,9 +1922,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.27.2" data-path="IDEA连接docker.html">
+        <li class="chapter " data-level="1.27.2" data-path="../docker/IDEA连接docker.html">
             
-                <a href="IDEA连接docker.html">
+                <a href="../docker/IDEA连接docker.html">
             
                     
                     IDEA连接docker
@@ -1937,9 +1935,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.27.3" data-path="部署springboot项目.html">
+        <li class="chapter " data-level="1.27.3" data-path="../docker/部署springboot项目.html">
             
-                <a href="部署springboot项目.html">
+                <a href="../docker/部署springboot项目.html">
             
                     
                     部署springboot项目
@@ -1950,9 +1948,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.27.4" data-path="problem.html">
+        <li class="chapter " data-level="1.27.4" data-path="../docker/problem.html">
             
-                <a href="problem.html">
+                <a href="../docker/problem.html">
             
                     
                     遇到的问题
@@ -1963,9 +1961,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.27.5" data-path="docker-compose.html">
+        <li class="chapter " data-level="1.27.5" data-path="../docker/docker-compose.html">
             
-                <a href="docker-compose.html">
+                <a href="../docker/docker-compose.html">
             
                     
                     docker-compose
@@ -2796,9 +2794,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.36.1" data-path="../other/使用Google Cloud搭建ssr.html">
+        <li class="chapter " data-level="1.36.1" data-path="使用Google Cloud搭建ssr.html">
             
-                <a href="../other/使用Google Cloud搭建ssr.html">
+                <a href="使用Google Cloud搭建ssr.html">
             
                     
                     搭建SSR
@@ -2809,9 +2807,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.36.2" data-path="../other/kaptcha验证码.html">
+        <li class="chapter " data-level="1.36.2" data-path="kaptcha验证码.html">
             
-                <a href="../other/kaptcha验证码.html">
+                <a href="kaptcha验证码.html">
             
                     
                     Kaptcha验证码
@@ -2822,9 +2820,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.36.3" data-path="../other/ffmpeg.html">
+        <li class="chapter " data-level="1.36.3" data-path="ffmpeg.html">
             
-                <a href="../other/ffmpeg.html">
+                <a href="ffmpeg.html">
             
                     
                     ffmpeg
@@ -2835,9 +2833,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.36.4" data-path="../other/搭建基于公网的samba服务.html">
+        <li class="chapter active" data-level="1.36.4" data-path="搭建基于公网的samba服务.html">
             
-                <a href="../other/搭建基于公网的samba服务.html">
+                <a href="搭建基于公网的samba服务.html">
             
                     
                     samba
@@ -2883,7 +2881,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >遇到的问题</a>
+        <a href=".." >samba</a>
     </h1>
 </div>
 
@@ -2901,16 +2899,99 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5220;&#x9664;&#x955C;&#x50CF;"><a name="&#x5220;&#x9664;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x955C;&#x50CF;</h2>
-<p>&#x5F53;&#x6709;&#x591A;&#x4E2A;&#x955C;&#x50CF;&#x540D;&#x79F0;&#x76F8;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x5220;&#x9664;&#x4F1A;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;</p>
-<pre><code class="lang-shell">Error response from daemon: conflict: unable to delete c50e9004f4ce (must be forced) - image is referenced in multi
-ple repositories
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;">&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;</a></li><ul><li><a href="#&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;">&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;</a></li><li><a href="#&#x8BBF;&#x95EE;">&#x8BBF;&#x95EE;</a></li><li><a href="#&#x642D;&#x5EFA;">&#x642D;&#x5EFA;</a></li><li><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><a href="#&#x521B;&#x5EFA;&#x7528;&#x6237;">&#x521B;&#x5EFA;&#x7528;&#x6237;</a></li><li><a href="#&#x9047;&#x5230;&#x6587;&#x4EF6;&#x5939;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x65F6;">&#x9047;&#x5230;&#x6587;&#x4EF6;&#x5939;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x65F6;</a></li></ul></ul></div><a href="#&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;"><a name="&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x642D;&#x5EFA;&#x57FA;&#x4E8E;&#x516C;&#x7F51;&#x7684;samba&#x670D;&#x52A1;</h1>
+<p>&#x73B0;&#x5728;&#x6709;&#x4E00;&#x53F0;&#x67D0;&#x8FD0;&#x8425;&#x5546;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;centos8&#xFF0C;&#x8981;&#x5728;&#x4E0A;&#x9762;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;samba&#x6587;&#x4EF6;&#x5171;&#x4EAB;&#x670D;&#x52A1;</p>
+<p>&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x672C;&#x5730;&#x7684;windows&#x4E3B;&#x673A;445&#x7AEF;&#x53E3;&#x88AB;&#x8FD0;&#x8425;&#x5546;&#x7981;&#x7528;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#xFF08;&#x540C;&#x5C40;&#x57DF;&#x7F51;&#x4E0B;&#x7684;samba&#x670D;&#x52A1;&#x8FDE;&#x63A5;&#x65F6;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF09;</p>
+<h2 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;"><a name="&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;</h2>
+<p>&#x518D;windows&#x4E3B;&#x673A;&#x4E0A;&#x505A;&#x5982;&#x4E0B;&#x4FEE;&#x6539;</p>
+<p>&#x4F7F;&#x7528;&#x7BA1;&#x7406;&#x5458;&#x6253;&#x5F00;cmd&#xFF0C;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x4E4B;&#x540E; &#x9700;&#x8981;&#x91CD;&#x542F;</p>
+<pre><code class="lang-shell"># &#x5C06;&#x672C;&#x5730;445&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x5BF9;&#x5E94;&#x670D;&#x52A1;&#x5668;&#x4E0A;samba&#x7684;&#x7AEF;&#x53E3; samba&#x670D;&#x52A1;&#x7684;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x4E3A;445 &#x9700;&#x8981;&#x63D0;&#x524D;&#x5C06;&#x5176;&#x6539;&#x4E3A;&#x6307;&#x5B9A;&#x7AEF;&#x53E3; &#x5982;6727
+netsh interface portproxy add v4tov4 listenaddress=127.0.0.1 listenport=445 connectaddress=&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;IP connectport=6727
+
+# &#x67E5;&#x770B;&#x5F53;&#x524D;windows&#x4E3B;&#x673A;&#x6240;&#x6709;&#x8FDE;&#x63A5;
+netsh interface portproxy show all
+
+
+# &#x5220;&#x9664;&#x914D;&#x7F6E;
+netsh interface portproxy delete v4tov4 listenaddress=127.0.0.1 listenport=445
 </code></pre>
-<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;,&#x4F7F;&#x7528;&#x5176;&#x7248;&#x672C;tag&#x8FDB;&#x884C;&#x5220;&#x9664;</p>
-<pre><code class="lang-shell">docker rmi &#x955C;&#x50CF;&#x540D;&#x79F0;:1.0
+<h2 id="&#x8BBF;&#x95EE;"><a name="&#x8BBF;&#x95EE;" class="anchor-navigation-ex-anchor" href="#&#x8BBF;&#x95EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBF;&#x95EE;</h2>
+<p>&#x5728;windows&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x8F93;&#x5165;</p>
+<p>windows&#x9ED8;&#x8BA4;&#x65F6;445&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x5C06;&#x5176;&#x8F6C;&#x53D1;&#x5230;&#x5BF9;&#x5E94;samba&#x670D;&#x52A1;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;</p>
+<p>&#x8FD9;&#x6837;&#x7684;&#x5F0A;&#x7AEF;&#x5C31;&#x662F; &#x5176;&#x4ED6;&#x7684;&#x6620;&#x5C04;&#x78C1;&#x76D8;&#x5C06;&#x4E0D;&#x4F1A;&#x518D;&#x53D7;&#x7528;&#xFF0C;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;</p>
+<pre><code class="lang-shell">\\127.0.0.1\shared
+</code></pre>
+<h2 id="&#x642D;&#x5EFA;"><a name="&#x642D;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x642D;&#x5EFA;</h2>
+<pre><code class="lang-shell"># &#x5B89;&#x88C5;
+install samba samba-client samba-common
+</code></pre>
+<h2 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<p>/etc/samba/smb.conf</p>
+<p>&#x793A;&#x4F8B;</p>
+<pre><code class="lang-shell"># See smb.conf.example for a more detailed config file or
+# read the smb.conf manpage.
+# Run &apos;testparm&apos; to verify the config is correct after
+# you modified it.
+
+[global]
+        workgroup = SAMBA
+        security = user
+
+        passdb backend = tdbsam
+
+        printing = cups
+        printcap name = cups
+        load printers = yes
+        cups options = raw
+
+        # samba&#x670D;&#x52A1;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3; &#x9ED8;&#x8BA4;&#x4E3A;445
+        #smb ports = 6727
+
+[homes]
+        comment = Home Directories
+        valid users = %S, %D%w%S
+        browseable = No
+        read only = No
+        inherit acls = Yes
+
+[printers]
+        comment = All Printers
+        path = /var/tmp
+        printable = Yes
+        create mask = 0600
+        browseable = No
+
+[print$]
+        comment = Printer Drivers
+        path = /var/lib/samba/drivers
+        write list = @printadmin root
+        force group = @printadmin
+        create mask = 0664
+        directory mask = 0775
+
+[shared]
+   # &#x5171;&#x4EAB;&#x6587;&#x4EF6;&#x5939;&#x5730;&#x5740;
+   path = /srv/samba/share
+   writable = yes
+   browsable = yes
+   guest ok = yes
+   # &#x65E0;&#x8BBA;&#x4EC0;&#x4E48;&#x7528;&#x6237;&#x767B;&#x5F55;&#xFF0C;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x4E3A;root&#x7528;&#x6237;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;
+   #force user = root
+   # &#x767B;&#x5F55;&#x65F6;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x7684;&#x7528;&#x6237;
+   valid users = taoqz
+   create mask = 0755
+   directory mask = 0775
+</code></pre>
+<h2 id="&#x521B;&#x5EFA;&#x7528;&#x6237;"><a name="&#x521B;&#x5EFA;&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x7528;&#x6237;</h2>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x540E;&#x540E;&#x8BA9;&#x4F60;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x548C;&#x786E;&#x8BA4;&#x5BC6;&#x7801;</p>
+<pre><code class="lang-shell">sudo smbpasswd -a taoqz
+</code></pre>
+<h2 id="&#x9047;&#x5230;&#x6587;&#x4EF6;&#x5939;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x65F6;"><a name="&#x9047;&#x5230;&#x6587;&#x4EF6;&#x5939;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x65F6;" class="anchor-navigation-ex-anchor" href="#&#x9047;&#x5230;&#x6587;&#x4EF6;&#x5939;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x65F6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9047;&#x5230;&#x6587;&#x4EF6;&#x5939;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x65F6;</h2>
+<pre><code class="lang-shell">sudo chown -R taoqz:taoqz /srv/samba/share
+sudo chmod -R 0777 /srv/samba/share
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; TaoQZ 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4F5C;&#x8005;&#x8054;&#x7CFB;&#x65B9;&#x5F0F;&#xFF1A;taoqingzhou@gmail.com &#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2024-10-03 11:55:45
+2024-10-03 11:40:18
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -2955,14 +3036,10 @@ ple repositories
 
             
                 
-                <a href="部署springboot项目.html" class="navigation navigation-prev " aria-label="Previous page: 部署springboot项目">
+                <a href="ffmpeg.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ffmpeg">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="docker-compose.html" class="navigation navigation-next " aria-label="Next page: docker-compose">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -2971,7 +3048,7 @@ ple repositories
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"遇到的问题","level":"1.27.4","depth":2,"next":{"title":"docker-compose","level":"1.27.5","depth":2,"path":"docker/docker-compose.md","ref":"docker/docker-compose.md","articles":[]},"previous":{"title":"部署springboot项目","level":"1.27.3","depth":2,"path":"docker/部署springboot项目.md","ref":"docker/部署springboot项目.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"作者联系方式：taoqingzhou@gmail.com 修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://ifl.life"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"docker/problem.md","mtime":"2024-10-03T02:55:45.854Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-03T02:56:46.292Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"samba","level":"1.36.4","depth":2,"previous":{"title":"ffmpeg","level":"1.36.3","depth":2,"path":"other/ffmpeg.md","ref":"other/ffmpeg.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"作者联系方式：taoqingzhou@gmail.com 修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://ifl.life"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"other/搭建基于公网的samba服务.md","mtime":"2024-10-03T02:40:18.695Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-03T02:56:46.292Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
