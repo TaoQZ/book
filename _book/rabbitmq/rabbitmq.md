@@ -1353,8 +1353,8 @@ index.vue
 <template>
   <div>
     rabbitmq
-    <button @click="sssss">11111</butto>
-  </di>
+    <button @click="sssss">11111</button>
+  </div>
 </templat>
 
 <script>
@@ -1382,11 +1382,16 @@ export default {
       // const topic = MQTT_topic;
       // const topic = '/queue/';
       // const topic = '/quse/';
-      const topic = '/queue/helloworldQueue';
+      // stomp 使用教程 https://www.rabbitmq.com/docs/stomp#d
+      // 消费指定队列的消息 不可以多个消费者同时消费
+      // const topic = '/amq/queue/tao';
+      // fanout 交换机 可以支持多个消费者消费同一队列的消息，这个队列需要绑定 tao_exchange 交换机
+      const topic = '/exchange/tao_exchange';
       this.client.subscribe(topic, this.responseCallback, this.onFailed)
     },
     async onConnected(frame) {
-      await this.client.connect(MQTT_USERNAME, MQTT_PASSWORD, this.onConnected, this.onFailed, MQTT_host) // this.client.connect(MQTT_USERNAME,MQTT_PASSWORD, this.onConnected, this.onFailed)//   有的是不需要MQTT_host的，不需要的话，就不用传这个参数 }
+      await this.client.connect(MQTT_USERNAME, MQTT_PASSWORD, this.onConnected, this.onFailed, MQTT_host) 
+      // this.client.connect(MQTT_USERNAME,MQTT_PASSWORD, this.onConnected, this.onFailed)//   有的是不需要MQTT_host的，不需要的话，就不用传这个参数 }
     },
     onFailed: function (frame) {
       console.log('MQ Failed:' + frame)
@@ -1416,9 +1421,25 @@ export const MQTT_topic = '/exchange/js-top/helloworldQueue' // 订阅频道
 
 
 
+## docker部署rabbitmq
 
+```shell
+# 启动
+docker run -d -p 15670:15670 -p 15671:15671 -p 15672:15672 -p 5672:5672 -p 5671:5671 -p 15674:15674  \
+        --restart=always \
+        -e RABBITMQ_DEFAULT_USER=guest \
+        -e RABBITMQ_DEFAULT_PASS=guest \
+        --name rabbitmq\
+        rabbitmq:latest
+        
+        
+#开启web客户端
+rabbitmq-plugins enable rabbitmq_management
 
-
+#开启stomp插件，提供给前端监听服务
+rabbitmq-plugins enable rabbitmq_web_stomp
+rabbitmq-plugins enable rabbitmq_web_stomp_examples        
+```
 
 
 
