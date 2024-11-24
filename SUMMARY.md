@@ -187,3 +187,4 @@
     * [Kaptcha验证码](other/kaptcha验证码.md)
     * [ffmpeg](other/ffmpeg.md)
     * [samba](other/搭建基于公网的samba服务.md)
+    * [docker部署时嵌入字体](other/docker部署时嵌入字体.md)
