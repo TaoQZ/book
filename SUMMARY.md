@@ -56,6 +56,8 @@
         * [事务](mysql/jike/事务/事务.md)
         * [mysql执行计划](mysql/jike/xn/mysql执行计划.md)
         * [MYSQL_performance_schema详解](mysql/jike/xn/MYSQL_performance_schema详解.md)
+* Oracle
+    * [oracle11g安装教程](oracle/oracle_install.md)         
 * Redis
     * [Redis基础](redis/redis.md)    
     * [Redis进阶](redis/redis高级.md)
