@@ -186,6 +186,7 @@
 		* [解决vue使用video播放视频无画面问题](worknote/other/解决vue使用video播放视频无画面问题.md)
 * 其他
     * [SRS](other/SRS+OBS+VLC.md)
+    * [openvpn](other/openvpn.md)
     * [搭建SSR](other/使用Google Cloud搭建ssr.md)
     * [Kaptcha验证码](other/kaptcha验证码.md)
     * [ffmpeg](other/ffmpeg.md)
