@@ -67,6 +67,31 @@ https://obsproject.com/download
 
 
 
+## FFmpg
+
+下载地址
+
+在windows上借助FFmpeg进行屏幕录制+推流
+
+https://www.gyan.dev/ffmpeg/builds/
+
+[ffmpeg-release-full.7z](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z)
+
+```cmd
+# 查看麦克风设备
+ffmpeg -list_devices true -f dshow -i dummy
+
+
+# 本地视频
+ffmpeg -re -i "F:\srs\911Mothers_2010W-480p.mp4" -vcodec libx264 -acodec aac -f flv rtmp://192.168.91.54/live/livestream/livestream2
+
+
+# 屏幕录制（直播推流）+ 麦克风
+ffmpeg -f gdigrab -i desktop -f dshow -i audio="麦克风 (Realtek High Definition Audio)" -vcodec libx264 -preset ultrafast -acodec aac -f flv rtmp://192.168.91.54/live/livestream/livestream2
+```
+
+
+
 ## VLC
 
 使用VLC观看直播
