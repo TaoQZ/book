@@ -14,11 +14,11 @@ current_date=$(date +%Y%m%d_%H%M%S)
 backup_dir='/home/iwipitbackupzytk'
 
 # 设置数据库连接字符串
-db_user='zytk40/159357@//localhost:1521/zytk40'
+db_user='username/password@//localhost:1521/zytk40'
 
 # 设置生成的备份文件名
-dumpfile="zytk40_database_backup_${current_date}.dmp"
-logfile="zytk40_database_backup_${current_date}.log"
+dumpfile="username_database_backup_${current_date}.dmp"
+logfile="username_database_backup_${current_date}.log"
 
 # 执行expdp备份命令
 echo "开始执行expdp备份..."
@@ -49,7 +49,7 @@ wait
 
 
 remote_user='root'
-remote_server='192.168.93.13'
+remote_server='服务器IP'
 remote_dir='/home/oracle/iwiporaclebackupzytk40'
 
 # 使用scp传送tar包到远程服务器

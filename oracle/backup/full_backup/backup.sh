@@ -14,7 +14,7 @@ current_date=$(date +%Y%m%d_%H%M%S)
 backup_dir='/home/iwipitbackup'
 
 # 设置数据库连接字符串
-db_user='zytk40/159357@//localhost:1521/zytk40'
+db_user='username/password@//localhost:1521/zytk40'
 
 # 设置生成的备份文件名
 dumpfile="full_database_backup_${current_date}.dmp"
@@ -46,7 +46,7 @@ wait
 
 
 remote_user='root'
-remote_server='192.168.93.13'
+remote_server='服务器IP'
 remote_dir='/home/oracle/iwiporaclebackup'
 
 # 使用scp传送tar包到远程服务器
