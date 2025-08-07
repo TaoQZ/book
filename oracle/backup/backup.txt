@@ -1,0 +1,14 @@
+SELECT * FROM all_directories;
+
+-- 需要切换到 oracle用户
+-- 该文件夹 oracle 需要有权限
+-- IWIPITBACKUPZYTK 代表 oracle 中的目录名字
+-- /home/iwipitbackupzytk 是在服务器中备份文件位置
+CREATE OR REPLACE DIRECTORY IWIPITBACKUPZYTK AS  '/home/iwipitbackupzytk';
+
+
+GRANT READ, WRITE ON DIRECTORY IWIPITBACKUPZYTK TO ZYTK40;
+
+GRANT EXP_FULL_DATABASE TO ZYTK40;
+
+SELECT directory_name, directory_path FROM dba_directories WHERE directory_name = 'IWIPITBACKUPZYTK';
