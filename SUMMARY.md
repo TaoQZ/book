@@ -173,6 +173,7 @@
 	* [rabbitmq](worknote/rabbitmq/docker安装rabbitmq.md)	
 	* [redis](worknote/redis/redis.md)	
 	* [websocket](worknote/websocket/springboot+vue+websocket.md)
+    * [sc_websocket](worknote/websocket/springcloud+websocket.md)
 	* [tess4j_ocr](worknote/tess4j_ocr/Tess4j使用记录.md)
     * [swagger](worknote/swagger/swagger.md)
 	* other
