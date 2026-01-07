@@ -2998,7 +2998,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5220;&#x9664;&#x955C;&#x50CF;"><a name="&#x5220;&#x9664;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x955C;&#x50CF;</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;-&#x62A5;-iptables-&#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;">&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6; &#x62A5; iptables &#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;</a></li><li><a href="#&#x4FEE;&#x6539;docker&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;">&#x4FEE;&#x6539;docker&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;</a></li><li><a href="#&#x5982;&#x679C;&#x9047;&#x5230;&#x6709;-&#x5BB9;&#x5668;&#x5F00;&#x653E;&#x7AEF;&#x53E3;-&#x4F46;&#x662F;&#x5916;&#x90E8;&#x8FD8;&#x662F;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;">&#x5982;&#x679C;&#x9047;&#x5230;&#x6709; &#x5BB9;&#x5668;&#x5F00;&#x653E;&#x7AEF;&#x53E3; &#x4F46;&#x662F;&#x5916;&#x90E8;&#x8FD8;&#x662F;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;</a></li></ul></div><a href="#&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;-&#x62A5;-iptables-&#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x5220;&#x9664;&#x955C;&#x50CF;"><a name="&#x5220;&#x9664;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x955C;&#x50CF;</h2>
 <p>&#x5F53;&#x6709;&#x591A;&#x4E2A;&#x955C;&#x50CF;&#x540D;&#x79F0;&#x76F8;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x5220;&#x9664;&#x4F1A;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;</p>
 <pre><code class="lang-shell">Error response from daemon: conflict: unable to delete c50e9004f4ce (must be forced) - image is referenced in multi
 ple repositories
@@ -3006,8 +3006,173 @@ ple repositories
 <p>&#x89E3;&#x51B3;&#x65B9;&#x6848;,&#x4F7F;&#x7528;&#x5176;&#x7248;&#x672C;tag&#x8FDB;&#x884C;&#x5220;&#x9664;</p>
 <pre><code class="lang-shell">docker rmi &#x955C;&#x50CF;&#x540D;&#x79F0;:1.0
 </code></pre>
+<h1 id="&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;-&#x62A5;-iptables-&#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;"><a name="&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;-&#x62A5;-iptables-&#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;-&#x62A5;-iptables-&#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;docker&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6; &#x62A5; iptables &#x89C4;&#x5219;&#x76F8;&#x5173;&#x95EE;&#x9898;</h1>
+<pre><code class="lang-sh">sudo systemctl stop docker
+</code></pre>
+<pre><code class="lang-sh">sudo iptables -t nat -F
+</code></pre>
+<pre><code class="lang-sh">sudo iptables -t filter -F
+</code></pre>
+<pre><code class="lang-sh">sudo iptables -t nat -X
+</code></pre>
+<pre><code class="lang-sh">sudo iptables -t filter -X
+</code></pre>
+<pre><code class="lang-sh">sudo systemctl start docker
+</code></pre>
+<h1 id="&#x4FEE;&#x6539;docker&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;"><a name="&#x4FEE;&#x6539;docker&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;docker&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;docker&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;</h1>
+<pre><code class="lang-sh">systemctl stop docker
+</code></pre>
+<pre><code class="lang-sh">vim /etc/docker/daemon.json
+
+{
+  <span class="hljs-string">&quot;bip&quot;</span>: <span class="hljs-string">&quot;172.20.0.1/16&quot;</span>
+}
+</code></pre>
+<pre><code class="lang-sh">ip link <span class="hljs-built_in">set</span> dev docker0 down
+</code></pre>
+<pre><code class="lang-sh">ip link delete docker0
+</code></pre>
+<pre><code class="lang-sh">systemctl start docker
+</code></pre>
+<pre><code class="lang-sh">docker network inspect bridge
+</code></pre>
+<h1 id="&#x5982;&#x679C;&#x9047;&#x5230;&#x6709;-&#x5BB9;&#x5668;&#x5F00;&#x653E;&#x7AEF;&#x53E3;-&#x4F46;&#x662F;&#x5916;&#x90E8;&#x8FD8;&#x662F;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;"><a name="&#x5982;&#x679C;&#x9047;&#x5230;&#x6709;-&#x5BB9;&#x5668;&#x5F00;&#x653E;&#x7AEF;&#x53E3;-&#x4F46;&#x662F;&#x5916;&#x90E8;&#x8FD8;&#x662F;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;&#x9047;&#x5230;&#x6709;-&#x5BB9;&#x5668;&#x5F00;&#x653E;&#x7AEF;&#x53E3;-&#x4F46;&#x662F;&#x5916;&#x90E8;&#x8FD8;&#x662F;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x679C;&#x9047;&#x5230;&#x6709; &#x5BB9;&#x5668;&#x5F00;&#x653E;&#x7AEF;&#x53E3; &#x4F46;&#x662F;&#x5916;&#x90E8;&#x8FD8;&#x662F;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;</h1>
+<p>SELinux </p>
+<p>&#x6709;&#x65F6; SELinux &#x4F1A;&#x62E6;&#x622A;&#x975E;&#x6807;&#x51C6;&#x7AEF;&#x53E3;&#xFF08;&#x6BD4;&#x5982; 10080&#xFF09;&#x3002;</p>
+<p>&#x67E5;&#x770B; Nginx &#x662F;&#x5426;&#x6709;&#x6743;&#x9650;&#x76D1;&#x542C;&#xFF1A;</p>
+<pre><code class="lang-sh">getsebool <span class="hljs-_">-a</span> | grep httpd
+</code></pre>
+<p>&#x4E34;&#x65F6;&#x5173;&#x95ED; SELinux &#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-sh">setenforce 0
+</code></pre>
+<p>iptables   </p>
+<p>host &#x6A21;&#x5F0F;&#x4E0B;&#x5BB9;&#x5668;&#x548C;&#x5BBF;&#x4E3B;&#x673A;&#x5171;&#x4EAB; iptables&#xFF0C;&#x5982;&#x679C;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x89C4;&#x5219;&#xFF0C;&#x53EF;&#x80FD;&#x62E6;&#x622A;&#x4E86;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x68C0;&#x67E5;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-sh">iptables -L -n
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5148;&#x6E05;&#x7A7A;&#x89C4;&#x5219;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-sh">iptables -F
+</code></pre>
+<pre><code class="lang-nginx"><span class="hljs-attribute">user</span>  nginx;
+<span class="hljs-attribute">worker_processes</span>  auto;
+
+<span class="hljs-attribute">error_log</span>  /var/log/nginx/error.log <span class="hljs-literal">notice</span>;
+<span class="hljs-attribute">pid</span>        /var/run/nginx.pid;
+
+
+<span class="hljs-section">events</span> {
+    <span class="hljs-attribute">worker_connections</span>  <span class="hljs-number">1024</span>;
+}
+
+
+
+<span class="hljs-section">http</span> {
+    <span class="hljs-attribute">include</span>       /etc/nginx/mime.types;
+    <span class="hljs-attribute">default_type</span>  application/octet-stream;
+
+    <span class="hljs-attribute">log_format</span>  main  <span class="hljs-string">&apos;<span class="hljs-variable">$remote_addr</span> - <span class="hljs-variable">$remote_user</span> [<span class="hljs-variable">$time_local</span>] &quot;<span class="hljs-variable">$request</span>&quot; &apos;</span>
+                      <span class="hljs-string">&apos;<span class="hljs-variable">$status</span> <span class="hljs-variable">$body_bytes_sent</span> &quot;<span class="hljs-variable">$http_referer</span>&quot; &apos;</span>
+                      <span class="hljs-string">&apos;&quot;<span class="hljs-variable">$http_user_agent</span>&quot; &quot;<span class="hljs-variable">$http_x_forwarded_for</span>&quot;&apos;</span>;
+
+    <span class="hljs-attribute">access_log</span>  /var/log/nginx/access.log  main;
+
+    <span class="hljs-attribute">sendfile</span>        <span class="hljs-literal">on</span>;
+    <span class="hljs-comment">#tcp_nopush     on;</span>
+
+    <span class="hljs-attribute">keepalive_timeout</span>  <span class="hljs-number">65</span>;
+
+    <span class="hljs-comment">#gzip  on;</span>
+    <span class="hljs-attribute">client_max_body_size</span> <span class="hljs-number">100M</span>;
+
+
+    <span class="hljs-attribute">gzip</span>  <span class="hljs-literal">on</span>;
+    <span class="hljs-attribute">gzip_min_length</span>  <span class="hljs-number">10k</span>;
+    <span class="hljs-attribute">gzip_buffers</span>     <span class="hljs-number">4</span> <span class="hljs-number">16k</span>;
+    <span class="hljs-attribute">gzip_http_version</span> <span class="hljs-number">1</span>.<span class="hljs-number">1</span>;
+    <span class="hljs-attribute">gzip_comp_level</span> <span class="hljs-number">9</span>;
+    <span class="hljs-attribute">gzip_types</span>
+     text/plain
+     application/x-javascript
+     text/css
+     application/xml
+     text/javascript
+     application/x-httpd-php
+     application/javascript
+     application/json
+     application/x-font-ttf
+     application/x-font-opentype
+     application/vnd.ms-fontobject
+     application/font-woff
+     application/font-woff2
+     application/wasm
+     font/ttf
+     font/otf
+     font/woff
+     font/woff2;
+    <span class="hljs-attribute">gzip_disable</span> <span class="hljs-string">&quot;MSIE [1-6]\.&quot;</span>;
+    <span class="hljs-attribute">gzip_vary</span> <span class="hljs-literal">on</span>;
+
+    <span class="hljs-section">server</span> {
+        <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>; <span class="hljs-comment"># &#x76D1;&#x542C;&#x6307;&#x5B9A; IP &#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;</span>
+        <span class="hljs-attribute">server_name</span> localhost; <span class="hljs-comment"># &#x670D;&#x52A1;&#x5668;&#x540D;&#xFF08;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF09;</span>
+        <span class="hljs-attribute">charset</span> utf-<span class="hljs-number">8</span>; 
+
+        <span class="hljs-comment"># &#x5149;&#x4F0F;&#x5927;&#x5C4F;    </span>
+        <span class="hljs-attribute">location</span> /test-api {
+             <span class="hljs-attribute">rewrite</span><span class="hljs-regexp"> ^/test-api/(.*)$</span> /<span class="hljs-variable">$1</span> <span class="hljs-literal">break</span>;
+             <span class="hljs-attribute">proxy_pass</span> http://192.168.1.4:18080;
+        }
+
+
+       <span class="hljs-comment"># &#x786E;&#x4FDD; /app/ &#x80FD;&#x6B63;&#x786E;&#x6620;&#x5C04;</span>
+       <span class="hljs-attribute">location</span> /app/ {
+            <span class="hljs-attribute">alias</span> /home/nginx/html/app/;
+            <span class="hljs-attribute">autoindex</span> <span class="hljs-literal">on</span>;   <span class="hljs-comment"># &#x53EF;&#x9009;&#xFF0C;&#x5141;&#x8BB8;&#x76EE;&#x5F55;&#x6D4F;&#x89C8;</span>
+       }  
+
+       <span class="hljs-attribute">location</span> / {
+            <span class="hljs-attribute">root</span>   /usr/share/nginx/html;
+            <span class="hljs-attribute">index</span>  index.html index.htm;
+       }
+
+       <span class="hljs-attribute">error_page</span> <span class="hljs-number">404</span> /50x.html;
+           <span class="hljs-attribute">location</span> = /50x.html {
+           <span class="hljs-attribute">root</span>   html;
+       }
+
+
+
+    }
+
+<span class="hljs-comment">#    server {</span>
+<span class="hljs-comment">#      listen 443 ssl; # &#x76D1;&#x542C;443&#x7AEF;&#x53E3;&#xFF0C;&#x542F;&#x7528;SSL&#x548C;HTTP/2</span>
+<span class="hljs-comment">#      http2 on;</span>
+<span class="hljs-comment">#      server_name localhost; # &#x8BBE;&#x7F6E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x57DF;&#x540D;</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#      # SSL&#x8BC1;&#x4E66;&#x548C;&#x5BC6;&#x94A5;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment">#      ssl_certificate /etc/nginx/conf.d/cert/*.pem; # SSL&#x8BC1;&#x4E66;&#x7684;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment">#      ssl_certificate_key /etc/nginx/conf.d/cert/*.key; # SSL&#x8BC1;&#x4E66;&#x5BC6;&#x94A5;&#x7684;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#      # SSL&#x5B89;&#x5168;&#x8BBE;&#x7F6E;</span>
+<span class="hljs-comment">#      ssl_protocols TLSv1.2 TLSv1.3; # &#x6307;&#x5B9A;&#x4F7F;&#x7528;TLS 1.2&#x548C;TLS 1.3&#x534F;&#x8BAE;</span>
+<span class="hljs-comment">#      ssl_prefer_server_ciphers on; # &#x4F18;&#x5148;&#x4F7F;&#x7528;&#x670D;&#x52A1;&#x5668;&#x6307;&#x5B9A;&#x7684;&#x5BC6;&#x7801;&#x5957;&#x4EF6;</span>
+<span class="hljs-comment">#      ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span>
+<span class="hljs-comment">#       </span>
+<span class="hljs-comment">#      location / {</span>
+<span class="hljs-comment">#         root   /usr/share/nginx/html;</span>
+<span class="hljs-comment">#         index  index.html index.htm;</span>
+<span class="hljs-comment">#         proxy_pass http://localhost:80/;</span>
+<span class="hljs-comment">#      }</span>
+<span class="hljs-comment">#    }</span>
+
+
+
+}
+</code></pre>
+<pre><code class="lang-sh">docker run  --name nginx --network host --restart=always -v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /home/nginx/logs:/var/<span class="hljs-built_in">log</span>/nginx -v /home/nginx/html:/usr/share/nginx/html -v /etc/localtime:/etc/localtime  -itd nginx:latest
+</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; TaoQZ 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4F5C;&#x8005;&#x8054;&#x7CFB;&#x65B9;&#x5F0F;&#xFF1A;taoqingzhou@gmail.com &#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2025-09-09 16:48:24
+2026-01-07 15:52:10
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -3068,7 +3233,7 @@ ple repositories
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"遇到的问题","level":"1.28.4","depth":2,"next":{"title":"docker-compose","level":"1.28.5","depth":2,"path":"docker/docker-compose.md","ref":"docker/docker-compose.md","articles":[]},"previous":{"title":"部署springboot项目","level":"1.28.3","depth":2,"path":"docker/部署springboot项目.md","ref":"docker/部署springboot项目.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"作者联系方式：taoqingzhou@gmail.com 修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.top/"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"docker/problem.md","mtime":"2025-09-09T07:48:24.700Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-09T07:48:43.741Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"遇到的问题","level":"1.28.4","depth":2,"next":{"title":"docker-compose","level":"1.28.5","depth":2,"path":"docker/docker-compose.md","ref":"docker/docker-compose.md","articles":[]},"previous":{"title":"部署springboot项目","level":"1.28.3","depth":2,"path":"docker/部署springboot项目.md","ref":"docker/部署springboot项目.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","disqus","github@^2.0.0","anchors@^0.7.1","include-codeblock@^3.0.2","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","-sharing","sharing-plus","multipart","baidu-tongji","ga","edit-link@^2.0.2","-lunr","-search","search-pro","search-plus","code","insert-logo","favicon","popup","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © TaoQZ 2019","modify_label":"作者联系方式：taoqingzhou@gmail.com 修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"taoqz"},"github":{"url":"https://taoqz.github.io"},"livereload":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"547fd35e117e03eb20cde8415b55ab18"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"/img/header/favicon.ico","bookmark":"/img/header/favicon.ico"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-145587281-1"},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"Edit This Page","base":"https://github.com/TaoQZ/book/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"/img/header/header.jpg"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"TaoQZ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Peace & Love","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://taoqz.top/"}},"gitbook":"3.2.3","description":"TaoQZ"},"file":{"path":"docker/problem.md","mtime":"2026-01-07T06:52:10.507Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-01-07T06:55:02.165Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
